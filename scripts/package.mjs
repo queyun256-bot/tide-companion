@@ -17,7 +17,7 @@ const output=await packager({
   // A temporary whitespace value satisfies Packager's required-author inference;
   // the CompanyName key is removed from the finished PE resource below.
   win32metadata:{CompanyName:' ',FileDescription:'潮汐',ProductName:'潮汐'},
-  ignore:[/^\/node_modules(?:\/|$)/,/^\/(?:dist|tests|docs|scripts|screenshots|build|\.vscode)(?:\/|$)/,/^\/\./,/^\/(?:pnpm-lock\.yaml|pnpm-workspace\.yaml|electron-builder\.json)$/]
+  ignore:[/^\/node_modules(?:\/|$)/,/^\/(?:dist|tests|docs|scripts|screenshots|build|\.vscode)(?:\/|$)/,/^\/\./,/^\/(?:pnpm-lock\.yaml|pnpm-workspace\.yaml|electron-builder\.json)$/,/^\/assets\/vendor\/live2dcubismcore\.min\.js$/]
 });
 for(const directory of output){
   // Windows reads taskbar relaunch icons outside the ASAR. A content-based name

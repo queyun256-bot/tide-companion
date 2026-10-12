@@ -118,7 +118,7 @@ async function run() {
 
   const archive = path.join(payloadPath, 'resources', 'app.asar');
   const archiveFiles = [];
-  const allowedRootFiles = new Set(['README.md', 'index.html', 'pet.html', 'package.json']);
+  const allowedRootFiles = new Set(['LICENSE', 'README.md', 'index.html', 'pet.html', 'package.json']);
   const allowedJson = new Set(['package.json', 'src/medication-catalog.json', 'src/reference-presets.json', 'assets/vendor/SHA256.json', 'assets/sharks/catalog.json']);
   const devOrPrivatePath = /(?:^|\/)(?:tests?|screenshots|raw|node_modules|dist|build|scripts|\.git|\.vscode|userdata|backups?)(?:\/|$)|(?:^|\/)state(?:[.-][^/]*)?\.json$|\.(?:sqlite3?|db|csv|xlsx?|log|bak|tmp)$/i;
   for (const rawPath of asar.listPackage(archive)) {
@@ -133,12 +133,14 @@ async function run() {
     await stat(path.join(root, relative));
     archiveFiles.push(relative);
   }
+  assert.ok(!archiveFiles.includes('assets/vendor/live2dcubismcore.min.js'), 'Public installer must not include proprietary Live2D Core');
   const bundledPackage = JSON.parse(asar.extractFile(archive, 'package.json').toString('utf8'));
   assert.equal(bundledPackage.version, pkg.version, 'Installer bundles a different app version');
   assert.equal(bundledPackage.main, pkg.main, 'Installer entry point differs from the current project');
   checks.push('ASAR contains release files without saved state, exports, tests, or screenshots');
 
   const criticalFiles = [
+    'LICENSE',
     'index.html', 'pet.html', 'src/app.js', 'src/app.css', 'src/medication-icons.js', 'src/medication-icons.css',
     'src/administration-picker.js', 'src/administration-picker.css',
     'src/journal.js', 'src/calendar.js', 'src/calendar.css', 'electron/daily-moods.cjs',
