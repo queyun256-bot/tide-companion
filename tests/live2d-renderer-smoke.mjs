@@ -1,0 +1,78 @@
+import { _electron as electron } from 'playwright-core';
+import { mkdtemp, mkdir, readFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import { fileURLToPath } from 'node:url';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const userData = await mkdtemp(path.join(tmpdir(), 'tide-live2d-'));
+const env = { ...process.env, TIDE_TEST_DATA: userData };
+delete env.ELECTRON_RUN_AS_NODE;
+const app = await electron.launch({ executablePath: path.join(root, 'node_modules/electron/dist/electron.exe'), args: [path.join(root, 'tests/launch-smoke.cjs')], env, timeout: 30000 });
+const errors = [];
+try {
+  await app.firstWindow();
+  let pet;
+  for (let index = 0; index < 100; index += 1) {
+    pet = app.windows().find(window => window.url().endsWith('/pet.html'));
+    if (pet) break;
+    await new Promise(resolve => setTimeout(resolve, 100));
+  }
+  assert.ok(pet, 'pet window loads');
+  pet.on('pageerror', error => errors.push(error.message));
+  pet.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+  await pet.locator('#builtin-pet svg.shark').waitFor();
+  assert.equal(await pet.locator('.pet-caption,.drag-caption,.pet-controls span').count(), 0);
+  assert.equal(await pet.locator('.fin-left,.fin-right,.tail').count(), 3);
+  await pet.waitForTimeout(2700);
+  assert.equal(await pet.locator('.pet-controls').evaluate(element => getComputedStyle(element).opacity), '0');
+  await pet.mouse.move(160, 320);
+  await pet.locator('#wallet-pet').click();
+  await pet.waitForTimeout(2800);
+  assert.equal(await pet.locator('.pet-controls').evaluate(element => getComputedStyle(element).opacity), '0', 'mouse click does not keep controls visible');
+  await pet.evaluate(async () => {
+    const state = await window.petAPI.loadState();
+    state.settings.name = '小星'; state.settings.mode = 'ftm';
+    await window.petAPI.saveState(state);
+  });
+  await pet.waitForFunction(() => document.title.startsWith('小星'));
+  assert.match(await pet.locator('#pat-pet').getAttribute('title'), /小星/);
+  assert.equal(await pet.locator('html').getAttribute('data-mode'), 'ftm');
+  await pet.evaluate(() => window.TideLive2D.switchSkin({ activeSkin: 'missing-model' }));
+  assert.equal(await pet.locator('#live2d-canvas').getAttribute('data-status'), 'disabled');
+  assert.equal(await pet.locator('#builtin-pet').isVisible(), true);
+  const modelFile = path.join(root, 'tests/fixtures/Haru/Haru.model3.json');
+  await app.evaluate(({ dialog }, selected) => { dialog.showOpenDialog = async () => ({ canceled: false, filePaths: [selected] }); }, modelFile);
+  // Simulate a pre-existing imported library through the retained storage API.
+  const skin = await pet.evaluate(() => window.petAPI.importSkin());
+  await pet.evaluate(id => window.petAPI.selectSkin(id, .9), skin.id);
+  await pet.waitForFunction(() => document.getElementById('live2d-canvas').dataset.status === 'disabled');
+  assert.equal(await pet.evaluate(() => window.TideLive2D.active), false);
+  assert.equal(await pet.locator('#builtin-pet').isVisible(), true);
+  assert.equal(await pet.locator('.pet-stage').getAttribute('data-variant'), 'builtin');
+  assert.equal(await pet.evaluate(() => Boolean(window.PIXI)), false);
+  assert.equal(await pet.locator('script[src*="assets/vendor/"]').count(), 0);
+  const dashboard = app.windows().find(window => window.url().endsWith('/index.html'));
+  await dashboard.locator('[data-page="settings"]').click();
+  await dashboard.locator('.shark-skin').first().waitFor();
+  assert.equal(await dashboard.locator('.shark-skin').count(), 5);
+  assert.equal(await dashboard.locator('.imported-skins,[data-action="import-skin"],#skin-scale').count(), 0);
+  assert.equal(await dashboard.locator('.shark-skin.is-selected').getAttribute('data-skin-id'), 'builtin');
+  await dashboard.waitForFunction(() => document.querySelector('tide-pet-preview')?.dataset.visualVariant === 'builtin');
+  await pet.evaluate(async () => { const state = await window.petAPI.loadState(); state.settings.notifications = !state.settings.notifications; await window.petAPI.saveState(state); });
+  const saved = JSON.parse(await readFile(path.join(userData, 'state.json'), 'utf8'));
+  assert.equal(saved.settings.activeSkin, skin.id, 'unrelated saving preserves the stored imported selection');
+  assert.equal(saved.settings.skinScale, .9);
+  const library = await pet.evaluate(() => window.petAPI.listSkins());
+  assert.ok(library.skins.some(item => item.id === skin.id), 'stored model is retained');
+  assert.equal(await pet.evaluate(async url => (await fetch(url)).ok, skin.modelUrl), true);
+  await pet.reload();
+  await pet.waitForFunction(() => document.getElementById('live2d-canvas').dataset.status === 'disabled');
+  assert.equal(await pet.evaluate(() => window.TideLive2D.active), false);
+  assert.equal((await pet.evaluate(() => window.petAPI.loadState())).settings.activeSkin, skin.id);
+  await dashboard.locator('.shark-skin [data-id="builtin-lilac"]').click();
+  await pet.waitForFunction(() => document.querySelector('.pet-stage').dataset.variant === 'builtin-lilac');
+  assert.ok((await pet.evaluate(() => window.petAPI.listSkins())).skins.some(item => item.id === skin.id));
+  assert.deepEqual(errors, [], 'no renderer errors or runtime requests');
+  console.log(JSON.stringify({ ok: true, checks: ['rigged SVG and controls', 'name and theme', 'hidden Live2D entry and model scaling', 'legacy model selection renders builtin without loading runtime', 'saved selection, scale and files remain intact across unrelated save and renderer restart', 'five builtin choices remain usable'], isolatedData: userData }));
+} finally { await app.close(); }

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data: blob: tide-skin:; connect-src 'self' tide-skin:; media-src 'none'; object-src 'none'; base-uri 'none'" />
+  <title>鲨鲨 · 桌面伙伴</title>
+  <link rel="stylesheet" href="src/pet.css" />
+  <link rel="stylesheet" href="src/star-effects.css" />
+  <link rel="stylesheet" href="src/star-feeding.css">
+</head>
+<body>
+  <main class="pet-stage controls-visible" aria-label="桌面伙伴">
+    <div class="speech is-hidden" id="speech" role="status" aria-live="polite" aria-hidden="true" inert><button id="speech-open" class="speech-open" type="button" hidden aria-label="打开手账查看用药提醒"><span>用药提醒</span><span aria-hidden="true">打开手账 ↗</span></button><span id="speech-text"></span></div>
+    <div class="float-wrap" data-visual-key="float" id="float-wrap">
+      <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+      <div class="star-lights" data-visual-key="stars" id="star-lights" data-count="0" aria-hidden="true"></div>
+      <div class="sleep-sign" data-visual-key="sleep" aria-hidden="true">z<span>z</span><span>z</span></div>
+      <svg class="drag-handle" id="fin-drag-handle" viewBox="0 0 400 320" role="img" aria-label="长按头顶鱼鳍后拖动桌宠"><title>长按头顶鱼鳍，轻轻提起</title><path d="M185 87C191 66 206 46 221 43C223 43 224 45 223 48C221 64 228 74 242 87Z"/></svg>
+      <button class="shark-touch" id="shark-touch" type="button" aria-label="摸摸；双击打开手账" title="摸摸 · 双击打开手账">
+        <span id="builtin-pet" data-visual-key="body"><svg class="shark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none" role="img" aria-labelledby="shark-title shark-desc">
+  <title id="shark-title">鲨鲨，戴着跨性别旗帜围巾的小鲨鱼</title>
+  <desc id="shark-desc">圆滚滚的浅蓝色小鲨鱼，短短的小鳍、白肚皮和粉色脸颊，围巾依次是浅蓝、粉、白、粉、浅蓝。</desc>
+  <defs>
+    <linearGradient id="shark-body-gradient" x1="127" y1="85" x2="281" y2="263" gradientUnits="userSpaceOnUse"><stop stop-color="#B0E5EB"/><stop offset="1" stop-color="#7CCBDD"/></linearGradient>
+    <linearGradient id="shark-belly-gradient" x1="197" y1="168" x2="197" y2="272" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFEFB"/><stop offset="1" stop-color="#EDF9F7"/></linearGradient>
+  </defs>
+  <ellipse class="shark-shadow" cx="203" cy="287" rx="87" ry="9" fill="#4F91A4" opacity=".1"/>
+  <g class="shark-body" stroke="#487E91" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path class="tail" data-visual-key="tail" d="M275 225C298 232 308 229 320 219C328 212 337 211 345 213C343 224 337 233 330 237C339 240 347 247 348 256C333 261 319 255 307 246L281 248Z" fill="#8ED1DF"/>
+    <path class="dorsal" d="M185 87C191 66 206 46 221 43C223 43 224 45 223 48C221 64 228 74 242 87Z" fill="#98D7E3"/>
+    <path class="fin-left" data-visual-key="fin-left" d="M111 172C90 172 68 184 59 199C58 201 59 204 62 205C79 209 98 201 113 190Z" fill="#9BD9E4"/>
+    <path class="fin-right" data-visual-key="fin-right" d="M286 172C307 176 326 187 334 201C335 204 333 206 331 206C313 208 296 200 283 190Z" fill="#8CCFDE"/>
+    <path class="round-body" d="M199 72C258 70 299 109 304 161C310 218 282 259 233 271C209 277 178 276 151 266C107 250 84 212 92 162C100 110 138 74 199 72Z" fill="url(#shark-body-gradient)"/>
+    <path class="belly" d="M124 178C139 159 168 159 196 166C222 158 253 160 271 179C290 200 284 235 261 254C230 280 166 278 136 253C113 234 106 201 124 178Z" fill="url(#shark-belly-gradient)" stroke="none"/>
+    <path class="flipper-left" d="M115 222C126 220 140 230 145 240C143 247 135 253 128 254C117 249 111 234 115 222Z" fill="#A0DCE6"/>
+    <path class="flipper-right" d="M277 221C266 220 253 231 249 242C252 249 260 253 269 252C279 245 283 230 277 221Z" fill="#8FD4E1"/>
+  </g>
+  <path d="M120 130C129 112 148 99 167 95" stroke="#DBF5F5" stroke-width="10" stroke-linecap="round" opacity=".86"/>
+  <circle cx="117" cy="146" r="4" fill="#D7F1F2" opacity=".78"/>
+  <g class="face" data-visual-key="face">
+    <ellipse class="cheek cheek-left" cx="139" cy="171" rx="19" ry="10" fill="#F6BDD1" opacity=".92"/>
+    <ellipse class="cheek cheek-right" cx="260" cy="171" rx="19" ry="10" fill="#F6BDD1" opacity=".92"/>
+    <g class="eyes" data-visual-key="eyes">
+      <g class="eye-gaze" data-visual-key="gaze">
+        <g class="eye eye-left" data-visual-key="eye-left"><ellipse cx="157" cy="151" rx="7.5" ry="10" fill="#365C73"/><circle cx="154.5" cy="148" r="2.5" fill="#FFFEFC"/><circle cx="160" cy="155" r="1.2" fill="#AEDCE5"/></g>
+        <g class="eye eye-right" data-visual-key="eye-right"><ellipse cx="243" cy="151" rx="7.5" ry="10" fill="#365C73"/><circle cx="240.5" cy="148" r="2.5" fill="#FFFEFC"/><circle cx="246" cy="155" r="1.2" fill="#AEDCE5"/></g>
+      </g>
+    </g>
+    <ellipse class="yawn" data-visual-key="yawn" cx="200" cy="178" rx="5" ry="7" fill="#527C8F" opacity="0"/><path class="smile" data-visual-key="smile" d="M184 175C190 183 205 187 217 175" stroke="#487E91" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M194 181L199 188L203 182" fill="#FFFEFB"/>
+    <path d="M103 165L109 169M102 176L108 180M291 165L285 169M292 176L286 180" stroke="#6AAEBF" stroke-width="2.8" stroke-linecap="round"/>
+  </g>
+  <g class="scarf" stroke="#6F97A5" stroke-width="2.7" stroke-linejoin="round">
+    <path d="M244 219L274 224L269 268L256 262L241 267Z" fill="#99DCEB"/>
+    <path d="M243 232L273 236L272 245L242 241Z" fill="#F5BBD0" stroke="none"/>
+    <path d="M242 241L272 245L271 254L242 250Z" fill="#FFFEFC" stroke="none"/>
+    <path d="M242 250L271 254L270 263L241 259Z" fill="#F5BBD0" stroke="none"/>
+    <path d="M121 203C166 219 237 220 279 203L279 230C238 247 167 245 121 230Z" fill="#99DCEB"/>
+    <path d="M121 209C166 224 237 226 279 209L279 214C237 231 166 230 121 214Z" fill="#F5BBD0" stroke="none"/>
+    <path d="M121 214C166 230 237 231 279 214L279 219C237 236 166 235 121 219Z" fill="#FFFEFC" stroke="none"/>
+    <path d="M121 219C166 235 237 236 279 219L279 224C237 241 166 240 121 224Z" fill="#F5BBD0" stroke="none"/>
+    <path d="M121 203C166 219 237 220 279 203L279 230C238 247 167 245 121 230Z" fill="none"/>
+  </g>
+  <g class="variant-accessory accessory-rose" fill="#FDECF2" stroke="#BB7C9B" stroke-width="2.5"><path d="M269 109C248 99 253 82 268 91L279 102C285 78 300 83 295 99L282 113Z"/><circle cx="278" cy="105" r="5" fill="#F1BAD1"/></g>
+  <g class="variant-accessory accessory-mint" fill="#9DCDAA" stroke="#5C9274" stroke-width="2.5"><path d="M263 115C247 112 246 94 248 87C268 88 277 103 263 115Z"/><path d="M265 114C266 96 280 93 289 96C287 112 277 120 265 114Z"/><path d="M264 119L255 100M264 116L279 103" fill="none" stroke-linecap="round"/></g>
+  <g class="variant-accessory accessory-peach" fill="#FFE69F" stroke="#B8935D" stroke-width="2.5" stroke-linejoin="round"><path d="M277 88L282 98L293 100L285 108L287 120L277 114L267 120L269 108L261 100L272 98Z"/></g>
+  <g class="variant-accessory accessory-lilac" fill="#FFF3CD" stroke="#9A85B5" stroke-width="2.5" stroke-linejoin="round"><path d="M283 90C267 87 257 103 265 116C273 129 292 124 296 111C278 118 269 101 283 90Z"/><circle cx="297" cy="92" r="3" fill="#DED2F2" stroke="none"/></g>
+  <g class="little-stars" fill="#F1BDD0"><path d="M295 88L298 96L306 99L298 102L295 110L292 102L284 99L292 96Z"/><path d="M83 122L85 127L90 129L85 131L83 136L81 131L76 129L81 127Z" fill="#A6DCE7"/></g>
+</svg>
+</span>
+        <canvas id="live2d-canvas" width="296" height="264" hidden aria-label="Live2D 桌宠"></canvas>
+      </button>
+    </div>
+    <nav class="pet-controls" aria-label="桌宠互动">
+      <button type="button" id="open-dashboard" title="打开手账" aria-label="打开手账"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="3"/><path d="M9 3v3M15 3v3M9 11h6M9 15h4"/></svg></button>
+      <button type="button" id="pat-pet" title="摸摸" aria-label="摸摸"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2 4.5 4.5 0 0 1 8 2c0 6-8 11-8 11Z"/></svg></button>
+      <button type="button" id="nuzzle-pet" title="轻轻蹭蹭" aria-label="轻轻蹭蹭"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16c-3 0-5-2-5-5s2-5 5-5c2 0 4 2 4 5s2 5 4 5c3 0 5-2 5-5s-2-5-5-5"/><path d="m6 18 2-2-2-2m12-10-2 2 2 2"/></svg></button>
+      <button type="button" id="wallet-pet" title="查看星星余额" aria-label="查看星星余额"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.8l6.5-.9Z"/></svg></button>
+      <button type="button" id="sleep-pet" title="打盹" aria-label="打盹" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.9 13.3A9 9 0 0 1 10.7 3.1 9 9 0 1 0 20.9 13.3Z"/></svg></button>
+    </nav>
+  </main>
+  <script src="src/live2d.js" type="module"></script>
+  <script src="src/pet.js" type="module"></script>
+</body>
+</html>
+
+
+

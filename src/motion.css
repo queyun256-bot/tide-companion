@@ -1,0 +1,16 @@
+/* Motion enhances feedback; records, values and focus always update immediately. */
+.page-enter{animation:none}
+.chart-series{transform-box:view-box;transform-origin:0 0}
+.btn,.care-btn,.mood-row button,.nav button,.mode-switch button{transition:background-color .16s ease,border-color .16s ease,box-shadow .16s ease,transform .16s ease}
+.btn:active:not(:disabled),.care-btn:active,.mood-row button:active{transform:scale(.975)}
+.nav button:active,.mode-switch button:active{transform:translateY(1px)}
+.field input,.field select,.chart-controls select{transition:border-color .16s ease,box-shadow .16s ease,background-color .16s ease}
+.setting-line input[type=checkbox]{transition:background-color .16s ease,border-color .16s ease}
+.setting-line input[type=checkbox]::before{transition:transform .16s ease,background-color .16s ease}
+.modal-leaving{pointer-events:none}
+.no-motion *,.no-motion *::before,.no-motion *::after{animation:none!important;transition:none!important}
+.no-motion .btn:active,.no-motion .care-btn:active,.no-motion .mood-row button:active,.no-motion .nav button:active,.no-motion .mode-switch button:active{transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .btn:active,.care-btn:active,.mood-row button:active,.nav button:active,.mode-switch button:active{transform:none}
+}

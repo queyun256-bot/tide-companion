@@ -1,0 +1,110 @@
+.administration-picker-enhanced > select,
+.administration-picker-enhanced > .administration-select-icon {
+  display: none !important;
+}
+
+.administration-picker-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 43px;
+  padding: 10px 11px;
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--surface);
+  font: inherit;
+  line-height: 1.6;
+  text-align: left;
+  transition: border-color .16s ease, background-color .16s ease;
+}
+
+.administration-picker-trigger:hover { border-color: var(--accent); }
+.administration-picker-trigger:focus-visible,
+.administration-picker-trigger[aria-expanded="true"] {
+  border-color: var(--accent);
+  outline: 2px solid var(--tint);
+  outline-offset: 1px;
+  background: #fff;
+}
+
+.administration-picker-symbol {
+  display: inline-flex;
+  flex: 0 0 20px;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: var(--accent);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.administration-picker-value,
+.administration-picker-option-label { flex: 1; min-width: 0; }
+.administration-picker-chevron { display: inline-flex; flex: 0 0 16px; color: var(--soft-ink); transition: transform .16s ease; }
+.administration-picker-trigger[aria-expanded="true"] .administration-picker-chevron { transform: rotate(180deg); }
+
+.administration-picker-listbox {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: min(240px, 34vh);
+  padding: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--edge) transparent;
+  border: 1px solid var(--edge);
+  border-radius: 11px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 10px 28px #3e283b18, 0 2px 6px #3e283b08;
+  animation: administration-picker-reveal .14s ease-out;
+}
+
+.administration-picker-listbox[hidden] { display: none; }
+.administration-picker-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 38px;
+  padding: 8px 7px;
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 1.5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.administration-picker-option.is-active { background: var(--tint2); }
+.administration-picker-option[aria-selected="true"] { color: var(--accent-deep); font-weight: 600; }
+.administration-picker-option[aria-selected="true"].is-active { background: var(--tint); }
+.administration-picker-option[aria-disabled="true"] { cursor: not-allowed; opacity: .45; }
+.administration-picker-check { display: inline-flex; flex: 0 0 16px; color: var(--accent); visibility: hidden; }
+.administration-picker-option[aria-selected="true"] .administration-picker-check { visibility: visible; }
+
+@keyframes administration-picker-reveal {
+  from { opacity: 0; transform: translateY(-3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.no-motion .administration-picker-listbox { animation: none; }
+.no-motion .administration-picker-trigger,
+.no-motion .administration-picker-chevron { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  .administration-picker-listbox { animation: none; }
+  .administration-picker-trigger, .administration-picker-chevron { transition: none; }
+}
+@media (forced-colors: active) {
+  .administration-picker-listbox { border-color: CanvasText; box-shadow: none; }
+  .administration-picker-option.is-active { outline: 1px solid Highlight; outline-offset: -1px; }
+}

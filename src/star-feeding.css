@@ -1,0 +1,13 @@
+[data-star-feed-source][draggable="true"] { cursor: grab; touch-action: none; }
+[data-star-feed-source][draggable="true"]:active { cursor: grabbing; }
+[data-star-feed-source][disabled] { cursor: default; }
+tide-pet-preview[data-star-feed-target] { transition: filter .18s ease, box-shadow .18s ease; }
+tide-pet-preview.is-star-feed-hover { filter: drop-shadow(0 0 10px #edc4728c); }
+.pet-stage.is-star-feed-hover .shark { filter: drop-shadow(0 0 6px #edc472a0); }
+.is-star-feed-drag .drag-handle path { cursor: default; pointer-events: none; }
+.is-star-feed-drag .pet-controls { pointer-events: none; }
+.star-feed-flight { position: fixed; z-index: 2147483647; margin: -15px 0 0 -15px; width: 30px; height: 30px; color: #e4b55e; font-size: 30px; line-height: 1; text-shadow: 0 2px 5px #b7823859; pointer-events: none; animation: star-feed-arrive .72s cubic-bezier(.2,.65,.3,1) both; }
+.star-feed-status { position: fixed; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; pointer-events: none; }
+@keyframes star-feed-arrive { 0% { opacity: 1; transform: translate(0,0) rotate(-12deg) scale(1.1); } 58% { opacity: 1; transform: translate(var(--star-feed-dx),var(--star-feed-dy)) rotate(70deg) scale(.8); } 100% { opacity: 0; transform: translate(var(--star-feed-dx),var(--star-feed-dy)) rotate(90deg) scale(.05); } }
+.reduced-motion .star-feed-flight { animation-duration: .15s; }
+@media (prefers-reduced-motion: reduce) { .star-feed-flight { animation-duration: .15s; } tide-pet-preview[data-star-feed-target] { transition: none; } }

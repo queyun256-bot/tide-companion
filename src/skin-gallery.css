@@ -1,0 +1,33 @@
+.shark-collection { display: grid; grid-template-columns: repeat(auto-fit, minmax(172px, 1fr)); gap: 13px; }
+.shark-skin { display: flex; flex-direction: column; min-width: 0; padding: 12px; border: 1px solid var(--edge); border-radius: 15px; background: var(--surface); transition: border-color .18s, box-shadow .18s; }
+.shark-skin:hover { border-color: var(--accent); box-shadow: 0 5px 15px #51374708; }
+.shark-skin.is-selected { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.shark-skin-art { position: relative; display: grid; place-items: center; height: 142px; border-radius: 10px; background: radial-gradient(ellipse at 50% 72%, #d6ebf17a 0%, transparent 65%); }
+.shark-skin[data-skin-id="builtin-rose"] .shark-skin-art { background: radial-gradient(ellipse at 50% 72%, #fae0eaa6 0%, transparent 65%); }
+.shark-skin[data-skin-id="builtin-mint"] .shark-skin-art { background: radial-gradient(ellipse at 50% 72%, #dcefe4a6 0%, transparent 65%); }
+.shark-skin[data-skin-id="builtin-peach"] .shark-skin-art { background: radial-gradient(ellipse at 50% 72%, #f9e4d3a6 0%, transparent 65%); }
+.shark-skin[data-skin-id="builtin-lilac"] .shark-skin-art { background: radial-gradient(ellipse at 50% 72%, #e8e0f7a6 0%, transparent 65%); }
+.shark-skin-art img { display: block; width: 100%; max-width: 200px; height: 130px; object-fit: contain; transition: transform .3s ease; }
+.shark-skin:hover .shark-skin-art img { transform: translateY(-3px) rotate(-2deg); }
+.shark-selected { position: absolute; top: 0; right: 0; padding: 3px 7px; font-size: 9px; color: var(--accent-deep); background: #ffffffd9; border: 1px solid var(--edge); border-radius: 9px; }
+.shark-skin-copy { flex: 1; margin-top: 8px; }
+.shark-skin-title { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 7px; }
+.shark-skin-title h3 { font-size: 13px; margin: 0; }
+.shark-skin-title > span { color: var(--accent-deep); font-size: 10px; }
+.shark-skin-copy p { font-size: 11px; line-height: 1.8; color: var(--soft-ink); margin: 9px 0 14px; }
+.shark-skin > .btn { width: 100%; }
+.shark-skin > .btn:disabled { opacity: 1; background: var(--tint); color: var(--accent-deep); border-color: var(--edge); }
+.shark-collection-note { margin: 17px 0 22px; font-size: 11px; line-height: 1.8; color: var(--soft-ink); }
+.imported-skins { border-top: 1px solid var(--edge); padding-top: 22px; }
+.imported-skins h3 { font-size: 13px; margin: 0; }
+.imported-skins .card-head { margin-bottom: 12px; }
+.imported-skins .skin-row { background: var(--surface); }
+.imported-skin-copy { flex: 1; min-width: 0; }
+.live2d-skin-icon { color: var(--accent); font-size: 28px; }
+.skin-preview-label { text-align: center; color: var(--soft-ink); font-size: 11px; margin: -5px 0 17px; }
+@media (max-width: 950px) { .shark-collection { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { .shark-skin, .shark-skin-art img { transition: none; } .shark-skin:hover .shark-skin-art img { transform: none; } }
+.no-motion .shark-skin:hover .shark-skin-art img { transform: none; }
+
+.settings-pet-preview { margin: 12px auto 0; }
+.hero-art > tide-pet-preview { filter: drop-shadow(0 15px 9px #93b7cc22); }

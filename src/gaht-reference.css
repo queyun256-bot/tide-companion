@@ -1,0 +1,19 @@
+.gaht-reference {
+  margin: 15px 0 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--edge);
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--tint2) 72%, #fff);
+}
+.gaht-reference-line { display: flex; align-items: baseline; flex-wrap: wrap; gap: 5px 12px; }
+.gaht-reference-line > span { color: var(--soft-ink); font-size: 11px; }
+.gaht-reference-line > b { color: var(--ink); font-size: 14px; font-weight: 600; letter-spacing: .15px; }
+.hormone-card .gaht-reference .gaht-reference-context { margin: 5px 0 0; color: var(--soft-ink); font-size: 11px; line-height: 1.7; }
+.gaht-reference-details { margin-top: 8px; }
+.gaht-reference-details > summary { width: fit-content; color: var(--accent-deep); font-size: 11px; cursor: pointer; }
+.gaht-reference-details > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+.hormone-card .gaht-reference .gaht-reference-body p { margin: 9px 0 0; color: var(--soft-ink); font-size: 11px; line-height: 1.8; }
+.gaht-reference-sources { display: flex; gap: 6px 12px; flex-wrap: wrap; margin-top: 10px; }
+.gaht-reference-sources button { border: 0; background: transparent; padding: 3px 0; color: var(--accent-deep); text-align: left; font: inherit; font-size: 10px; cursor: pointer; }
+.gaht-reference-sources button:hover { text-decoration: underline; text-underline-offset: 3px; }
+.gaht-reference-sources button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }

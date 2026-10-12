@@ -1,0 +1,22 @@
+[
+  {
+    "file": "cubism4.min.js",
+    "sha256": "af1267e6d52759b245766c578d905bfa025b532d5c3cc727c370957c4409e21b",
+    "bytes": 119922
+  },
+  {
+    "file": "live2dcubismcore.min.js",
+    "sha256": "25ae938cb4fe282ce189b357bcc97e603d1e1f7ec78bf04150d401c23cdc792f",
+    "bytes": 207155
+  },
+  {
+    "file": "pixi-csp.min.js",
+    "sha256": "94bb4bfdbd015087772ee03bc4117e253c326e8ca73a61646bd331b22f6847ad",
+    "bytes": 3884
+  },
+  {
+    "file": "pixi.min.js",
+    "sha256": "403f2f2ee8145fa17f60c5c89403056efe2680e5096ec2762036486914ed19c5",
+    "bytes": 460333
+  }
+]

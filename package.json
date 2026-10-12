@@ -1,0 +1,27 @@
+{
+  "name": "tide-companion",
+  "productName": "潮汐",
+  "version": "0.9.1",
+  "description": "潮汐 · 桌宠与 HRT 记录",
+  "private": true,
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.js",
+    "pack": "node scripts/package.mjs",
+    "installer": "node scripts/installer.mjs",
+    "pack:mac": "node scripts/package-macos.mjs",
+    "smoke": "node tests/desktop-smoke.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "@pixi/unsafe-eval": "6.5.10",
+    "electron": "44.7.0",
+    "electron-builder": "26.15.3",
+    "pixi-live2d-display": "0.4.0",
+    "pixi.js": "6.5.10",
+    "playwright-core": "1.64.0"
+  }
+}

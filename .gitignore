@@ -1,0 +1,33 @@
+# Dependencies and generated application packages
+/node_modules/
+/dist/
+/build/*
+!/build/installer.nsh
+
+# Local logs, screenshots and generated test fixtures
+*.log
+.DS_Store
+Thumbs.db
+/.local-data/
+/tests/fixtures/
+/screenshots/
+/coverage/
+
+# Personal records, backups and credentials are never source files
+state.json
+state.backup.json
+state.*.json
+state-*.json
+userdata/
+backups/
+exports/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Proprietary Live2D Core is obtained separately from Live2D, not redistributed in Git.
+/assets/vendor/live2dcubismcore.min.js

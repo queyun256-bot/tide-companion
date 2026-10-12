@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "启动潮汐桌宠",
+    "type": "node",
+    "request": "launch",
+    "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd",
+    "windows": {"runtimeExecutable": "${workspaceFolder}/node_modules/electron/dist/electron.exe"},
+    "args": ["."],
+    "cwd": "${workspaceFolder}",
+    "console": "integratedTerminal",
+    "skipFiles": ["<node_internals>/**"]
+  }]
+}

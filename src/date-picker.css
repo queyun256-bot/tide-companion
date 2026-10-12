@@ -1,0 +1,48 @@
+.date-picker{position:relative;display:flex;align-items:center;width:100%;min-width:0;border:1px solid var(--edge);border-radius:11px;background:#fff;transition:border-color .18s,box-shadow .18s}
+.date-picker:focus-within,.date-picker.is-open{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 11%,transparent)}
+.date-picker .date-picker-native{position:absolute!important;left:0!important;top:0!important;width:1px!important;height:1px!important;padding:0!important;margin:0!important;border:0!important;opacity:0!important;pointer-events:none!important}
+.date-picker .date-picker-input{flex:1;min-width:0;width:100%;padding:11px 12px!important;border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;color:var(--ink)!important;font:inherit;font-variant-numeric:tabular-nums;letter-spacing:.25px;border-radius:11px}
+.date-picker .date-picker-input[aria-invalid=true]{color:#ae4865!important}
+.date-picker .date-picker-trigger{flex-shrink:0;display:grid;place-items:center;width:36px;height:34px;padding:7px;margin:0 5px 0 0;border-radius:8px;background:var(--tint2);color:var(--accent-deep)}
+.date-picker-trigger:hover{background:var(--tint)}
+.date-picker svg,.date-picker-popover svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.date-picker-popover{position:fixed;inset:auto;margin:0;padding:15px;border:1px solid var(--edge);border-radius:18px;background:#fff;color:var(--ink);box-shadow:0 16px 55px #4d35432a,0 3px 8px #4d35430a;overflow:auto;overscroll-behavior:contain;font:12px/1.5 Tide,"Segoe UI",sans-serif;animation:date-picker-reveal .16s ease-out;z-index:2000}
+.date-picker-popover::backdrop{background:transparent;backdrop-filter:none}
+.date-picker-heading{display:flex;align-items:center;justify-content:space-between;margin:0 1px 11px;color:var(--soft-ink);font-size:11px}
+.date-picker-heading small{font-size:10px;color:var(--soft-ink);opacity:.8}
+.date-picker-navigation{display:flex;align-items:center;justify-content:space-between;padding:3px 0 10px;gap:8px}
+.date-picker-navigation strong{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+.date-picker-navigation button{display:grid;place-items:center;width:30px;height:30px;padding:6px;border-radius:9px;background:var(--tint2);color:var(--accent-deep)}
+.date-picker-popover button{font:inherit;cursor:pointer;border:0;transition:background .15s,color .15s,transform .15s}
+.date-picker-popover button:hover:not(:disabled){background:var(--tint);color:var(--accent-deep)}
+.date-picker-popover button:disabled{cursor:not-allowed;opacity:.35}
+.date-picker-weekdays,.date-picker-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.date-picker-weekdays{margin-bottom:5px;text-align:center;color:var(--soft-ink);font-size:10px;line-height:24px}
+.date-picker-days button{position:relative;min-width:0;height:32px;padding:0;border-radius:9px;background:transparent;color:var(--ink);font-size:12px;font-variant-numeric:tabular-nums}
+.date-picker-days .is-adjacent{color:var(--soft-ink);opacity:.42}
+.date-picker-days .is-today::after{content:"";position:absolute;bottom:3px;left:calc(50% - 1.5px);width:3px;height:3px;background:var(--accent);border-radius:50%}
+.date-picker-days button[aria-pressed=true],.date-picker-months button[aria-pressed=true]{background:var(--accent);color:#fff;opacity:1}
+.date-picker-days button[aria-pressed=true].is-today::after{background:#fff}
+.date-picker-months{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:3px 0 10px}
+.date-picker-months button{height:46px;border-radius:11px;background:var(--tint2);color:var(--ink);font-size:15px;font-variant-numeric:tabular-nums}
+.date-picker-months small{margin-left:4px;font-size:10px}
+.date-picker-time{display:flex;align-items:center;gap:7px;padding:13px 1px 1px;margin-top:10px;border-top:1px solid var(--edge)}
+.date-picker-time>span{display:flex;align-items:center;gap:6px;margin-right:auto;color:var(--soft-ink);font-size:11px}
+.date-picker-time>span svg{width:16px;height:16px}
+.date-picker-time>label{position:relative;display:flex;align-items:center;width:52px;height:34px;border:1px solid var(--edge);border-radius:8px;background:var(--tint2)}
+.date-picker-time input{appearance:textfield;-moz-appearance:textfield;width:100%!important;min-width:0!important;padding:5px 17px 5px 6px!important;border:0!important;border-radius:8px!important;background:transparent!important;color:var(--ink)!important;font:500 13px/1.5 "Segoe UI",sans-serif;text-align:center;font-variant-numeric:tabular-nums}
+.date-picker-time input::-webkit-inner-spin-button,.date-picker-time input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.date-picker-time label small{position:absolute;right:5px;pointer-events:none;color:var(--soft-ink);font-size:9px}
+.date-picker-time b{font-weight:400;color:var(--soft-ink)}
+.date-picker-footer{display:flex;align-items:center;gap:6px;margin-top:15px;padding-top:12px;border-top:1px solid var(--edge)}
+.date-picker-footer>span{flex:1}
+.date-picker-footer button{min-height:31px;padding:5px 10px;border-radius:8px;background:transparent;color:var(--soft-ink);font-size:11px}
+.date-picker-footer .date-picker-now{color:var(--accent-deep);background:var(--tint2)}
+.date-picker-footer .date-picker-confirm{color:#fff;background:var(--accent);padding-inline:14px}
+.date-picker-footer .date-picker-confirm:hover:not(:disabled){background:var(--accent-deep);color:#fff}
+.date-picker-error{margin:10px 0 0;color:#ae4865;font-size:10px;line-height:1.6}
+.journal-month-label .date-picker{max-width:205px;margin-top:5px}
+.journal-month-label .date-picker-input{font-size:15px;padding-block:8px!important;letter-spacing:.5px}
+.journal-month-label .date-picker-trigger{height:30px;width:32px}
+@keyframes date-picker-reveal{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.date-picker-popover{animation:none}.date-picker,.date-picker-popover button{transition:none}}

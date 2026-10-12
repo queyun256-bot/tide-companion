@@ -1,0 +1,32 @@
+.star-lights { --star-gold:#e8c375; --star-pink:#e9b8cc; --star-blue:#9ed4e2; --star-low:.42; --star-high:.65; --star-size:.8; --star-glow:1px; position:absolute; inset:0; width:296px; height:264px; z-index:0; display:block; color:var(--star-gold); opacity:0; pointer-events:none; transform:none; transition:opacity .6s ease; }
+.star-lights[data-star-tier="3"] { --star-low:.5; --star-high:.72; --star-size:.88; --star-glow:1.5px; }
+.star-lights[data-star-tier="7"] { --star-low:.56; --star-high:.78; --star-size:.94; --star-glow:2px; }
+.star-lights[data-star-tier="15"] { --star-low:.62; --star-high:.82; --star-size:1; --star-glow:2.5px; }
+.star-lights[data-star-tier="30"] { --star-low:.67; --star-high:.86; --star-size:1.06; --star-glow:3px; }
+.star-lights[data-star-tier="60"] { --star-low:.72; --star-high:.91; --star-size:1.12; --star-glow:3.6px; }
+.star-lights[data-star-tier="100"] { --star-low:.8; --star-high:.98; --star-size:1.2; --star-glow:4.2px; }
+.star-lights.is-visible { opacity:1; transform:none; }
+.star-lights[data-star-variant="builtin-rose"] { --star-gold:#e7c09b; --star-pink:#e6a8c1; }
+.star-lights[data-star-variant="builtin-mint"] { --star-gold:#ddcb84; --star-blue:#a4d8c4; }
+.star-lights[data-star-variant="builtin-peach"] { --star-gold:#e8be68; --star-pink:#edbaa4; }
+.star-lights[data-star-variant="builtin-lilac"] { --star-gold:#ddd0a0; --star-blue:#bdafe4; }
+.star-sky { width:296px; height:264px; display:block; overflow:visible; }
+.star-point { fill:var(--star-gold); opacity:var(--star-high); scale:var(--star-size); filter:drop-shadow(0 0 var(--star-glow) #eac87777); animation:star-drift 7s ease-in-out infinite; }
+.star-color-1 { fill:var(--star-pink); }
+.star-color-2 { fill:var(--star-blue); }
+.star-dust { fill:var(--star-gold); opacity:.55; animation:star-dust-drift 9s ease-in-out infinite; }
+.star-halo { fill:none; stroke:var(--star-gold); stroke-width:7; opacity:.16; filter:blur(8px); }
+.star-orbit { fill:none; stroke:var(--star-gold); stroke-width:1; stroke-dasharray:1 14; stroke-linecap:round; opacity:.4; animation:star-orbit 48s linear infinite; }
+.star-orbit-1 { stroke:var(--star-pink); opacity:.28; }
+.star-meteor { fill:none; stroke:var(--star-blue); stroke-width:1.5; stroke-linecap:round; opacity:.22; animation:star-sailing 19s ease-in-out infinite; }
+.star-meteor-1 { stroke:var(--star-pink); animation-duration:23s; }
+.star-lights.is-star-celebrating .star-halo { opacity:.25; transition:opacity 1s ease; }
+.star-lights.is-star-celebrating .star-point { filter:drop-shadow(0 0 4px #eac87799); }
+.stars-paused *, .stars-reduced * { animation-play-state:paused!important; }
+.stars-reduced .star-meteor { opacity:.25; }
+.reduced-motion .star-lights *, .reduced-motion .star-lights *::before { animation:none!important; transition:none!important; }
+@media (prefers-reduced-motion:reduce) { .star-lights * { animation:none!important; transition:none!important; } }
+@keyframes star-drift { 0%,100% { transform:translateY(1px) rotate(-6deg); opacity:var(--star-low); } 50% { transform:translateY(-2px) rotate(6deg); opacity:var(--star-high); } }
+@keyframes star-dust-drift { 0%,100% { transform:translateY(1px); opacity:.42; } 50% { transform:translateY(-2px); opacity:.64; } }
+@keyframes star-orbit { to { stroke-dashoffset:-180; } }
+@keyframes star-sailing { 0%,100% { transform:translate(0,0); opacity:.12; } 50% { transform:translate(-15px,8px); opacity:.48; } }

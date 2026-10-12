@@ -1,0 +1,49 @@
+.administration-icon {
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: -.2em;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.administration-icon [data-icon-accent] {
+  fill: currentColor;
+  fill-opacity: .14;
+  stroke: none;
+}
+
+.administration-icon [data-icon-solid] {
+  fill: currentColor;
+  stroke: none;
+}
+
+.medication-symbol, .row-icon.route-symbol {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--accent);
+}
+
+.administration-select { position: relative; display: block; }
+.field .administration-select select { padding-left: 40px; }
+.administration-select-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent);
+  pointer-events: none;
+}
+.medication-route-label { display: inline-flex; align-items: center; gap: 8px; }
+.medication-route-label > .administration-icon { color: var(--accent); }
+
+@media (forced-colors: active) {
+  .administration-icon [data-icon-accent] {
+    fill-opacity: .2;
+  }
+}

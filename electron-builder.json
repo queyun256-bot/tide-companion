@@ -1,0 +1,46 @@
+{
+  "appId": "org.transpet.desktop",
+  "productName": "潮汐",
+  "directories": {
+    "output": "dist/installers",
+    "buildResources": "build"
+  },
+  "artifactName": "潮汐-Setup-${version}-${arch}.${ext}",
+  "compression": "maximum",
+  "forceCodeSigning": false,
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "executableName": "Tide-Companion",
+    "icon": "assets/app.ico",
+    "signAndEditExecutable": false
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowElevation": false,
+    "allowToChangeInstallationDirectory": true,
+    "packElevateHelper": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "潮汐",
+    "menuCategory": false,
+    "deleteAppDataOnUninstall": false,
+    "runAfterFinish": true,
+    "installerLanguages": [
+      "zh_CN"
+    ],
+    "language": "2052",
+    "installerIcon": "assets/app.ico",
+    "uninstallerIcon": "assets/app.ico",
+    "uninstallDisplayName": "潮汐 ${version}",
+    "include": "build/installer.nsh"
+  },
+  "copyright": "潮汐"
+}

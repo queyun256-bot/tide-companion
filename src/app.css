@@ -1,0 +1,259 @@
+@font-face{font-family:Tide;src:local("Microsoft YaHei UI")}*{box-sizing:border-box}body{margin:0;background:#f6f8fa;color:#213b48;font:14px Tide,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #69bcdc;outline-offset:3px}button{border:0}a{color:#287e9f}button,select,input{transition:background .15s,box-shadow .15s}button:disabled{cursor:not-allowed;opacity:.5}.shell{display:grid;grid-template-columns:222px 1fr;min-height:100vh}.sidebar{background:#173944;color:#b9d0d6;padding:32px 20px;position:fixed;inset:0 auto 0 0;width:222px;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:10px;color:white;font-size:25px;font-weight:700;letter-spacing:3px;padding:0 14px}.brand-icon{width:38px;height:38px;background:#d6eef6;border-radius:14px;display:grid;place-items:center;color:#235568;font-size:28px}.brand small{display:block;letter-spacing:2px;font-size:9px;font-weight:400;color:#9abcc8;margin-top:5px}.nav-label{font-size:10px;letter-spacing:2px;color:#6e9aa7;margin:44px 15px 12px}.nav{display:flex;flex-direction:column;gap:7px}.nav button{background:transparent;color:#aac7cf;display:flex;align-items:center;gap:13px;padding:14px 16px;border-radius:11px;text-align:left;font-size:13px}.nav button.active{color:#fff;background:#2a505d}.nav button:hover{background:#254b58}.nav svg{width:19px;height:19px;stroke:currentColor;stroke-width:1.7;fill:none}.side-bottom{margin-top:auto;padding:28px 12px 0}.flag{display:flex;height:6px;border-radius:4px;overflow:hidden;width:66px}.flag i{flex:1;background:#5bcefa}.flag i:nth-child(2),.flag i:nth-child(4){background:#f5a9b8}.flag i:nth-child(3){background:#fff}.side-bottom p{font-size:11px;line-height:1.8;color:#90b0bb}.content{grid-column:2;padding:27px 36px 35px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px;font-size:12px;color:#83939b}.top-actions{display:flex;align-items:center;gap:12px}.local-badge{display:flex;align-items:center;gap:6px}.dot{width:6px;height:6px;background:#64b9a4;border-radius:50%;display:inline-block}.avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(145deg,#d5eff9,#fce0e9);display:grid;place-items:center;color:#4c7f91;font-size:15px}.page-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:23px;gap:16px}h1{font-size:25px;letter-spacing:.5px;font-weight:650;margin:0 0 8px}h2{font-size:16px;margin:0;font-weight:650}h3{font-size:14px;margin:0 0 12px}.muted{color:#87969e;font-size:12px;line-height:1.8}.page-title p{margin:0}.eyebrow{color:#6695a8;font-size:10px;letter-spacing:2px;font-weight:700;text-transform:uppercase}.hero{background:linear-gradient(115deg,#e6f2f8 5%,#eef3f9 52%,#f7ebf2);border:1px solid #e5edf1;min-height:240px;border-radius:20px;position:relative;overflow:hidden;display:flex;align-items:center;margin-bottom:22px;padding:30px 35px}.hero-copy{position:relative;z-index:1;flex:1}.hero h2{font-size:25px;line-height:1.55;margin:10px 0 12px;font-weight:600}.hero p{color:#72909e;font-size:12px;line-height:1.9;margin-bottom:20px}.hero-art{width:285px;min-width:210px;align-self:stretch;display:flex;align-items:center;justify-content:center;position:relative}.hero-art:before{content:"";position:absolute;width:204px;height:204px;background:#ffffff65;border:1px solid #ffffff91;border-radius:50%}.hero-art img{width:260px;height:205px;object-fit:contain;position:relative;filter:drop-shadow(0 15px 9px #93b7cc22)}.hero-art .spark{position:absolute;color:#fff;font-size:24px;right:5px;top:22px}.pet-name{position:absolute;bottom:0;left:50%;transform:translateX(-50%);background:#ffffffbd;border:1px solid #fff;padding:5px 14px;border-radius:20px;font-size:10px;white-space:nowrap;color:#7b93a2}.btn{background:#377e96;color:white;border:1px solid transparent;border-radius:9px;padding:10px 17px;font-size:12px;display:inline-flex;align-items:center;justify-content:center;gap:7px}.btn:hover{background:#2a6b82}.btn.secondary{background:#fff;color:#577b8d;border-color:#e1e9ed}.btn.secondary:hover{background:#edf5f8}.btn.ghost{background:transparent;color:#688493;border-color:transparent;padding:6px 9px}.btn.danger{color:#ad5971;background:#fff0f3;border-color:#fadce5}.btn.small{font-size:11px;padding:7px 11px}.button-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 23px}.stat,.card{background:#fff;border:1px solid #e8eef1;border-radius:15px}.stat{padding:21px}.stat-top{display:flex;align-items:center;justify-content:space-between;color:#7b8f9b;font-size:12px}.stat-icon{width:29px;height:29px;background:#eaf5fb;color:#76a7c1;border-radius:9px;display:grid;place-items:center}.stat:nth-child(2) .stat-icon{background:#fcf0f5;color:#d596ac}.stat:nth-child(3) .stat-icon{background:#eff5ee;color:#97ae87}.stat-value{font:600 25px "Segoe UI",Tide,sans-serif;margin:11px 0 5px;color:#294f60;letter-spacing:-.3px}.stat-value small{font-size:11px;color:#8ea1ab;margin-left:6px;font-weight:400}.stat .muted{font-size:11px}.grid-main{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,1fr);gap:20px}.card{padding:22px;min-width:0}.card-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:17px}.card-head small{font-size:10px;letter-spacing:1px;color:#9aaaaf}.pill{border-radius:20px;background:#edf5fa;color:#628fa6;font-size:10px;padding:5px 9px;white-space:nowrap}.pill.pink{background:#fff0f4;color:#b87b95}.pill.green{background:#edf7f2;color:#5b9e84}.pill.amber{background:#fff6e6;color:#9e8255}.empty{padding:34px 12px;text-align:center;color:#9baab3;line-height:1.9;font-size:12px}.empty-symbol{display:block;font-size:28px;color:#b9d6e4;margin-bottom:10px}.empty strong{display:block;font-size:13px;color:#607f90;font-weight:500;margin-bottom:7px}.notice{border-radius:11px;padding:12px 16px;font-size:11px;line-height:1.9;color:#879298;background:#f0f4f6;border:1px solid #e8edef;margin-top:18px}.notice.warm{background:#fff8ed;color:#927649;border-color:#f4e8d3}.notice.demo{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#fff2e1;color:#9c7444;margin:0 0 20px}.list-row{display:flex;align-items:center;gap:13px;padding:15px 0;border-top:1px solid #f0f3f5}.list-row:first-child{border-top:0}.row-icon{width:35px;height:35px;flex-shrink:0;background:#edf5fb;border-radius:11px;display:grid;place-items:center;color:#699dbb}.row-text{flex:1;min-width:0}.row-text strong{font-size:12px;font-weight:600;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.row-text span{display:block;font-size:10px;color:#91a1aa;line-height:1.8;margin-top:4px}.plan-card{margin-bottom:15px}.plan-card .list-row{padding:0}.chart{width:100%;height:auto;display:block;overflow:visible}.chart text{font-family:"Segoe UI",Tide,sans-serif;font-size:10px;fill:#94a6b1}.chart line.grid{stroke:#edf1f4;stroke-dasharray:3 5}.chart-legend{display:flex;gap:17px;flex-wrap:wrap;align-items:center;font-size:10px;color:#81959f;margin-top:8px}.legend-line{display:inline-block;width:16px;height:2px;background:#83bad3;margin-right:5px;vertical-align:middle}.legend-line.pink{background:#eda9c0}.chart-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.chart-controls select{border:1px solid #e1e9ee;padding:7px 10px;border-radius:8px;color:#607c8d;background:#fff;font-size:11px;max-width:240px}.metric-strip{display:flex;gap:35px;padding:15px 0 22px}.metric-strip strong{font:600 27px "Segoe UI",Tide,sans-serif;display:block;color:#4e86a1}.metric-strip small{font-size:10px;color:#95a5af}.metric-strip span{font-size:11px;line-height:2.2;color:#8c9da7}.route-note{font-size:11px;color:#8397a2;line-height:1.9;border-top:1px solid #edf1f3;padding-top:14px;margin-top:15px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:8px;color:#587280;font-size:12px}.field.full{grid-column:1/-1}.field input,.field select{width:100%;background:#f8fafb;border:1px solid #dfe8ed;border-radius:8px;padding:11px;color:#385566;min-width:0}.field input:focus,.field select:focus{outline:2px solid #abd5e6;border-color:transparent}.field small{color:#97a5ad;font-size:10px;line-height:1.6}.field input[type=checkbox]{width:auto;accent-color:#5091aa}.form-footer{display:flex;justify-content:flex-end;gap:9px;margin-top:25px}.error{color:#b9556f;font-size:12px;margin-top:15px;line-height:1.7}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.setting-line{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 0;border-bottom:1px solid #eef2f5;font-size:12px}.setting-line input{width:17px;height:17px;accent-color:#41889f}.setting-line p{margin:5px 0 0;color:#90a0aa;font-size:11px;line-height:1.8}.history{width:100%;border-collapse:collapse;font-size:11px}.history th{font-weight:400;color:#90a1aa;text-align:left;padding:12px 10px;border-bottom:1px solid #edf1f4}.history td{padding:13px 10px;border-bottom:1px solid #f1f4f6;color:#607d8d}.table-scroll{overflow:auto}.page-stack{display:flex;flex-direction:column;gap:20px}.care-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}.care-btn{padding:18px 7px;background:#f4f8fb;border:1px solid #e7eff5;border-radius:12px;color:#7c9caf;font-size:11px}.care-btn span{display:block;font-size:22px;margin-bottom:7px}.care-btn:hover{background:#eaf3f8}.mood-row{display:flex;gap:8px;margin-top:12px}.mood-row button{flex:1;background:#f7f9fb;border:1px solid #e9eef2;border-radius:10px;font-size:21px;padding:12px 3px}.mood-row button:hover{background:#fdf0f5}.help-links{display:flex;gap:15px;font-size:11px;flex-wrap:wrap}.help-links button{padding:0;background:none;color:#6c99af;text-decoration:underline;line-height:1.8}.footer-note{color:#a4b1b8;font-size:10px;margin-top:22px;text-align:center;letter-spacing:.5px}dialog{padding:28px;border:1px solid #e2ebef;border-radius:18px;width:min(540px,90vw);color:#2b4c5e;box-shadow:0 25px 80px #18364130;background:#fff;max-height:90vh;overflow:auto}dialog::backdrop{background:#17374766;backdrop-filter:blur(3px)}dialog h2{margin:0 0 10px}dialog .muted{margin-bottom:22px}#toast{position:fixed;bottom:25px;left:calc(50% + 70px);transform:translateX(-50%);background:#234754;color:#fff;border-radius:12px;padding:13px 23px;box-shadow:0 7px 30px #19384720;font-size:12px;z-index:1000;display:none;max-width:70vw}#toast.show{display:block}.loading{display:grid;place-items:center;height:100vh;color:#648ea1}.soft-link{font-size:11px;color:#6c97ac;border:0;background:none;padding:0}.mini-message{font-size:12px;color:#7394a4;line-height:1.9;background:#f5f9fc;padding:15px;border-radius:10px;margin-top:16px}.no-motion *{animation:none!important;transition:none!important}@media(max-width:1100px){.content{padding:25px}.sidebar{width:195px;padding:30px 13px}.shell{grid-template-columns:195px 1fr}.hero{padding:25px}.hero h2{font-size:22px}.hero-art{width:215px;min-width:190px}.hero-art img{width:215px}.grid-main{grid-template-columns:1.35fr 1fr}.card{padding:18px}}@media(max-width:860px){.sidebar{width:70px;padding:25px 10px}.shell{grid-template-columns:70px 1fr}.brand{padding:0}.brand-text,.nav-label,.nav button span,.side-bottom{display:none}.nav{margin-top:40px}.nav button{padding:14px}.content{padding:22px}.grid-main,.settings-grid{grid-template-columns:1fr}.hero-art{width:180px;min-width:170px}.hero h2{font-size:21px}.stats{gap:10px}.stat{padding:16px}.stat-value{font-size:22px}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+/* Dialog-specific controls and strict-CSP replacements for presentational styles. */
+[hidden]{display:none!important}.spaced-15{margin-top:15px}.spaced-18{margin-top:18px}.spaced-20{margin-top:20px}.metric-strip .metric-status{font-size:20px}.settings-shark{height:170px;width:100%;object-fit:contain}#lab-route{border:1px solid #e1e9ee;padding:9px 12px;border-radius:9px;color:#607c8d;background:#fff;max-width:280px}
+.medication-model{display:block;color:var(--accent-deep);font-size:10px;margin-top:6px}.hormone-card .concentration-hint{padding-top:8px;border-top:1px solid var(--edge);color:var(--ink);line-height:1.7}.lab-fit-status{max-width:220px;line-height:1.7}.model-parameters strong,.model-parameters small{display:block}.model-parameters small{margin:8px 0 12px;line-height:1.8}.model-parameters .history td{overflow-wrap:anywhere}.future-record{display:block;color:#aa7959;margin-top:5px;font-size:10px}
+.is-saving button,.is-saving input,.is-saving select{pointer-events:none}
+
+.medication-preview.field{display:flex;flex-direction:row;align-items:flex-start;gap:12px;padding:13px 14px;background:var(--tint2);border:1px solid var(--edge);border-radius:12px}.medication-symbol{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:10px;background:#ffffffb3;font-size:22px;line-height:1}.medication-copy{min-width:0}.medication-copy strong{display:block;font-size:12px;color:var(--ink)}.medication-copy small{display:block;font-size:10px;color:var(--soft-ink);line-height:1.8;margin-top:3px}.medication-copy p{margin:7px 0 0;font-size:10px;line-height:1.75;color:var(--soft-ink)}.medication-caution{display:inline-block;font-size:10px;line-height:1.6;color:#96693d;background:#fff5e8;border-radius:5px;padding:2px 6px;margin:6px 5px 0 0}#hormone-chart-svg.is-dragging{cursor:ew-resize}
+@media(prefers-reduced-motion:reduce){.page-enter{animation:none}}.no-motion .page-enter{animation:none}
+.analyte-toggle{display:flex;align-items:center;gap:8px;color:var(--soft-ink);font-size:11px;margin:0 0 14px}.analyte-toggle input{accent-color:var(--accent)}.hormone-cards.single{grid-template-columns:minmax(0,1fr)}.hormone-card.cpa strong,.hormone-card.cpa .hormone-title{color:#9163b9}.hormone-card.cpa .hormone-title i,.legend-line.cpa{background:#9a75c7}.hormone-card.cpa .hormone-title span{background:#f4effb}.hormone-line.cpa{stroke:#9a75c7}.lab-point.cpa{fill:#9060bc;stroke:white;stroke-width:1.2}.chart .cpa-label{fill:#9473b2}.cpa-text{color:#8758b0}#marker-cpa{fill:#9a75c7;stroke:white;stroke-width:1.5}.reference-source{padding:15px;border:1px solid var(--edge);border-radius:12px;background:var(--tint2)}.reference-source .history th,.reference-source .history td{padding:8px 5px;font-size:10px}.reference-source #reference-state{color:var(--soft-ink);font-size:10px}
+body{--accent:#bd7798;--accent-deep:#a7587e;--ink:#5b4050;--soft-ink:#987a8c;--surface:#fffafb;--tint:#f8eaf1;--tint2:#fceef5;--edge:#f0e4eb;--sidebar:#f6e6ee;--hero:#fbeaf3}.shell{color:var(--ink);background:var(--surface)}
+body[data-mode="ftm"]{--accent:#629ac5;--accent-deep:#417fac;--ink:#36546b;--soft-ink:#7b97ab;--surface:#f8fbfe;--tint:#e7f1fb;--tint2:#eff6fc;--edge:#e0eaf3;--sidebar:#e5eff8;--hero:#e6f1fc}
+body{background:#fffafb}.sidebar{background:var(--sidebar);color:var(--ink)}.brand{color:var(--ink);font-size:24px;letter-spacing:2px}.brand-icon{background:#fff8;color:var(--accent)}.brand small{color:var(--soft-ink);font-size:8px;letter-spacing:1.4px}.nav-label{color:var(--soft-ink);margin-top:25px}.nav button{color:var(--soft-ink)}.nav button.active,.nav button:hover{background:#fff9;color:var(--accent-deep)}.side-bottom p{color:var(--soft-ink)}.topbar,.muted,.footer-note{color:var(--soft-ink)}.avatar{background:var(--tint);color:var(--accent)}.mode-switch{display:flex;gap:5px;margin:27px 10px 0;background:#ffffff65;border:1px solid #ffffffaa;padding:4px;border-radius:12px}.mode-switch button{flex:1;padding:9px 0;border-radius:8px;background:none;color:var(--soft-ink);font:600 11px "Segoe UI",sans-serif;letter-spacing:1px}.mode-switch button[aria-pressed="true"]{color:var(--accent-deep);background:#fff;box-shadow:0 2px 8px #54304508}.hero{background:linear-gradient(110deg,var(--hero),#fff8,var(--tint2));border-color:var(--edge);min-height:216px}.hero h2{font-size:25px}.hero p,.eyebrow{color:var(--soft-ink)}.hero-art img{width:235px}.btn{background:var(--accent,#bd7798)}.btn:hover{background:var(--accent-deep,#a7587e)}.btn.secondary{border-color:var(--edge,#f0e4eb);color:var(--accent-deep,#a7587e)}.btn.secondary:hover{background:var(--tint,#f8eaf1)}.btn.ghost{color:var(--soft-ink,#987a8c)}.card,.stat{border-color:var(--edge);box-shadow:0 3px 15px #805c6e03}.pill,.row-icon,.care-btn{background:var(--tint);color:var(--accent-deep)}.pill.pink{background:#fbeaf2}.mini-message,.mood-row button{background:var(--tint2);color:var(--soft-ink)}.mood-row button,.care-btn{border-color:var(--edge)}.mood-row button:hover,.care-btn:hover{background:var(--tint)}.row-text span,.list-row,.setting-line,.history th,.history td{color:var(--soft-ink);border-color:var(--edge)}.row-text strong{color:var(--ink)}.notice{background:var(--tint2);border-color:var(--edge);color:var(--soft-ink)}.notice.warm{background:#fff8ee;color:#95784c}.empty,.empty strong,.empty-symbol{color:var(--soft-ink)}.chart-controls select,.setting-line select{padding:8px 10px;background:white;border:1px solid var(--edge);border-radius:9px;color:var(--ink)}.help-links button,.soft-link{color:var(--accent-deep)}.setting-line input{accent-color:var(--accent)}.setting-line p{color:var(--soft-ink)}.field{color:#725264}.field input,.field select{background:#fffafb;border-color:#ebdee5;color:#604552}.field input:focus,.field select:focus{outline-color:#eac3d7}dialog{color:#604552}#toast{background:#865b73}body[data-mode="ftm"] #toast{background:#527c9c}
+.hormone-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0 0 21px}.hormone-card{background:white;border:1px solid var(--edge);border-radius:15px;padding:21px 24px}.hormone-title{display:flex;align-items:center;gap:8px;font-size:12px;color:#a65b83}.hormone-title i{width:7px;height:7px;border-radius:50%;background:#d982ab}.hormone-title span{font-size:10px;margin-left:auto;background:#fff3f8;padding:4px 8px;border-radius:20px}.hormone-card strong{font:600 32px "Segoe UI",sans-serif;display:block;margin:10px 0 5px;color:#be6793}.hormone-card strong small{font-size:11px;font-weight:400;margin-left:8px}.hormone-card p{color:var(--soft-ink);font-size:10px;margin-bottom:0;line-height:1.8}.hormone-card.testosterone strong,.hormone-card.testosterone .hormone-title{color:#5e94c2}.hormone-card.testosterone .hormone-title i{background:#6fa8d9}.hormone-card.testosterone .hormone-title span{background:#edf5fd}.hormone-line{fill:none;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}.hormone-line.estradiol{stroke:#d578a4}.hormone-line.testosterone{stroke:#66a0d1}.hormone-line.future{stroke-dasharray:6 5;opacity:.65}.lab-point.estradiol{fill:#cc6c9c;stroke:white;stroke-width:1.2}.lab-point.testosterone{fill:#4b8bbe;stroke:white;stroke-width:1.2}.chart .e2-label{fill:#bc7a9a}.chart .t-label{fill:#739fbe}.chart .grid{stroke:var(--edge)}.time-now{stroke:#c8bbc5;stroke-dasharray:3 5}.legend-line.e2{background:#d578a4}.legend-line.t{background:#66a0d1}.chart-readout{min-height:43px;display:flex;gap:12px;flex-wrap:wrap;font-size:10px;align-items:center;line-height:1.7;padding:10px 12px;margin:6px 0 17px;border-radius:9px;background:var(--tint2);font-variant-numeric:tabular-nums}.chart-readout time{color:var(--soft-ink)}.e2-text{color:#b85e8c}.t-text{color:#4c88b8}#marker-line{stroke:#907789;stroke-width:1;stroke-dasharray:4 3}#marker-e2{fill:#d578a4;stroke:white;stroke-width:1.5}#marker-t{fill:#66a0d1;stroke:white;stroke-width:1.5}#hormone-chart-svg{touch-action:none;cursor:crosshair}.calibration-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.skin-card{grid-column:1/-1}.skin-list{display:grid;grid-template-columns:1fr 1fr;gap:13px}.skin-row{border:1px solid var(--edge);background:var(--tint2);padding:14px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:12px}.skin-row strong{font-size:12px;display:block;overflow-wrap:anywhere}.skin-row small{font-size:10px;display:block;margin-top:7px;color:var(--soft-ink)}details+details{margin-top:8px}summary{cursor:pointer;font-size:12px}.calibration-grid p{font-size:11px}.hormone-chart .chart-legend{font-size:10px}.settings-shark{height:150px}
+@media(max-width:1000px){.hormone-card{padding:17px}.hormone-title{flex-wrap:wrap}.hormone-title span{margin-left:0}.skin-list{grid-template-columns:1fr}.grid-main{grid-template-columns:1fr}.hero-art{width:230px}}@media(max-width:860px){.mode-switch{margin:25px 0 0;display:block;padding:3px}.mode-switch button{display:block;width:100%;font-size:9px}.hero{padding:25px}.calibration-grid{grid-template-columns:1fr}.hormone-cards{gap:10px}.hormone-card strong{font-size:28px}.mode-switch+.nav-label+.nav{margin-top:22px}}
+
+/* v0.5: quiet desktop surfaces, shared mode tokens, and readable controls. */
+body {
+  --accent: #aa5a7e;
+  --accent-deep: #8f4667;
+  --ink: #4d4049;
+  --soft-ink: #756670;
+  --surface: #fcf9fb;
+  --tint: #f4e5ec;
+  --tint2: #faf3f6;
+  --edge: #ece2e8;
+  --sidebar: #f5ecf1;
+  --hero: #f8eef3;
+  --shadow: 0 3px 12px #69465204;
+  background: var(--surface);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body[data-mode="ftm"] {
+  --accent: #407aa7;
+  --accent-deep: #32658c;
+  --ink: #384c5d;
+  --soft-ink: #5b6f80;
+  --surface: #f8fafc;
+  --tint: #e3eef7;
+  --tint2: #f0f5f9;
+  --edge: #dfe8ef;
+  --sidebar: #ebf1f6;
+  --hero: #edf4f9;
+  --shadow: 0 3px 12px #33526804;
+}
+button, select, input { transition: none; }
+button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+a { color: var(--accent-deep); text-underline-offset: 3px; }
+::selection { background: var(--tint); color: var(--ink); }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { border: 2px solid transparent; border-radius: 8px; background: #bcaeba7a; background-clip: padding-box; }
+::-webkit-scrollbar-track { background: transparent; }
+.shell { grid-template-columns: 218px minmax(0, 1fr); }
+.sidebar { z-index: 2; width: 218px; padding: 30px 16px 24px; border-right: 1px solid var(--edge); }
+.brand { gap: 11px; padding: 0 12px; font-size: 24px; font-weight: 650; }
+.brand-icon { flex-shrink: 0; border: 1px solid #fff; border-radius: 13px; background: #ffffffad; font: 30px/1 "Segoe UI", sans-serif; }
+.brand small { margin-top: 3px; font: 500 8px/1.5 "Segoe UI", sans-serif; letter-spacing: 1.5px; }
+.mode-switch { gap: 4px; margin: 29px 9px 0; border-color: var(--edge); border-radius: 11px; background: #ffffff5e; }
+.mode-switch button { padding: 8px 0; border-radius: 7px; line-height: 1.5; letter-spacing: .7px; }
+.mode-switch button[aria-pressed="true"] { box-shadow: 0 1px 4px #42313a0c; }
+.nav-label { margin: 30px 14px 11px; font-size: 10px; letter-spacing: 1.3px; }
+.nav button { position: relative; gap: 12px; min-height: 44px; padding: 11px 14px; border: 1px solid transparent; border-radius: 10px; font-size: 12px; }
+.nav button.active { background: #ffffffbd; border-color: #fff; font-weight: 600; box-shadow: var(--shadow); }
+.nav button:hover { background: #ffffff8c; }
+.nav button.active::after { content: ""; position: absolute; right: 12px; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
+.nav svg { width: 18px; height: 18px; flex-shrink: 0; stroke-width: 1.65; }
+.side-bottom { padding: 32px 14px 0; }
+.side-bottom p { font-size: 10px; line-height: 1.9; }
+.side-bottom p:last-child { margin-bottom: 0; opacity: .85; }
+.flag { width: 54px; height: 5px; }
+.content { padding: 26px 34px 30px; margin: 0 auto; }
+.topbar { margin-bottom: 28px; font-size: 11px; }
+.top-actions { gap: 14px; }
+.dot { width: 5px; height: 5px; background: #79a894; }
+.avatar { width: 28px; height: 28px; border: 1px solid var(--edge); border-radius: 10px; background: #fff; }
+.page-title { gap: 18px; margin-bottom: 22px; }
+h1 { margin-bottom: 6px; font-size: 25px; line-height: 1.5; letter-spacing: .3px; }
+h2 { font-size: 15px; font-weight: 600; line-height: 1.7; }
+h3 { font-size: 13px; font-weight: 600; }
+.muted { font-size: 11px; line-height: 1.85; }
+.eyebrow { color: var(--accent-deep); font: 600 10px/1.5 "Segoe UI", sans-serif; letter-spacing: 1.5px; }
+.footer-note { margin-top: 24px; letter-spacing: .15px; }
+.hero { min-height: 211px; padding: 25px 32px; border-radius: 18px; background: var(--hero); }
+.hero-copy { min-width: 0; }
+.hero h2 { margin: 10px 0 11px; font-size: 25px; font-weight: 550; letter-spacing: .3px; }
+.hero p { margin: 0 0 21px; }
+.hero-art { width: 245px; min-width: 185px; }
+.hero-art::before { width: 174px; height: 174px; border-color: #ffffffb0; background: #ffffff60; }
+.hero-art img { width: 235px; height: 183px; filter: drop-shadow(0 9px 6px #5d425510); animation: none; }
+.btn { min-height: 36px; padding: 8px 15px; line-height: 1.6; white-space: nowrap; }
+.btn.secondary:hover { background: var(--tint2); border-color: var(--accent); }
+.btn.ghost { min-height: 30px; padding: 5px 8px; }
+.btn.ghost:hover { color: var(--accent-deep); background: var(--tint2); }
+.btn.danger { background: #fcf0f1; border-color: #efd9de; color: #a13f5b; }
+.btn.small { min-height: 30px; padding: 5px 10px; }
+.stat, .card, .hormone-card { box-shadow: var(--shadow); }
+.stat-value { color: var(--ink); font-variant-numeric: tabular-nums; }
+.card-head { margin-bottom: 18px; }
+.card-head small { color: var(--soft-ink); font-size: 11px; letter-spacing: 0; }
+.pill { display: inline-block; padding: 4px 9px; border-radius: 6px; background: var(--tint2); line-height: 1.7; }
+.pill.green { background: #eef5f1; color: #547f68; }
+.pill.amber { background: #fbf4e8; color: #8c7044; }
+.empty { padding: 31px 12px; font-size: 11px; }
+.empty-symbol { margin-bottom: 9px; color: var(--accent); font-size: 26px; opacity: .55; }
+.empty strong { color: var(--ink); font-size: 12px; }
+.notice { padding: 13px 16px; }
+.notice.warm { background: #fbf7ef; border-color: #efe6d5; color: #8c7451; }
+.list-row { gap: 12px; padding: 16px 0; }
+.row-icon { width: 34px; height: 34px; border-radius: 10px; background: var(--tint2); font-size: 17px; }
+.row-text strong { font-weight: 500; }
+.row-text span { font-size: 11px; }
+.row-text strong .pill { display: inline-block; margin: 0 0 0 6px; vertical-align: 1px; font-size: 10px; }
+.plan-card { margin-bottom: 14px; }
+.mini-message { border-radius: 11px; font-size: 11px; }
+.mood-row { gap: 9px; }
+.mood-row button { padding: 8px 3px; border-radius: 9px; background: #ffffffb3; color: var(--accent-deep); line-height: 1.4; }
+.mood-row button:hover { border-color: var(--accent); background: #fff; }
+.hormone-cards { margin-bottom: 22px; }
+.hormone-card { padding: 20px 23px 18px; }
+.hormone-title { color: #a45379; line-height: 1.7; }
+.hormone-title i { flex-shrink: 0; width: 6px; height: 6px; }
+.hormone-title span { padding: 3px 8px; border: 1px solid #f5e9ef; border-radius: 6px; background: #fdf5f9; color: #a66d8a; white-space: nowrap; }
+.hormone-card strong { color: #b55b86; line-height: 1.35; font-variant-numeric: tabular-nums; letter-spacing: -.6px; }
+.hormone-card strong small { letter-spacing: 0; }
+.hormone-card p { font-size: 11px; }
+.hormone-card .concentration-hint { padding-top: 9px; color: var(--soft-ink); line-height: 1.75; }
+.hormone-card.testosterone strong, .hormone-card.testosterone .hormone-title { color: #4e88b5; }
+.hormone-card.testosterone .hormone-title span { background: #f2f7fc; border-color: #e4eef7; color: #658da9; }
+.hormone-card.cpa strong, .hormone-card.cpa .hormone-title { color: #8861a6; }
+.hormone-card.cpa .hormone-title span { background: #f7f3fb; border-color: #eee6f5; color: #9279a8; }
+.chart text { fill: var(--soft-ink); }
+.chart-legend { gap: 16px; color: var(--soft-ink); }
+.chart-controls select, .setting-line select, #lab-route { max-width: 280px; padding: 7px 10px; border-color: var(--edge); border-radius: 8px; color: var(--ink); font-size: 11px; }
+.chart-controls select:focus-visible, .setting-line select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.chart-readout { min-height: 43px; padding: 10px 13px; margin: 9px 0 16px; border: 1px solid var(--edge); font-size: 11px; }
+.chart .e2-label { fill: #b16c8e; }
+.chart .t-label { fill: #668faa; }
+.chart .cpa-label { fill: #8c6da5; }
+.e2-text { color: #b05a86; }
+.t-text { color: #477fa9; }
+.cpa-text { color: #855ba7; }
+.form-grid { gap: 18px 17px; }
+.field { color: var(--ink); }
+.field input, .field select { padding: 10px 11px; border-color: var(--edge); background: var(--surface); color: var(--ink); line-height: 1.6; }
+.field input:hover, .field select:hover { border-color: #bfaeba; }
+.field input:focus, .field select:focus { border-color: var(--accent); outline: 2px solid var(--tint); outline-offset: 1px; background: #fff; }
+.field input::placeholder { color: var(--soft-ink); opacity: .8; }
+.field small { color: var(--soft-ink); font-size: 11px; line-height: 1.75; }
+.form-footer { padding-top: 20px; margin-top: 24px; border-top: 1px solid var(--edge); }
+.error { color: #ab4262; }
+.medication-preview.field { padding: 14px; border-radius: 11px; }
+.medication-symbol { border: 1px solid var(--edge); background: #fff; }
+.medication-copy strong { font-weight: 600; }
+.medication-copy small, .medication-copy p, .medication-model { font-size: 11px; }
+.medication-caution { background: #fbf1e3; color: #95643d; }
+.reference-source { padding: 16px; border-radius: 11px; }
+.reference-source #reference-state { font-size: 11px; }
+.history th { padding: 11px 10px; }
+.history td { color: var(--ink); line-height: 1.8; }
+.history tbody tr:last-child td { border-bottom: 0; }
+.history tbody tr:hover { background: var(--surface); }
+.history th:first-child, .history td:first-child { padding-left: 0; }
+.history th:last-child, .history td:last-child { padding-right: 0; }
+.setting-line { gap: 16px; padding: 16px 0; color: var(--ink); }
+.setting-line p { margin-top: 4px; }
+.setting-line input[type="checkbox"] { position: relative; appearance: none; flex: 0 0 32px; width: 32px; height: 20px; margin: 0; border: 1px solid #d8cdd4; border-radius: 20px; background: #e9e3e7; cursor: pointer; }
+.setting-line input[type="checkbox"]::before { content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px #48343e20; }
+.setting-line input[type="checkbox"]:checked { border-color: var(--accent); background: var(--accent); }
+.setting-line input[type="checkbox"]:checked::before { transform: translateX(12px); }
+.setting-line input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.settings-shark { height: 160px; }
+.care-btn { padding: 15px 7px; border-radius: 11px; background: var(--tint2); line-height: 1.8; }
+.care-btn span { margin-bottom: 5px; font-size: 23px; }
+.skin-row { padding: 15px; border-radius: 11px; background: var(--surface); }
+.skin-row strong { font-weight: 500; }
+.skin-row small { margin-top: 5px; font-size: 11px; }
+summary { font-size: 11px; line-height: 1.9; }
+summary::marker { color: var(--accent); }
+details[open] > summary { color: var(--ink); }
+.help-links { gap: 12px; }
+.help-links button { font-size: 11px; text-underline-offset: 3px; }
+dialog { width: min(560px, 90vw); border-color: var(--edge); color: var(--ink); box-shadow: 0 20px 70px #3e283b28, 0 2px 8px #3e283b0d; }
+dialog::backdrop { background: #322d363b; }
+dialog h2 { margin-bottom: 8px; font-size: 18px; }
+dialog .muted { margin-bottom: 18px; }
+dialog .field .muted { margin: 4px 0 0; }
+#toast { bottom: 26px; left: calc(50% + 80px); max-width: min(560px, 70vw); padding: 12px 20px; border: 1px solid #ffffff24; background: #634957; box-shadow: 0 6px 24px #30232d21; line-height: 1.8; }
+body[data-mode="ftm"] #toast { background: #426178; }
+.loading { color: var(--accent); font-size: 13px; }
+.no-motion *, .no-motion *::before, .no-motion *::after { animation: none !important; transition: none !important; }
+@media (max-width: 1100px) {
+  .shell { grid-template-columns: 192px minmax(0, 1fr); }
+  .sidebar { width: 192px; padding: 28px 12px 22px; }
+  .content { padding: 25px; }
+  .brand { gap: 9px; padding: 0 9px; font-size: 23px; }
+  .brand small { font-size: 7px; }
+  .nav button { gap: 10px; padding: 11px 12px; }
+  .hero { padding: 23px 25px; }
+  .hero h2 { font-size: 23px; }
+  .hero-art { width: 205px; min-width: 170px; }
+  .hero-art img { width: 205px; }
+  .grid-main { grid-template-columns: minmax(0, 1.35fr) minmax(250px, 1fr); }
+  .card { padding: 19px; }
+  .hormone-card { padding: 18px 20px; }
+}
+@media (max-width: 1000px) {
+  .grid-main, .skin-list { grid-template-columns: 1fr; }
+  .hormone-title { flex-wrap: wrap; }
+  .hormone-title span { margin-left: 0; }
+  .plan-card .list-row { flex-wrap: wrap; }
+  .plan-card .button-row { margin-left: 46px; }
+}
+@media (max-width: 860px) {
+  .shell { grid-template-columns: 70px minmax(0, 1fr); }
+  .sidebar { width: 70px; padding: 25px 9px; }
+  .brand { padding: 0 6px; }
+  .mode-switch { display: block; margin: 25px 0 0; padding: 3px; }
+  .mode-switch button { display: block; width: 100%; font-size: 9px; }
+  .nav { margin-top: 23px; }
+  .nav button { padding: 13px 15px; }
+  .nav button.active::after { right: 5px; width: 3px; height: 3px; }
+  .content { padding: 22px; }
+  .grid-main, .settings-grid, .calibration-grid { grid-template-columns: 1fr; }
+  .hero { padding: 23px; }
+  .hero-art { width: 180px; min-width: 160px; }
+  .hero-art img { width: 195px; }
+  .hero-art::before { width: 154px; height: 154px; }
+  .hero h2 { font-size: 22px; }
+  .stats, .hormone-cards { gap: 12px; }
+  .hormone-card strong { font-size: 29px; }
+  #toast { left: calc(50% + 28px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Initial setup stays inside the desktop window and uses the saved theme. */
+.setup-reminder { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 12px 15px; margin: 0 0 22px; border: 1px solid var(--edge); border-radius: 12px; background: var(--tint2); color: var(--soft-ink); font-size: 12px; }
+.onboarding-modal { width: min(520px, 90vw); }
+.onboarding-welcome { display: flex; align-items: center; gap: 12px; margin: -7px 0 14px; color: var(--accent-deep); font-size: 12px; }
+.onboarding-welcome img { width: 76px; height: 61px; object-fit: contain; }
+.onboarding-modal h2 { font-size: 22px; }
+.onboarding-mode { margin: 0; padding: 0; border: 0; min-width: 0; }
+.onboarding-mode legend { margin-bottom: 10px; padding: 0; color: var(--ink); }
+.onboarding-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.onboarding-choice { display: flex; align-items: flex-start; gap: 10px; padding: 15px 12px; border: 1px solid var(--edge); border-radius: 12px; background: #fff; cursor: pointer; }
+.onboarding-choice input[type="radio"] { flex: 0 0 15px; width: 15px; height: 15px; padding: 0; margin: 4px 0 0; accent-color: var(--choice-accent); }
+.onboarding-choice input[type="radio"]:focus { outline: none; }
+.onboarding-choice.mtf { --choice-accent: #aa5a7e; --choice-bg: #faf0f5; }
+.onboarding-choice.ftm { --choice-accent: #407aa7; --choice-bg: #eff6fb; }
+.onboarding-choice:has(input:checked) { border-color: var(--choice-accent); background: var(--choice-bg); box-shadow: 0 0 0 1px var(--choice-accent); }
+.onboarding-choice:has(input:focus-visible) { outline: 2px solid var(--choice-accent); outline-offset: 4px; }
+.onboarding-choice strong { display: block; color: var(--choice-accent); font: 600 15px/1.5 "Segoe UI", sans-serif; letter-spacing: .5px; }
+.onboarding-choice small { display: block; margin-top: 5px; font-size: 10px; color: #655c65; line-height: 1.8; }
+.onboarding-mode > small { display: block; margin-top: 10px; }
+.onboarding-modal .form-footer { margin-top: 18px; }
+
+
