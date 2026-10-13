@@ -1,8 +1,8 @@
 # Live2D 本地运行时
 
-0.9.1 的 `src/skin-features.js` 延续 0.9.0 的设置，将 Live2D 功能暂时关闭。渲染和模型存储实现保留，但不加载运行库或渲染模型；旧选择暂时显示内置鲨鱼。本文以下说明保留运行时的来源与历史实现，当前产品入口隐藏。
+0.9.2 的 `src/skin-features.js` 延续 0.9.0 的设置，将 Live2D 功能暂时关闭。渲染和模型存储实现保留，但不加载运行库或渲染模型；旧选择暂时显示内置鲨鱼。本文以下说明保留运行时的来源与历史实现，当前产品入口隐藏。
 
-**Git 仓库不包含专有的 `assets/vendor/live2dcubismcore.min.js`，也不包含 `tests/fixtures/` 下的 Haru 模型。** 这两类文件已被忽略，开发机原有文件不会被删除。0.9.1 使用内置鲨鱼，正常启动、开发和常规 `npm test` 均无需 Core 或 Haru。许可文件与 `SHA256.json` 中的版本散列保留作为历史来源记录，不表示仓库提供对应的专有运行库。
+**Git 仓库不包含专有的 `assets/vendor/live2dcubismcore.min.js`，也不包含 `tests/fixtures/` 下的 Haru 模型。** 这两类文件已被忽略，开发机原有文件不会被删除。0.9.2 的 Windows 与 macOS 应用包也排除 Core，正常启动、开发和常规 `npm test` 均无需 Core 或 Haru。许可文件与 `SHA256.json` 中的版本散列保留作为历史来源记录，不表示仓库提供对应的专有运行库。
 
 历史渲染实现使用真实 Cubism 模型，不把模型转换为静态图片；它只加载本地运行库，不从 CDN 加载脚本，也不上传用户模型。如需研究或恢复此实现，应先从 [Live2D 官方](https://docs.live2d.com/en/cubism-sdk-manual/cubism-core/) 单独取得 Core、确认适用许可，再将文件放入上述本地路径。模型目录须保留 `.model3.json` 引用的 `.moc3`、纹理、动作、表情和物理文件；当前版本没有模型导入界面。
 

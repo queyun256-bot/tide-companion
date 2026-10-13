@@ -140,6 +140,8 @@ export async function verifyMacArchive(filename, options = {}) {
   assert.equal(sha256(application), manifest.appAsarSha256);
   const inspect = path.join(ROOT, 'build/macos-toolchain', `verify-${arch}.asar`); await fs.writeFile(inspect, application);
   const files = asar.listPackage(inspect).map(name => name.replaceAll('\\', '/').replace(/^\/+/, ''));
+  assert.ok(!files.some(name => name.toLowerCase() === 'assets/vendor/live2dcubismcore.min.js'), 'Mac release must not include proprietary Live2D Core');
+  assert.ok(files.includes('LICENSE'), 'Root project license is missing from Mac release');
   const allowedJson = new Set(['package.json', 'src/medication-catalog.json', 'src/reference-presets.json', 'assets/vendor/SHA256.json', 'assets/sharks/catalog.json']);
   const forbidden = /(?:^|\/)(?:tests?|screenshots|raw|node_modules|dist|build|scripts|\.git|\.vscode|userdata|backups?)(?:\/|$)|(?:^|\/)state(?:[.-][^/]*)?\.json$|\.(?:sqlite3?|db|csv|xlsx?|log|bak|tmp)$/i;
   for (const name of files) {
@@ -147,7 +149,7 @@ export async function verifyMacArchive(filename, options = {}) {
     assert.ok(!entry.link, `Unexpected ASAR link: ${name}`);
     assert.ok(!forbidden.test(name), `Private/development file in ASAR: ${name}`);
     if (entry.files) continue;
-    assert.match(name, /^(?:electron|src|assets)\/|^(?:index\.html|pet\.html|package\.json)$/, `Unexpected app source path: ${name}`);
+    assert.match(name, /^(?:electron|src|assets)\/|^(?:index\.html|pet\.html|package\.json|LICENSE)$/, `Unexpected app source path: ${name}`);
     if (name.endsWith('.json')) assert.ok(allowedJson.has(name), `Unexpected data JSON: ${name}`);
     assert.deepEqual(asar.extractFile(inspect, path.normalize(name)), await fs.readFile(path.join(ROOT, name)), `Stale source: ${name}`);
   }

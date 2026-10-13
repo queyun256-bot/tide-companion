@@ -58,8 +58,10 @@ function validateStarWallet(value) {
     const amount = kind === 'long' ? Math.min(7, Math.floor(item.intervalHours / 24)) : 1;
     if (item.kind !== kind || item.amount !== amount || !ROUTES.has(item.routeId) || !numeric(item.doseAmount, .000001, 100000)) fail('奖励参数');
     const earned = Date.parse(earnedAt), scheduled = Date.parse(scheduledAt);
-    if (earned < scheduled || earned > scheduled + REWARD_WINDOW_MS) fail('获得时间');
-    if (Date.parse(doseAt) < Math.floor(scheduled/60000)*60000 || Date.parse(doseAt) > earned) fail('实际使用时间');
+    // Eligibility follows the actual use, not when somebody has time to record it.
+    // Existing post-reminder receipts remain valid; new receipts can be earned early.
+    const actual = Date.parse(doseAt);
+    if (actual < Math.floor((scheduled - REWARD_WINDOW_MS)/60000)*60000 || actual > scheduled + REWARD_WINDOW_MS || actual > earned) fail('实际使用时间');
     // Persist the civil day at earning time; changing timezone must not rewrite it.
     // Civil zones are bounded by UTC-12..UTC+14, with historical date-line changes.
     const dayStamp = Date.parse(`${item.day}T12:00:00.000Z`);
@@ -93,30 +95,51 @@ function validateStarWallet(value) {
 
 const sameNumber = (a,b) => typeof a === 'number' && typeof b === 'number' && Math.abs(a-b) <= Math.max(1,Math.abs(a),Math.abs(b))*1e-10;
 const sameDuration = (a,b) => a === undefined && b === undefined || sameNumber(a,b);
-function matchingReceipt(dose, reminders, now) {
+function matchingOccurrence(dose, previous, now) {
   const at = Date.parse(dose.at);
-  if (!Number.isFinite(at) || at > now) return null;
-  const eligible = reminders.filter(receipt => {
+  if (!Number.isFinite(at) || at > now) return {code:'expired-or-unmatched'};
+  const candidates = new Map();
+  // Read only the plans that existed before this save. Each plan contributes the
+  // occurrence nearest the actual use, including a not-yet-displayed reminder.
+  for (const plan of previous.plans || []) {
+    if (!plan.enabled || dose.planId && dose.planId !== plan.id) continue;
+    const start = Date.parse(plan.startAt), interval = plan.intervalHours * 3600000;
+    if (!Number.isFinite(start) || !numeric(plan.intervalHours,.25,8760) || !ROUTES.has(plan.routeId)) continue;
+    const scheduled = start + Math.max(0,Math.round((at-start)/interval)) * interval;
+    if (!Number.isFinite(scheduled)) continue;
+    const scheduledAt = new Date(scheduled).toISOString(), id = `${plan.id}@${scheduledAt}`;
+    candidates.set(id,{id,planId:plan.id,scheduledAt,routeId:plan.routeId,amount:plan.amount,intervalHours:plan.intervalHours,...(plan.durationHours === undefined ? {} : {durationHours:plan.durationHours})});
+  }
+  // A dispatched reminder freezes its prescription. Recovery notifications use
+  // status "missed" too; this classification never means no notification existed.
+  // Keep these snapshots valid even if the plan was subsequently disabled/deleted.
+  for (const receipt of previous.reminderLog || []) {
     const scheduled = Date.parse(receipt.scheduledAt), notified = Date.parse(receipt.at);
-    if (receipt.status !== 'notified' || !Number.isFinite(scheduled) || !Number.isFinite(notified) || notified > now || notified < scheduled) return false;
-    if (receipt.id !== `${receipt.planId}@${receipt.scheduledAt}` || !ROUTES.has(receipt.routeId) || !numeric(receipt.intervalHours,.25,8760)) return false;
-    if (dose.planId && dose.planId !== receipt.planId) return false;
-    // The record editor intentionally has minute precision; a reminder at 09:00:30
-    // can match an honestly entered 09:00, but never 08:59 or a future record.
-    if (now < scheduled || now > scheduled + REWARD_WINDOW_MS || at < Math.floor(scheduled / 60000) * 60000 || at > scheduled + REWARD_WINDOW_MS) return false;
+    if (!['notified','missed'].includes(receipt.status) || !Number.isFinite(scheduled) || !Number.isFinite(notified) || notified > now || notified < scheduled) continue;
+    if (receipt.id !== `${receipt.planId}@${receipt.scheduledAt}` || !ROUTES.has(receipt.routeId) || !numeric(receipt.intervalHours,.25,8760)) continue;
+    if (dose.planId && dose.planId !== receipt.planId) continue;
+    candidates.set(receipt.id,receipt);
+  }
+  const eligible = [...candidates.values()].filter(receipt => {
+    const scheduled = Date.parse(receipt.scheduledAt);
+    // The editor has minute precision. Round only the lower boundary down, so a
+    // second-bearing schedule does not reject its honestly entered first minute.
+    if (at < Math.floor((scheduled-REWARD_WINDOW_MS)/60000)*60000 || at > scheduled+REWARD_WINDOW_MS) return false;
     return dose.routeId === receipt.routeId && sameNumber(dose.amount,receipt.amount) && sameDuration(dose.durationHours,receipt.durationHours);
-  }).sort((a,b) => Date.parse(b.scheduledAt)-Date.parse(a.scheduledAt));
-  // Two indistinguishable latest reminders need an explicit planId; do not guess
-  // or fall back to an older occurrence after the latest one has already earned.
-  if (!eligible.length || eligible[1]?.scheduledAt === eligible[0].scheduledAt) return null;
-  return eligible[0];
+  }).sort((a,b) => Math.abs(Date.parse(a.scheduledAt)-at)-Math.abs(Date.parse(b.scheduledAt)-at) || Date.parse(b.scheduledAt)-Date.parse(a.scheduledAt));
+  if (!eligible.length) return {code:'expired-or-unmatched'};
+  const nearest = eligible[0], distance = Math.abs(Date.parse(nearest.scheduledAt)-at);
+  // An explicit plan selects among otherwise equally close matching plans. Never
+  // silently pick another occurrence after the closest one has already earned.
+  if (eligible.some(receipt => receipt.planId !== nearest.planId && Math.abs(Date.parse(receipt.scheduledAt)-at) === distance)) return {code:'ambiguous'};
+  return {receipt:nearest};
 }
 
 /** Only main-process newly-created actual doses enter this path, before one atomic save. */
 function rewardNewDoses(previous, incoming, now = Date.now()) {
   if (!Number.isFinite(now)) throw new TypeError('Invalid reward time');
   const wallet = validateStarWallet(previous.starWallet);
-  const entries = [...wallet.entries], rewards = [];
+  const entries = [...wallet.entries], rewards = [], outcomes = [];
   const priorIds = new Set(previous.doses.map(dose => dose.id));
   const priorRewards = entries.filter(medicationEntry);
   const claimed = new Set(entries.map(entry => entry.id)), rewardedDoses = new Set(priorRewards.map(entry => entry.doseId));
@@ -124,21 +147,25 @@ function rewardNewDoses(previous, incoming, now = Date.now()) {
   const day = localDay(now);
   let regular = entries.filter(entry => entry.day === day && entry.kind === 'regular').reduce((sum,entry) => sum + entry.amount, 0);
   for (const dose of incoming.doses) {
+    const report = (code,amount=0) => outcomes.push({doseId:dose.id,code,amount});
+    if (priorIds.has(dose.id)) {report('existing');continue;}
     // Currency capacity must never prevent an actual medication record being saved.
-    if (entries.length >= MAX_ENTRIES) break;
+    if (entries.length >= MAX_ENTRIES) {report('capacity');continue;}
     const fingerprint = doseFingerprint(dose);
-    if (priorIds.has(dose.id) || rewardedDoses.has(dose.id) || fingerprints.has(fingerprint)) continue;
-    const receipt = matchingReceipt(dose, previous.reminderLog || [], now);
-    if (!receipt || claimed.has(receipt.id)) continue;
+    if (rewardedDoses.has(dose.id) || fingerprints.has(fingerprint)) {report('duplicate');continue;}
+    const {receipt,code} = matchingOccurrence(dose,previous,now);
+    if (!receipt) {report(code);continue;}
+    if (claimed.has(receipt.id)) {report('already-claimed');continue;}
     const kind = receipt.intervalHours >= 48 ? 'long' : 'regular';
-    if (kind === 'regular' && regular >= REGULAR_DAILY_LIMIT) continue;
+    if (kind === 'regular' && regular >= REGULAR_DAILY_LIMIT) {report('daily-limit');continue;}
     const amount = kind === 'long' ? Math.min(7,Math.floor(receipt.intervalHours / 24)) : 1;
     const entry = {id:receipt.id,doseId:dose.id,planId:receipt.planId,scheduledAt:receipt.scheduledAt,earnedAt:new Date(now).toISOString(),day,kind,amount,intervalHours:receipt.intervalHours,routeId:receipt.routeId,doseAmount:receipt.amount,doseAt:dose.at};
     if (receipt.durationHours !== undefined) entry.durationHours = receipt.durationHours;
     entries.push(entry);rewards.push(entry);claimed.add(entry.id);rewardedDoses.add(dose.id);fingerprints.add(fingerprint);
     if (kind === 'regular') regular += amount;
+    report('awarded',amount);
   }
-  return {wallet:validateStarWallet({version:1,entries}),rewards};
+  return {wallet:validateStarWallet({version:1,entries}),rewards,outcomes};
 }
 
 /** Preserve local receipts first; importing an older backup never resets earned currency. */

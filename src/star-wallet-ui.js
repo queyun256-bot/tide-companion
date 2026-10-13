@@ -48,6 +48,6 @@ export function renderStarWallet(state) {
     </div><tide-pet-preview class="wallet-pet-preview" name="${escape(name)}" skin="${escape(visibleSkinId(settings.activeSkin))}" mode="${escape(settings.mode || 'mtf')}" reduced-motion="${Boolean(settings.reducedMotion)}" data-star-feed-target data-action="pet"></tide-pet-preview></div>
     <p class="star-wallet-note">余额与成长会留在本机，也随备份保存。喂星星只是一点互动，平时一起待着也很好。</p>
     <div class="star-wallet-history"><h3>最近的星星记录</h3>${history ? '<ol>' + history + '</ol>' : '<p class="wallet-history-empty">还没有星星。按自己的用药安排记录就好，它们会慢慢留下来。</p>'}</div>
-    <details class="star-wallet-rules"><summary>星星与成长</summary><div><p>提醒发出后，在计划时间起 <b>2 小时内</b>确认已实际使用，每次可留下一颗星星；普通提醒每天最多 <b>2 颗</b>。</p><p>间隔 <b>48 小时及以上</b>的计划，按完整天数获得星星，单次最多 <b>7 颗</b>，不占当天普通额度。</p><p>未对应正常提醒的历史补录、修改记录和测试提醒不会增加星星，同一次提醒只记录一次奖励。没有星星的用药记录也会照常保存，不会因为漏记而扣除星星。</p><p>投喂每次消耗 <b>1 颗</b>星星，增加 <b>1 点</b>经验，最高 <b>10 级</b>。满级仍可以投喂，经验保持满格。2 级起，桌宠在清醒、可见且空闲时每天最多产星一次，数量为 1 至等级加 1、最多 10 颗；数量越多，出现概率越低。五种皮肤共享每天这一次，不会补发离线产星。</p></div></details>
+    <details class="star-wallet-rules"><summary>星星与成长</summary><div><p>已有提醒计划时，在预定时间<b>前后各 2 小时内</b>实际用药并记录，每次可留下一颗星星，无需等提醒弹出；普通提醒每天最多 <b>2 颗</b>，按记录获星当天计算。</p><p>间隔 <b>48 小时及以上</b>的计划，按完整天数获得星星，单次最多 <b>7 颗</b>，不占当天普通额度。</p><p>可以稍后补记，按实际使用时间匹配药物、用量和时长。同一次提醒只奖励一次；修改已保存记录和测试提醒不会增加星星。没有星星的用药记录也会照常保存，不会因为漏记而扣除星星。</p><p>投喂每次消耗 <b>1 颗</b>星星，增加 <b>1 点</b>经验，最高 <b>10 级</b>。满级仍可以投喂，经验保持满格。2 级起，桌宠在清醒、可见且空闲时每天最多产星一次，数量为 1 至等级加 1、最多 10 颗；数量越多，出现概率越低。五种皮肤共享每天这一次，不会补发离线产星。</p></div></details>
   </section>`;
 }

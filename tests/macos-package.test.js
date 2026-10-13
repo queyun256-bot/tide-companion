@@ -4,8 +4,11 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import { createHash } from 'node:crypto';
-import { readZip, writeZip, makeIcns, MAC_SOURCE_FILES } from '../scripts/package-macos.mjs';
+import { createRequire } from 'node:module';
+import { readZip, writeZip, makeIcns, stageMacSource, MAC_SOURCE_FILES } from '../scripts/package-macos.mjs';
 import { machoSignature } from '../scripts/verify-macos.mjs';
+const require = createRequire(import.meta.url);
+const asar = createRequire(require.resolve('@electron/packager'))('@electron/asar');
 
 test('macOS ZIP preserves executable permissions, UTF-8 paths and POSIX link bytes', async () => {
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'tide-mac-zip-'));
@@ -50,7 +53,36 @@ test('Mac icon wraps original 256px PNG and source whitelist excludes workstatio
   assert.equal(icon.readUInt32BE(4), icon.length);
   assert.equal(icon.subarray(8, 12).toString(), 'ic08');
   assert.deepEqual(icon.subarray(16), png);
-  assert.deepEqual(MAC_SOURCE_FILES, ['electron', 'src', 'assets', 'index.html', 'pet.html', 'package.json']);
+  assert.deepEqual(MAC_SOURCE_FILES, ['electron', 'src', 'assets', 'index.html', 'pet.html', 'package.json', 'LICENSE']);
+});
+
+test('Mac source ASAR excludes separately obtained Core, preserves its source, and includes the root license', async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'tide-mac-source-'));
+  const source = path.join(dir, 'source'), stage = path.join(dir, 'stage');
+  const core = Buffer.from('local-only proprietary runtime fixture');
+  const license = await fs.readFile(new URL('../LICENSE', import.meta.url));
+  try {
+    for (const name of ['electron', 'src', 'assets/vendor']) await fs.mkdir(path.join(source, name), { recursive: true });
+    await fs.mkdir(stage);
+    for (const name of ['index.html', 'pet.html']) await fs.writeFile(path.join(source, name), '<!doctype html>');
+    await fs.writeFile(path.join(source, 'package.json'), '{"name":"mac-package-fixture","version":"1.0.0"}');
+    await fs.writeFile(path.join(source, 'electron/main.cjs'), '// application fixture');
+    await fs.writeFile(path.join(source, 'LICENSE'), license);
+    await fs.writeFile(path.join(source, 'assets/vendor/live2dcubismcore.min.js'), core);
+    await fs.writeFile(path.join(source, 'assets/vendor/PIXI-LICENSE.txt'), 'third-party license fixture');
+    await stageMacSource(source, stage);
+    const archive = path.join(dir, 'app.asar');
+    await asar.createPackage(stage, archive);
+    const files = asar.listPackage(archive).map(name => name.replaceAll('\\', '/').replace(/^\/+/, ''));
+    assert.ok(!files.includes('assets/vendor/live2dcubismcore.min.js'));
+    assert.deepEqual(asar.extractFile(archive, 'LICENSE'), license);
+    assert.equal(asar.extractFile(archive, path.normalize('assets/vendor/PIXI-LICENSE.txt')).toString(), 'third-party license fixture');
+    assert.deepEqual(await fs.readFile(path.join(source, 'assets/vendor/live2dcubismcore.min.js')), core, 'Source Core must remain untouched');
+  } finally {
+    // Only this test's freshly created, resolved temporary directory is removed.
+    assert.ok(path.resolve(dir).startsWith(path.resolve(os.tmpdir()) + path.sep));
+    await fs.rm(dir, { recursive: true, force: true });
+  }
 });
 
 function signedMachFixture() {

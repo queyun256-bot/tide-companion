@@ -12,6 +12,8 @@ contextBridge.exposeInMainWorld('petAPI', Object.freeze({
   getPlatform: () => ipcRenderer.invoke('app:platform'),
   loadState: () => ipcRenderer.invoke('state:load'),
   saveState: (state) => ipcRenderer.invoke('state:save', state),
+  saveDoseState: (state, doseId) => ipcRenderer.invoke('state:save', state, {reportDoseId:doseId}),
+  previewDoseReward: (record) => ipcRenderer.invoke('dose:reward-preview', record),
   onState: (callback) => subscribe('state:changed', callback),
   onPetAction: (callback) => subscribe('pet:action', callback),
   openDashboard: () => ipcRenderer.invoke('window:dashboard'),

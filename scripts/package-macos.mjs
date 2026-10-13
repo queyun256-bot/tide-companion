@@ -17,7 +17,7 @@ const asar = packagerRequire('@electron/asar');
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const PRODUCT = '潮汐';
 export const BUNDLE_ID = 'org.transpet.desktop';
-export const MAC_SOURCE_FILES = ['electron', 'src', 'assets', 'index.html', 'pet.html', 'package.json'];
+export const MAC_SOURCE_FILES = ['electron', 'src', 'assets', 'index.html', 'pet.html', 'package.json', 'LICENSE'];
 const CACHE = path.join(ROOT, 'build/macos-toolchain');
 const hash = (buffer, algorithm = 'sha256') => createHash(algorithm).update(buffer).digest();
 export const sha256 = buffer => hash(buffer).toString('hex');
@@ -135,10 +135,17 @@ async function resetBuildDirectory(directory) {
   if (!path.resolve(directory).startsWith(allowed)) throw new Error('Refusing to clear outside build workspace');
   await fs.rm(directory, { recursive: true, force: true }); await fs.mkdir(directory, { recursive: true });
 }
+export async function stageMacSource(sourceRoot, stage) {
+  for (const name of MAC_SOURCE_FILES) await fs.cp(path.join(sourceRoot, name), path.join(stage, name), {
+    recursive: true,
+    // Keep the developer's separately obtained Core in place, outside releases.
+    filter: source => path.relative(sourceRoot, source).replaceAll('\\', '/').toLowerCase() !== 'assets/vendor/live2dcubismcore.min.js',
+  });
+}
 export async function createMacAsar() {
   const stage = path.join(ROOT, 'build/macos-source');
   await resetBuildDirectory(stage);
-  for (const name of MAC_SOURCE_FILES) await fs.cp(path.join(ROOT, name), path.join(stage, name), { recursive: true });
+  await stageMacSource(ROOT, stage);
   const destination = path.join(CACHE, 'app.asar');
   await asar.createPackage(stage, destination);
   return destination;

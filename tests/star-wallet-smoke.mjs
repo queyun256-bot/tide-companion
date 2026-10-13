@@ -19,7 +19,9 @@ async function launch(){
   await app.evaluate(({BrowserWindow})=>{for(const w of BrowserWindow.getAllWindows()){w.webContents.setBackgroundThrottling(false);w.hide();}});
 }
 async function close(){if(app){await app.close();app=null;win=null;}}
-const addDose=async(id,planId,overrides={})=>win.evaluate(async({id,planId,overrides})=>{const state=await window.petAPI.loadState(),plan=state.plans.find(item=>item.id===planId);state.doses.push({id,planId,routeId:plan.routeId,amount:plan.amount,at:new Date().toISOString(),...overrides});return window.petAPI.saveState(state);},{id,planId,overrides});
+// Match the real form's minute precision; renderer/main millisecond clocks can
+// differ slightly, which must not turn this synthetic record into a future dose.
+const addDose=async(id,planId,overrides={})=>win.evaluate(async({id,planId,overrides})=>{const state=await window.petAPI.loadState(),plan=state.plans.find(item=>item.id===planId);state.doses.push({id,planId,routeId:plan.routeId,amount:plan.amount,at:new Date(Math.floor(Date.now()/60000)*60000).toISOString(),...overrides});return window.petAPI.saveState(state);},{id,planId,overrides});
 try{
   await launch();
   await win.evaluate(async()=>{const s=await window.petAPI.loadState();s.settings.notifications=false;s.settings.petVisible=false;s.settings.autoHideFullscreen=false;s.settings.reducedMotion=true;await window.petAPI.saveState(s);});
@@ -68,7 +70,14 @@ try{
   await close();await launch();
   assert.equal(total(await disk()),16);assert.equal(total(await win.evaluate(()=>window.petAPI.loadState())),16);
   await addDose('restart-duplicate','failure');assert.equal(total(await disk()),16);
-  assert.deepEqual(errors,[]);
   checks.push('complete process restart restores the persistent balance and receipt deduplication');
-  console.log(JSON.stringify({ok:true,checks,balance:16,isolatedData:userData,installerPayload:!!process.env.TIDE_TEST_APP_ROOT}));
+
+  await win.evaluate(async()=>{const s=await window.petAPI.loadState();s.plans.push({id:'recovery',name:'合成恢复提醒',routeId:'e2-oral',amount:9,intervalHours:48,startAt:new Date(Date.now()-20*60000).toISOString(),enabled:true});await window.petAPI.saveState(s);});
+  assert.equal((await disk()).reminderLog.find(r=>r.planId==='recovery').status,'missed');
+  await addDose('recovery-dose','recovery');assert.equal(total(await disk()),18);
+  await close();await launch();assert.equal(total(await disk()),18);
+  await addDose('recovery-duplicate','recovery');assert.equal(total(await disk()),18);
+  assert.deepEqual(errors,[]);
+  checks.push('a real 20-minute recovery notification earns its two-star reward and remains deduplicated after a complete restart');
+  console.log(JSON.stringify({ok:true,checks,balance:18,isolatedData:userData,installerPayload:!!process.env.TIDE_TEST_APP_ROOT}));
 }finally{await close();}

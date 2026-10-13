@@ -1,13 +1,14 @@
 // Exercises the macOS UI capability contract with real Electron renderers on
 // any host. This does not substitute for native macOS window/notification QA.
 import { _electron as electron } from 'playwright-core';
-import { mkdtemp } from 'node:fs/promises';
+import { mkdtemp, readFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const version = JSON.parse(await readFile(path.join(root, 'package.json'), 'utf8')).version;
 const userData = await mkdtemp(path.join(tmpdir(), 'tide-platform-ui-'));
 const env = { ...process.env, TIDE_TEST_DATA: userData }; delete env.ELECTRON_RUN_AS_NODE;
 const app = await electron.launch({ executablePath: path.join(root, 'node_modules/electron/dist/electron.exe'), args: [path.join(root, 'tests/launch-smoke.cjs')], env });
@@ -28,7 +29,7 @@ try {
   await dashboard.reload();
   await dashboard.locator('[data-page="settings"]').click();
   await dashboard.locator('[data-setting="notifications"]').waitFor();
-  assert.match(await dashboard.locator('.side-bottom').innerText(), /v0\.9\.1 · macOS/);
+  assert.ok((await dashboard.locator('.side-bottom').innerText()).includes(`v${version} · macOS`));
   assert.equal(await dashboard.locator('[data-setting="autoHideFullscreen"]').count(), 0);
   assert.equal(await dashboard.locator('[data-setting="launchAtLogin"]').count(), 0);
   assert.match(await dashboard.locator('.settings-grid').innerText(), /macOS 版暂不自动检测/);

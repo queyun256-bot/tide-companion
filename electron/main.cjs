@@ -382,15 +382,22 @@ function setupIpc() {
   });
   handle('state:load', () => state);
   handle('app:platform', () => PLATFORM);
-  handle('state:save', (incoming) => {
+  handle('dose:reward-preview', (record) => {
+    const next = validateState({...state, doses:[record]});
+    return rewardNewDoses(state,next,Date.now()).outcomes.find(item=>item.doseId===record?.id);
+  });
+  handle('state:save', (incoming, options) => {
     const next = validateState({ ...incoming, settings: { ...incoming?.settings, nameCustomized: incoming?.settings?.name !== state.settings.name ? true : state.settings.nameCustomized, activeSkin: state.settings.activeSkin, skinScale: state.settings.skinScale }, reminderLog: state.reminderLog, moods: state.moods, dailyMoods: state.dailyMoods, starWallet:state.starWallet });
-    let {wallet,rewards} = rewardNewDoses(state,next,Date.now());
+    let {wallet,rewards,outcomes} = rewardNewDoses(state,next,Date.now());
+    const reportDoseId = typeof options?.reportDoseId === 'string' ? options.reportDoseId : null;
+    if (reportDoseId && outcomes.some(item=>item.doseId===reportDoseId&&item.code==='ambiguous')) throw new Error('有多个相同的提醒，请选择这次记录对应的提醒计划。');
     next.starWallet = wallet;
     // Optional currency must not push an otherwise valid clinical save over the
     // shared storage-size limit. Preserve prior stars and still save the dose.
     if (rewards.length && Buffer.byteLength(JSON.stringify(next,null,2),'utf8') > MAX_BYTES) {
       next.starWallet = state.starWallet;
       rewards = [];
+      outcomes = outcomes.map(item=>item.code==='awarded'?{...item,code:'capacity',amount:0}:item);
     }
     const previous = state.settings;
     if (next.settings.launchAtLogin !== previous.launchAtLogin) {
@@ -406,7 +413,7 @@ function setupIpc() {
     applySettings(previous);
     if (rewards.length) broadcast('pet:action', {action:'star-reward',id:crypto.randomUUID(),at:new Date().toISOString(),amount:rewards.reduce((sum,entry)=>sum+entry.amount,0),balance:starBalance(state.starWallet),rewards});
     reminderTick();
-    return state;
+    return reportDoseId ? {state,reward:outcomes.find(item=>item.doseId===reportDoseId)} : state;
   });
   handle('window:dashboard', () => { openDashboard(); return true; });
   handle('window:dashboard-toggle', toggleDashboard);
@@ -415,7 +422,7 @@ function setupIpc() {
   handle('window:pet-hide', () => setPetVisible(false));
   handle('pet:interact', (action) => {
     if (!ACTIONS.has(action)) throw new Error('未知互动动作。');
-    if (action === 'feed') throw new Error('星星会在提醒后按时确认实际使用时自动获得。');
+    if (action === 'feed') throw new Error('星星会在已有提醒前后两小时内实际用药并记录时自动获得。');
     const event = { id: crypto.randomUUID(), action, at: new Date().toISOString() };
     // This handler stays synchronous through save. Two queued IPC calls cannot
     // both pass the daily check; failed persistence never changes the day lock.
