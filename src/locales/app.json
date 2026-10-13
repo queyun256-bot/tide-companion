@@ -1,0 +1,1276 @@
+{
+  "雌二醇 E2": [
+    "Estradiol E2",
+    "雌二醇 E2",
+    "エストラジオール E2",
+    "에스트라디올 E2",
+    "Estradiol E2"
+  ],
+  "总睾酮 T": [
+    "Total testosterone T",
+    "總睪固酮 T",
+    "総テストステロン T",
+    "총 테스토스테론 T",
+    "Testosterona total T"
+  ],
+  "醋酸环丙孕酮 CPA": [
+    "Cyproterone acetate CPA",
+    "醋酸環丙孕酮 CPA",
+    "酢酸シプロテロン CPA",
+    "시프로테론 아세테이트 CPA",
+    "Acetato de ciproterona CPA"
+  ],
+  "桌面": [
+    "Desktop",
+    "桌面",
+    "デスクトップ",
+    "데스크톱",
+    "Escritorio"
+  ],
+  "概览": [
+    "Overview",
+    "概覽",
+    "ホーム",
+    "홈",
+    "Resumen"
+  ],
+  "日历": [
+    "Calendar",
+    "日曆",
+    "カレンダー",
+    "달력",
+    "Calendario"
+  ],
+  "用药计划": [
+    "Medication plans",
+    "用藥計畫",
+    "服薬プラン",
+    "복약 계획",
+    "Planes de medicación"
+  ],
+  "浓度曲线": [
+    "Concentration curves",
+    "濃度曲線",
+    "濃度グラフ",
+    "농도 그래프",
+    "Curvas de concentración"
+  ],
+  "化验与校准": [
+    "Labs & calibration",
+    "檢驗與校準",
+    "検査と校正",
+    "검사 및 보정",
+    "Análisis y calibración"
+  ],
+  "桌宠与设置": [
+    "Pet & settings",
+    "桌寵與設定",
+    "ペットと設定",
+    "펫 및 설정",
+    "Mascota y ajustes"
+  ],
+  "上一项修改正在保存，请稍后再试。": [
+    "Your previous change is still saving. Please try again shortly.",
+    "上一項修改正在儲存，請稍後再試。",
+    "前の変更を保存しています。少し待ってからお試しください。",
+    "이전 변경 사항을 저장 중이에요. 잠시 후 다시 시도해 주세요.",
+    "Se está guardando el cambio anterior. Inténtalo de nuevo en un momento."
+  ],
+  "请在潮汐桌面程序中保存记录。": [
+    "Please save records in the Tide desktop app.",
+    "請在潮汐桌面程式中儲存紀錄。",
+    "記録の保存には潮汐のデスクトップアプリをご利用ください。",
+    "기록은 데스크톱 앱에서 저장해 주세요.",
+    "Guarda los registros en la aplicación de escritorio Tide."
+  ],
+  "同时查看雌二醇 E2": [
+    "Also show estradiol E2",
+    "同時查看雌二醇 E2",
+    "エストラジオール E2 も表示",
+    "에스트라디올 E2 함께 표시",
+    "Mostrar también estradiol E2"
+  ],
+  "模式与主题": [
+    "Mode & theme",
+    "模式與主題",
+    "モードとテーマ",
+    "모드 및 테마",
+    "Modo y tema"
+  ],
+  "日常记录": [
+    "Daily journal",
+    "日常紀錄",
+    "日々の記録",
+    "일상 기록",
+    "Diario"
+  ],
+  "跨性别旗帜": [
+    "Transgender flag",
+    "跨性別旗幟",
+    "トランスジェンダーの旗",
+    "트랜스젠더 깃발",
+    "Bandera transgénero"
+  ],
+  "按自己的节奏就好。": [
+    "At your own pace.",
+    "按自己的節奏就好。",
+    "自分のペースで、ゆっくりと。",
+    "내 속도대로 천천히.",
+    "A tu propio ritmo."
+  ],
+  "本机保存": [
+    "Saved locally",
+    "本機儲存",
+    "この端末に保存",
+    "기기에 저장",
+    "Guardado local"
+  ],
+  "本机记录 · 随时可以导出备份": [
+    "Local records · Export a backup anytime",
+    "本機紀錄 · 隨時可以匯出備份",
+    "端末内の記録 · いつでもバックアップできます",
+    "기기 내 기록 · 언제든 백업 가능",
+    "Registros locales · Exporta una copia cuando quieras"
+  ],
+  "确认模式与模型体重后，就可以开始记录。": [
+    "Confirm your mode and model weight to get started.",
+    "確認模式與模型體重後，就可以開始紀錄。",
+    "モードとモデル用の体重を確認して、記録を始めましょう。",
+    "모드와 모델에 사용할 체중을 확인하면 기록을 시작할 수 있어요.",
+    "Confirma el modo y el peso del modelo para empezar."
+  ],
+  "完成初始设置": [
+    "Complete setup",
+    "完成初始設定",
+    "初期設定を完了",
+    "초기 설정 완료",
+    "Completar configuración"
+  ],
+  "留一点时间，": [
+    "A little time,",
+    "留一點時間，",
+    "少しの時間を、",
+    "잠시 여유를,",
+    "Un momento,"
+  ],
+  "给自己。": [
+    "just for you.",
+    "給自己。",
+    "自分のために。",
+    "나 자신에게.",
+    "para ti."
+  ],
+  "记下一次用药，或只是和{0}待一会儿。": [
+    "Log a dose, or just spend a moment with {0}.",
+    "記下一次用藥，或只是和{0}待一會兒。",
+    "服薬を記録したり、{0}と少し一緒に過ごしたり。",
+    "복약을 기록하거나, {0}와 잠시 함께 있어도 좋아요.",
+    "Registra una toma, o pasa un ratito con {0}."
+  ],
+  "参考估计与个人校准分开标注；实测点始终保留。": [
+    "Reference estimates and personal calibration are labeled separately; measured points stay visible.",
+    "參考估計與個人校準分開標註；實測點始終保留。",
+    "参考推定と個人校正は区別して表示し、実測点は常に残します。",
+    "참고 추정값과 개인 보정값을 구분하며 실측 지점은 항상 표시해요.",
+    "Las estimaciones de referencia y la calibración personal se indican por separado; los puntos medidos siempre se conservan."
+  ],
+  "接下来的提醒": [
+    "Upcoming reminders",
+    "接下來的提醒",
+    "これからのリマインダー",
+    "다가오는 알림",
+    "Próximos recordatorios"
+  ],
+  "今天已记录 {0} 次使用 · {1} 条化验{2}{3}": [
+    "Today: {0} doses logged · {1} lab results{2}{3}",
+    "今天已紀錄 {0} 次使用 · {1} 筆檢驗{2}{3}",
+    "今日の記録：服薬 {0} 件 · 検査 {1} 件{2}{3}",
+    "오늘 복약 {0}건 · 검사 {1}건{2}{3}",
+    "Hoy: {0} tomas registradas · {1} análisis{2}{3}"
+  ],
+  "未校准参考值采用资料锚点与假设背景，并非你的实测结果。MTF / FTM 不足以决定个人激素水平；可在模型设置中修改假设。": [
+    "Uncalibrated values use published reference points and an assumed baseline, not your measurements. MTF / FTM alone cannot determine individual hormone levels; you can edit these assumptions in model settings.",
+    "未校準參考值採用資料錨點與假設背景，並非你的實測結果。MTF / FTM 不足以決定個人荷爾蒙水平；可在模型設定中修改假設。",
+    "未校正の参考値は文献の基準点と仮定した背景値に基づき、あなたの実測値ではありません。MTF / FTM だけでは個人のホルモン値は決まりません。仮定はモデル設定で変更できます。",
+    "보정 전 참고값은 문헌 기준점과 가정한 기저값을 사용하며 개인의 실측값이 아니에요. MTF / FTM만으로 개인 호르몬 수치를 결정할 수 없으며 모델 설정에서 가정을 바꿀 수 있어요.",
+    "Los valores sin calibrar usan referencias publicadas y un nivel basal supuesto, no tus mediciones. MTF / FTM por sí solo no determina tus niveles hormonales; puedes cambiar estos supuestos en los ajustes del modelo."
+  ],
+  "今天": [
+    "Today",
+    "今天",
+    "今日",
+    "오늘",
+    "Hoy"
+  ],
+  "{0}在桌面上，日常记录在这里。": [
+    "{0} is on your desktop; your daily records are here.",
+    "{0}在桌面上，日常紀錄在這裡。",
+    "{0}はデスクトップに、日々の記録はここに。",
+    "{0}는 바탕 화면에, 일상 기록은 여기에 있어요.",
+    "{0} te acompaña en el escritorio; tus registros están aquí."
+  ],
+  "＋ 记录使用": [
+    "＋ Log a dose",
+    "＋ 紀錄使用",
+    "＋ 服薬を記録",
+    "＋ 복약 기록",
+    "＋ Registrar toma"
+  ],
+  "看看桌宠 ↗": [
+    "Visit your pet ↗",
+    "看看桌寵 ↗",
+    "ペットを見る ↗",
+    "펫 보기 ↗",
+    "Ver mascota ↗"
+  ],
+  "摸摸 ♡": [
+    "A gentle pat ♡",
+    "摸摸 ♡",
+    "なでなで ♡",
+    "쓰다듬기 ♡",
+    "Una caricia ♡"
+  ],
+  "完整曲线 ↗": [
+    "Full curves ↗",
+    "完整曲線 ↗",
+    "グラフ全体 ↗",
+    "전체 그래프 ↗",
+    "Ver curvas ↗"
+  ],
+  "所有计划": [
+    "All plans",
+    "所有計畫",
+    "すべてのプラン",
+    "모든 계획",
+    "Todos los planes"
+  ],
+  "还没有提醒计划": [
+    "No reminder plans yet",
+    "還沒有提醒計畫",
+    "リマインダーはまだありません",
+    "아직 알림 계획이 없어요",
+    "Aún no hay recordatorios"
+  ],
+  "可以设置固定间隔，由{0}提醒你。": [
+    "Set a regular interval and let {0} remind you.",
+    "可以設定固定間隔，由{0}提醒你。",
+    "間隔を設定すると、{0}がお知らせします。",
+    "일정 간격을 설정하면 {0}가 알려 줘요.",
+    "Configura un intervalo y {0} te avisará."
+  ],
+  "＋ 添加提醒": [
+    "＋ Add reminder",
+    "＋ 新增提醒",
+    "＋ リマインダーを追加",
+    "＋ 알림 추가",
+    "＋ Añadir recordatorio"
+  ],
+  "查看日历 ↗": [
+    "View calendar ↗",
+    "查看日曆 ↗",
+    "カレンダーを見る ↗",
+    "달력 보기 ↗",
+    "Ver calendario ↗"
+  ],
+  "{0} · 每 {1} 小时": [
+    "{0} · Every {1} hours",
+    "{0} · 每 {1} 小時",
+    "{0} · {1} 時間ごと",
+    "{0} · {1}시간마다",
+    "{0} · Cada {1} horas"
+  ],
+  "记录": [
+    "Log",
+    "紀錄",
+    "記録",
+    "기록",
+    "Registrar"
+  ],
+  "实际使用记录": [
+    "Doses taken",
+    "實際使用紀錄",
+    "実際の服薬記録",
+    "실제 복약 기록",
+    "Tomas registradas"
+  ],
+  "最近提醒": [
+    "Recent reminders",
+    "最近提醒",
+    "最近のリマインダー",
+    "최근 알림",
+    "Recordatorios recientes"
+  ],
+  "不代表已经使用": [
+    "Does not confirm a dose was taken",
+    "不代表已經使用",
+    "服薬済みを意味するものではありません",
+    "복약 완료를 뜻하지 않아요",
+    "No confirma que se haya tomado la dosis"
+  ],
+  "关闭管理窗口后程序留在系统托盘继续运行。关机、睡眠或退出期间不会发出实时提醒；恢复运行后只汇总最近一次到期事项，不自动补记使用，也不建议补用。": [
+    "The app keeps running in the system tray after this window closes. Reminders cannot appear while the device is off, asleep, or the app has quit. On resuming, only the most recent due reminder is shown; no doses are automatically logged or suggested to make up.",
+    "關閉管理視窗後程式留在系統匣繼續執行。關機、睡眠或退出期間不會發出即時提醒；恢復執行後只彙總最近一次到期事項，不自動補記使用，也不建議補用。",
+    "このウィンドウを閉じてもアプリはトレイで動作します。電源オフ・スリープ・アプリ終了中は通知できません。再開時は直近の期限のみお知らせし、服薬の自動記録や追加服薬の提案は行いません。",
+    "창을 닫아도 앱은 트레이에서 실행돼요. 종료·절전·전원 꺼짐 중에는 실시간 알림이 없으며, 재개 시 가장 최근 알림만 표시해요. 복약을 자동 기록하거나 놓친 용량을 보충하도록 안내하지 않아요.",
+    "La aplicación sigue en la bandeja al cerrar la ventana. No hay avisos si el equipo está apagado, suspendido o la aplicación ha salido. Al volver se muestra solo el último aviso pendiente; no se registran tomas automáticamente ni se sugiere compensarlas."
+  ],
+  "用药记录与提醒": [
+    "Medication & reminders",
+    "用藥紀錄與提醒",
+    "服薬記録とリマインダー",
+    "복약 기록 및 알림",
+    "Medicación y recordatorios"
+  ],
+  "固定间隔提醒；按你已有的用药方案填写。": [
+    "Regular reminders based on your existing medication plan.",
+    "固定間隔提醒；按你已有的用藥方案填寫。",
+    "既存の服薬方針に沿って、一定間隔の通知を設定します。",
+    "현재 복약 계획에 따라 일정 간격의 알림을 설정해요.",
+    "Recordatorios periódicos según tu pauta actual."
+  ],
+  "＋ 新建提醒": [
+    "＋ New reminder",
+    "＋ 新增提醒",
+    "＋ 新規リマインダー",
+    "＋ 새 알림",
+    "＋ Nuevo recordatorio"
+  ],
+  "{0} · {1} {2} · 每 {3} 小时{4}": [
+    "{0} · {1} {2} · Every {3} hours{4}",
+    "{0} · {1} {2} · 每 {3} 小時{4}",
+    "{0} · {1} {2} · {3} 時間ごと{4}",
+    "{0} · {1} {2} · {3}시간마다{4}",
+    "{0} · {1} {2} · Cada {3} horas{4}"
+  ],
+  "已启用": [
+    "Enabled",
+    "已啟用",
+    "有効",
+    "사용 중",
+    "Activo"
+  ],
+  "已暂停": [
+    "Paused",
+    "已暫停",
+    "一時停止中",
+    "일시 중지됨",
+    "En pausa"
+  ],
+  " · 佩戴 ": [
+    " · Wear for ",
+    " · 佩戴 ",
+    " · 貼付時間 ",
+    " · 부착 시간 ",
+    " · Aplicación durante "
+  ],
+  " 小时": [
+    " hours",
+    " 小時",
+    " 時間",
+    "시간",
+    " horas"
+  ],
+  "下次 ": [
+    "Next ",
+    "下次 ",
+    "次回 ",
+    "다음 ",
+    "Próximo "
+  ],
+  "提醒暂停中": [
+    "Reminders paused",
+    "提醒暫停中",
+    "リマインダー停止中",
+    "알림 일시 중지됨",
+    "Recordatorios en pausa"
+  ],
+  "记录使用": [
+    "Log a dose",
+    "紀錄使用",
+    "服薬を記録",
+    "복약 기록",
+    "Registrar toma"
+  ],
+  "编辑": [
+    "Edit",
+    "編輯",
+    "編集",
+    "수정",
+    "Editar"
+  ],
+  "暂停": [
+    "Pause",
+    "暫停",
+    "一時停止",
+    "일시 중지",
+    "Pausar"
+  ],
+  "启用": [
+    "Enable",
+    "啟用",
+    "有効にする",
+    "활성화",
+    "Activar"
+  ],
+  "删除": [
+    "Delete",
+    "刪除",
+    "削除",
+    "삭제",
+    "Eliminar"
+  ],
+  "提醒设置独立于使用记录。你可以先记录历史，也可以从设置提醒开始。": [
+    "Reminder plans and dose records are separate. Start with past doses or set up a reminder first.",
+    "提醒設定獨立於使用紀錄。你可以先紀錄歷史，也可以從設定提醒開始。",
+    "リマインダーと服薬記録は別々です。過去の記録からでも、通知の設定からでも始められます。",
+    "알림 설정과 복약 기록은 별개예요. 과거 기록부터 입력하거나 알림부터 설정해도 좋아요.",
+    "Los recordatorios y los registros son independientes. Puedes empezar registrando tomas pasadas o creando un recordatorio."
+  ],
+  "＋ 创建计划": [
+    "＋ Create plan",
+    "＋ 建立計畫",
+    "＋ プランを作成",
+    "＋ 계획 만들기",
+    "＋ Crear plan"
+  ],
+  "＋ 补充记录": [
+    "＋ Add past dose",
+    "＋ 補充紀錄",
+    "＋ 過去の服薬を追加",
+    "＋ 지난 기록 추가",
+    "＋ Añadir toma anterior"
+  ],
+  "原定 {0} · {1}": [
+    "Scheduled for {0} · {1}",
+    "原定 {0} · {1}",
+    "予定 {0} · {1}",
+    "예정 {0} · {1}",
+    "Programado para {0} · {1}"
+  ],
+  "已删除的计划": [
+    "Deleted plan",
+    "已刪除的計畫",
+    "削除されたプラン",
+    "삭제된 계획",
+    "Plan eliminado"
+  ],
+  "启动或唤醒后补发提醒": [
+    "Reminder shown after starting or waking",
+    "啟動或喚醒後補發提醒",
+    "起動・復帰後の通知",
+    "시작 또는 절전 해제 후 알림",
+    "Aviso al iniciar o reanudar"
+  ],
+  "已提交提醒": [
+    "Reminder submitted",
+    "已提交提醒",
+    "通知を送信済み",
+    "알림 전달됨",
+    "Aviso enviado"
+  ],
+  "提醒会出现在这里": [
+    "Reminders will appear here",
+    "提醒會出現在這裡",
+    "リマインダーがここに表示されます",
+    "알림이 여기에 표시돼요",
+    "Los recordatorios aparecerán aquí"
+  ],
+  "软件在托盘运行时可发出提醒；完全退出或关机期间无法实时提醒。": [
+    "Reminders work while the app runs in the tray; they cannot appear when the app has quit or the device is off.",
+    "軟體在系統匣執行時可發出提醒；完全退出或關機期間無法即時提醒。",
+    "トレイで動作中は通知できます。アプリ終了中や電源オフ中は通知できません。",
+    "앱이 트레이에서 실행 중이면 알림을 보낼 수 있어요. 앱이나 기기가 꺼진 동안에는 알림이 표시되지 않아요.",
+    "Los avisos funcionan mientras la aplicación está en la bandeja; no pueden aparecer con la aplicación cerrada o el equipo apagado."
+  ],
+  "实际时间": [
+    "Time taken",
+    "實際時間",
+    "実際の日時",
+    "실제 사용 시각",
+    "Fecha y hora de uso"
+  ],
+  "给药方式": [
+    "Administration route",
+    "給藥方式",
+    "投与経路",
+    "투여 경로",
+    "Vía de administración"
+  ],
+  "记录用量": [
+    "Recorded dose",
+    "紀錄用量",
+    "記録した用量",
+    "기록한 용량",
+    "Dosis registrada"
+  ],
+  "佩戴时长": [
+    "Wear duration",
+    "佩戴時長",
+    "貼付時間",
+    "부착 시간",
+    "Duración de aplicación"
+  ],
+  "未发生 · 暂不计入估算": [
+    "Not yet taken · Excluded from estimates",
+    "尚未發生 · 暫不計入估算",
+    "未実施 · 推定対象外",
+    "아직 사용 전 · 추정에서 제외",
+    "Aún no realizada · Excluida de la estimación"
+  ],
+  "显示最近 200 条，模型使用完整历史。": [
+    "Showing the latest 200 records; the model uses the full history.",
+    "顯示最近 200 筆，模型使用完整歷史。",
+    "最新の200件を表示しています。モデルには全履歴を使用します。",
+    "최근 200건을 표시하며 모델에는 전체 기록을 사용해요.",
+    "Se muestran los últimos 200 registros; el modelo usa todo el historial."
+  ],
+  "还没有实际使用记录": [
+    "No doses recorded yet",
+    "還沒有實際使用紀錄",
+    "服薬の記録はまだありません",
+    "아직 실제 복약 기록이 없어요",
+    "Aún no hay tomas registradas"
+  ],
+  "只有明确记录的实际使用，才会进入浓度模型。": [
+    "Only explicitly logged doses are included in the concentration model.",
+    "只有明確紀錄的實際使用，才會進入濃度模型。",
+    "濃度モデルには、実際の服薬として記録したもののみ含まれます。",
+    "명시적으로 기록한 실제 복약만 농도 모델에 반영돼요.",
+    "Solo las tomas registradas expresamente se incluyen en el modelo de concentración."
+  ],
+  "T 左轴 / E2 右轴": [
+    "T left axis / E2 right axis",
+    "T 左軸 / E2 右軸",
+    "左軸 T / 右軸 E2",
+    "왼쪽 축 T / 오른쪽 축 E2",
+    "T eje izquierdo / E2 eje derecho"
+  ],
+  "E2 左轴 / CPA 右轴": [
+    "E2 left axis / CPA right axis",
+    "E2 左軸 / CPA 右軸",
+    "左軸 E2 / 右軸 CPA",
+    "왼쪽 축 E2 / 오른쪽 축 CPA",
+    "E2 eje izquierdo / CPA eje derecho"
+  ],
+  "图表时间范围": [
+    "Chart time range",
+    "圖表時間範圍",
+    "グラフの期間",
+    "그래프 기간",
+    "Intervalo del gráfico"
+  ],
+  "右键按住并左右拖动标线；也支持选中图表后按方向键。未来虚线假设不追加给药。": [
+    "Hold the right mouse button and drag the marker horizontally, or focus the chart and use the arrow keys. Future dashed lines assume no further doses.",
+    "按住滑鼠右鍵並左右拖動標線；也支援選中圖表後按方向鍵。未來虛線假設不追加給藥。",
+    "右クリックを押したまま標線を左右にドラッグできます。グラフを選択して矢印キーでも操作できます。未来の破線は追加投与なしの仮定です。",
+    "마우스 오른쪽 버튼을 누른 채 표식을 좌우로 끌거나 그래프를 선택한 뒤 방향키를 사용하세요. 미래 점선은 추가 투여가 없다고 가정해요.",
+    "Mantén el botón derecho y arrastra el marcador, o selecciona el gráfico y usa las flechas. Las líneas futuras discontinuas suponen que no habrá nuevas dosis."
+  ],
+  "CPA 曲线表示药物本身的参考浓度（ng/mL）。CPA、雌二醇和睾酮之间的内分泌抑制及芳香化未建模；请结合实测结果理解。": [
+    "The CPA curve estimates the drug itself (ng/mL). Endocrine suppression and aromatization involving CPA, estradiol and testosterone are not modeled; interpret alongside measured results.",
+    "CPA 曲線表示藥物本身的參考濃度（ng/mL）。CPA、雌二醇和睪固酮之間的內分泌抑制及芳香化未建模；請結合實測結果理解。",
+    "CPA 曲線は薬物自体の参考濃度（ng/mL）です。CPA・エストラジオール・テストステロン間の内分泌抑制や芳香化はモデル化していません。実測値と併せて解釈してください。",
+    "CPA 곡선은 약물 자체의 참고 농도(ng/mL)예요. CPA·에스트라디올·테스토스테론 사이의 내분비 억제와 방향족화는 모델에 포함되지 않으므로 실측 결과와 함께 해석해 주세요.",
+    "La curva de CPA estima el propio fármaco (ng/mL). No se modelan la supresión endocrina ni la aromatización entre CPA, estradiol y testosterona; interprétala junto con los resultados medidos."
+  ],
+  "身体的潮汐": [
+    "The tides within",
+    "身體的潮汐",
+    "からだの潮汐",
+    "몸 안의 조수",
+    "Las mareas del cuerpo"
+  ],
+  "{0} 天视图": [
+    "{0}-day view",
+    "{0} 天檢視",
+    "{0} 日間表示",
+    "{0}일 보기",
+    "Vista de {0} días"
+  ],
+  "模型与参考背景": [
+    "Models & reference baseline",
+    "模型與參考背景",
+    "モデルと参考背景値",
+    "모델 및 참고 기저값",
+    "Modelos y nivel basal"
+  ],
+  "已参与校准": [
+    "Included in calibration",
+    "已參與校準",
+    "校正に使用済み",
+    "보정에 반영됨",
+    "Incluido en la calibración"
+  ],
+  "未参与校准 · 见上方说明": [
+    "Not used for calibration · See above",
+    "未參與校準 · 見上方說明",
+    "校正対象外 · 上記参照",
+    "보정 미반영 · 위 설명 참고",
+    "No usado para calibrar · Ver explicación anterior"
+  ],
+  "个人校准": [
+    "Personal calibration",
+    "個人校準",
+    "個人校正",
+    "개인 보정",
+    "Calibración personal"
+  ],
+  "各项目按总参考贡献拟合一个幅度；不会按不同途径重复加入背景。CPA 的固定背景为 0。": [
+    "Each analyte fits one scale factor to its total reference contribution; the baseline is not added again for each route. The fixed CPA baseline is 0.",
+    "各項目按總參考貢獻擬合一個幅度；不會按不同途徑重複加入背景。CPA 的固定背景為 0。",
+    "各項目の参考寄与の合計に対して一つの倍率を当てはめます。経路ごとに背景値を重複加算しません。CPA の固定背景値は 0 です。",
+    "각 항목은 총 참고 기여도에 하나의 배율을 맞추며 경로별로 기저값을 중복 추가하지 않아요. CPA 고정 기저값은 0이에요.",
+    "Cada analito ajusta un único factor a su contribución de referencia total; el nivel basal no se suma de nuevo por cada vía. El nivel basal fijo de CPA es 0."
+  ],
+  "化验记录": [
+    "Lab results",
+    "檢驗紀錄",
+    "検査記録",
+    "검사 기록",
+    "Resultados de análisis"
+  ],
+  "以采血时刻为准": [
+    "Use the blood draw time",
+    "以採血時刻為準",
+    "採血時刻を使用",
+    "채혈 시각 기준",
+    "Usar la hora de extracción"
+  ],
+  "填写采血时间、结果及单位，各检测项目分别校准。": [
+    "Enter the blood draw time, result and unit. Each analyte is calibrated separately.",
+    "填寫採血時間、結果及單位，各檢測項目分別校準。",
+    "採血日時・結果・単位を入力してください。項目ごとに個別に校正します。",
+    "채혈 시각, 결과, 단위를 입력하세요. 각 검사 항목은 별도로 보정돼요.",
+    "Introduce la hora de extracción, el resultado y la unidad. Cada analito se calibra por separado."
+  ],
+  "＋ 添加化验": [
+    "＋ Add lab result",
+    "＋ 新增檢驗",
+    "＋ 検査結果を追加",
+    "＋ 검사 추가",
+    "＋ Añadir análisis"
+  ],
+  "参考背景与模型": [
+    "Reference baseline & model",
+    "參考背景與模型",
+    "参考背景値とモデル",
+    "참고 기저값 및 모델",
+    "Nivel basal y modelo"
+  ],
+  "有效样本 {0} · 拟合 RMSE {1}": [
+    "Valid samples {0} · Fit RMSE {1}",
+    "有效樣本 {0} · 擬合 RMSE {1}",
+    "有効標本 {0} · 当てはめ RMSE {1}",
+    "유효 표본 {0} · 적합 RMSE {1}",
+    "Muestras válidas {0} · RMSE del ajuste {1}"
+  ],
+  "采血时间": [
+    "Blood draw time",
+    "採血時間",
+    "採血日時",
+    "채혈 시각",
+    "Fecha y hora de extracción"
+  ],
+  "采血时间不能在未来。": [
+    "The blood draw time cannot be in the future.",
+    "採血時間不能在未來。",
+    "採血日時に未来の日時は指定できません。",
+    "채혈 시각은 미래로 설정할 수 없어요.",
+    "La extracción no puede tener una fecha futura."
+  ],
+  "化验已保存，模型已重新评估。": [
+    "Lab result saved. The model has been reassessed.",
+    "檢驗已儲存，模型已重新評估。",
+    "検査結果を保存し、モデルを再評価しました。",
+    "검사 결과를 저장하고 모델을 다시 평가했어요.",
+    "Análisis guardado. Se ha reevaluado el modelo."
+  ],
+  "吸收过程半衰期（小时）": [
+    "Absorption half-life (hours)",
+    "吸收過程半衰期（小時）",
+    "吸収過程の半減期（時間）",
+    "흡수 과정 반감기(시간)",
+    "Semivida de absorción (horas)"
+  ],
+  "终末过程半衰期（小时）": [
+    "Terminal half-life (hours)",
+    "終末過程半衰期（小時）",
+    "終末相の半減期（時間）",
+    "말기 반감기(시간)",
+    "Semivida terminal (horas)"
+  ],
+  "检测项目": [
+    "Analyte",
+    "檢測項目",
+    "検査項目",
+    "검사 항목",
+    "Analito"
+  ],
+  "模型过程": [
+    "Model process",
+    "模型過程",
+    "モデルの過程",
+    "모델 과정",
+    "Proceso del modelo"
+  ],
+  "表观分布容积（L/kg）": [
+    "Apparent volume of distribution (L/kg)",
+    "表觀分布容積（L/kg）",
+    "見かけの分布容積（L/kg）",
+    "겉보기 분포 용적(L/kg)",
+    "Volumen aparente de distribución (L/kg)"
+  ],
+  "清除速率（h⁻¹）": [
+    "Elimination rate (h⁻¹)",
+    "清除速率（h⁻¹）",
+    "消失速度定数（h⁻¹）",
+    "제거 속도(h⁻¹)",
+    "Tasa de eliminación (h⁻¹)"
+  ],
+  "游离激素 / 化合物分子量比": [
+    "Free hormone / compound molecular weight ratio",
+    "游離荷爾蒙 / 化合物分子量比",
+    "遊離ホルモン / 化合物の分子量比",
+    "유리 호르몬 / 화합물 분자량 비",
+    "Relación de masas moleculares: hormona libre / compuesto"
+  ],
+  "吸收速率（h⁻¹）": [
+    "Absorption rate (h⁻¹)",
+    "吸收速率（h⁻¹）",
+    "吸収速度定数（h⁻¹）",
+    "흡수 속도(h⁻¹)",
+    "Tasa de absorción (h⁻¹)"
+  ],
+  "吞咽支路吸收速率（h⁻¹）": [
+    "Swallowed branch absorption rate (h⁻¹)",
+    "吞嚥支路吸收速率（h⁻¹）",
+    "嚥下経路の吸収速度定数（h⁻¹）",
+    "삼킨 분획의 흡수 속도(h⁻¹)",
+    "Tasa de absorción de la fracción deglutida (h⁻¹)"
+  ],
+  "酯水解速率（h⁻¹）": [
+    "Ester hydrolysis rate (h⁻¹)",
+    "酯水解速率（h⁻¹）",
+    "エステル加水分解速度定数（h⁻¹）",
+    "에스터 가수분해 속도(h⁻¹)",
+    "Tasa de hidrólisis del éster (h⁻¹)"
+  ],
+  "吞咽支路生物利用度": [
+    "Swallowed branch bioavailability",
+    "吞嚥支路生體可用率",
+    "嚥下経路のバイオアベイラビリティ",
+    "삼킨 분획의 생체이용률",
+    "Biodisponibilidad de la fracción deglutida"
+  ],
+  "参考生物利用度": [
+    "Reference bioavailability",
+    "參考生體可用率",
+    "参考バイオアベイラビリティ",
+    "참고 생체이용률",
+    "Biodisponibilidad de referencia"
+  ],
+  "快储库份额": [
+    "Fast depot fraction",
+    "快儲庫份額",
+    "速いデポの割合",
+    "빠른 저장소 분율",
+    "Fracción del depósito rápido"
+  ],
+  "慢储库吸收速率（h⁻¹）": [
+    "Slow depot absorption rate (h⁻¹)",
+    "慢儲庫吸收速率（h⁻¹）",
+    "遅いデポの吸収速度定数（h⁻¹）",
+    "느린 저장소 흡수 속도(h⁻¹)",
+    "Tasa de absorción del depósito lento (h⁻¹)"
+  ],
+  "有效形成份额": [
+    "Effective formation fraction",
+    "有效形成份額",
+    "有効形成割合",
+    "유효 형성 분율",
+    "Fracción de formación efectiva"
+  ],
+  "默认佩戴时长（小时）": [
+    "Default wear duration (hours)",
+    "預設佩戴時長（小時）",
+    "標準の貼付時間（時間）",
+    "기본 부착 시간(시간)",
+    "Duración de aplicación predeterminada (horas)"
+  ],
+  "给药记录单位": [
+    "Dose recording unit",
+    "給藥紀錄單位",
+    "投与記録の単位",
+    "투여 기록 단위",
+    "Unidad de registro de dosis"
+  ],
+  "口服吸收与清除": [
+    "Oral absorption and elimination",
+    "口服吸收與清除",
+    "経口吸収と消失",
+    "경구 흡수 및 제거",
+    "Absorción oral y eliminación"
+  ],
+  "黏膜 / 吞咽双支路": [
+    "Mucosal / swallowed dual pathways",
+    "黏膜 / 吞嚥雙支路",
+    "粘膜・嚥下の二経路",
+    "점막 / 삼킴의 이중 경로",
+    "Doble vía: mucosa y deglución"
+  ],
+  "双储库、酯水解与清除": [
+    "Dual depot, ester hydrolysis and elimination",
+    "雙儲庫、酯水解與清除",
+    "二つのデポ・エステル加水分解・消失",
+    "이중 저장소, 에스터 가수분해 및 제거",
+    "Doble depósito, hidrólisis del éster y eliminación"
+  ],
+  "皮肤吸收与清除": [
+    "Skin absorption and elimination",
+    "皮膚吸收與清除",
+    "皮膚吸収と消失",
+    "피부 흡수 및 제거",
+    "Absorción cutánea y eliminación"
+  ],
+  "恒速释放与移除后清除": [
+    "Constant release and elimination after removal",
+    "恆速釋放與移除後清除",
+    "定速放出と除去後の消失",
+    "일정 속도 방출 및 제거 후 소실",
+    "Liberación constante y eliminación tras la retirada"
+  ],
+  "药代动力学参考模型": [
+    "Reference pharmacokinetic models",
+    "藥代動力學參考模型",
+    "薬物動態の参考モデル",
+    "참고 약동학 모델",
+    "Modelos farmacocinéticos de referencia"
+  ],
+  "使用对应药物与给药途径的模型；体重和舌下吸收份额可在上方修改。个人化验只拟合幅度，不验证时间曲线。": [
+    "Models depend on the medication and route. Adjust weight and the sublingual absorption fraction above. Personal lab results fit amplitude only; they do not validate the time course.",
+    "使用對應藥物與給藥途徑的模型；體重和舌下吸收份額可在上方修改。個人檢驗只擬合幅度，不驗證時間曲線。",
+    "薬剤・投与経路ごとのモデルを使用します。体重と舌下吸収割合は上で変更できます。個人の検査値は振幅のみを調整し、時間推移を検証するものではありません。",
+    "약물과 투여 경로에 맞는 모델을 사용해요. 체중과 설하 흡수 분율은 위에서 바꿀 수 있어요. 개인 검사값은 크기만 보정하며 시간 곡선을 검증하지 않아요.",
+    "Se usa el modelo de cada fármaco y vía. El peso y la fracción sublingual se ajustan arriba. Los análisis personales solo ajustan la amplitud; no validan la evolución temporal."
+  ],
+  "已保留旧版自定义半衰期，但新版多过程模型不再使用这两个旧参数。": [
+    "Legacy custom half-lives are retained, but the new multi-process models no longer use these two parameters.",
+    "已保留舊版自訂半衰期，但新版多過程模型不再使用這兩個舊參數。",
+    "旧版の半減期設定は保持されていますが、新しい複数過程モデルではこの二つの値を使用しません。",
+    "이전 사용자 지정 반감기는 보존되지만 새 다중 과정 모델에서는 이 두 매개변수를 사용하지 않아요.",
+    "Se conservan las semividas personalizadas anteriores, pero los nuevos modelos de procesos múltiples ya no usan esos dos parámetros."
+  ],
+  "查看参考实现参数": [
+    "View reference parameters",
+    "查看參考實作參數",
+    "参考実装のパラメーターを見る",
+    "참고 구현 매개변수 보기",
+    "Ver parámetros de referencia"
+  ],
+  "参数": [
+    "Parameter",
+    "參數",
+    "パラメーター",
+    "매개변수",
+    "Parámetro"
+  ],
+  "值": [
+    "Value",
+    "值",
+    "値",
+    "값",
+    "Valor"
+  ],
+  "中位数（原单位）": [
+    "Median (original units)",
+    "中位數（原單位）",
+    "中央値（原単位）",
+    "중앙값(원래 단위)",
+    "Mediana (unidades originales)"
+  ],
+  "四分位距": [
+    "Interquartile range",
+    "四分位距",
+    "四分位範囲",
+    "사분위 범위",
+    "Rango intercuartílico"
+  ],
+  "治疗前队列参考背景，并非治疗后浓度或个体目标；CPA 背景固定为 0 ng/mL。": [
+    "Pretreatment cohort reference baseline, not a treated concentration or individual target. The CPA baseline is fixed at 0 ng/mL.",
+    "治療前隊列參考背景，並非治療後濃度或個人目標；CPA 背景固定為 0 ng/mL。",
+    "治療前コホートの参考背景値であり、治療後濃度や個人の目標値ではありません。CPA 背景値は 0 ng/mL 固定です。",
+    "치료 전 코호트의 참고 기저값이며 치료 후 농도나 개인 목표값이 아니에요. CPA 기저값은 0 ng/mL로 고정돼요.",
+    "Nivel basal de una cohorte antes del tratamiento, no una concentración tras el tratamiento ni un objetivo individual. El nivel basal de CPA es 0 ng/mL."
+  ],
+  "论文与原始单位 ↗": [
+    "Paper & original units ↗",
+    "論文與原始單位 ↗",
+    "論文と原単位 ↗",
+    "논문 및 원래 단위 ↗",
+    "Artículo y unidades originales ↗"
+  ],
+  "恢复论文背景": [
+    "Restore published baseline",
+    "恢復論文背景",
+    "論文の背景値に戻す",
+    "논문 기저값 복원",
+    "Restaurar nivel basal publicado"
+  ],
+  "当前为自定义背景": [
+    "Using a custom baseline",
+    "目前為自訂背景",
+    "カスタム背景値を使用中",
+    "사용자 지정 기저값 사용 중",
+    "Nivel basal personalizado"
+  ],
+  "当前随模式采用论文背景": [
+    "Using the published baseline for this mode",
+    "目前隨模式採用論文背景",
+    "モードに応じた論文の背景値を使用中",
+    "모드에 따른 논문 기저값 사용 중",
+    "Nivel basal publicado según el modo"
+  ],
+  "参考假设、个人固定基线与药代参数分别保存。": [
+    "Reference assumptions, personal fixed baselines and pharmacokinetic parameters are saved separately.",
+    "參考假設、個人固定基線與藥代參數分別儲存。",
+    "参考仮定・個人の固定基線・薬物動態パラメーターは別々に保存されます。",
+    "참고 가정, 개인 고정 기저값, 약동학 매개변수는 별도로 저장돼요.",
+    "Los supuestos, los niveles basales personales y los parámetros farmacocinéticos se guardan por separado."
+  ],
+  "模型体重（kg）": [
+    "Model weight (kg)",
+    "模型體重（kg）",
+    "モデル用体重（kg）",
+    "모델 체중(kg)",
+    "Peso del modelo (kg)"
+  ],
+  "初始 70 kg 仅为可修改的参考假设，请按个人情况填写。": [
+    "The initial 70 kg is an editable reference assumption. Please enter your own weight.",
+    "初始 70 kg 僅為可修改的參考假設，請按個人情況填寫。",
+    "初期値の 70 kg は変更可能な参考仮定です。ご自身の値を入力してください。",
+    "초깃값 70 kg은 수정 가능한 참고 가정이에요. 개인에 맞게 입력해 주세요.",
+    "El valor inicial de 70 kg es un supuesto editable. Introduce tu propio peso."
+  ],
+  "舌下黏膜吸收份额（%）": [
+    "Sublingual mucosal absorption fraction (%)",
+    "舌下黏膜吸收份額（%）",
+    "舌下粘膜吸収割合（%）",
+    "설하 점막 흡수 분율(%)",
+    "Fracción de absorción sublingual (%)"
+  ],
+  "默认 11% 是参考实现的经验假设，不能由含服时长精确推得；其余按吞咽支路计算。": [
+    "The default 11% is an empirical assumption in the reference implementation, not a value precisely inferred from holding time. The remainder follows the swallowed pathway.",
+    "預設 11% 是參考實作的經驗假設，不能由含服時長精確推得；其餘按吞嚥支路計算。",
+    "既定の 11% は参考実装の経験的仮定で、口に含む時間から正確には算出できません。残りは嚥下経路で計算します。",
+    "기본 11%는 참고 구현의 경험적 가정으로, 입에 머금은 시간만으로 정확히 계산할 수 없어요. 나머지는 삼킨 경로로 계산해요.",
+    "El 11% predeterminado es un supuesto empírico de la implementación de referencia; no se deduce con precisión del tiempo bajo la lengua. El resto sigue la vía deglutida."
+  ],
+  "参考 E2 背景（pg/mL）": [
+    "Reference E2 baseline (pg/mL)",
+    "參考 E2 背景（pg/mL）",
+    "参考 E2 背景値（pg/mL）",
+    "참고 E2 기저값(pg/mL)",
+    "Nivel basal de E2 de referencia (pg/mL)"
+  ],
+  "参考 T 背景（ng/dL）": [
+    "Reference T baseline (ng/dL)",
+    "參考 T 背景（ng/dL）",
+    "参考 T 背景値（ng/dL）",
+    "참고 T 기저값(ng/dL)",
+    "Nivel basal de T de referencia (ng/dL)"
+  ],
+  "个人校准 E2 固定基线（pg/mL）": [
+    "Personal calibration: fixed E2 baseline (pg/mL)",
+    "個人校準 E2 固定基線（pg/mL）",
+    "個人校正用 E2 固定基線（pg/mL）",
+    "개인 보정용 E2 고정 기저값(pg/mL)",
+    "Calibración personal: nivel basal fijo de E2 (pg/mL)"
+  ],
+  "个人校准 T 固定基线（ng/dL）": [
+    "Personal calibration: fixed T baseline (ng/dL)",
+    "個人校準 T 固定基線（ng/dL）",
+    "個人校正用 T 固定基線（ng/dL）",
+    "개인 보정용 T 고정 기저값(ng/dL)",
+    "Calibración personal: nivel basal fijo de T (ng/dL)"
+  ],
+  "高级 · 选择要查看的药代模型": [
+    "Advanced · Choose a pharmacokinetic model to inspect",
+    "進階 · 選擇要查看的藥代模型",
+    "詳細 · 表示する薬物動態モデルを選択",
+    "고급 · 살펴볼 약동학 모델 선택",
+    "Avanzado · Elegir modelo farmacocinético"
+  ],
+  "参考参数已保存，浓度曲线已重新计算。": [
+    "Reference parameters saved. The curves have been recalculated.",
+    "參考參數已儲存，濃度曲線已重新計算。",
+    "参考パラメーターを保存し、濃度曲線を再計算しました。",
+    "참고 매개변수를 저장하고 농도 곡선을 다시 계산했어요.",
+    "Parámetros guardados. Se han recalculado las curvas."
+  ],
+  "保存后恢复随模式采用论文背景": [
+    "Saving will restore the published baseline for this mode",
+    "儲存後恢復隨模式採用論文背景",
+    "保存するとモードに応じた論文の背景値に戻ります",
+    "저장하면 모드에 따른 논문 기저값을 복원해요",
+    "Al guardar se restaurará el nivel basal publicado para este modo"
+  ],
+  "提醒计划": [
+    "reminder plan",
+    "提醒計畫",
+    "リマインダープラン",
+    "알림 계획",
+    "plan de recordatorio"
+  ],
+  "删除{0}": [
+    "Delete {0}",
+    "刪除{0}",
+    "{0}を削除",
+    "{0} 삭제",
+    "Eliminar {0}"
+  ],
+  "删除计划会停止对应提醒，保留已有使用记录。": [
+    "Deleting this plan stops its reminders and keeps past dose records.",
+    "刪除計畫會停止對應提醒，保留已有使用紀錄。",
+    "プランを削除すると通知が止まります。過去の服薬記録は残ります。",
+    "계획을 삭제하면 해당 알림이 중단되며 기존 복약 기록은 유지돼요.",
+    "Al eliminar el plan se detienen sus avisos; las tomas anteriores se conservan."
+  ],
+  "删除后将重新计算相关曲线与校准。": [
+    "Related curves and calibrations will be recalculated after deletion.",
+    "刪除後將重新計算相關曲線與校準。",
+    "削除後に関連する曲線と校正を再計算します。",
+    "삭제 후 관련 곡선과 보정을 다시 계산해요.",
+    "Se recalcularán las curvas y calibraciones relacionadas."
+  ],
+  "请确认删除所选{0}。": [
+    "Confirm deletion of the selected {0}.",
+    "請確認刪除所選{0}。",
+    "選択した{0}の削除を確認してください。",
+    "선택한 {0} 삭제를 확인해 주세요.",
+    "Confirma la eliminación de {0}."
+  ],
+  "已删除。": [
+    "Deleted.",
+    "已刪除。",
+    "削除しました。",
+    "삭제했어요.",
+    "Eliminado."
+  ],
+  "确认删除": [
+    "Confirm deletion",
+    "確認刪除",
+    "削除を確認",
+    "삭제 확인",
+    "Confirmar eliminación"
+  ],
+  "主题已切换；个人记录和校准基线保持不变。": [
+    "Theme changed. Your records and calibration baselines are unchanged.",
+    "主題已切換；個人紀錄和校準基線保持不變。",
+    "テーマを変更しました。記録と校正基線はそのままです。",
+    "테마를 변경했어요. 개인 기록과 보정 기저값은 유지돼요.",
+    "Tema cambiado. Tus registros y niveles basales de calibración se conservan."
+  ],
+  "模型已导入，点击「使用」切换。": [
+    "Model imported. Select “Use” to switch to it.",
+    "模型已匯入，點選「使用」切換。",
+    "モデルを読み込みました。「使う」で切り替えられます。",
+    "모델을 가져왔어요. ‘사용’을 눌러 전환하세요.",
+    "Modelo importado. Pulsa «Usar» para activarlo."
+  ],
+  "皮肤已切换。": [
+    "Skin changed.",
+    "造型已切換。",
+    "見た目を変更しました。",
+    "스킨을 변경했어요.",
+    "Aspecto cambiado."
+  ],
+  "移除本机皮肤": [
+    "Remove local skin",
+    "移除本機造型",
+    "ローカルの見た目を削除",
+    "기기의 스킨 제거",
+    "Eliminar aspecto local"
+  ],
+  "只移除应用导入的副本；原始模型文件不受影响。": [
+    "Only the imported copy is removed; the original model files are unaffected.",
+    "只移除應用程式匯入的副本；原始模型檔案不受影響。",
+    "アプリに取り込んだコピーのみ削除します。元のモデルファイルには影響しません。",
+    "앱으로 가져온 복사본만 제거하며 원본 모델 파일에는 영향이 없어요.",
+    "Solo se elimina la copia importada; los archivos originales no cambian."
+  ],
+  "移除": [
+    "Remove",
+    "移除",
+    "削除",
+    "제거",
+    "Eliminar"
+  ],
+  "修改桌宠名字": [
+    "Rename your pet",
+    "修改桌寵名字",
+    "ペットの名前を変更",
+    "펫 이름 변경",
+    "Cambiar nombre de la mascota"
+  ],
+  "桌面、提醒和这里会使用同一个名字。": [
+    "The same name is used on the desktop, in reminders and here.",
+    "桌面、提醒和這裡會使用同一個名字。",
+    "デスクトップ・通知・ここで同じ名前を使います。",
+    "바탕 화면, 알림, 이곳에서 같은 이름을 사용해요.",
+    "Se usará el mismo nombre en el escritorio, los avisos y aquí."
+  ],
+  "名字": [
+    "Name",
+    "名字",
+    "名前",
+    "이름",
+    "Nombre"
+  ],
+  "名字不能为空。": [
+    "Please enter a name.",
+    "名字不能為空。",
+    "名前を入力してください。",
+    "이름을 입력해 주세요.",
+    "Introduce un nombre."
+  ],
+  "请通过桌面程序保存心情。": [
+    "Please save your mood through the desktop app.",
+    "請透過桌面程式儲存心情。",
+    "気分の保存にはデスクトップアプリをご利用ください。",
+    "데스크톱 앱에서 기분을 저장해 주세요.",
+    "Guarda tu estado de ánimo desde la aplicación de escritorio."
+  ],
+  "今天的心情记下了。": [
+    "Your mood for today is noted.",
+    "今天的心情記下了。",
+    "今日の気分を記録しました。",
+    "오늘의 기분을 기록했어요.",
+    "Tu estado de ánimo de hoy está anotado."
+  ],
+  "{0}轻轻蹭了蹭你的手。": [
+    "{0} gently nuzzles your hand.",
+    "{0}輕輕蹭了蹭你的手。",
+    "{0}がそっと手にすり寄りました。",
+    "{0}가 손에 살짝 몸을 비벼요.",
+    "{0} se acurruca suavemente contra tu mano."
+  ],
+  "{0}打算眯一会儿。": [
+    "{0} is settling in for a little nap.",
+    "{0}打算瞇一會兒。",
+    "{0}は少しうとうとするようです。",
+    "{0}가 잠깐 눈을 붙이려 해요.",
+    "{0} se acomoda para una siestita."
+  ],
+  "今天的心情已保存。": [
+    "Today’s mood is saved.",
+    "今天的心情已儲存。",
+    "今日の気分を保存しました。",
+    "오늘의 기분을 저장했어요.",
+    "Estado de ánimo de hoy guardado."
+  ],
+  "请通过桌面程序使用此功能。": [
+    "Please use this feature in the desktop app.",
+    "請透過桌面程式使用此功能。",
+    "この機能はデスクトップアプリでご利用ください。",
+    "이 기능은 데스크톱 앱에서 사용해 주세요.",
+    "Usa esta función desde la aplicación de escritorio."
+  ],
+  "{0}已经来到桌面。": [
+    "{0} is now on your desktop.",
+    "{0}已經來到桌面。",
+    "{0}がデスクトップに来ました。",
+    "{0}가 바탕 화면에 왔어요.",
+    "{0} ya está en tu escritorio."
+  ],
+  "{0}暂时隐藏，提醒继续运行。": [
+    "{0} is hidden for now. Reminders are still running.",
+    "{0}暫時隱藏，提醒繼續執行。",
+    "{0}を一時的に隠しました。リマインダーは続きます。",
+    "{0}를 잠시 숨겼어요. 알림은 계속 실행돼요.",
+    "{0} está oculto por ahora. Los recordatorios siguen activos."
+  ],
+  "已提交测试提醒；也请检查 {0} 通知权限。": [
+    "Test reminder submitted. Please also check notification permissions in {0}.",
+    "已送出測試提醒；也請檢查 {0} 通知權限。",
+    "テスト通知を送信しました。{0} の通知権限も確認してください。",
+    "테스트 알림을 보냈어요. {0}의 알림 권한도 확인해 주세요.",
+    "Aviso de prueba enviado. Comprueba también los permisos de notificación en {0}."
+  ],
+  "系统通知当前关闭，已向桌宠发送测试气泡。": [
+    "System notifications are off. A test bubble was sent to your pet.",
+    "系統通知目前關閉，已向桌寵傳送測試氣泡。",
+    "システム通知はオフです。ペットにテストの吹き出しを送りました。",
+    "시스템 알림이 꺼져 있어 펫에게 테스트 말풍선을 보냈어요.",
+    "Las notificaciones del sistema están desactivadas. Se ha enviado un mensaje de prueba a tu mascota."
+  ],
+  "数据备份已导出。": [
+    "Backup exported.",
+    "資料備份已匯出。",
+    "バックアップを書き出しました。",
+    "백업을 내보냈어요.",
+    "Copia de seguridad exportada."
+  ],
+  "备份已导入。": [
+    "Backup imported.",
+    "備份已匯入。",
+    "バックアップを読み込みました。",
+    "백업을 가져왔어요.",
+    "Copia de seguridad importada."
+  ],
+  "本机数据读取失败：{0}。请重新启动软件。": [
+    "Could not read local data: {0}. Please restart the app.",
+    "本機資料讀取失敗：{0}。請重新啟動軟體。",
+    "端末のデータを読み込めませんでした：{0}。アプリを再起動してください。",
+    "기기 데이터를 읽지 못했어요: {0}. 앱을 다시 시작해 주세요.",
+    "No se pudieron leer los datos locales: {0}. Reinicia la aplicación."
+  ],
+  "语言 / Language": [
+    "Language",
+    "語言 / Language",
+    "言語 / Language",
+    "언어 / Language",
+    "Idioma / Language"
+  ],
+  "更改后立即生效；选择“跟随系统”会在启动时使用系统语言。": [
+    "Changes apply immediately. “Follow system” uses your system language at startup.",
+    "變更後立即生效；選擇「跟隨系統」會在啟動時使用系統語言。",
+    "変更はすぐに反映されます。「システムに合わせる」は起動時のシステム言語を使用します。",
+    "변경하면 바로 적용돼요. ‘시스템 설정 따르기’는 시작할 때 시스템 언어를 사용해요.",
+    "Los cambios se aplican al instante. «Usar idioma del sistema» toma el idioma del sistema al iniciar."
+  ],
+  "跟随系统": [
+    "Follow system",
+    "跟隨系統",
+    "システムに合わせる",
+    "시스템 설정 따르기",
+    "Usar idioma del sistema"
+  ],
+  "语言已切换。": [
+    "Language changed.",
+    "語言已切換。",
+    "言語を変更しました。",
+    "언어를 변경했어요.",
+    "Idioma cambiado."
+  ],
+  "正在打开潮汐…": [
+    "Opening Tide…",
+    "正在開啟潮汐…",
+    "潮汐を開いています…",
+    "潮汐를 여는 중…",
+    "Abriendo Tide…"
+  ],
+  "Vlot et al., 2019 · ENIGI 成人队列基线中位数": [
+    "Vlot et al., 2019 · Baseline medians in the adult ENIGI cohort",
+    "Vlot et al., 2019 · ENIGI 成人隊列基線中位數",
+    "Vlot et al., 2019 · ENIGI 成人コホートのベースライン中央値",
+    "Vlot et al., 2019 · ENIGI 성인 코호트의 기저 중앙값",
+    "Vlot et al., 2019 · Medianas basales de la cohorte adulta ENIGI"
+  ],
+  "Amsterdam ENIGI 成人；排除既往激素治疗，9–12时空腹采血；TW n=121，TM n=132": [
+    "Amsterdam ENIGI adults; previous hormone therapy excluded; fasting blood draws at 09:00–12:00; TW n=121, TM n=132",
+    "Amsterdam ENIGI 成人；排除既往荷爾蒙治療，9–12時空腹採血；TW n=121，TM n=132",
+    "Amsterdam ENIGI 成人：ホルモン治療歴のある参加者を除外、9–12時に空腹時採血。TW n=121、TM n=132",
+    "Amsterdam ENIGI 성인; 호르몬 치료 이력 제외, 오전 9–12시 공복 채혈; TW n=121, TM n=132",
+    "Adultos de Amsterdam ENIGI; sin hormonoterapia previa, extracción en ayunas entre 09:00 y 12:00; TW n=121, TM n=132"
+  ]
+}

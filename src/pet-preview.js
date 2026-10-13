@@ -2,6 +2,7 @@ import { applySharkPalette, getBuiltinShark, isBuiltinShark } from './shark-vari
 import { renderStarfield } from './star-effects.js';
 import { visibleSkinId } from './skin-features.js';
 import { ensurePetStarEffects, setProducedAmount } from './pet-star-animation.js';
+import { t, onLanguageChange } from './i18n.js';
 
 const PET_DOCUMENT = new URL('../pet.html', import.meta.url);
 const PET_STYLE = new URL('./pet.css', import.meta.url);
@@ -93,14 +94,19 @@ class TidePetPreview extends HTMLElement {
     fallback.append(image, note); this.shadowRoot.append(fallback); this._fallback = fallback;
     const placeholder = document.createElement('div'); placeholder.className = 'preview-placeholder'; placeholder.hidden = true;
     const symbol = document.createElement('span'); symbol.textContent = '∿'; symbol.setAttribute('aria-hidden', 'true');
-    const title = document.createElement('span'); title.textContent = '正在使用本机 Live2D';
-    const description = document.createElement('small'); description.textContent = '请在桌面查看';
+    const title = document.createElement('span'); title.textContent = t('正在使用本机 Live2D');
+    const description = document.createElement('small'); description.textContent = t('请在桌面查看');
     placeholder.append(symbol, title, description); this.shadowRoot.append(placeholder); this._placeholder = placeholder;
   }
 
   connectedCallback() {
     this._updateAttributes();
     this._stop = subscribe(this._snapshot);
+    this._stopLanguage = onLanguageChange(() => {
+      this._palette = null;
+      this._updateAttributes();
+      this._applySnapshot();
+    });
     this._motion.addEventListener('change', this._preference);
     this.addEventListener('keydown', this._key);
     this._resize = new ResizeObserver(() => this._scale()); this._resize.observe(this);
@@ -109,6 +115,7 @@ class TidePetPreview extends HTMLElement {
 
   disconnectedCallback() {
     this._stop?.(); this._stop = null;
+    this._stopLanguage?.(); this._stopLanguage = null;
     this._resize?.disconnect(); this._resize = null;
     this._motion.removeEventListener('change', this._preference);
     this.removeEventListener('keydown', this._key);
@@ -125,8 +132,11 @@ class TidePetPreview extends HTMLElement {
     this._fallback.querySelector('img').src = new URL(`../${getBuiltinShark(this.getAttribute('skin') || 'builtin').thumbnail}`, import.meta.url).href;
     if (this.hasAttribute('data-action')) {
       this.setAttribute('role', 'button'); this.tabIndex = 0;
-      this.setAttribute('aria-label', `摸摸${name}`);
-    } else { this.setAttribute('role', 'img'); this.removeAttribute('tabindex'); this.setAttribute('aria-label', `${name}的桌宠预览`); }
+      this.setAttribute('aria-label', t('摸摸{name}', {name}));
+    } else { this.setAttribute('role', 'img'); this.removeAttribute('tabindex'); this.setAttribute('aria-label', t('{name}的桌宠预览', {name})); }
+    this._placeholder.children[1].textContent = t('正在使用本机 Live2D');
+    this._placeholder.children[2].textContent = t('请在桌面查看');
+    if (this._failed) this._fallback.querySelector('.preview-note').textContent = t('暂时显示静态外观');
     this._setVisibility();
   }
 
@@ -152,7 +162,7 @@ class TidePetPreview extends HTMLElement {
       this._scale(); this._applySnapshot();
     } catch {
       this._failed = true;
-      this._fallback.querySelector('.preview-note').textContent = '暂时显示静态外观';
+      this._fallback.querySelector('.preview-note').textContent = t('暂时显示静态外观');
       this._setVisibility();
     } finally { this._loading = false; }
   }

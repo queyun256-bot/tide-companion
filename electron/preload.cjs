@@ -10,6 +10,7 @@ function subscribe(channel, callback) {
 
 contextBridge.exposeInMainWorld('petAPI', Object.freeze({
   getPlatform: () => ipcRenderer.invoke('app:platform'),
+  getLocale: () => ipcRenderer.invoke('app:locale'),
   loadState: () => ipcRenderer.invoke('state:load'),
   saveState: (state) => ipcRenderer.invoke('state:save', state),
   saveDoseState: (state, doseId) => ipcRenderer.invoke('state:save', state, {reportDoseId:doseId}),

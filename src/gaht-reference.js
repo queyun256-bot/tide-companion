@@ -1,3 +1,4 @@
+import { t } from './i18n.js';
 // Clinical monitoring context only. These references never enter the PK engine,
 // set a personal target, or classify an estimated point as safe/unsafe.
 const SOURCES = Object.freeze({
@@ -36,7 +37,8 @@ const REFERENCES = Object.freeze({
 });
 
 export function gahtReference(analyte, mode) {
-  return REFERENCES[`${mode}:${analyte}`] || null;
+  const source = REFERENCES[`${mode}:${analyte}`];
+  return source ? {...source, label:t(source.label),value:t(source.value),context:t(source.context), paragraphs:source.paragraphs.map(text=>t(text)),sources:source.sources.map(item=>({...item,label:t(item.label)}))} : null;
 }
 
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -44,5 +46,5 @@ const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', 
 export function gahtReferenceMarkup(analyte, mode) {
   const reference = gahtReference(analyte, mode);
   if (!reference) return '';
-  return `<aside class="gaht-reference" data-gaht-reference="${escape(analyte)}" aria-label="${escape(reference.label)}"><div class="gaht-reference-line"><span>${escape(reference.label)}</span><b>${escape(reference.value)}</b></div><p class="gaht-reference-context">${escape(reference.context)}</p><details class="gaht-reference-details"><summary>适用条件与文献</summary><div class="gaht-reference-body">${reference.paragraphs.map(paragraph => `<p>${escape(paragraph)}</p>`).join('')}<div class="gaht-reference-sources">${reference.sources.map(source => `<button type="button" data-source="${escape(source.url)}">${escape(source.label)} <span aria-hidden="true">↗</span></button>`).join('')}</div></div></details></aside>`;
+  return `<aside class="gaht-reference" data-gaht-reference="${escape(analyte)}" aria-label="${escape(reference.label)}"><div class="gaht-reference-line"><span>${escape(reference.label)}</span><b>${escape(reference.value)}</b></div><p class="gaht-reference-context">${escape(reference.context)}</p><details class="gaht-reference-details"><summary>${t('适用条件与文献')}</summary><div class="gaht-reference-body">${reference.paragraphs.map(paragraph => `<p>${escape(paragraph)}</p>`).join('')}<div class="gaht-reference-sources">${reference.sources.map(source => `<button type="button" data-source="${escape(source.url)}">${escape(source.label)} <span aria-hidden="true">↗</span></button>`).join('')}</div></div></details></aside>`;
 }

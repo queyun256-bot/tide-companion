@@ -1,3 +1,4 @@
+import { t, getLocale, html } from './i18n.js';
 const mounted = new WeakMap();
 let active = null;
 let manual = null;
@@ -36,7 +37,7 @@ export function pickerMonthCells(year, month) {
 }
 const shiftedDate = (value, days) => { const parsed = parsePickerValue(value, 'date'); const date = civilDate(parsed.year, parsed.month, parsed.day + days); return dateKey(date); };
 const formatText = value => value.replace('T', ' ');
-const labelFor = input => input.getAttribute('aria-label') || input.labels?.[0]?.firstChild?.textContent?.trim() || (input.type === 'month' ? '选择月份' : '选择日期与时间');
+const labelFor = input => input.getAttribute('aria-label') || input.labels?.[0]?.firstChild?.textContent?.trim() || (input.type === 'month' ? t('选择月份') : t('选择日期与时间'));
 export const isDatePickerOpen = () => Boolean(active);
 export const isDatePickerEditing = () => Boolean(active || manual?.input.isConnected);
 export function closeDatePickers() {
@@ -79,7 +80,7 @@ function mount(input) {
   trigger.type = 'button';
   trigger.className = 'date-picker-trigger';
   trigger.dataset.datePickerTrigger = '';
-  trigger.setAttribute('aria-label', `打开${type === 'month' ? '月份' : '日期'}选择器`);
+  trigger.setAttribute('aria-label', t(type === 'month' ? '打开月份选择器' : '打开日期选择器'));
   trigger.setAttribute('aria-haspopup', 'dialog');
   trigger.setAttribute('aria-controls', `${id}-popover`);
   trigger.setAttribute('aria-expanded', 'false');
@@ -99,15 +100,15 @@ function mount(input) {
     textInput.removeAttribute('aria-invalid');
   };
   const validity = value => {
-    if (!value.trim()) return input.required ? '请填写日期。' : '';
+    if (!value.trim()) return input.required ? t('请填写日期。') : '';
     const parsed = parsePickerValue(value, type);
-    if (!parsed) return type === 'month' ? '请填写有效月份，例如 2026-10。' : type === 'date' ? '请填写有效日期，例如 2026-10-12。' : '请填写有效日期和时间，例如 2026-10-12 09:30。';
+    if (!parsed) return type === 'month' ? t('请填写有效月份，例如 2026-10。') : type === 'date' ? t('请填写有效日期，例如 2026-10-12。') : t('请填写有效日期和时间，例如 2026-10-12 09:30。');
     if (type === 'datetime-local') {
       const local = new Date(parsed.value);
-      if (!Number.isFinite(local.getTime()) || localPickerValue(type, local) !== parsed.value) return '这个本机时间不存在，请检查日期、时间或夏令时切换。';
+      if (!Number.isFinite(local.getTime()) || localPickerValue(type, local) !== parsed.value) return t('这个本机时间不存在，请检查日期、时间或夏令时切换。');
     }
-    if (input.min && parsed.value < input.min) return `不能早于 ${formatText(input.min)}。`;
-    if (input.max && parsed.value > input.max) return `不能晚于 ${formatText(input.max)}。`;
+    if (input.min && parsed.value < input.min) return t('不能早于 {value}。',{value:formatText(input.min)});
+    if (input.max && parsed.value > input.max) return t('不能晚于 {value}。',{value:formatText(input.max)});
     return '';
   };
   const markValidity = message => {
@@ -164,11 +165,11 @@ function mount(input) {
   function renderPanel(focusSelector) {
     if (!panel) return;
     const parsed = parsePickerValue(draft, type), today = localPickerValue('date');
-    panel.innerHTML = `<div class="date-picker-heading"><span>${type === 'month' ? '选择月份' : '选择日期'}</span><small>${type === 'datetime-local' ? '本机时间' : '轻点选择'}</small></div>
-      <div class="date-picker-navigation"><button type="button" data-picker-action="previous" aria-label="${type === 'month' ? '上一年' : '上个月'}">${arrow('prev')}</button><strong aria-live="polite">${viewedYear} 年${type === 'month' ? '' : ` ${viewedMonth} 月`}</strong><button type="button" data-picker-action="next" aria-label="${type === 'month' ? '下一年' : '下个月'}">${arrow('next')}</button></div>
-      ${type === 'month' ? `<div class="date-picker-months" role="group" aria-label="月份">${Array.from({length:12}, (_, index) => { const value = `${String(viewedYear).padStart(4, '0')}-${pad(index + 1)}`; return `<button type="button" data-picker-month="${value}" aria-pressed="${draft === value}" ${validMonth(value) ? '' : 'disabled'}>${index + 1}<small>月</small></button>`; }).join('')}</div>` : `<div class="date-picker-weekdays" aria-hidden="true">${['一','二','三','四','五','六','日'].map(day => `<span>${day}</span>`).join('')}</div><div class="date-picker-days" role="group" aria-label="日期，使用方向键移动">${pickerMonthCells(viewedYear, viewedMonth).map(value => `<button type="button" data-picker-day="${value}" class="${Number(value.slice(5,7)) !== viewedMonth ? 'is-adjacent' : ''} ${value === today ? 'is-today' : ''}" aria-label="${value}${value === today ? '，今天' : ''}" aria-pressed="${draft.slice(0,10) === value}" tabindex="${value === focusedDay ? 0 : -1}" ${validDay(value) ? '' : 'disabled'}>${Number(value.slice(-2))}</button>`).join('')}</div>`}
-      ${type === 'datetime-local' ? `<div class="date-picker-time"><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg>使用时间</span><label><input type="number" min="0" max="23" step="1" value="${pad(parsed.hour)}" data-picker-hour aria-label="小时"><small>时</small></label><b>:</b><label><input type="number" min="0" max="59" step="1" value="${pad(parsed.minute)}" data-picker-minute aria-label="分钟"><small>分</small></label></div>` : ''}
-      <p class="date-picker-error" role="alert" hidden></p><div class="date-picker-footer"><button type="button" data-picker-action="now" class="date-picker-now">${type === 'month' ? '本月' : type === 'date' ? '今天' : '现在'}</button><span></span><button type="button" data-picker-action="cancel">取消</button><button type="button" data-picker-action="confirm" class="date-picker-confirm">确定</button></div>`;
+    panel.innerHTML = html`<div class="date-picker-heading"><span>${type === 'month' ? t('选择月份') : t('选择日期')}</span><small>${type === 'datetime-local' ? t('本机时间') : t('轻点选择')}</small></div>
+      <div class="date-picker-navigation"><button type="button" data-picker-action="previous" aria-label="${type === 'month' ? t('上一年') : t('上个月')}">${arrow('prev')}</button><strong aria-live="polite">${new Intl.DateTimeFormat(getLocale(),{year:'numeric',...(type === 'month'?{}:{month:'long'}),timeZone:'UTC'}).format(civilDate(viewedYear,viewedMonth,1))}</strong><button type="button" data-picker-action="next" aria-label="${type === 'month' ? t('下一年') : t('下个月')}">${arrow('next')}</button></div>
+      ${type === 'month' ? html`<div class="date-picker-months" role="group" aria-label="月份">${Array.from({length:12}, (_, index) => { const value = `${String(viewedYear).padStart(4, '0')}-${pad(index + 1)}`; return html`<button type="button" data-picker-month="${value}" aria-pressed="${draft === value}" ${validMonth(value) ? '' : 'disabled'}>${new Intl.DateTimeFormat(getLocale(),{month:'short',timeZone:'UTC'}).format(civilDate(viewedYear,index+1,1))}</button>`; }).join('')}</div>` : html`<div class="date-picker-weekdays" aria-hidden="true">${Array.from({length:7},(_,index)=>new Intl.DateTimeFormat(getLocale(),{weekday:'short',timeZone:'UTC'}).format(civilDate(2026,1,5+index))).map(day => `<span>${day}</span>`).join('')}</div><div class="date-picker-days" role="group" aria-label="日期，使用方向键移动">${pickerMonthCells(viewedYear, viewedMonth).map(value => `<button type="button" data-picker-day="${value}" class="${Number(value.slice(5,7)) !== viewedMonth ? 'is-adjacent' : ''} ${value === today ? 'is-today' : ''}" aria-label="${value}${value === today ? t('，今天') : ''}" aria-pressed="${draft.slice(0,10) === value}" tabindex="${value === focusedDay ? 0 : -1}" ${validDay(value) ? '' : 'disabled'}>${Number(value.slice(-2))}</button>`).join('')}</div>`}
+      ${type === 'datetime-local' ? html`<div class="date-picker-time"><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg>使用时间</span><label><input type="number" min="0" max="23" step="1" value="${pad(parsed.hour)}" data-picker-hour aria-label="小时"><small>时</small></label><b>:</b><label><input type="number" min="0" max="59" step="1" value="${pad(parsed.minute)}" data-picker-minute aria-label="分钟"><small>分</small></label></div>` : ''}
+      <p class="date-picker-error" role="alert" hidden></p><div class="date-picker-footer"><button type="button" data-picker-action="now" class="date-picker-now">${type === 'month' ? t('本月') : type === 'date' ? t('今天') : t('现在')}</button><span></span><button type="button" data-picker-action="cancel">取消</button><button type="button" data-picker-action="confirm" class="date-picker-confirm">确定</button></div>`;
     position();
     if (focusSelector) panel.querySelector(focusSelector)?.focus({preventScroll:true});
   }
@@ -177,7 +178,7 @@ function mount(input) {
     const hour = panel.querySelector('[data-picker-hour]'), minute = panel.querySelector('[data-picker-minute]');
     const valid = /^\d{1,2}$/.test(hour.value) && /^\d{1,2}$/.test(minute.value) && Number(hour.value) <= 23 && Number(minute.value) <= 59;
     if (!valid) {
-      const error = panel.querySelector('.date-picker-error'); error.textContent = '小时为 0–23，分钟为 0–59。'; error.hidden = false;
+      const error = panel.querySelector('.date-picker-error'); error.textContent = t('小时为 0–23，分钟为 0–59。'); error.hidden = false;
       return false;
     }
     draft = `${draft.slice(0,10)}T${pad(Number(hour.value))}:${pad(Number(minute.value))}`;
@@ -293,7 +294,7 @@ function mount(input) {
       else document.dispatchEvent(new CustomEvent('tide-date-picker-close'));
     }
   });
-  const nativeInvalid = event => { event.preventDefault(); if (!textInput.validationMessage) markValidity(input.validationMessage || '请填写有效日期。'); textInput.focus(); textInput.reportValidity(); };
+  const nativeInvalid = event => { event.preventDefault(); if (!textInput.validationMessage) markValidity(input.validationMessage || t('请填写有效日期。')); textInput.focus(); textInput.reportValidity(); };
   input.addEventListener('invalid', nativeInvalid);
   input.addEventListener('change', sync); input.addEventListener('input', sync);
   const reset = () => queueMicrotask(() => { if (input.isConnected) { close(false); sync(); } });

@@ -142,7 +142,7 @@ export async function verifyMacArchive(filename, options = {}) {
   const files = asar.listPackage(inspect).map(name => name.replaceAll('\\', '/').replace(/^\/+/, ''));
   assert.ok(!files.some(name => name.toLowerCase() === 'assets/vendor/live2dcubismcore.min.js'), 'Mac release must not include proprietary Live2D Core');
   assert.ok(files.includes('LICENSE'), 'Root project license is missing from Mac release');
-  const allowedJson = new Set(['package.json', 'src/medication-catalog.json', 'src/reference-presets.json', 'assets/vendor/SHA256.json', 'assets/sharks/catalog.json']);
+  const allowedJson = new Set(['package.json', 'src/medication-catalog.json', 'src/reference-presets.json', 'assets/vendor/SHA256.json', 'assets/sharks/catalog.json', 'src/locales/app.json', 'src/locales/native.json', 'src/locales/journal.json', 'src/locales/companion.json']);
   const forbidden = /(?:^|\/)(?:tests?|screenshots|raw|node_modules|dist|build|scripts|\.git|\.vscode|userdata|backups?)(?:\/|$)|(?:^|\/)state(?:[.-][^/]*)?\.json$|\.(?:sqlite3?|db|csv|xlsx?|log|bak|tmp)$/i;
   for (const name of files) {
     const entry = asar.statFile(inspect, path.normalize(name), false);
@@ -153,7 +153,7 @@ export async function verifyMacArchive(filename, options = {}) {
     if (name.endsWith('.json')) assert.ok(allowedJson.has(name), `Unexpected data JSON: ${name}`);
     assert.deepEqual(asar.extractFile(inspect, path.normalize(name)), await fs.readFile(path.join(ROOT, name)), `Stale source: ${name}`);
   }
-  for (const name of ['electron/main.cjs', 'electron/preload.cjs', 'electron/platform.cjs', 'electron/pet-window.cjs', 'electron/pet-growth-desktop.cjs', 'src/app.js', 'src/star-feeding.js', 'src/pet-input.js']) assert.ok(files.includes(name), `Missing source: ${name}`);
+  for (const name of ['electron/main.cjs', 'electron/preload.cjs', 'electron/platform.cjs', 'electron/pet-window.cjs', 'electron/pet-growth-desktop.cjs', 'electron/i18n.cjs', 'src/i18n-core.js', 'src/i18n-core.cjs', 'src/i18n.js', 'src/locales/app.json', 'src/locales/native.json', 'src/locales/journal.json', 'src/locales/companion.json', 'src/app.js', 'src/star-feeding.js', 'src/pet-input.js']) assert.ok(files.includes(name), `Missing source: ${name}`);
   if (options.runtime) {
     const official = readZip(await fs.readFile(options.runtime));
     for (const [name, entry] of official) if (isLink(entry)) {

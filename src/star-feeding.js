@@ -1,4 +1,5 @@
 import {petPointIsInteractive} from './pet-input.js';
+import { t, translateError } from './i18n.js';
 
 export const STAR_FEED_TYPE = 'application/x-tide-star-feed';
 let sharedSession = null;
@@ -37,7 +38,7 @@ function animateStar({x,y},mouth) {
 function announce(message) {
   let status=document.getElementById('star-feed-status');
   if(!status){status=document.createElement('span');status.id='star-feed-status';status.className='star-feed-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');document.body.append(status);}
-  status.textContent=message;
+  status.textContent=translateError(t(message));
 }
 
 /** One installation per document. Source and desktop windows share only a

@@ -65,7 +65,7 @@ function harness({ packaged = true, login = {}, loginReadError = false, argv = [
       if (id === 'node:path') return path.posix;
       if (id === 'node:fs') return { readFileSync: () => Buffer.alloc(1) };
       if (id.startsWith('node:')) return require(id);
-      if (['./platform.cjs', './pet-window.cjs'].includes(id)) return require(`../electron/${id.slice(2)}`);
+      if (['./platform.cjs', './pet-window.cjs', './i18n.cjs'].includes(id)) return require(`../electron/${id.slice(2)}`);
       if (id === './tray-icon.cjs') return () => Buffer.alloc(1);
       return {};
     },

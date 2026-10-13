@@ -1,0 +1,2704 @@
+{
+  "打开手账": [
+    "Open journal",
+    "開啟手帳",
+    "手帳を開く",
+    "기록장 열기",
+    "Abrir diario"
+  ],
+  "收起手账": [
+    "Close journal",
+    "收起手帳",
+    "手帳を閉じる",
+    "기록장 닫기",
+    "Cerrar diario"
+  ],
+  "用药提醒": [
+    "Medication reminder",
+    "用藥提醒",
+    "服薬リマインダー",
+    "투약 알림",
+    "Recordatorio de medicación"
+  ],
+  "打开手账查看用药提醒": [
+    "Open journal to view medication reminder",
+    "開啟手帳查看用藥提醒",
+    "手帳で服薬リマインダーを見る",
+    "기록장에서 투약 알림 보기",
+    "Abrir diario para ver el recordatorio"
+  ],
+  "打开手账 ↗": [
+    "Open journal ↗",
+    "開啟手帳 ↗",
+    "手帳を開く ↗",
+    "기록장 열기 ↗",
+    "Abrir diario ↗"
+  ],
+  "桌宠互动": [
+    "Companion interactions",
+    "桌寵互動",
+    "デスクトップペットとのふれあい",
+    "데스크톱 친구와 교감",
+    "Interactuar con tu compañía"
+  ],
+  "{name} · 桌面伙伴": [
+    "{name} · Desktop companion",
+    "{name} · 桌面夥伴",
+    "{name} · デスクトップの友だち",
+    "{name} · 데스크톱 친구",
+    "{name} · Compañía de escritorio"
+  ],
+  "{name}，桌面伙伴": [
+    "{name}, desktop companion",
+    "{name}，桌面夥伴",
+    "{name}、デスクトップの友だち",
+    "{name}, 데스크톱 친구",
+    "{name}, tu compañía de escritorio"
+  ],
+  "摸摸{name} · 按住轻蹭 · 滑动抚摸 · 双击打开手账": [
+    "Pet {name} · Hold to nuzzle · Slide to stroke · Double-click for journal",
+    "摸摸{name} · 按住輕蹭 · 滑動撫摸 · 按兩下開啟手帳",
+    "{name}をなでる · 長押しですりすり · スライドでなでる · ダブルクリックで手帳",
+    "{name} 쓰다듬기 · 길게 눌러 부비기 · 밀어서 쓰다듬기 · 두 번 눌러 기록장 열기",
+    "Acariciar a {name} · Mantén para acercarte · Desliza para acariciar · Doble clic para el diario"
+  ],
+  "摸摸{name}；按住轻蹭，滑动抚摸；双击打开手账": [
+    "Pet {name}; hold to nuzzle, slide to stroke; double-click for journal",
+    "摸摸{name}；按住輕蹭，滑動撫摸；按兩下開啟手帳",
+    "{name}をなでる。長押しですりすり、スライドでなでる。ダブルクリックで手帳",
+    "{name} 쓰다듬기. 길게 눌러 부비기, 밀어서 쓰다듬기. 두 번 눌러 기록장 열기",
+    "Acariciar a {name}; mantén para acercarte, desliza para acariciar; doble clic para el diario"
+  ],
+  "长按{name}头顶鱼鳍后，轻轻拖动": [
+    "Hold {name}’s top fin, then gently drag",
+    "長按{name}頭頂魚鰭後，輕輕拖動",
+    "{name}の背びれを長押しして、そっとドラッグ",
+    "{name}의 등지느러미를 길게 누른 뒤 살살 끌기",
+    "Mantén pulsada la aleta de {name} y arrastra suavemente"
+  ],
+  "长按{name}头顶鱼鳍后拖动": [
+    "Hold {name}’s top fin to drag",
+    "長按{name}頭頂魚鰭後拖動",
+    "{name}の背びれを長押ししてドラッグ",
+    "{name}의 등지느러미를 길게 눌러 끌기",
+    "Mantén la aleta de {name} para arrastrar"
+  ],
+  "摸摸{name}的脑袋": [
+    "Pat {name}’s head",
+    "摸摸{name}的腦袋",
+    "{name}の頭をなでる",
+    "{name}의 머리 쓰다듬기",
+    "Acariciar la cabeza de {name}"
+  ],
+  "和{name}轻轻蹭蹭": [
+    "Gently nuzzle {name}",
+    "和{name}輕輕蹭蹭",
+    "{name}とそっとすりすり",
+    "{name}와 살짝 부비기",
+    "Acercarte suavemente a {name}"
+  ],
+  "查看星星余额：{count} 颗": [
+    "View star balance: {count}",
+    "查看星星餘額：{count} 顆",
+    "星の残高を見る：{count} 個",
+    "별 잔액 보기: {count}개",
+    "Ver saldo de estrellas: {count}"
+  ],
+  "轻轻叫醒{name}": [
+    "Gently wake {name}",
+    "輕輕叫醒{name}",
+    "{name}をそっと起こす",
+    "{name} 살며시 깨우기",
+    "Despertar suavemente a {name}"
+  ],
+  "让{name}打个短盹": [
+    "Let {name} take a little nap",
+    "讓{name}打個短盹",
+    "{name}を少し寝かせる",
+    "{name} 잠깐 재우기",
+    "Dejar que {name} eche una siestita"
+  ],
+  "{name}，戴着跨性别旗帜围巾的小鲨鱼": [
+    "{name}, a little shark wearing a trans pride scarf",
+    "{name}，戴著跨性別旗幟圍巾的小鯊魚",
+    "{name}、トランスジェンダーフラッグのマフラーを巻いた小さなサメ",
+    "{name}, 트랜스젠더 프라이드 목도리를 두른 작은 상어",
+    "{name}, un tiburoncito con una bufanda de la bandera trans"
+  ],
+  "{name}，Live2D 桌宠": [
+    "{name}, Live2D companion",
+    "{name}，Live2D 桌寵",
+    "{name}、Live2D ペット",
+    "{name}, Live2D 친구",
+    "{name}, compañía Live2D"
+  ],
+  "身边还有 {count} 颗星星。可以在手账里拖一颗给我，慢慢长大。": [
+    "We have {count} stars. You can drag one to me in the journal and we’ll grow together.",
+    "身邊還有 {count} 顆星星。可以在手帳裡拖一顆給我，慢慢長大。",
+    "そばに星が {count} 個あるよ。手帳からひとつくれると、少しずつ育つよ。",
+    "곁에 별이 {count}개 있어. 기록장에서 하나 끌어다 주면 조금씩 자랄 거야.",
+    "Tenemos {count} estrellas. Puedes arrastrarme una desde el diario para que vaya creciendo."
+  ],
+  "嗯，以后叫我{name}。": [
+    "Okay, you can call me {name}.",
+    "嗯，以後叫我{name}。",
+    "うん、これからは{name}って呼んでね。",
+    "응, 이제 {name}라고 불러 줘.",
+    "Vale, a partir de ahora me llamo {name}."
+  ],
+  "嗨，我是{name}。": [
+    "Hi, I’m {name}.",
+    "嗨，我是{name}。",
+    "やあ、{name}だよ。",
+    "안녕, 나는 {name}야.",
+    "Hola, soy {name}."
+  ],
+  "有一条用药提醒，打开手账查看吧。": [
+    "There’s a medication reminder. You can check it in the journal.",
+    "有一條用藥提醒，開啟手帳查看吧。",
+    "服薬リマインダーがあるよ。手帳で確認してね。",
+    "투약 알림이 있어. 기록장에서 확인해 봐.",
+    "Hay un recordatorio de medicación. Puedes verlo en el diario."
+  ],
+  "手账暂时没有打开，请从托盘再试一次。": [
+    "The journal couldn’t open. Try again from the tray.",
+    "手帳暫時沒有開啟，請從系統匣再試一次。",
+    "手帳を開けなかったよ。トレイからもう一度試してね。",
+    "기록장을 열지 못했어. 트레이에서 다시 열어 줘.",
+    "No se pudo abrir el diario. Inténtalo desde la bandeja del sistema."
+  ],
+  "手账暂时没有响应，请从托盘再试一次。": [
+    "The journal isn’t responding. Try again from the tray.",
+    "手帳暫時沒有回應，請從系統匣再試一次。",
+    "手帳が応答しないみたい。トレイからもう一度試してね。",
+    "기록장이 응답하지 않아. 트레이에서 다시 시도해 줘.",
+    "El diario no responde. Inténtalo desde la bandeja del sistema."
+  ],
+  "正在准备新的外观……": [
+    "Getting the new look ready…",
+    "正在準備新的外觀……",
+    "新しい姿を準備中…",
+    "새 모습을 준비하고 있어…",
+    "Preparando el nuevo aspecto…"
+  ],
+  "新外观准备好了。": [
+    "The new look is ready.",
+    "新外觀準備好了。",
+    "新しい姿の準備ができたよ。",
+    "새 모습이 준비됐어.",
+    "El nuevo aspecto está listo."
+  ],
+  "摸摸{name}": [
+    "Pet {name}",
+    "摸摸{name}",
+    "{name}をなでる",
+    "{name} 쓰다듬기",
+    "Acariciar a {name}"
+  ],
+  "{name}的桌宠预览": [
+    "Preview of {name}",
+    "{name}的桌寵預覽",
+    "{name}のプレビュー",
+    "{name} 미리 보기",
+    "Vista previa de {name}"
+  ],
+  "正在使用本机 Live2D": [
+    "Using a local Live2D model",
+    "正在使用本機 Live2D",
+    "ローカルの Live2D モデルを使用中",
+    "로컬 Live2D 모델 사용 중",
+    "Usando un modelo Live2D local"
+  ],
+  "请在桌面查看": [
+    "View on the desktop",
+    "請在桌面查看",
+    "デスクトップで確認してください",
+    "바탕 화면에서 확인해 주세요",
+    "Ver en el escritorio"
+  ],
+  "暂时显示静态外观": [
+    "Showing a still preview for now",
+    "暫時顯示靜態外觀",
+    "現在は静止画で表示しています",
+    "현재 정지 이미지로 표시 중",
+    "Mostrando una vista estática por ahora"
+  ],
+  "星星还在这里，稍后再试试。": [
+    "Your star is still here. Try again in a moment.",
+    "星星還在這裡，稍後再試試。",
+    "星はまだここにあるよ。少ししてから試してね。",
+    "별은 그대로 있어. 잠시 후 다시 해 봐.",
+    "Tu estrella sigue aquí. Prueba de nuevo en un momento."
+  ],
+  "这颗星星没有花掉，可以再试一次。": [
+    "This star wasn’t spent. You can try again.",
+    "這顆星星沒有花掉，可以再試一次。",
+    "この星は使われていないよ。もう一度試せるよ。",
+    "이 별은 쓰이지 않았어. 다시 해도 돼.",
+    "Esta estrella no se ha gastado. Puedes volver a intentarlo."
+  ],
+  "星星收下啦，陪你待一会儿。": [
+    "Got your star. I’ll sit with you a while.",
+    "星星收下啦，陪你待一會兒。",
+    "星、受け取ったよ。ちょっとそばにいるね。",
+    "별 받았어. 잠깐 곁에 있을게.",
+    "Ya tengo tu estrella. Me quedo contigo un ratito."
+  ],
+  "星星收下啦，经验增加了 1。": [
+    "Star received. Gained 1 XP.",
+    "星星收下啦，經驗增加了 1。",
+    "星を受け取ったよ。経験値が 1 増えたよ。",
+    "별을 받았어. 경험치가 1 올랐어.",
+    "Estrella recibida. Has ganado 1 punto de experiencia."
+  ],
+  "这次没能收下星星，稍后再试试。": [
+    "I couldn’t take the star this time. Try again in a moment.",
+    "這次沒能收下星星，稍後再試試。",
+    "今回は星を受け取れなかったよ。少ししてから試してね。",
+    "이번에는 별을 받지 못했어. 잠시 후 다시 해 봐.",
+    "Esta vez no pude recibir la estrella. Prueba de nuevo en un momento."
+  ],
+  "咦，围巾里亮了一点。": [
+    "Oh, there’s a little glow in my scarf.",
+    "咦，圍巾裡亮了一點。",
+    "あれ、マフラーの中が少し光った。",
+    "어, 목도리 안이 살짝 빛났어.",
+    "Oh, hay un brillito en mi bufanda."
+  ],
+  "围巾里藏了点暖暖的星光。": [
+    "There’s warm starlight tucked in my scarf.",
+    "圍巾裡藏了點暖暖的星光。",
+    "マフラーにあたたかい星の光が隠れてた。",
+    "목도리에 따뜻한 별빛이 숨어 있었어.",
+    "Había un poquito de luz cálida en mi bufanda."
+  ],
+  "小鳍边，慢慢亮起来了。": [
+    "A little light is growing beside my fin.",
+    "小鰭邊，慢慢亮起來了。",
+    "ひれのそばが、ゆっくり明るくなった。",
+    "작은 지느러미 옆이 천천히 밝아졌어.",
+    "Junto a mi aletita va apareciendo una luz."
+  ],
+  "尾巴一晃，掉出小星星啦。": [
+    "A tail wiggle, and out came a star!",
+    "尾巴一晃，掉出小星星啦。",
+    "しっぽを振ったら、お星さまが出てきた！",
+    "꼬리를 흔들었더니 작은 별이 나왔어!",
+    "¡Moví la colita y salió una estrella!"
+  ],
+  "刚刚的小梦，留下一点光。": [
+    "That little dream left a bit of light.",
+    "剛剛的小夢，留下一點光。",
+    "さっきの小さな夢が、光を残していった。",
+    "방금 꾼 작은 꿈이 빛을 조금 남겼어.",
+    "Aquel sueñito dejó un poco de luz."
+  ],
+  "内置鲨鱼皮肤": [
+    "Built-in shark looks",
+    "內建鯊魚外觀",
+    "内蔵のサメの着せ替え",
+    "기본 상어 외형",
+    "Aspectos de tiburón incluidos"
+  ],
+  "{name}鲨鱼": [
+    "{name} shark",
+    "{name}鯊魚",
+    "{name}のサメ",
+    "{name} 상어",
+    "Tiburón {name}"
+  ],
+  "当前陪伴": [
+    "By your side",
+    "目前陪伴",
+    "いまの仲間",
+    "지금 함께하는 친구",
+    "Tu compañía actual"
+  ],
+  "正在使用{name}": [
+    "Using {name}",
+    "正在使用{name}",
+    "{name}を使用中",
+    "{name} 사용 중",
+    "Usando {name}"
+  ],
+  "换成{name}": [
+    "Switch to {name}",
+    "換成{name}",
+    "{name}に着替える",
+    "{name}로 바꾸기",
+    "Cambiar a {name}"
+  ],
+  "使用中": [
+    "In use",
+    "使用中",
+    "使用中",
+    "사용 중",
+    "En uso"
+  ],
+  "换上这一身": [
+    "Wear this look",
+    "換上這一身",
+    "この姿に着替える",
+    "이 모습으로 바꾸기",
+    "Elegir este aspecto"
+  ],
+  "换肤会改变{name}的颜色、动作节奏和说话方式，名字保持不变。当天的心情也会影响陪伴节奏。": [
+    "A new look changes {name}’s colors, movement rhythm and voice, while keeping the same name. Your mood today also shapes the pace of your time together.",
+    "換膚會改變{name}的顏色、動作節奏和說話方式，名字保持不變。當天的心情也會影響陪伴節奏。",
+    "着せ替えると{name}の色や動きのリズム、話し方が変わります。名前はそのまま。その日の気分も過ごし方に影響します。",
+    "외형을 바꾸면 {name}의 색과 움직임, 말투가 달라져요. 이름은 유지돼요. 오늘의 기분도 함께하는 리듬에 영향을 줘요.",
+    "Al cambiar de aspecto, {name} cambia de color, ritmo y forma de hablar, pero conserva su nombre. Tu ánimo del día también influye en su compañía."
+  ],
+  "本机 Live2D 模型": [
+    "Local Live2D models",
+    "本機 Live2D 模型",
+    "ローカルの Live2D モデル",
+    "로컬 Live2D 모델",
+    "Modelos Live2D locales"
+  ],
+  "自己的 Live2D": [
+    "Your own Live2D",
+    "自己的 Live2D",
+    "自分の Live2D",
+    "나만의 Live2D",
+    "Tu propio Live2D"
+  ],
+  "导入模型": [
+    "Import model",
+    "匯入模型",
+    "モデルを取り込む",
+    "모델 가져오기",
+    "Importar modelo"
+  ],
+  "本机 Live2D": [
+    "Local Live2D",
+    "本機 Live2D",
+    "ローカル Live2D",
+    "로컬 Live2D",
+    "Live2D local"
+  ],
+  "使用": [
+    "Use",
+    "使用",
+    "使う",
+    "사용",
+    "Usar"
+  ],
+  "移除": [
+    "Remove",
+    "移除",
+    "削除",
+    "제거",
+    "Eliminar"
+  ],
+  "也可以让你自己的模型住进来。选择 .model3.json，相关素材会一起保存在本机。": [
+    "You can bring your own model too. Choose its .model3.json; related assets will be saved locally.",
+    "也可以讓你自己的模型住進來。選擇 .model3.json，相關素材會一起儲存在本機。",
+    "自分のモデルも迎えられます。.model3.json を選ぶと、関連素材もこの端末に保存されます。",
+    "내 모델도 데려올 수 있어요. .model3.json을 고르면 관련 소재도 이 기기에 저장돼요.",
+    "Puedes traer tu propio modelo. Elige su .model3.json; los recursos asociados se guardarán en este dispositivo."
+  ],
+  "浅海蓝": [
+    "Shallow Blue",
+    "淺海藍",
+    "浅瀬ブルー",
+    "얕은 바다 블루",
+    "Azul de la orilla"
+  ],
+  "绒绒粉": [
+    "Cozy Pink",
+    "絨絨粉",
+    "ふわふわピンク",
+    "포근한 핑크",
+    "Rosa suave"
+  ],
+  "薄荷绿": [
+    "Mint Green",
+    "薄荷綠",
+    "ミントグリーン",
+    "민트 그린",
+    "Verde menta"
+  ],
+  "蜜桃橙": [
+    "Peach Orange",
+    "蜜桃橙",
+    "ピーチオレンジ",
+    "복숭아 오렌지",
+    "Naranja melocotón"
+  ],
+  "暮云紫": [
+    "Dusk Lilac",
+    "暮雲紫",
+    "夕雲パープル",
+    "저녁구름 퍼플",
+    "Lila del atardecer"
+  ],
+  "随和 · 好奇": [
+    "Easygoing · Curious",
+    "隨和 · 好奇",
+    "おおらか · 好奇心いっぱい",
+    "느긋함 · 호기심",
+    "Tranquilo · Curioso"
+  ],
+  "温柔 · 亲近": [
+    "Gentle · Affectionate",
+    "溫柔 · 親近",
+    "やさしい · 甘えん坊",
+    "다정함 · 친근함",
+    "Tierno · Cariñoso"
+  ],
+  "沉稳 · 慢悠悠": [
+    "Steady · Unhurried",
+    "沉穩 · 慢悠悠",
+    "落ち着き · のんびり",
+    "차분함 · 여유로움",
+    "Sereno · Sin prisas"
+  ],
+  "活泼 · 小机灵": [
+    "Playful · Bright",
+    "活潑 · 小機靈",
+    "元気 · おちゃめ",
+    "활발함 · 장난기",
+    "Alegre · Ingenioso"
+  ],
+  "安静 · 爱做小梦": [
+    "Quiet · Dreamy",
+    "安靜 · 愛做小夢",
+    "静か · 夢見がち",
+    "조용함 · 꿈꾸기 좋아함",
+    "Callado · Soñador"
+  ],
+  "喜欢歪头看看，偶尔轻轻蹭过来，陪你把日子过得松一点。": [
+    "Tilts its head in curiosity, nuzzles over now and then, and helps the day feel a little softer.",
+    "喜歡歪頭看看，偶爾輕輕蹭過來，陪你把日子過得鬆一點。",
+    "首をかしげてあたりを見たり、ときどきすり寄ったり。少し肩の力を抜いて過ごす仲間です。",
+    "고개를 갸웃하며 구경하다 가끔 살짝 다가와요. 함께하는 하루가 조금 편안해지도록요.",
+    "Inclina la cabeza con curiosidad y se acerca de vez en cuando, para acompañarte con calma."
+  ],
+  "动作软软慢慢的，喜欢挨着你，小心地分来围巾的一角。": [
+    "Moves softly and slowly, likes sitting close, and shares a little corner of its scarf.",
+    "動作軟軟慢慢的，喜歡挨著你，小心地分來圍巾的一角。",
+    "ゆっくり柔らかく動き、そばに寄り添います。マフラーの端もそっと分けてくれます。",
+    "움직임이 부드럽고 느려요. 곁에 앉아 목도리 한쪽을 살며시 내어 줘요.",
+    "Se mueve despacito, le gusta sentarse cerca y compartir un rincón de su bufanda."
+  ],
+  "常常点点头、伸伸小鳍，安安静静地陪在旁边，不催你赶路。": [
+    "Nods and stretches its little fins, quietly staying beside you with no hurry.",
+    "常常點點頭、伸伸小鰭，安安靜靜地陪在旁邊，不催你趕路。",
+    "うなずいたり小さなひれを伸ばしたり。急かすことなく、静かにそばにいます。",
+    "고개를 끄덕이거나 지느러미를 펴며 조용히 곁에 있어요. 서두르라고 하지 않아요.",
+    "Asiente y estira sus aletitas. Se queda a tu lado en silencio, sin meterte prisa."
+  ],
+  "喜欢小幅摆尾、伸懒腰，把星星藏在小鳍里；你累时也会轻下来。": [
+    "Wiggles its tail, stretches, and tucks stars into its fins; it settles down when you’re tired.",
+    "喜歡小幅擺尾、伸懶腰，把星星藏在小鰭裡；你累時也會輕下來。",
+    "しっぽを揺らし、伸びをして、ひれに星を隠します。疲れた日には動きもそっと控えめに。",
+    "꼬리를 살랑이고 기지개를 켜며 작은 지느러미에 별을 숨겨요. 네가 지치면 조용해져요.",
+    "Mueve la colita, se estira y esconde estrellas entre sus aletas; cuando te cansas, también baja el ritmo."
+  ],
+  "喜欢慢慢眨眼、轻轻歪头，话少一点，陪伴一直在旁边。": [
+    "Blinks slowly and tilts its head gently. It says a little less, but stays by your side.",
+    "喜歡慢慢眨眼、輕輕歪頭，話少一點，陪伴一直在旁邊。",
+    "ゆっくりまばたきして、そっと首をかしげます。言葉は少なくても、いつもそばに。",
+    "천천히 눈을 깜빡이고 살짝 고개를 기울여요. 말은 적어도 늘 곁에 있어요.",
+    "Parpadea despacio e inclina la cabeza con suavidad. Habla poco, pero siempre está a tu lado."
+  ],
+  "{name}的小鲨鱼，圆肚皮、短小鳍，戴着浅蓝、粉、白相间的跨性别旗帜围巾。{description}": [
+    "A {name} shark with a round belly, short fins and a light-blue, pink and white trans pride scarf. {description}",
+    "{name}的小鯊魚，圓肚皮、短小鰭，戴著淺藍、粉、白相間的跨性別旗幟圍巾。{description}",
+    "{name}の小さなサメ。丸いお腹に短いひれ、水色・ピンク・白のトランスジェンダーフラッグのマフラー。{description}",
+    "동그란 배와 짧은 지느러미를 가진 {name} 상어. 하늘색, 분홍색, 흰색의 트랜스젠더 프라이드 목도리를 두르고 있어요. {description}",
+    "Un tiburoncito {name}, de barriga redonda y aletas cortas, con una bufanda trans azul claro, rosa y blanca. {description}"
+  ],
+  "查看星星，已攒下 {count} 颗": [
+    "View stars: {count} saved",
+    "查看星星，已攢下 {count} 顆",
+    "星を見る：{count} 個たまったよ",
+    "별 보기: {count}개 모았어요",
+    "Ver estrellas: {count} guardadas"
+  ],
+  "已攒下 {count} 颗": [
+    "{count} stars saved",
+    "已攢下 {count} 顆",
+    "{count} 個たまったよ",
+    "{count}개 모았어요",
+    "{count} estrellas guardadas"
+  ],
+  "喂给{name}的小星星": [
+    "Stars fed to {name}",
+    "餵給{name}的小星星",
+    "{name}にあげた星",
+    "{name}에게 준 별",
+    "Estrellas que recibió {name}"
+  ],
+  "{name}留下的星光": [
+    "Starlight from {name}",
+    "{name}留下的星光",
+    "{name}が残した星の光",
+    "{name}가 남긴 별빛",
+    "Luz que dejó {name}"
+  ],
+  "投喂": [
+    "Feeding",
+    "餵食",
+    "おやつ",
+    "먹이 주기",
+    "Alimentación"
+  ],
+  "自然产星": [
+    "Idle stars",
+    "自然產星",
+    "くつろぎ中の星",
+    "쉬다가 남긴 별",
+    "Estrellas al descansar"
+  ],
+  "长周期提醒": [
+    "Long-interval reminder",
+    "長週期提醒",
+    "長い間隔のリマインダー",
+    "긴 주기 알림",
+    "Recordatorio de intervalo largo"
+  ],
+  "普通提醒": [
+    "Regular reminder",
+    "普通提醒",
+    "通常のリマインダー",
+    "일반 알림",
+    "Recordatorio habitual"
+  ],
+  "已保存的记录": [
+    "Saved record",
+    "已儲存的紀錄",
+    "保存済みの記録",
+    "저장된 기록",
+    "Registro guardado"
+  ],
+  "攒下的小星星": [
+    "Your little stars",
+    "攢下的小星星",
+    "たまった小さな星",
+    "모아 둔 작은 별",
+    "Tus estrellitas"
+  ],
+  "慢慢留下来的光": [
+    "A little light, over time",
+    "慢慢留下來的光",
+    "少しずつたまる光",
+    "조금씩 쌓이는 빛",
+    "Luz que se queda poco a poco"
+  ],
+  "星星余额": [
+    "Star balance",
+    "星星餘額",
+    "星の残高",
+    "별 잔액",
+    "Saldo de estrellas"
+  ],
+  "颗": [
+    "stars",
+    "顆",
+    "個",
+    "개",
+    "estrellas"
+  ],
+  " 颗": [
+    " stars",
+    " 顆",
+    " 個",
+    " 개",
+    " estrellas"
+  ],
+  "/ 2 颗": [
+    "/ 2 stars",
+    "/ 2 顆",
+    "/ 2 個",
+    "/ 2개",
+    "/ 2 estrellas"
+  ],
+  "今天获得": [
+    "Received today",
+    "今天獲得",
+    "今日もらった星",
+    "오늘 받은 별",
+    "Recibidas hoy"
+  ],
+  "普通提醒 · 今日": [
+    "Regular reminders · Today",
+    "普通提醒 · 今日",
+    "通常のリマインダー · 今日",
+    "일반 알림 · 오늘",
+    "Recordatorios habituales · Hoy"
+  ],
+  "一起慢慢长大": [
+    "Growing together",
+    "一起慢慢長大",
+    "一緒に少しずつ育とう",
+    "함께 천천히 자라요",
+    "Crecer poco a poco juntos"
+  ],
+  "五种外观共用同一份成长，换肤不会从头开始。": [
+    "All five looks share one growth journey. Changing looks never resets it.",
+    "五種外觀共用同一份成長，換膚不會從頭開始。",
+    "5 つの姿で成長を共有します。着せ替えても最初からにはなりません。",
+    "다섯 외형이 같은 성장을 공유해요. 외형을 바꿔도 처음부터 시작하지 않아요.",
+    "Los cinco aspectos comparten el mismo progreso. Cambiar de aspecto no lo reinicia."
+  ],
+  "经验已满": [
+    "XP full",
+    "經驗已滿",
+    "経験値は最大です",
+    "경험치 최대",
+    "Experiencia completa"
+  ],
+  "这一等级的经验": [
+    "XP for this level",
+    "這一等級的經驗",
+    "このレベルの経験値",
+    "현재 레벨 경험치",
+    "Experiencia de este nivel"
+  ],
+  "满级": [
+    "Max level",
+    "滿級",
+    "最大レベル",
+    "최고 레벨",
+    "Nivel máximo"
+  ],
+  "{name}的等级经验": [
+    "{name}’s level progress",
+    "{name}的等級經驗",
+    "{name}のレベル経験値",
+    "{name}의 레벨 경험치",
+    "Progreso de nivel de {name}"
+  ],
+  "拖一颗星星喂给{name}，消耗一颗星星": [
+    "Drag a star to feed {name}; costs one star",
+    "拖一顆星星餵給{name}，消耗一顆星星",
+    "星をドラッグして{name}にあげる。星を 1 個使います",
+    "별 하나를 끌어 {name}에게 주기. 별 1개 소모",
+    "Arrastra una estrella para dársela a {name}; cuesta una estrella"
+  ],
+  "拖一颗给{name}": [
+    "Drag one to {name}",
+    "拖一顆給{name}",
+    "{name}にひとつあげる",
+    "{name}에게 하나 끌어다 주기",
+    "Arrastra una a {name}"
+  ],
+  "拖到旁边或桌面的鲨鱼身上": [
+    "Drop onto the shark here or on your desktop",
+    "拖到旁邊或桌面的鯊魚身上",
+    "隣かデスクトップのサメにドラッグ",
+    "옆이나 바탕 화면의 상어에게 끌어다 주세요",
+    "Suéltala sobre el tiburón de aquí o del escritorio"
+  ],
+  "1 颗星星": [
+    "1 star",
+    "1 顆星星",
+    "星 1 個",
+    "별 1개",
+    "1 estrella"
+  ],
+  "经验已满，也可以喂着玩": [
+    "XP is full; you can still feed for fun",
+    "經驗已滿，也可以餵著玩",
+    "経験値は最大でも、おやつはあげられます",
+    "경험치는 최대지만 계속 줄 수 있어요",
+    "La experiencia está completa, pero puedes seguir jugando"
+  ],
+  "1 点经验": [
+    "1 XP",
+    "1 點經驗",
+    "経験値 1",
+    "경험치 1",
+    "1 punto de experiencia"
+  ],
+  "到 2 级后，闲下来时偶尔会留下一点星光。": [
+    "From level 2, quiet moments can leave a little starlight.",
+    "到 2 級後，閒下來時偶爾會留下一點星光。",
+    "レベル 2 から、のんびりしていると星の光を残すことがあります。",
+    "2레벨부터는 쉬는 동안 가끔 별빛을 남겨요.",
+    "Desde el nivel 2, a veces deja un poco de luz al descansar."
+  ],
+  "今天的星光已经留下啦，安心待着就好。": [
+    "Today’s starlight is already here. We can just relax.",
+    "今天的星光已經留下啦，安心待著就好。",
+    "今日の星の光はもう残したよ。あとはゆっくりしよう。",
+    "오늘의 별빛은 이미 남겼어. 이제 편히 있어도 돼.",
+    "La luz de hoy ya está aquí. Podemos descansar."
+  ],
+  "闲下来时，偶尔会留下 1–{count} 颗星星；小份更常见，每天最多一次。": [
+    "While resting, may leave 1–{count} stars, at most once a day. Smaller amounts are more common.",
+    "閒下來時，偶爾會留下 1–{count} 顆星星；小份更常見，每天最多一次。",
+    "くつろぎ中に 1 日 1 回まで、星を 1〜{count} 個残すことがあります。少ない数ほど出やすくなります。",
+    "쉴 때 하루 최대 한 번 별 1–{count}개를 남길 수 있어요. 적은 수량이 더 자주 나와요.",
+    "Al descansar puede dejar de 1 a {count} estrellas, como máximo una vez al día. Las cantidades pequeñas son más frecuentes."
+  ],
+  "余额与成长会留在本机，也随备份保存。喂星星只是一点互动，平时一起待着也很好。": [
+    "Your balance and growth stay on this device and in backups. Feeding is just a little way to interact; simply spending time together is lovely too.",
+    "餘額與成長會留在本機，也隨備份儲存。餵星星只是一點互動，平時一起待著也很好。",
+    "残高と成長は端末とバックアップに保存されます。星をあげるのはふれあいのひとつ。一緒に過ごすだけでも十分です。",
+    "잔액과 성장은 이 기기와 백업에 저장돼요. 별 주기는 작은 교감일 뿐이에요. 그저 함께 있어도 좋아요.",
+    "El saldo y el progreso se guardan aquí y en las copias de seguridad. Dar estrellas es solo una forma de jugar; estar juntos también está bien."
+  ],
+  "最近的星星记录": [
+    "Recent star activity",
+    "最近的星星紀錄",
+    "最近の星の記録",
+    "최근 별 기록",
+    "Actividad reciente de estrellas"
+  ],
+  "还没有星星。按自己的用药安排记录就好，它们会慢慢留下来。": [
+    "No stars yet. Keep records at your own medication schedule; they’ll gather over time.",
+    "還沒有星星。按自己的用藥安排記錄就好，它們會慢慢留下來。",
+    "まだ星はありません。自分の服薬予定に沿って記録すれば、少しずつたまります。",
+    "아직 별이 없어요. 내 투약 일정에 맞춰 기록하면 조금씩 모일 거예요.",
+    "Aún no hay estrellas. Registra según tu propia pauta de medicación; irán llegando poco a poco."
+  ],
+  "星星与成长": [
+    "Stars and growth",
+    "星星與成長",
+    "星と成長",
+    "별과 성장",
+    "Estrellas y crecimiento"
+  ],
+  "已有提醒计划时，在预定时间前后各 2 小时内实际用药并记录，每次可留下一颗星星，无需等提醒弹出；普通提醒每天最多 2 颗，按记录获星当天计算。": [
+    "With an existing reminder plan, taking and recording a dose within 2 hours before or after its scheduled time earns one star. You need not wait for the notification. Regular reminders earn up to 2 stars per day, counted on the day the record earns its stars.",
+    "已有提醒計畫時，在預定時間前後各 2 小時內實際用藥並記錄，每次可留下一顆星星，無需等提醒彈出；普通提醒每天最多 2 顆，按記錄獲星當天計算。",
+    "既存のリマインダーの予定時刻の前後 2 時間以内に実際に使用して記録すると、星が 1 個もらえます。通知を待つ必要はありません。通常は星を獲得した日ごとに最大 2 個です。",
+    "기존 알림 계획의 예정 시각 전후 2시간 안에 실제로 사용하고 기록하면 별 1개를 받아요. 알림이 뜰 때까지 기다릴 필요는 없어요. 일반 알림은 별을 받은 날짜 기준으로 하루 최대 2개예요.",
+    "Con un plan de recordatorios existente, usar la medicación en las 2 horas anteriores o posteriores a la hora prevista y registrarla da una estrella, sin esperar al aviso. Los recordatorios habituales dan hasta 2 al día, según el día en que se obtienen."
+  ],
+  "间隔 48 小时及以上的计划，按完整天数获得星星，单次最多 7 颗，不占当天普通额度。": [
+    "Plans spaced 48 hours or more apart earn stars by whole interval days, up to 7 per dose, separate from the regular daily limit.",
+    "間隔 48 小時及以上的計畫，按完整天數獲得星星，單次最多 7 顆，不佔當天普通額度。",
+    "間隔が 48 時間以上の予定は、間隔の満日数に応じて 1 回最大 7 個の星をもらえます。通常の日ごとの上限とは別枠です。",
+    "간격이 48시간 이상인 계획은 간격의 온전한 날짜 수만큼, 한 번에 최대 7개를 받아요. 일반 일일 한도와 별도예요.",
+    "Los planes con intervalos de al menos 48 horas dan estrellas por cada día completo del intervalo, hasta 7 por dosis, aparte del límite habitual diario."
+  ],
+  "可以稍后补记，按实际使用时间匹配药物、用量和时长。同一次提醒只奖励一次；修改已保存记录和测试提醒不会增加星星。没有星星的用药记录也会照常保存，不会因为漏记而扣除星星。": [
+    "You can record later; matching uses the actual dose time, medication, amount and duration. Each reminder occurrence earns stars only once. Editing saved records or testing reminders earns none. Records without stars are still saved, and missed records never take stars away.",
+    "可以稍後補記，按實際使用時間匹配藥物、用量和時長。同一次提醒只獎勵一次；修改已儲存紀錄和測試提醒不會增加星星。沒有星星的用藥紀錄也會照常儲存，不會因為漏記而扣除星星。",
+    "あとから記録することもできます。実際の使用時刻、薬、量、使用時間で照合します。同じ予定の報酬は一度だけで、記録の編集やテスト通知では増えません。星のない記録も保存され、記録し忘れても星は減りません。",
+    "나중에 기록해도 돼요. 실제 사용 시각과 약물, 용량, 사용 시간을 대조해요. 같은 알림 회차는 한 번만 보상하며, 저장된 기록 수정이나 알림 테스트로는 별이 늘지 않아요. 별을 받지 못한 기록도 저장되며 기록을 놓쳐도 별은 줄지 않아요.",
+    "Puedes registrar más tarde; se compara la hora real, el medicamento, la cantidad y la duración. Cada aviso solo recompensa una vez. Editar registros o probar avisos no da estrellas. Los registros sin estrellas también se guardan, y olvidar uno no resta estrellas."
+  ],
+  "投喂每次消耗 1 颗星星，增加 1 点经验，最高 10 级。满级仍可以投喂，经验保持满格。2 级起，桌宠在清醒、可见且空闲时每天最多产星一次，数量为 1 至等级加 1、最多 10 颗；数量越多，出现概率越低。五种皮肤共享每天这一次，不会补发离线产星。": [
+    "Feeding costs 1 star and gives 1 XP, up to level 10. You can still feed at maximum level without increasing XP. From level 2, an awake, visible, idle companion may produce stars once a day: 1 to level plus 1, capped at 10. Larger amounts are rarer. All five looks share this daily chance; no stars are generated offline.",
+    "餵食每次消耗 1 顆星星，增加 1 點經驗，最高 10 級。滿級仍可以餵食，經驗保持滿格。2 級起，桌寵在清醒、可見且閒暇時每天最多產星一次，數量為 1 至等級加 1、最多 10 顆；數量越多，出現機率越低。五種外觀共享每天這一次，不會補發離線產星。",
+    "星を 1 個あげると経験値が 1 増え、最大レベルは 10 です。最大でもあげられますが経験値は増えません。レベル 2 から、起きて画面に見えているくつろぎ中に 1 日 1 回まで星を残します。数は 1〜レベル+1 個、最大 10 個で、多いほどまれです。5 つの姿でこの機会を共有し、オフライン分の補充はありません。",
+    "먹이를 줄 때 별 1개를 쓰고 경험치 1을 얻으며 최고 10레벨까지 자라요. 최고 레벨에서도 줄 수 있지만 경험치는 늘지 않아요. 2레벨부터 깨어 있고 화면에 보이며 쉬고 있을 때 하루 최대 한 번 별을 남겨요. 1개부터 레벨+1개까지, 최대 10개이며 많을수록 드물어요. 다섯 외형은 이 하루 한 번의 기회를 공유하고 오프라인 보상은 없어요.",
+    "Dar una estrella cuesta 1 y aporta 1 punto de experiencia, hasta el nivel 10. Al máximo puedes seguir alimentando sin sumar experiencia. Desde el nivel 2, si está despierto, visible y descansando, puede dejar estrellas una vez al día: de 1 a nivel+1, máximo 10. Las cantidades mayores son más raras. Los cinco aspectos comparten la oportunidad diaria y no se generan estrellas sin conexión."
+  ],
+  "嘿嘿，和你一起开心。": [
+    "Hehe, happy to share this with you.",
+    "嘿嘿，和你一起開心。",
+    "えへへ、一緒にうれしいね。",
+    "헤헤, 같이 기뻐할래.",
+    "Jeje, qué alegría estar contigo."
+  ],
+  "小鳍摆起来啦。": [
+    "My little fins are waving.",
+    "小鰭擺起來啦。",
+    "ひれがゆらゆらしちゃう。",
+    "작은 지느러미가 살랑살랑.",
+    "Mis aletitas se están moviendo."
+  ],
+  "想蹭蹭你的手。": [
+    "I’d like a little nuzzle against your hand.",
+    "想蹭蹭你的手。",
+    "手にすりすりしたいな。",
+    "네 손에 살짝 부비고 싶어.",
+    "Me apetece acurrucarme en tu mano."
+  ],
+  "嘿嘿，有点痒。": [
+    "Hehe, that tickles a little.",
+    "嘿嘿，有點癢。",
+    "えへへ、ちょっとくすぐったい。",
+    "헤헤, 조금 간지러워.",
+    "Jeje, da un poquito de cosquillas."
+  ],
+  "这边也软软的。": [
+    "This side is soft too.",
+    "這邊也軟軟的。",
+    "こっちもふわふわだよ。",
+    "이쪽도 말랑해.",
+    "Este lado también es blandito."
+  ],
+  "唔，舒服。": [
+    "Mmm, that feels nice.",
+    "唔，舒服。",
+    "ん、気持ちいい。",
+    "음, 편안해.",
+    "Mmm, qué a gusto."
+  ],
+  "再来一下？": [
+    "One more little pat?",
+    "再來一下？",
+    "もう一回、なでて？",
+    "한 번 더 쓰다듬어 줄래?",
+    "¿Una caricia más?"
+  ],
+  "脑袋借你摸一会儿。": [
+    "You can borrow my head for a few pats.",
+    "腦袋借你摸一會兒。",
+    "しばらく頭を貸してあげる。",
+    "잠깐 머리를 쓰다듬어도 돼.",
+    "Te presto mi cabecita un ratito."
+  ],
+  "这样刚刚好。": [
+    "That’s just right.",
+    "這樣剛剛好。",
+    "うん、ちょうどいい。",
+    "이 정도가 딱 좋아.",
+    "Así está perfecto."
+  ],
+  "嗯，很舒服。": [
+    "Mm, very comfy.",
+    "嗯，很舒服。",
+    "うん、とっても心地いい。",
+    "응, 정말 편안해.",
+    "Sí, qué gustito."
+  ],
+  "慢一点，围巾要歪了。": [
+    "A little slower, my scarf’s slipping.",
+    "慢一點，圍巾要歪了。",
+    "ゆっくりね、マフラーがずれちゃう。",
+    "조금 천천히, 목도리가 삐뚤어지겠어.",
+    "Más despacito, que se me tuerce la bufanda."
+  ],
+  "摸到尾巴了。": [
+    "You found my tail.",
+    "摸到尾巴了。",
+    "しっぽまで届いたね。",
+    "꼬리까지 닿았네.",
+    "Has llegado a mi colita."
+  ],
+  "挨一小会儿。": [
+    "Let’s sit close for a bit.",
+    "挨一小會兒。",
+    "少しだけ、くっつこう。",
+    "잠깐 붙어 있을래.",
+    "Vamos a juntarnos un ratito."
+  ],
+  "蹭蹭，轻轻的。": [
+    "A soft little nuzzle.",
+    "蹭蹭，輕輕的。",
+    "すりすり、そーっとね。",
+    "살짝, 부비부비.",
+    "Un mimo, muy suavecito."
+  ],
+  "围巾分你一个小角。": [
+    "Here’s a little corner of my scarf.",
+    "圍巾分你一個小角。",
+    "マフラーの端っこ、分けるね。",
+    "목도리 한쪽을 나눠 줄게.",
+    "Te guardo un rinconcito de mi bufanda."
+  ],
+  "就这样靠着。": [
+    "We can stay like this.",
+    "就這樣靠著。",
+    "このまま、くっついていよう。",
+    "이렇게 기대 있을래.",
+    "Podemos quedarnos así."
+  ],
+  "嗷呜，接住啦。": [
+    "Nom, caught it!",
+    "嗷嗚，接住啦。",
+    "あむ、受け取ったよ！",
+    "냠, 받았어!",
+    "¡Ñam, la atrapé!"
+  ],
+  "亮晶晶的，谢谢你。": [
+    "So sparkly. Thank you.",
+    "亮晶晶的，謝謝你。",
+    "きらきらだね、ありがとう。",
+    "반짝반짝하네, 고마워.",
+    "Qué brillante. Gracias."
+  ],
+  "这一颗亮亮的。": [
+    "This one’s bright.",
+    "這一顆亮亮的。",
+    "この星、ぴかぴかだ。",
+    "이 별은 환하네.",
+    "Esta brilla mucho."
+  ],
+  "藏进围巾里。": [
+    "Tucking it into my scarf.",
+    "藏進圍巾裡。",
+    "マフラーにしまおう。",
+    "목도리 안에 숨겨 둘래.",
+    "La guardo en mi bufanda."
+  ],
+  "伸个懒腰。": [
+    "Time for a little stretch.",
+    "伸個懶腰。",
+    "ちょっと、のびー。",
+    "기지개 쭉.",
+    "Voy a estirarme un poquito."
+  ],
+  "围巾有点歪了。": [
+    "My scarf’s a little crooked.",
+    "圍巾有點歪了。",
+    "マフラーがちょっと斜めだ。",
+    "목도리가 조금 비뚤어졌어.",
+    "Tengo la bufanda algo torcida."
+  ],
+  "窗外好像有动静。": [
+    "Was that something outside?",
+    "窗外好像有動靜。",
+    "窓の外で何か動いたかな。",
+    "창밖에서 뭔가 움직였나 봐.",
+    "¿Se ha movido algo fuera?"
+  ],
+  "换个姿势。": [
+    "Just shifting a little.",
+    "換個姿勢。",
+    "ちょっと姿勢を変えよう。",
+    "자세를 살짝 바꿀래.",
+    "Voy a cambiar de postura."
+  ],
+  "嗯，就这样待一会儿。": [
+    "Mm, let’s stay here a little.",
+    "嗯，就這樣待一會兒。",
+    "うん、このまま少し過ごそう。",
+    "응, 이렇게 잠깐 있자.",
+    "Sí, quedémonos así un rato."
+  ],
+  "一起发会儿呆呀。": [
+    "Let’s daydream for a bit.",
+    "一起發會兒呆呀。",
+    "一緒にぼーっとしよう。",
+    "같이 잠깐 멍하니 있자.",
+    "Vamos a quedarnos pensando en nada."
+  ],
+  "唔？是你呀。": [
+    "Hmm? Oh, it’s you.",
+    "唔？是你呀。",
+    "ん？きみだったんだ。",
+    "응? 너였구나.",
+    "¿Mmm? Ah, eres tú."
+  ],
+  "手心暖暖的。": [
+    "Your palm is warm.",
+    "手心暖暖的。",
+    "手のひら、あったかい。",
+    "손바닥이 따뜻해.",
+    "Tu mano está calentita."
+  ],
+  "脑袋往这边靠靠。": [
+    "Leaning my head this way.",
+    "腦袋往這邊靠靠。",
+    "こっちに頭をこてん。",
+    "머리를 이쪽으로 기댈게.",
+    "Apoyo la cabecita por aquí."
+  ],
+  "有点舒服。": [
+    "That feels pretty nice.",
+    "有點舒服。",
+    "なんだか気持ちいい。",
+    "좀 편안한걸.",
+    "Se está bastante a gusto."
+  ],
+  "摸得想眯眼啦。": [
+    "That makes my eyes all sleepy.",
+    "摸得想瞇眼啦。",
+    "なでられると目が細くなるね。",
+    "쓰다듬으니 눈이 스르르 감겨.",
+    "Con esas caricias se me cierran los ojitos."
+  ],
+  "嗯，这样就好。": [
+    "Mm, this is lovely.",
+    "嗯，這樣就好。",
+    "うん、これでいいね。",
+    "응, 이렇게면 좋아.",
+    "Sí, así me gusta."
+  ],
+  "围巾也顺好了。": [
+    "My scarf is tidy too.",
+    "圍巾也順好了。",
+    "マフラーも整ったよ。",
+    "목도리도 가지런해졌어.",
+    "La bufanda también está en su sitio."
+  ],
+  "慢慢摸吧。": [
+    "Take your time with the pats.",
+    "慢慢摸吧。",
+    "ゆっくりなでてね。",
+    "천천히 쓰다듬어 줘.",
+    "Acaríciame sin prisa."
+  ],
+  "这边也可以。": [
+    "This side is fine too.",
+    "這邊也可以。",
+    "こっちでもいいよ。",
+    "이쪽도 괜찮아.",
+    "Por este lado también puedes."
+  ],
+  "借个位置靠一下。": [
+    "May I lean here a little?",
+    "借個位置靠一下。",
+    "ちょっと場所を借りて、こてん。",
+    "잠깐 여기 기대도 될까.",
+    "¿Me dejas apoyarme un poquito aquí?"
+  ],
+  "轻轻碰一下。": [
+    "Just a gentle little touch.",
+    "輕輕碰一下。",
+    "そっと、ちょん。",
+    "살짝 톡.",
+    "Un toquecito suave."
+  ],
+  "嗯，挨近一点。": [
+    "Mm, a little closer.",
+    "嗯，挨近一點。",
+    "うん、もう少しそばに。",
+    "응, 조금 더 가까이.",
+    "Sí, un poquito más cerca."
+  ],
+  "就靠一小会儿。": [
+    "I’ll lean here just a moment.",
+    "就靠一小會兒。",
+    "ほんの少し、寄りかかるね。",
+    "잠깐만 기대 있을게.",
+    "Me apoyo solo un ratito."
+  ],
+  "啊呜，谢谢你。": [
+    "Nom, thank you.",
+    "啊嗚，謝謝你。",
+    "あむ、ありがとう。",
+    "냠, 고마워.",
+    "Ñam, gracias."
+  ],
+  "小星星藏在这里。": [
+    "The little star can hide here.",
+    "小星星藏在這裡。",
+    "お星さまはここにしまおう。",
+    "작은 별은 여기 숨겨 둘래.",
+    "La estrellita se esconde aquí."
+  ],
+  "鼻尖也亮啦。": [
+    "Even my nose is glowing.",
+    "鼻尖也亮啦。",
+    "鼻の先まで光ったよ。",
+    "코끝도 빛나.",
+    "Hasta mi naricita brilla."
+  ],
+  "暖乎乎的一颗。": [
+    "Such a warm little star.",
+    "暖乎乎的一顆。",
+    "ぽかぽかのお星さま。",
+    "따끈한 별 하나네.",
+    "Qué estrella tan calentita."
+  ],
+  "整理一下围巾。": [
+    "Just fixing my scarf.",
+    "整理一下圍巾。",
+    "マフラーを整えよう。",
+    "목도리를 정리할래.",
+    "Me arreglo la bufanda."
+  ],
+  "在这儿待一会儿。": [
+    "I’ll stay here a little.",
+    "在這兒待一會兒。",
+    "ここで少し過ごそう。",
+    "여기 잠깐 있을게.",
+    "Me quedo aquí un rato."
+  ],
+  "有点想打盹。": [
+    "Feeling a little nap coming on.",
+    "有點想打盹。",
+    "ちょっと眠くなってきた。",
+    "살짝 졸고 싶어졌어.",
+    "Me están entrando ganas de una siestita."
+  ],
+  "嗯，我在旁边。": [
+    "Mm, I’m right here.",
+    "嗯，我在旁邊。",
+    "うん、そばにいるよ。",
+    "응, 곁에 있어.",
+    "Sí, estoy aquí al lado."
+  ],
+  "不说话也可以，靠一会儿。": [
+    "We don’t have to talk. Let’s lean together.",
+    "不說話也可以，靠一會兒。",
+    "話さなくてもいいよ。少し寄り添おう。",
+    "말하지 않아도 돼. 잠깐 기대 있어.",
+    "No hace falta hablar. Acércate un ratito."
+  ],
+  "给你留个软软的位置。": [
+    "There’s a soft spot here for you.",
+    "給你留個軟軟的位置。",
+    "やわらかい場所を空けておくね。",
+    "네 자리를 말랑하게 남겨 둘게.",
+    "Te guardo un sitio blandito."
+  ],
+  "唔。": [
+    "Mmm.",
+    "唔。",
+    "ん。",
+    "음.",
+    "Mmm."
+  ],
+  "软软的，慢慢摸。": [
+    "Soft and squishy. Take your time.",
+    "軟軟的，慢慢摸。",
+    "ふわふわ、ゆっくりなでて。",
+    "말랑말랑해, 천천히 쓰다듬어.",
+    "Blandito, acaricia despacio."
+  ],
+  "在这儿呢。": [
+    "I’m here.",
+    "在這兒呢。",
+    "ここにいるよ。",
+    "여기 있어.",
+    "Aquí estoy."
+  ],
+  "轻轻的。": [
+    "Ever so gently.",
+    "輕輕的。",
+    "そっとね。",
+    "살며시.",
+    "Muy suavecito."
+  ],
+  "小鳍也靠过来。": [
+    "My little fin is coming closer too.",
+    "小鰭也靠過來。",
+    "小さなひれも寄せるね。",
+    "작은 지느러미도 곁에 댈게.",
+    "Mi aletita también se acerca."
+  ],
+  "这样就好。": [
+    "This is enough.",
+    "這樣就好。",
+    "これでいいんだよ。",
+    "이렇게면 돼.",
+    "Así está bien."
+  ],
+  "嗯，很轻。": [
+    "Mm, so gentle.",
+    "嗯，很輕。",
+    "うん、やさしいね。",
+    "응, 아주 부드러워.",
+    "Sí, muy suave."
+  ],
+  "围巾顺好了。": [
+    "The scarf is settled.",
+    "圍巾順好了。",
+    "マフラー、整った。",
+    "목도리가 가지런해졌어.",
+    "Ya está arreglada la bufanda."
+  ],
+  "靠一下。": [
+    "A little lean.",
+    "靠一下。",
+    "ちょっと、こてん。",
+    "살짝 기댈게.",
+    "Me apoyo un poquito."
+  ],
+  "轻轻蹭蹭。": [
+    "A gentle nuzzle.",
+    "輕輕蹭蹭。",
+    "そっとすりすり。",
+    "살짝 부비부비.",
+    "Un mimo suavecito."
+  ],
+  "围巾这边还有空。": [
+    "There’s room on this side of my scarf.",
+    "圍巾這邊還有空。",
+    "マフラーのこっち側、空いてるよ。",
+    "목도리 이쪽에 아직 자리가 있어.",
+    "Aún hay sitio a este lado de mi bufanda."
+  ],
+  "嗯，待一会儿。": [
+    "Mm, let’s stay a while.",
+    "嗯，待一會兒。",
+    "うん、少しだけいよう。",
+    "응, 잠깐 있자.",
+    "Sí, quedémonos un rato."
+  ],
+  "藏好这点亮光。": [
+    "I’ll keep this little light safe.",
+    "藏好這點亮光。",
+    "この小さな光、しまっておこう。",
+    "이 빛을 잘 간직할게.",
+    "Guardo bien este poquito de luz."
+  ],
+  "谢谢这颗星星。": [
+    "Thank you for the star.",
+    "謝謝這顆星星。",
+    "お星さま、ありがとう。",
+    "별을 줘서 고마워.",
+    "Gracias por esta estrella."
+  ],
+  "放在小鳍旁边。": [
+    "I’ll set it beside my fin.",
+    "放在小鰭旁邊。",
+    "ひれのそばに置こう。",
+    "작은 지느러미 옆에 둘래.",
+    "La pongo junto a mi aletita."
+  ],
+  "轻轻接住啦。": [
+    "Caught it, gently.",
+    "輕輕接住啦。",
+    "そっと受け取ったよ。",
+    "살며시 받았어.",
+    "La he recibido con cuidado."
+  ],
+  "伸一下小鳍。": [
+    "A little fin stretch.",
+    "伸一下小鰭。",
+    "ひれを少し伸ばそう。",
+    "지느러미를 조금 펼래.",
+    "Estiro un poquito la aletita."
+  ],
+  "围巾整理好了。": [
+    "My scarf is all tidy.",
+    "圍巾整理好了。",
+    "マフラー、きれいになったよ。",
+    "목도리 정리 끝.",
+    "La bufanda ya está bien colocada."
+  ],
+  "眯一会儿。": [
+    "Closing my eyes for a bit.",
+    "瞇一會兒。",
+    "少しだけ目を閉じよう。",
+    "잠깐 눈을 붙일래.",
+    "Cierro los ojitos un rato."
+  ],
+  "又攒下一点星光。": [
+    "A little more starlight saved.",
+    "又攢下一點星光。",
+    "星の光がまた少したまった。",
+    "별빛이 조금 더 모였어.",
+    "Un poquito más de luz guardada."
+  ],
+  "这点亮光，替你收好了。": [
+    "I’ve kept this little glow for you.",
+    "這點亮光，替你收好了。",
+    "この光、きみのためにしまったよ。",
+    "이 빛은 널 위해 잘 간직했어.",
+    "Te he guardado este brillito."
+  ],
+  "小星星慢慢多起来了。": [
+    "The little stars are gathering.",
+    "小星星慢慢多起來了。",
+    "小さな星が少しずつ増えてるね。",
+    "작은 별들이 조금씩 늘어나네.",
+    "Las estrellitas van aumentando."
+  ],
+  "把这一点光放在身边。": [
+    "Let’s keep this bit of light close.",
+    "把這一點光放在身邊。",
+    "この光をそばに置いておこう。",
+    "이 빛은 곁에 둘래.",
+    "Guardemos esta luz cerquita."
+  ],
+  "先眯一会儿。": [
+    "I’ll close my eyes a little.",
+    "先瞇一會兒。",
+    "まずは少し目を閉じるね。",
+    "먼저 잠깐 눈 붙일게.",
+    "Voy a cerrar los ojos un poquito."
+  ],
+  "有点困了。": [
+    "Getting a little sleepy.",
+    "有點困了。",
+    "少し眠くなった。",
+    "조금 졸려졌어.",
+    "Me está entrando un poco de sueño."
+  ],
+  "打个小盹。": [
+    "Time for a tiny nap.",
+    "打個小盹。",
+    "ちょっとお昼寝。",
+    "조금만 졸게.",
+    "Una siestita pequeña."
+  ],
+  "嗯，休息一下。": [
+    "Mm, a little rest.",
+    "嗯，休息一下。",
+    "うん、ちょっと休憩。",
+    "응, 조금 쉴게.",
+    "Sí, voy a descansar un poco."
+  ],
+  "醒了。": [
+    "I’m awake.",
+    "醒了。",
+    "起きたよ。",
+    "일어났어.",
+    "Ya estoy despierto."
+  ],
+  "睡了个小觉。": [
+    "That was a nice little nap.",
+    "睡了個小覺。",
+    "少し眠ったよ。",
+    "한숨 잤어.",
+    "He dormido un ratito."
+  ],
+  "唔，几点了。": [
+    "Mmm, what time is it?",
+    "唔，幾點了。",
+    "ん、何時かな。",
+    "음, 몇 시지.",
+    "Mmm, ¿qué hora es?"
+  ],
+  "嗯？醒了。": [
+    "Hm? I’m awake.",
+    "嗯？醒了。",
+    "ん？起きたよ。",
+    "응? 깼어.",
+    "¿Eh? Ya me desperté."
+  ],
+  "唔，是你呀。": [
+    "Mmm, it’s you.",
+    "唔，是你呀。",
+    "ん、きみだね。",
+    "음, 너구나.",
+    "Mmm, eres tú."
+  ],
+  "刚刚打了个盹。": [
+    "I was just having a little nap.",
+    "剛剛打了個盹。",
+    "ちょうど少し寝てたんだ。",
+    "방금 잠깐 졸았어.",
+    "Estaba echando una siestita."
+  ],
+  "让我伸个懒腰。": [
+    "Let me have a stretch.",
+    "讓我伸個懶腰。",
+    "ちょっと伸びをさせてね。",
+    "기지개 좀 켤게.",
+    "Deja que me estire un poquito."
+  ],
+  "围巾这边，给你留着。": [
+    "This side of my scarf is yours.",
+    "圍巾這邊，給你留著。",
+    "マフラーのこっち側、空けてあるよ。",
+    "목도리 이쪽은 네 자리야.",
+    "Este lado de mi bufanda es para ti."
+  ],
+  "软软的我，过来啦。": [
+    "Your soft little friend is here.",
+    "軟軟的我，過來啦。",
+    "ふわふわのぼく、来たよ。",
+    "말랑한 내가 왔어.",
+    "Aquí llega tu amiguito blandito."
+  ],
+  "今天也挨着坐呀。": [
+    "Let’s sit close today too.",
+    "今天也挨著坐呀。",
+    "今日も隣に座ろうね。",
+    "오늘도 나란히 앉자.",
+    "Hoy también me siento a tu lado."
+  ],
+  "围巾里又多一点暖光。": [
+    "A little more warm light in my scarf.",
+    "圍巾裡又多一點暖光。",
+    "マフラーにあたたかい光が増えた。",
+    "목도리에 따뜻한 빛이 조금 더 생겼어.",
+    "Más luz calentita en mi bufanda."
+  ],
+  "软软的小星星，收好啦。": [
+    "A soft little star, tucked away.",
+    "軟軟的小星星，收好啦。",
+    "ふわふわの星、しまったよ。",
+    "포근한 작은 별, 잘 넣어 뒀어.",
+    "Una estrella suave, bien guardada."
+  ],
+  "把这点亮光留在你身边。": [
+    "I’ll keep this glow beside you.",
+    "把這點亮光留在你身邊。",
+    "この光をきみのそばに置くね。",
+    "이 빛은 네 곁에 둘게.",
+    "Dejo este brillito junto a ti."
+  ],
+  "挨过来一点点。": [
+    "Come a tiny bit closer.",
+    "挨過來一點點。",
+    "ほんの少し、こっちへ。",
+    "아주 조금만 더 가까이 와.",
+    "Acércate un poquitito."
+  ],
+  "嗯，慢慢陪着你。": [
+    "Mm, I’ll be here, unhurried.",
+    "嗯，慢慢陪著你。",
+    "うん、ゆっくり一緒にいるよ。",
+    "응, 천천히 함께 있을게.",
+    "Sí, te acompaño sin prisas."
+  ],
+  "围巾的小角借给你。": [
+    "You can borrow this scarf corner.",
+    "圍巾的小角借給你。",
+    "マフラーの端っこ、貸すね。",
+    "목도리 한쪽을 빌려 줄게.",
+    "Te presto la puntita de mi bufanda."
+  ],
+  "脑袋放到你手心。": [
+    "Resting my head in your palm.",
+    "腦袋放到你手心。",
+    "手のひらに頭をのせるね。",
+    "네 손바닥에 머리를 올릴게.",
+    "Dejo la cabecita en tu mano."
+  ],
+  "摸得软乎乎的。": [
+    "Your pats make me all soft.",
+    "摸得軟乎乎的。",
+    "なでられて、ふにゃふにゃ。",
+    "쓰다듬으니 더 말랑해져.",
+    "Con tus caricias me quedo blandito."
+  ],
+  "嗯，再靠近一点。": [
+    "Mm, just a little closer.",
+    "嗯，再靠近一點。",
+    "うん、もうちょっと近くに。",
+    "응, 조금만 더 가까이.",
+    "Sí, un poquito más cerquita."
+  ],
+  "手心暖暖的呀。": [
+    "Your hand is so warm.",
+    "手心暖暖的呀。",
+    "手のひら、ぽかぽかだね。",
+    "손바닥이 참 따뜻하네.",
+    "Qué calentita tienes la mano."
+  ],
+  "围巾都摸蓬松了。": [
+    "Even my scarf got fluffier.",
+    "圍巾都摸蓬鬆了。",
+    "マフラーまでふわふわになった。",
+    "목도리도 보송해졌어.",
+    "Hasta la bufanda está más esponjosa."
+  ],
+  "从这边慢慢摸呀。": [
+    "Try gentle pats from this side.",
+    "從這邊慢慢摸呀。",
+    "こっちからゆっくりなでてね。",
+    "이쪽에서 천천히 쓰다듬어 줘.",
+    "Acaricia despacito desde aquí."
+  ],
+  "唔，变成一团软绒了。": [
+    "Mmm, I’ve become a fluffy ball.",
+    "唔，變成一團軟絨了。",
+    "ん、ふわふわのかたまりになった。",
+    "음, 폭신한 솜뭉치가 됐어.",
+    "Mmm, soy una bolita de pelusa."
+  ],
+  "小鳍也放松下来。": [
+    "My little fins are relaxing too.",
+    "小鰭也放鬆下來。",
+    "小さなひれも力が抜けた。",
+    "작은 지느러미도 편안해졌어.",
+    "Mis aletitas también se relajan."
+  ],
+  "轻一点，好舒服。": [
+    "Softly, that’s lovely.",
+    "輕一點，好舒服。",
+    "そっとね、気持ちいい。",
+    "살살, 정말 편안해.",
+    "Suavecito, qué bien se siente."
+  ],
+  "轻轻贴一下。": [
+    "A little cuddle, gently.",
+    "輕輕貼一下。",
+    "そっと、ぴと。",
+    "살짝 꼭.",
+    "Me arrimo suavemente."
+  ],
+  "这边软，靠这边。": [
+    "This side is soft. Lean here.",
+    "這邊軟，靠這邊。",
+    "こっちが柔らかいよ、どうぞ。",
+    "이쪽이 말랑해, 여기 기대.",
+    "Este lado es blandito, apóyate aquí."
+  ],
+  "围巾分你半边。": [
+    "Half my scarf is yours.",
+    "圍巾分你半邊。",
+    "マフラー、半分こしよう。",
+    "목도리 반쪽을 나눠 줄게.",
+    "Compartimos mi bufanda a medias."
+  ],
+  "嗯，碰到你啦。": [
+    "Mm, there you are.",
+    "嗯，碰到你啦。",
+    "うん、触れたね。",
+    "응, 네게 닿았어.",
+    "Sí, ya te he alcanzado."
+  ],
+  "留一点光在围巾边。": [
+    "A bit of light by my scarf.",
+    "留一點光在圍巾邊。",
+    "マフラーのそばに少し光を。",
+    "목도리 옆에 빛을 조금 둘래.",
+    "Un poco de luz junto a la bufanda."
+  ],
+  "暖暖的，接住了。": [
+    "Warm and bright. Got it.",
+    "暖暖的，接住了。",
+    "あったかいね、受け取った。",
+    "따뜻해, 받았어.",
+    "Calentita. Ya la tengo."
+  ],
+  "这一颗软软亮亮的。": [
+    "This star is soft and glowy.",
+    "這一顆軟軟亮亮的。",
+    "この星はふわっと明るい。",
+    "이 별은 포근하게 빛나.",
+    "Esta es suave y brillante."
+  ],
+  "小鳍捧好啦。": [
+    "Cradled safely in my fins.",
+    "小鰭捧好啦。",
+    "ひれで大事に包んだよ。",
+    "작은 지느러미로 잘 감쌌어.",
+    "La sostengo con mis aletitas."
+  ],
+  "把围巾摊松一点。": [
+    "Loosening my scarf a little.",
+    "把圍巾攤鬆一點。",
+    "マフラーを少しゆるめよう。",
+    "목도리를 조금 느슨하게 할래.",
+    "Aflojo un poco la bufanda."
+  ],
+  "给你挪个软软的位置。": [
+    "Making a soft spot for you.",
+    "給你挪個軟軟的位置。",
+    "やわらかい席を空けるね。",
+    "네게 포근한 자리를 내줄게.",
+    "Te hago un hueco blandito."
+  ],
+  "尾巴也放松啦。": [
+    "My tail has relaxed too.",
+    "尾巴也放鬆啦。",
+    "しっぽもゆったり。",
+    "꼬리도 편안해졌어.",
+    "La colita también se ha relajado."
+  ],
+  "挨着发会儿呆。": [
+    "Let’s daydream side by side.",
+    "挨著發會兒呆。",
+    "隣でぼーっとしよう。",
+    "나란히 멍하니 있자.",
+    "Nos quedamos aquí soñando un rato."
+  ],
+  "裹好围巾，眯一会儿。": [
+    "Scarf tucked in, time for a nap.",
+    "裹好圍巾，瞇一會兒。",
+    "マフラーを巻いて、ちょっとお昼寝。",
+    "목도리를 여미고 잠깐 잘래.",
+    "Me arropo con la bufanda y cierro los ojos."
+  ],
+  "软软地打个盹。": [
+    "Settling into a soft little nap.",
+    "軟軟地打個盹。",
+    "ふんわり、ひと眠り。",
+    "포근하게 잠깐 졸래.",
+    "Una siestita bien suave."
+  ],
+  "脑袋有一点沉啦。": [
+    "My little head feels sleepy.",
+    "腦袋有一點沉啦。",
+    "頭が少し重くなってきた。",
+    "머리가 조금 무거워졌어.",
+    "La cabecita ya me pesa un poco."
+  ],
+  "唔，围巾还暖着。": [
+    "Mmm, my scarf is still warm.",
+    "唔，圍巾還暖著。",
+    "ん、マフラーはまだあったかい。",
+    "음, 목도리가 아직 따뜻해.",
+    "Mmm, la bufanda sigue calentita."
+  ],
+  "睡得毛绒绒的。": [
+    "That was a fluffy little sleep.",
+    "睡得毛絨絨的。",
+    "ふわふわの眠りだった。",
+    "보송보송하게 잤어.",
+    "He dormido como una bolita de peluche."
+  ],
+  "伸伸小鳍，再靠过来。": [
+    "Stretching my fins, then back beside you.",
+    "伸伸小鰭，再靠過來。",
+    "ひれを伸ばして、またそばへ。",
+    "지느러미를 펴고 다시 곁으로.",
+    "Estiro las aletitas y vuelvo a tu lado."
+  ],
+  "嗯，是暖暖的手心。": [
+    "Mm, that warm hand of yours.",
+    "嗯，是暖暖的手心。",
+    "うん、あったかい手のひらだ。",
+    "응, 따뜻한 손바닥이네.",
+    "Sí, es tu mano calentita."
+  ],
+  "唔，靠过来啦。": [
+    "Mmm, leaning your way.",
+    "唔，靠過來啦。",
+    "ん、そっちに寄るね。",
+    "음, 곁으로 갈게.",
+    "Mmm, ya me acerco."
+  ],
+  "再眨一下眼就醒啦。": [
+    "One more blink and I’m awake.",
+    "再眨一下眼就醒啦。",
+    "あと一回まばたきしたら起きるよ。",
+    "한 번만 더 깜빡이면 깰 거야.",
+    "Un parpadeo más y me despierto."
+  ],
+  "不用说什么，靠一会儿。": [
+    "No words needed. Lean here a while.",
+    "不用說什麼，靠一會兒。",
+    "何も言わなくていいよ、少し寄り添おう。",
+    "아무 말 안 해도 돼, 잠깐 기대 있어.",
+    "No hace falta decir nada, acércate un rato."
+  ],
+  "给你留着软软的位置。": [
+    "I’m keeping your soft spot ready.",
+    "給你留著軟軟的位置。",
+    "やわらかい場所を取っておくね。",
+    "네 포근한 자리를 비워 뒀어.",
+    "Tu sitio blandito sigue aquí."
+  ],
+  "我轻轻待在旁边。": [
+    "I’ll stay quietly beside you.",
+    "我輕輕待在旁邊。",
+    "そっと、隣にいるね。",
+    "살며시 곁에 있을게.",
+    "Me quedo a tu lado, suavecito."
+  ],
+  "慢慢摸，软软的。": [
+    "Soft little pats, nice and slow.",
+    "慢慢摸，軟軟的。",
+    "ゆっくりなでて、ふわふわ。",
+    "천천히 쓰다듬어, 말랑해.",
+    "Acaricia despacio, está blandito."
+  ],
+  "小鳍搭在这儿。": [
+    "I’ll rest my little fin here.",
+    "小鰭搭在這兒。",
+    "ひれをここにのせよう。",
+    "작은 지느러미를 여기 둘게.",
+    "Apoyo mi aletita aquí."
+  ],
+  "嗯，我在呀。": [
+    "Mm, I’m here with you.",
+    "嗯，我在呀。",
+    "うん、ここにいるよ。",
+    "응, 나 여기 있어.",
+    "Sí, estoy aquí contigo."
+  ],
+  "轻一点点，刚刚好。": [
+    "A tiny bit softer. Just right.",
+    "輕一點點，剛剛好。",
+    "ほんの少しやさしく、ちょうどいい。",
+    "조금만 살살, 딱 좋아.",
+    "Un poquito más suave, así está bien."
+  ],
+  "围巾这边很软。": [
+    "This side of my scarf is soft.",
+    "圍巾這邊很軟。",
+    "マフラーのこっち側は柔らかいよ。",
+    "목도리 이쪽이 포근해.",
+    "Este lado de mi bufanda es muy suave."
+  ],
+  "就挨着坐一会儿。": [
+    "We can just sit close for a while.",
+    "就挨著坐一會兒。",
+    "ただ隣に座っていよう。",
+    "그냥 나란히 잠깐 앉아 있자.",
+    "Nos sentamos cerca un ratito."
+  ],
+  "找个舒服的位置，坐下啦。": [
+    "Found a comfy spot. Settling in.",
+    "找個舒服的位置，坐下啦。",
+    "落ち着く場所を見つけて、座ろう。",
+    "편한 자리를 찾아 앉았어.",
+    "He encontrado un sitio cómodo. Me siento."
+  ],
+  "今天也慢慢来。": [
+    "We can take today slowly too.",
+    "今天也慢慢來。",
+    "今日もゆっくりいこう。",
+    "오늘도 천천히 가자.",
+    "Hoy también podemos ir sin prisa."
+  ],
+  "这儿正好，一起待会儿。": [
+    "This spot is just right. Stay a while?",
+    "這兒正好，一起待會兒。",
+    "ここがちょうどいいね、一緒にいよう。",
+    "여기가 딱 좋아, 같이 잠깐 있자.",
+    "Aquí está bien, quedémonos un rato."
+  ],
+  "一颗一颗，慢慢攒着。": [
+    "One little star at a time.",
+    "一顆一顆，慢慢攢著。",
+    "ひとつずつ、少しずつ。",
+    "하나씩 천천히 모으자.",
+    "Una estrellita cada vez."
+  ],
+  "小鳍托稳这点星光。": [
+    "Holding this starlight steady.",
+    "小鰭托穩這點星光。",
+    "この星の光をひれでそっと支えるね。",
+    "지느러미로 이 별빛을 잘 받칠게.",
+    "Sujeto esta luz con mis aletitas."
+  ],
+  "嗯，又存下一点亮光。": [
+    "Mm, a little more light tucked away.",
+    "嗯，又存下一點亮光。",
+    "うん、また少し光がたまった。",
+    "응, 빛을 조금 더 모았어.",
+    "Sí, un poco más de luz guardada."
+  ],
+  "嗯，陪你待着。": [
+    "Mm, I’ll stay with you.",
+    "嗯，陪你待著。",
+    "うん、一緒にいるよ。",
+    "응, 함께 있을게.",
+    "Sí, me quedo contigo."
+  ],
+  "日子可以慢一点。": [
+    "The day can go a little slower.",
+    "日子可以慢一點。",
+    "日々はゆっくりでもいいね。",
+    "하루가 조금 느려도 괜찮아.",
+    "El día puede ir más despacio."
+  ],
+  "歇歇小鳍。": [
+    "Letting my little fins rest.",
+    "歇歇小鰭。",
+    "ひれをひと休み。",
+    "작은 지느러미를 쉴래.",
+    "Dejo descansar mis aletitas."
+  ],
+  "嗯，刚刚好。": [
+    "Mm, just right.",
+    "嗯，剛剛好。",
+    "うん、ぴったり。",
+    "응, 딱 좋아.",
+    "Sí, justo así."
+  ],
+  "小鳍放平啦。": [
+    "My little fins are resting flat.",
+    "小鰭放平啦。",
+    "ひれをぺたんと休めよう。",
+    "지느러미를 편히 내려뒀어.",
+    "Dejo las aletitas descansando."
+  ],
+  "脑袋也松下来了。": [
+    "My head feels relaxed too.",
+    "腦袋也鬆下來了。",
+    "頭もすっと楽になった。",
+    "머리도 편안해졌어.",
+    "La cabecita también se ha relajado."
+  ],
+  "慢慢摸，不急。": [
+    "Slow pats. No hurry.",
+    "慢慢摸，不急。",
+    "ゆっくりなでて、急がずに。",
+    "천천히 쓰다듬어, 급하지 않아.",
+    "Acaricia despacio, no hay prisa."
+  ],
+  "舒服得想点点头。": [
+    "That feels nice enough for a little nod.",
+    "舒服得想點點頭。",
+    "気持ちよくて、こくんとしたくなる。",
+    "편안해서 고개가 끄덕여져.",
+    "Qué gusto, hasta me dan ganas de asentir."
+  ],
+  "从头到尾，顺好了。": [
+    "All smooth from head to tail.",
+    "從頭到尾，順好了。",
+    "頭からしっぽまで整ったよ。",
+    "머리부터 꼬리까지 가지런해졌어.",
+    "Todo suave, de la cabeza a la cola."
+  ],
+  "嗯，稳稳地接住。": [
+    "Mm, holding it steady.",
+    "嗯，穩穩地接住。",
+    "うん、しっかり受け止めた。",
+    "응, 든든하게 받았어.",
+    "Sí, lo sostengo bien."
+  ],
+  "小鳍伸展开啦。": [
+    "My little fins are stretching out.",
+    "小鰭伸展開啦。",
+    "小さなひれが伸びたよ。",
+    "지느러미를 쭉 펼쳤어.",
+    "Mis aletitas ya se han estirado."
+  ],
+  "在旁边坐稳了。": [
+    "Settled here beside you.",
+    "在旁邊坐穩了。",
+    "隣で落ち着いたよ。",
+    "곁에 편히 앉았어.",
+    "Ya me he acomodado a tu lado."
+  ],
+  "靠一下，慢慢的。": [
+    "Leaning in, nice and slow.",
+    "靠一下，慢慢的。",
+    "ゆっくり、寄りかかるね。",
+    "천천히 살짝 기댈게.",
+    "Me apoyo un poquito, despacio."
+  ],
+  "留个位置给你。": [
+    "Saving a spot for you.",
+    "留個位置給你。",
+    "きみの場所を空けておくね。",
+    "네 자리를 남겨 둘게.",
+    "Te guardo un sitio."
+  ],
+  "嗯，挨着挺好。": [
+    "Mm, close is nice.",
+    "嗯，挨著挺好。",
+    "うん、隣っていいね。",
+    "응, 나란히 있으니 좋아.",
+    "Sí, se está bien cerquita."
+  ],
+  "放好这颗小星星。": [
+    "Putting this little star away.",
+    "放好這顆小星星。",
+    "この小さな星をしまおう。",
+    "이 작은 별을 잘 둘래.",
+    "Guardo bien esta estrellita."
+  ],
+  "接住了，暖暖的。": [
+    "Got it. So warm.",
+    "接住了，暖暖的。",
+    "受け取った、あったかい。",
+    "받았어, 따뜻하네.",
+    "La tengo. Qué calentita."
+  ],
+  "一颗一颗慢慢来。": [
+    "One at a time, unhurried.",
+    "一顆一顆慢慢來。",
+    "ひとつずつ、のんびりね。",
+    "하나씩 천천히 하자.",
+    "De una en una, sin prisas."
+  ],
+  "小鳍托稳啦。": [
+    "Held steady in my little fins.",
+    "小鰭托穩啦。",
+    "ひれでしっかり支えたよ。",
+    "지느러미로 든든히 받쳤어.",
+    "Bien sujeta entre mis aletitas."
+  ],
+  "伸伸小鳍。": [
+    "Stretching my little fins.",
+    "伸伸小鰭。",
+    "小さなひれを、のびー。",
+    "지느러미를 쭉 펼래.",
+    "Estiro mis aletitas."
+  ],
+  "缓缓地换个姿势。": [
+    "Slowly shifting my posture.",
+    "緩緩地換個姿勢。",
+    "ゆっくり姿勢を変えよう。",
+    "천천히 자세를 바꿀래.",
+    "Cambio de postura poco a poco."
+  ],
+  "这里很安稳。": [
+    "It feels peaceful here.",
+    "這裡很安穩。",
+    "ここは落ち着くね。",
+    "여기는 편안해.",
+    "Aquí se está tranquilo."
+  ],
+  "看看窗边的光。": [
+    "Watching the light by the window.",
+    "看看窗邊的光。",
+    "窓辺の光を見よう。",
+    "창가의 빛을 볼래.",
+    "Miro la luz junto a la ventana."
+  ],
+  "小鳍收好，休息一会儿。": [
+    "Fins tucked in. A little rest.",
+    "小鰭收好，休息一會兒。",
+    "ひれをしまって、少し休もう。",
+    "지느러미를 모으고 조금 쉴래.",
+    "Recojo las aletitas y descanso un rato."
+  ],
+  "眯一小觉。": [
+    "A brief little snooze.",
+    "瞇一小覺。",
+    "ほんの少し、うとうと。",
+    "잠깐 눈 붙일래.",
+    "Una siestita breve."
+  ],
+  "慢慢闭上眼啦。": [
+    "Slowly closing my eyes.",
+    "慢慢閉上眼啦。",
+    "ゆっくり目を閉じるね。",
+    "천천히 눈을 감을게.",
+    "Voy cerrando los ojitos."
+  ],
+  "嗯，睡好了。": [
+    "Mm, that was a good rest.",
+    "嗯，睡好了。",
+    "うん、よく眠れた。",
+    "응, 잘 잤어.",
+    "Sí, he descansado bien."
+  ],
+  "先伸一下小鳍。": [
+    "First, a little fin stretch.",
+    "先伸一下小鰭。",
+    "まずはひれを伸ばそう。",
+    "먼저 지느러미를 좀 펼게.",
+    "Primero estiro una aletita."
+  ],
+  "慢慢醒过来。": [
+    "Waking up, nice and slowly.",
+    "慢慢醒過來。",
+    "ゆっくり目覚めよう。",
+    "천천히 깨어날게.",
+    "Me voy despertando despacio."
+  ],
+  "嗯，醒着啦。": [
+    "Mm, I’m awake now.",
+    "嗯，醒著啦。",
+    "うん、もう起きてるよ。",
+    "응, 이제 깼어.",
+    "Sí, ya estoy despierto."
+  ],
+  "让我慢慢睁眼。": [
+    "Let me open my eyes slowly.",
+    "讓我慢慢睜眼。",
+    "ゆっくり目を開けさせてね。",
+    "천천히 눈을 뜰게.",
+    "Deja que abra los ojos despacio."
+  ],
+  "唔，你来啦。": [
+    "Mmm, you’re here.",
+    "唔，你來啦。",
+    "ん、来てくれたんだ。",
+    "음, 왔구나.",
+    "Mmm, ya estás aquí."
+  ],
+  "先陪你坐一会儿。": [
+    "I’ll sit with you for a while.",
+    "先陪你坐一會兒。",
+    "まずは一緒に座っていよう。",
+    "먼저 곁에 잠깐 앉아 있을게.",
+    "Primero me siento contigo un ratito."
+  ],
+  "不用赶着好起来。": [
+    "There’s no rush to feel better.",
+    "不用趕著好起來。",
+    "元気になるのを急がなくていいよ。",
+    "서둘러 괜찮아지지 않아도 돼.",
+    "No hay prisa por sentirse mejor."
+  ],
+  "嗯，慢慢来就好。": [
+    "Mm, one thing at a time is fine.",
+    "嗯，慢慢來就好。",
+    "うん、ゆっくりでいいんだよ。",
+    "응, 천천히 해도 괜찮아.",
+    "Sí, poco a poco está bien."
+  ],
+  "稳稳地靠着。": [
+    "A steady little place to lean.",
+    "穩穩地靠著。",
+    "安心して寄りかかってね。",
+    "편히 기대 있어.",
+    "Apóyate con calma."
+  ],
+  "嗯，小鳍在这儿。": [
+    "Mm, my fin is right here.",
+    "嗯，小鰭在這兒。",
+    "うん、ひれはここにあるよ。",
+    "응, 작은 지느러미가 여기 있어.",
+    "Sí, mi aletita está aquí."
+  ],
+  "慢慢摸就好。": [
+    "Slow gentle pats are lovely.",
+    "慢慢摸就好。",
+    "ゆっくりなでるだけでいいよ。",
+    "천천히 쓰다듬으면 돼.",
+    "Despacio está bien."
+  ],
+  "手心可以歇一会儿。": [
+    "Your hand can rest a moment too.",
+    "手心可以歇一會兒。",
+    "手のひらも少し休めてね。",
+    "손바닥도 잠깐 쉬어도 돼.",
+    "Tu mano también puede descansar."
+  ],
+  "坐得舒服一点。": [
+    "Let’s get a little comfier.",
+    "坐得舒服一點。",
+    "もう少し楽に座ろう。",
+    "조금 더 편히 앉자.",
+    "Vamos a acomodarnos mejor."
+  ],
+  "慢慢伸一下小鳍。": [
+    "A slow little fin stretch.",
+    "慢慢伸一下小鰭。",
+    "ゆっくりひれを伸ばそう。",
+    "지느러미를 천천히 펼게.",
+    "Estiro la aletita despacito."
+  ],
+  "尾巴摆好，来陪你啦。": [
+    "Tail ready, here to keep you company.",
+    "尾巴擺好，來陪你啦。",
+    "しっぽを整えて、会いに来たよ。",
+    "꼬리도 챙기고, 함께하러 왔어.",
+    "Colita lista, ¡vengo a acompañarte!"
+  ],
+  "给你看看我的小鳍。": [
+    "Look at my little fins!",
+    "給你看看我的小鰭。",
+    "ぼくの小さなひれ、見て！",
+    "내 작은 지느러미 좀 봐!",
+    "¡Mira mis aletitas!"
+  ],
+  "嘿，今天也碰个小鳍。": [
+    "Hey, a little fin bump for today.",
+    "嘿，今天也碰個小鰭。",
+    "やあ、今日もひれタッチ。",
+    "안녕, 오늘도 지느러미 하이파이브.",
+    "Oye, hoy también chocamos la aletita."
+  ],
+  "嘿，星星在小鳍边排好啦。": [
+    "Hey, the stars have lined up by my fin.",
+    "嘿，星星在小鰭邊排好啦。",
+    "ねえ、ひれの横に星が並んだよ。",
+    "지느러미 옆에 별이 줄을 섰어.",
+    "¡Las estrellas se han puesto en fila junto a mi aleta!"
+  ],
+  "又多一点光，藏好藏好。": [
+    "More light! Let’s tuck it away.",
+    "又多一點光，藏好藏好。",
+    "光が増えた、しまおうしまおう。",
+    "빛이 더 생겼어, 잘 숨겨 두자.",
+    "¡Más luz! A guardarla bien."
+  ],
+  "尾巴旁边亮了一点呀。": [
+    "A little brighter beside my tail.",
+    "尾巴旁邊亮了一點呀。",
+    "しっぽのそばが少し明るくなった。",
+    "꼬리 옆이 조금 밝아졌네.",
+    "Junto a mi cola hay un brillito más."
+  ],
+  "小尾巴也晃起来啦。": [
+    "My little tail is wagging too.",
+    "小尾巴也晃起來啦。",
+    "しっぽまで揺れちゃうよ。",
+    "작은 꼬리도 살랑살랑.",
+    "La colita también se está moviendo."
+  ],
+  "碰个小鳍呀。": [
+    "How about a little fin bump?",
+    "碰個小鰭呀。",
+    "ひれタッチしよう。",
+    "지느러미 하이파이브 할래?",
+    "¿Chocamos la aletita?"
+  ],
+  "一起晒晒小肚皮。": [
+    "Let’s warm our little bellies.",
+    "一起曬曬小肚皮。",
+    "一緒にお腹を日なたぼっこ。",
+    "같이 배에 햇볕을 쬐자.",
+    "Vamos a tomar el sol en la barriguita."
+  ],
+  "嘿嘿，挠到痒痒啦。": [
+    "Hehe, you found my tickly spot!",
+    "嘿嘿，撓到癢癢啦。",
+    "えへへ、くすぐったいところだ！",
+    "헤헤, 간지러운 데를 찾았네!",
+    "¡Jeje, has encontrado las cosquillas!"
+  ],
+  "等一下，围巾歪啦。": [
+    "Wait, my scarf went sideways!",
+    "等一下，圍巾歪啦。",
+    "待って、マフラーが曲がった！",
+    "잠깐, 목도리가 삐뚤어졌어!",
+    "¡Espera, se me ha torcido la bufanda!"
+  ],
+  "小脑袋递过来。": [
+    "Here comes my little head.",
+    "小腦袋遞過來。",
+    "小さな頭を、どうぞ。",
+    "작은 머리를 내밀게.",
+    "Te acerco mi cabecita."
+  ],
+  "唔，差点笑出泡泡。": [
+    "Mmm, nearly giggled bubbles.",
+    "唔，差點笑出泡泡。",
+    "ん、笑って泡が出そう。",
+    "음, 웃다가 거품이 나올 뻔했어.",
+    "Mmm, casi me salen burbujas de la risa."
+  ],
+  "尾巴偷偷晃了一下。": [
+    "My tail did a sneaky little wag.",
+    "尾巴偷偷晃了一下。",
+    "しっぽがこっそり揺れちゃった。",
+    "꼬리가 몰래 살랑거렸어.",
+    "La colita se ha movido a escondidas."
+  ],
+  "顺着摸，尾巴在这边。": [
+    "This way for pats. Tail over here.",
+    "順著摸，尾巴在這邊。",
+    "こっちへなでて、しっぽはここ。",
+    "이쪽으로 쓰다듬어, 꼬리는 여기야.",
+    "Acaricia por aquí, la colita está a este lado."
+  ],
+  "欸，变成顺毛鲨啦。": [
+    "Oh, I’m a smooth little shark now.",
+    "欸，變成順毛鯊啦。",
+    "お、つやつやサメになった。",
+    "어, 매끈한 상어가 됐어.",
+    "¡Eh, ahora soy un tiburón bien peinadito!"
+  ],
+  "小鳍也来凑个热闹。": [
+    "My fins want to join in too.",
+    "小鰭也來湊個熱鬧。",
+    "ひれも仲間に入りたそう。",
+    "지느러미도 같이 놀고 싶대.",
+    "Mis aletitas también quieren participar."
+  ],
+  "好啦，乖乖不动。": [
+    "Okay, I’ll stay nice and still.",
+    "好啦，乖乖不動。",
+    "はい、おとなしくじっとするね。",
+    "알겠어, 얌전히 있을게.",
+    "Vale, me quedo quietecito."
+  ],
+  "碰个小鳍。": [
+    "A little fin bump.",
+    "碰個小鰭。",
+    "ひれで、たっち。",
+    "지느러미 하이파이브.",
+    "Un choque de aletitas."
+  ],
+  "嘿，轻轻顶一下。": [
+    "Hey, a tiny little boop.",
+    "嘿，輕輕頂一下。",
+    "えい、そっとつん。",
+    "살짝 콕.",
+    "Eh, un toquecito suave."
+  ],
+  "贴贴，尾巴收好啦。": [
+    "Snuggle time. Tail tucked in.",
+    "貼貼，尾巴收好啦。",
+    "ぴとっ、しっぽはしまったよ。",
+    "꼭 붙을래, 꼬리는 잘 접었어.",
+    "Me arrimo, con la colita recogida."
+  ],
+  "蹭一下就坐乖。": [
+    "One nuzzle, then I’ll sit still.",
+    "蹭一下就坐乖。",
+    "すりすりしたら、ちゃんと座るね。",
+    "한 번 부비고 얌전히 앉을게.",
+    "Un mimo y me siento quietecito."
+  ],
+  "啊呜！这颗亮亮的。": [
+    "Nom! Such a shiny one.",
+    "啊嗚！這顆亮亮的。",
+    "あむ！この星はまぶしい。",
+    "냠! 이 별 반짝인다.",
+    "¡Ñam! Qué brillante es esta."
+  ],
+  "接住！没掉下来。": [
+    "Caught it! Didn’t drop it.",
+    "接住！沒掉下來。",
+    "キャッチ！落とさなかったよ。",
+    "잡았다! 안 떨어뜨렸어.",
+    "¡La atrapé! No se me ha caído."
+  ],
+  "藏进小鳍里啦。": [
+    "Hidden in my little fins.",
+    "藏進小鰭裡啦。",
+    "小さなひれに隠したよ。",
+    "작은 지느러미에 숨겼어.",
+    "La escondí entre mis aletitas."
+  ],
+  "鼻尖沾上星光啦。": [
+    "Got starlight on my nose!",
+    "鼻尖沾上星光啦。",
+    "鼻の先に星の光がついた！",
+    "코끝에 별빛이 묻었어!",
+    "¡Se me ha pegado luz en la nariz!"
+  ],
+  "小鳍伸直——收好。": [
+    "Fins out—and tuck them in.",
+    "小鰭伸直——收好。",
+    "ひれをのばしてー、しまう。",
+    "지느러미 쭉—다시 접기.",
+    "Aletitas fuera… y recogidas."
+  ],
+  "围巾又歪了一点。": [
+    "My scarf’s crooked again.",
+    "圍巾又歪了一點。",
+    "マフラー、またちょっと曲がった。",
+    "목도리가 또 조금 비뚤어졌어.",
+    "Se me ha vuelto a torcer la bufanda."
+  ],
+  "尾巴打了个小弯。": [
+    "A little curl in my tail.",
+    "尾巴打了個小彎。",
+    "しっぽをちょっとくるり。",
+    "꼬리가 살짝 말렸어.",
+    "La colita hizo una curvita."
+  ],
+  "歪头看看这边。": [
+    "A head tilt to look this way.",
+    "歪頭看看這邊。",
+    "首をかしげて、こっちを見よう。",
+    "고개를 갸웃하고 이쪽을 볼래.",
+    "Inclino la cabeza para mirar por aquí."
+  ],
+  "玩困了，蜷一下小鳍。": [
+    "Played myself sleepy. Fins curled in.",
+    "玩困了，蜷一下小鰭。",
+    "遊んで眠くなった。ひれを丸めよう。",
+    "놀다 보니 졸려, 지느러미를 모을래.",
+    "De tanto jugar me dio sueño. Recojo las aletitas."
+  ],
+  "尾巴也要歇会儿啦。": [
+    "My tail needs a rest too.",
+    "尾巴也要歇會兒啦。",
+    "しっぽもひと休みだね。",
+    "꼬리도 좀 쉴 시간이야.",
+    "La colita también quiere descansar."
+  ],
+  "打个小盹，呼。": [
+    "A little nap. Phew.",
+    "打個小盹，呼。",
+    "ちょっとお昼寝、ふう。",
+    "조금 졸게, 후우.",
+    "Una siestita, uf."
+  ],
+  "小鳍展开，醒啦。": [
+    "Fins out, I’m awake!",
+    "小鰭展開，醒啦。",
+    "ひれを広げて、起きた！",
+    "지느러미 펴고, 일어났어!",
+    "¡Aletitas abiertas, ya desperté!"
+  ],
+  "梦里接住一颗星星。": [
+    "I caught a star in my dream.",
+    "夢裡接住一顆星星。",
+    "夢で星をひとつつかまえた。",
+    "꿈에서 별 하나를 잡았어.",
+    "En mi sueño atrapé una estrella."
+  ],
+  "嘿，伸个大懒腰。": [
+    "Hey, time for a big stretch.",
+    "嘿，伸個大懶腰。",
+    "よし、大きくのびー。",
+    "자, 기지개 크게 쭉.",
+    "Vamos, un estiramiento bien grande."
+  ],
+  "唔，尾巴先醒了。": [
+    "Mmm, my tail woke up first.",
+    "唔，尾巴先醒了。",
+    "ん、しっぽが先に起きた。",
+    "음, 꼬리가 먼저 깼어.",
+    "Mmm, la colita se despertó antes."
+  ],
+  "欸，是你呀。": [
+    "Oh, it’s you!",
+    "欸，是你呀。",
+    "あ、きみだ！",
+    "어, 너구나!",
+    "¡Ah, eres tú!"
+  ],
+  "小脑袋开机啦。": [
+    "Little head, powered on.",
+    "小腦袋開機啦。",
+    "小さな頭、起動したよ。",
+    "작은 머리 부팅 완료.",
+    "Cabecita encendida."
+  ],
+  "尾巴收好，陪你坐坐。": [
+    "Tail tucked in. I’ll sit with you.",
+    "尾巴收好，陪你坐坐。",
+    "しっぽをしまって、一緒に座ろう。",
+    "꼬리를 접고 곁에 앉을게.",
+    "Recojo la colita y me siento contigo."
+  ],
+  "今天轻轻碰个小鳍。": [
+    "Just a soft fin bump today.",
+    "今天輕輕碰個小鰭。",
+    "今日はそっと、ひれタッチ。",
+    "오늘은 살짝 지느러미 하이파이브.",
+    "Hoy chocamos la aletita suavemente."
+  ],
+  "嗯，安静一点陪着你。": [
+    "Mm, I’ll keep you company quietly.",
+    "嗯，安靜一點陪著你。",
+    "うん、静かに一緒にいるよ。",
+    "응, 조용히 함께 있을게.",
+    "Sí, te acompaño un poquito más en silencio."
+  ],
+  "小脑袋递给你。": [
+    "My little head is here for you.",
+    "小腦袋遞給你。",
+    "小さな頭を差し出すね。",
+    "작은 머리를 네게 내밀게.",
+    "Te ofrezco mi cabecita."
+  ],
+  "轻轻摸也很舒服。": [
+    "Soft pats feel lovely too.",
+    "輕輕摸也很舒服。",
+    "そっとなでるのも気持ちいいね。",
+    "살살 쓰다듬어도 참 좋아.",
+    "Las caricias suaves también son agradables."
+  ],
+  "嗯，这回不晃尾巴啦。": [
+    "Mm, I’ll keep my tail still this time.",
+    "嗯，這回不晃尾巴啦。",
+    "うん、今度はしっぽを静かにするね。",
+    "응, 이번엔 꼬리를 가만히 둘게.",
+    "Sí, esta vez dejo la colita quieta."
+  ],
+  "在这儿，软乎乎的。": [
+    "Right here, all soft and squishy.",
+    "在這兒，軟乎乎的。",
+    "ここにいるよ、ふわふわで。",
+    "여기 있어, 말랑말랑하게.",
+    "Aquí estoy, bien blandito."
+  ],
+  "把小鳍放松一点。": [
+    "Letting my fins loosen up.",
+    "把小鰭放鬆一點。",
+    "ひれの力を少し抜こう。",
+    "지느러미 힘을 조금 뺄래.",
+    "Relajo un poco las aletitas."
+  ],
+  "尾巴轻轻收好。": [
+    "Tucking my tail in gently.",
+    "尾巴輕輕收好。",
+    "しっぽをそっとしまおう。",
+    "꼬리를 살며시 접을게.",
+    "Recojo la colita con cuidado."
+  ],
+  "云慢慢飘，我慢慢陪。": [
+    "Clouds drift slowly. I’ll keep you company.",
+    "雲慢慢飄，我慢慢陪。",
+    "雲はゆっくり、ぼくもゆっくりそばに。",
+    "구름은 천천히, 나도 천천히 함께할게.",
+    "Las nubes van despacio. Yo te acompaño igual."
+  ],
+  "安安静静坐到你旁边。": [
+    "Quietly sitting down beside you.",
+    "安安靜靜坐到你旁邊。",
+    "静かに隣へ座るね。",
+    "조용히 네 곁에 앉을게.",
+    "Me siento en silencio a tu lado."
+  ],
+  "今天的光，软软的。": [
+    "Today’s light feels soft.",
+    "今天的光，軟軟的。",
+    "今日の光は、やわらかいね。",
+    "오늘 빛은 포근하네.",
+    "La luz de hoy es suave."
+  ],
+  "把小小的夜光收进口袋。": [
+    "Tucking a tiny nightlight into my pocket.",
+    "把小小的夜光收進口袋。",
+    "小さな夜の光をポケットへ。",
+    "작은 밤빛을 주머니에 넣을래.",
+    "Guardo una lucecita nocturna en el bolsillo."
+  ],
+  "又多了一点安静的光。": [
+    "A little more quiet light.",
+    "又多了一點安靜的光。",
+    "静かな光が、また少し。",
+    "고요한 빛이 조금 더 생겼어.",
+    "Un poquito más de luz tranquila."
+  ],
+  "小云旁边，多了一点星光。": [
+    "A little starlight beside my cloud.",
+    "小雲旁邊，多了一點星光。",
+    "小さな雲の隣に、星の光。",
+    "작은 구름 옆에 별빛이 더해졌어.",
+    "Junto a la nubecita hay un poco más de luz."
+  ],
+  "嗯，一起待会儿。": [
+    "Mm, let’s stay together a while.",
+    "嗯，一起待會兒。",
+    "うん、一緒に少し過ごそう。",
+    "응, 같이 잠깐 있자.",
+    "Sí, nos quedamos juntos un ratito."
+  ],
+  "小梦也分你一点。": [
+    "I’ll share a little of my dream.",
+    "小夢也分你一點。",
+    "小さな夢も、少し分けるね。",
+    "작은 꿈도 조금 나눠 줄게.",
+    "Te comparto un pedacito de mi sueño."
+  ],
+  "云好像慢下来了。": [
+    "The clouds seem to have slowed.",
+    "雲好像慢下來了。",
+    "雲がゆっくりになったみたい。",
+    "구름이 느려진 것 같아.",
+    "Parece que las nubes van más despacio."
+  ],
+  "唔，像碰到一朵云。": [
+    "Mmm, like touching a little cloud.",
+    "唔，像碰到一朵雲。",
+    "ん、小さな雲に触れたみたい。",
+    "음, 구름에 닿은 것 같아.",
+    "Mmm, como tocar una nube."
+  ],
+  "眼睛有一点眯起来了。": [
+    "My eyes are getting a little squinty.",
+    "眼睛有一點瞇起來了。",
+    "目が少し細くなってきた。",
+    "눈이 조금 감기네.",
+    "Se me están cerrando un poco los ojitos."
+  ],
+  "脑袋轻轻偏过来。": [
+    "Tilting my head gently toward you.",
+    "腦袋輕輕偏過來。",
+    "頭をそっと傾けるね。",
+    "머리를 살짝 기울일게.",
+    "Inclino suavemente la cabecita hacia ti."
+  ],
+  "嗯，很轻很舒服。": [
+    "Mm, soft and soothing.",
+    "嗯，很輕很舒服。",
+    "うん、やさしくて心地いい。",
+    "응, 부드럽고 편안해.",
+    "Sí, suave y agradable."
+  ],
+  "摸到一只迷糊鲨。": [
+    "You found one very sleepy shark.",
+    "摸到一隻迷糊鯊。",
+    "ぼんやりサメを見つけたね。",
+    "잠이 덜 깬 상어를 만졌네.",
+    "Has encontrado un tiburoncito adormilado."
+  ],
+  "像把云慢慢理顺。": [
+    "Like smoothing out a little cloud.",
+    "像把雲慢慢理順。",
+    "雲をゆっくり整えるみたい。",
+    "구름을 천천히 매만지는 것 같아.",
+    "Como peinar una nube despacito."
+  ],
+  "小鳍也变轻了。": [
+    "My little fins feel lighter too.",
+    "小鰭也變輕了。",
+    "ひれまで軽くなった。",
+    "지느러미도 가벼워졌어.",
+    "Mis aletitas también están más ligeras."
+  ],
+  "唔，尾巴在这边。": [
+    "Mmm, my tail’s this way.",
+    "唔，尾巴在這邊。",
+    "ん、しっぽはこっちだよ。",
+    "음, 꼬리는 이쪽이야.",
+    "Mmm, la colita está por aquí."
+  ],
+  "慢一点也很好。": [
+    "Slower is lovely too.",
+    "慢一點也很好。",
+    "ゆっくりなのも、いいね。",
+    "조금 느려도 좋아.",
+    "Más despacio también está bien."
+  ],
+  "轻轻挨着。": [
+    "Resting softly beside you.",
+    "輕輕挨著。",
+    "そっと、寄り添って。",
+    "살며시 곁에.",
+    "Me arrimo suavemente."
+  ],
+  "留一点安静在这儿。": [
+    "A little quiet, right here.",
+    "留一點安靜在這兒。",
+    "ここに、少し静けさを。",
+    "여기에 고요함을 조금 둘래.",
+    "Dejamos un poco de calma aquí."
+  ],
+  "像两朵小云靠近。": [
+    "Like two little clouds drifting close.",
+    "像兩朵小雲靠近。",
+    "小さな雲がふたつ、寄り添うみたい。",
+    "작은 구름 둘이 가까워지는 것 같아.",
+    "Como dos nubecitas acercándose."
+  ],
+  "嗯，碰到啦。": [
+    "Mm, there’s a little touch.",
+    "嗯，碰到啦。",
+    "うん、触れた。",
+    "응, 닿았어.",
+    "Sí, ya nos tocamos."
+  ],
+  "一颗小小的夜光。": [
+    "One tiny nightlight.",
+    "一顆小小的夜光。",
+    "小さな夜の光、ひとつ。",
+    "작디작은 밤빛 하나.",
+    "Una lucecita de noche."
+  ],
+  "藏在梦的口袋里。": [
+    "Tucked into my dream pocket.",
+    "藏在夢的口袋裡。",
+    "夢のポケットにしまおう。",
+    "꿈의 주머니에 숨길래.",
+    "La guardo en el bolsillo de los sueños."
+  ],
+  "这颗很安静地亮着。": [
+    "This one shines so quietly.",
+    "這顆很安靜地亮著。",
+    "この星は静かに光ってる。",
+    "이 별은 고요하게 빛나.",
+    "Esta brilla muy despacito."
+  ],
+  "小鳍接到光啦。": [
+    "My little fins caught some light.",
+    "小鰭接到光啦。",
+    "ひれに光が届いたよ。",
+    "지느러미가 빛을 받았어.",
+    "Mis aletitas han atrapado luz."
+  ],
+  "刚刚像看见一朵小云。": [
+    "I think I saw a little cloud.",
+    "剛剛像看見一朵小雲。",
+    "さっき小さな雲が見えた気がする。",
+    "방금 작은 구름을 본 것 같아.",
+    "Creo que acabo de ver una nubecita."
+  ],
+  "眨一下眼，慢慢的。": [
+    "One blink, nice and slow.",
+    "眨一下眼，慢慢的。",
+    "まばたきをひとつ、ゆっくり。",
+    "천천히 눈을 한 번 깜빡.",
+    "Un parpadeo, despacito."
+  ],
+  "把尾巴收进影子里。": [
+    "Tucking my tail into the shade.",
+    "把尾巴收進影子裡。",
+    "しっぽを影にしまおう。",
+    "꼬리를 그림자 안에 둘래.",
+    "Recojo la cola entre las sombras."
+  ],
+  "发一小会儿呆。": [
+    "A tiny moment to daydream.",
+    "發一小會兒呆。",
+    "ほんの少し、ぼーっと。",
+    "아주 잠깐 멍하니 있을래.",
+    "Un ratito para soñar despierto."
+  ],
+  "去云边眯一会儿。": [
+    "Off for a nap beside a cloud.",
+    "去雲邊瞇一會兒。",
+    "雲のそばで、少しお昼寝。",
+    "구름 옆에서 잠깐 잘래.",
+    "Voy a dormir un poquito junto a las nubes."
+  ],
+  "小梦快飘过来啦。": [
+    "A little dream is drifting near.",
+    "小夢快飄過來啦。",
+    "小さな夢が近づいてきた。",
+    "작은 꿈이 다가오고 있어.",
+    "Ya se acerca un sueñito."
+  ],
+  "小鳍收好，晚一点醒。": [
+    "Fins tucked in. I’ll wake a little later.",
+    "小鰭收好，晚一點醒。",
+    "ひれをしまって、あとで起きるね。",
+    "지느러미를 모으고 조금 이따 깰게.",
+    "Recojo las aletitas y despertaré luego."
+  ],
+  "云飘走一点，醒啦。": [
+    "The cloud drifted on. I’m awake.",
+    "雲飄走一點，醒啦。",
+    "雲が少し流れて、起きたよ。",
+    "구름이 조금 흘러가고, 깼어.",
+    "La nube se apartó un poco y desperté."
+  ],
+  "唔，做了个软软的梦。": [
+    "Mmm, I had such a soft dream.",
+    "唔，做了個軟軟的夢。",
+    "ん、やわらかい夢を見た。",
+    "음, 포근한 꿈을 꿨어.",
+    "Mmm, tuve un sueño muy suave."
+  ],
+  "慢慢把眼睛睁开。": [
+    "Opening my eyes slowly.",
+    "慢慢把眼睛睜開。",
+    "ゆっくり目を開けよう。",
+    "천천히 눈을 뜰게.",
+    "Abro los ojos despacito."
+  ],
+  "嗯，从小梦里回来啦。": [
+    "Mm, back from my little dream.",
+    "嗯，從小夢裡回來啦。",
+    "うん、小さな夢から帰ってきた。",
+    "응, 작은 꿈에서 돌아왔어.",
+    "Sí, ya volví de mi sueñito."
+  ],
+  "唔，是手心呀。": [
+    "Mmm, that’s your palm.",
+    "唔，是手心呀。",
+    "ん、手のひらだったんだ。",
+    "음, 손바닥이었구나.",
+    "Mmm, es la palma de tu mano."
+  ],
+  "再眨一下眼。": [
+    "Just one more blink.",
+    "再眨一下眼。",
+    "もう一回、まばたき。",
+    "한 번만 더 깜빡.",
+    "Un parpadeo más."
+  ],
+  "不说话也可以。": [
+    "We don’t have to talk.",
+    "不說話也可以。",
+    "話さなくてもいいよ。",
+    "말하지 않아도 돼.",
+    "No hace falta hablar."
+  ],
+  "安安静静陪在这儿。": [
+    "Quietly keeping you company here.",
+    "安安靜靜陪在這兒。",
+    "静かにここで一緒にいるよ。",
+    "조용히 여기 함께 있을게.",
+    "Te acompaño aquí, en silencio."
+  ],
+  "留一块软软的云给你。": [
+    "Saving a soft little cloud for you.",
+    "留一塊軟軟的雲給你。",
+    "やわらかい雲をひとつ、きみに。",
+    "포근한 구름 한 조각을 남겨 줄게.",
+    "Te guardo un trocito de nube suave."
+  ],
+  "轻轻的，我在呢。": [
+    "Softly. I’m here.",
+    "輕輕的，我在呢。",
+    "そっとね、ここにいるよ。",
+    "살며시, 여기 있어.",
+    "Suavecito, estoy aquí."
+  ],
+  "脑袋靠过来一点。": [
+    "Leaning my head a little closer.",
+    "腦袋靠過來一點。",
+    "頭を少し寄せるね。",
+    "머리를 조금 더 기댈게.",
+    "Acerco un poquito la cabecita."
+  ],
+  "慢慢摸一会儿。": [
+    "A few slow, gentle pats.",
+    "慢慢摸一會兒。",
+    "しばらく、ゆっくりなでて。",
+    "잠깐 천천히 쓰다듬어 줘.",
+    "Unas caricias despacito."
+  ],
+  "云也在慢慢飘。": [
+    "The clouds are drifting slowly too.",
+    "雲也在慢慢飄。",
+    "雲もゆっくり流れてる。",
+    "구름도 천천히 흘러가네.",
+    "Las nubes también se mueven despacio."
+  ],
+  "轻轻眨一下眼。": [
+    "One soft little blink.",
+    "輕輕眨一下眼。",
+    "そっとひとつ、まばたき。",
+    "살며시 눈 한 번 깜빡.",
+    "Un parpadeo suavecito."
+  ]
+}

@@ -5,6 +5,8 @@ const path = require('node:path');
 if (!process.env.TIDE_TEST_DATA) throw new Error('TIDE_TEST_DATA must identify an isolated test directory.');
 fs.mkdirSync(process.env.TIDE_TEST_DATA, { recursive: true });
 app.setPath('userData', process.env.TIDE_TEST_DATA);
+// Only this isolated fixture can override OS language for locale regression tests.
+if (process.env.TIDE_TEST_SYSTEM_LOCALE) app.getPreferredSystemLanguages = () => [process.env.TIDE_TEST_SYSTEM_LOCALE];
 const appRoot = process.env.TIDE_TEST_APP_ROOT || path.resolve(__dirname, '..');
 // Existing interaction suites start after setup. The onboarding suite uses the
 // same production entry with a genuinely fresh or legacy store instead.

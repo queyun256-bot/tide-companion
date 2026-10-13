@@ -33,6 +33,7 @@ function harness({ packaged = true, platform = 'win32', current = false, readErr
       if (id === 'electron') return electron;
       if (id.startsWith('node:')) return require(id);
       if (id === './platform.cjs') return require('../electron/platform.cjs');
+      if (id === './i18n.cjs') return require('../electron/i18n.cjs');
       if (id === './tray-icon.cjs') return () => Buffer.alloc(0);
       return {};
     },

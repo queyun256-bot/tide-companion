@@ -1,5 +1,6 @@
 import { getBuiltinShark } from './shark-variants.js';
 import { PERSONALITIES } from './shark-personalities.js';
+import { t } from './i18n.js';
 export const IDLE_ACTIONS = Object.freeze(['wave', 'scarf', 'sway', 'peek', 'tailcurl', 'bob']);
 export const IDLE_DURATIONS = Object.freeze({ wave: 2600, scarf: 2900, sway: 3400, peek: 3100, tailcurl: 2800, bob: 3000 });
 const IDLE_PREFERENCES = Object.freeze({
@@ -108,7 +109,7 @@ export class PetBehavior {
     this.recentLines.push(message);
     this.recentLines = this.recentLines.slice(-10);
     this.lastSpeechAt = now;
-    return { type: 'speech', message };
+    return { type: 'speech', message: t(message) };
   }
   startSleep(now, manual = false) {
     if (this.state === 'drowsy' || this.state === 'sleeping') return [];

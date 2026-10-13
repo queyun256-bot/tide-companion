@@ -1,0 +1,2410 @@
+{
+  "关于潮汐": [
+    "About Tide",
+    "關於潮汐",
+    "潮汐について",
+    "Tide 정보",
+    "Acerca de Tide"
+  ],
+  "隐藏潮汐": [
+    "Hide Tide",
+    "隱藏潮汐",
+    "潮汐を隠す",
+    "Tide 가리기",
+    "Ocultar Tide"
+  ],
+  "隐藏其他应用": [
+    "Hide Others",
+    "隱藏其他應用程式",
+    "ほかを隠す",
+    "다른 앱 가리기",
+    "Ocultar otras"
+  ],
+  "显示全部": [
+    "Show All",
+    "顯示全部",
+    "すべて表示",
+    "모두 보기",
+    "Mostrar todo"
+  ],
+  "退出潮汐": [
+    "Quit Tide",
+    "結束潮汐",
+    "潮汐を終了",
+    "Tide 종료",
+    "Salir de Tide"
+  ],
+  "手账": [
+    "Journal",
+    "手帳",
+    "手帳",
+    "기록장",
+    "Diario"
+  ],
+  "打开手账": [
+    "Open Journal",
+    "開啟手帳",
+    "手帳を開く",
+    "기록장 열기",
+    "Abrir diario"
+  ],
+  "关闭窗口": [
+    "Close Window",
+    "關閉視窗",
+    "ウインドウを閉じる",
+    "창 닫기",
+    "Cerrar ventana"
+  ],
+  "编辑": [
+    "Edit",
+    "編輯",
+    "編集",
+    "편집",
+    "Editar"
+  ],
+  "撤销": [
+    "Undo",
+    "復原",
+    "取り消す",
+    "실행 취소",
+    "Deshacer"
+  ],
+  "重做": [
+    "Redo",
+    "重做",
+    "やり直す",
+    "다시 실행",
+    "Rehacer"
+  ],
+  "剪切": [
+    "Cut",
+    "剪下",
+    "カット",
+    "잘라내기",
+    "Cortar"
+  ],
+  "复制": [
+    "Copy",
+    "複製",
+    "コピー",
+    "복사",
+    "Copiar"
+  ],
+  "粘贴": [
+    "Paste",
+    "貼上",
+    "ペースト",
+    "붙여넣기",
+    "Pegar"
+  ],
+  "全选": [
+    "Select All",
+    "全選",
+    "すべて選択",
+    "모두 선택",
+    "Seleccionar todo"
+  ],
+  "窗口": [
+    "Window",
+    "視窗",
+    "ウインドウ",
+    "윈도우",
+    "Ventana"
+  ],
+  "最小化": [
+    "Minimize",
+    "最小化",
+    "しまう",
+    "최소화",
+    "Minimizar"
+  ],
+  "缩放": [
+    "Zoom",
+    "縮放",
+    "拡大／縮小",
+    "확대/축소",
+    "Ampliar"
+  ],
+  "全部置于前方": [
+    "Bring All to Front",
+    "全部移至最前方",
+    "すべてを手前に移動",
+    "모두 앞으로 가져오기",
+    "Traer todo al frente"
+  ],
+  "此页面无权访问桌面功能。": [
+    "This page cannot access desktop features.",
+    "此頁面無權存取桌面功能。",
+    "このページはデスクトップ機能にアクセスできません。",
+    "이 페이지는 데스크톱 기능에 접근할 수 없어요.",
+    "Esta página no tiene acceso a las funciones de escritorio."
+  ],
+  "潮汐 · 手账": [
+    "Tide · Journal",
+    "潮汐 · 手帳",
+    "潮汐 · 手帳",
+    "Tide · 기록장",
+    "Tide · Diario"
+  ],
+  "无法打开{name}": [
+    "Unable to open {name}",
+    "無法開啟{name}",
+    "{name}を開けません",
+    "{name}을(를) 열 수 없어요",
+    "No se puede abrir {name}"
+  ],
+  "应用界面文件缺失，请重新安装或在完整项目目录中启动。": [
+    "App interface files are missing. Reinstall the app or launch from the complete project folder.",
+    "應用程式介面檔案遺失，請重新安裝或在完整專案目錄中啟動。",
+    "画面ファイルがありません。再インストールするか、完全なプロジェクトフォルダーから起動してください。",
+    "앱 화면 파일이 없어요. 다시 설치하거나 전체 프로젝트 폴더에서 실행해 주세요.",
+    "Faltan archivos de la interfaz. Reinstala la aplicación o iníciala desde la carpeta completa del proyecto."
+  ],
+  "{name}桌宠": [
+    "{name} · Desktop pet",
+    "{name}桌寵",
+    "{name} · デスクトップペット",
+    "{name} · 데스크톱 펫",
+    "{name} · Mascota de escritorio"
+  ],
+  "无法打开桌宠": [
+    "Unable to open desktop pet",
+    "無法開啟桌寵",
+    "デスクトップペットを開けません",
+    "데스크톱 펫을 열 수 없어요",
+    "No se puede abrir la mascota"
+  ],
+  "桌宠界面文件缺失，请重新安装或在完整项目目录中启动。": [
+    "Desktop pet interface files are missing. Reinstall the app or launch from the complete project folder.",
+    "桌寵介面檔案遺失，請重新安裝或在完整專案目錄中啟動。",
+    "ペットの画面ファイルがありません。再インストールするか、完全なプロジェクトフォルダーから起動してください。",
+    "펫 화면 파일이 없어요. 다시 설치하거나 전체 프로젝트 폴더에서 실행해 주세요.",
+    "Faltan archivos de la mascota. Reinstala la aplicación o iníciala desde la carpeta completa del proyecto."
+  ],
+  "{name} · 操作未保存": [
+    "{name} · Changes not saved",
+    "{name} · 操作未儲存",
+    "{name} · 保存できませんでした",
+    "{name} · 변경 사항이 저장되지 않았어요",
+    "{name} · Cambios sin guardar"
+  ],
+  "本次设置未能保存。请检查本机存储空间与用户目录的写入权限后再试，原有数据仍会保留。": [
+    "Settings could not be saved. Check available storage and write permissions for your user folder, then retry. Existing data is preserved.",
+    "本次設定未能儲存。請檢查本機儲存空間與使用者目錄的寫入權限後再試，原有資料仍會保留。",
+    "設定を保存できませんでした。空き容量とユーザーフォルダーの書き込み権限を確認して、再試行してください。既存データは保持されています。",
+    "설정을 저장하지 못했어요. 저장 공간과 사용자 폴더의 쓰기 권한을 확인하고 다시 시도해 주세요. 기존 데이터는 유지돼요.",
+    "No se pudo guardar la configuración. Comprueba el espacio disponible y los permisos de escritura de tu carpeta de usuario y reinténtalo. Los datos existentes se conservan."
+  ],
+  "潮汐 · 桌面陪伴与提醒": [
+    "Tide · Desktop companion and reminders",
+    "潮汐 · 桌面陪伴與提醒",
+    "潮汐 · デスクトップの仲間とリマインダー",
+    "Tide · 데스크톱 친구와 알림",
+    "Tide · Compañía y recordatorios"
+  ],
+  "{name} · Windows 通知": [
+    "{name} · Windows notifications",
+    "{name} · Windows 通知",
+    "{name} · Windows 通知",
+    "{name} · Windows 알림",
+    "{name} · Notificaciones de Windows"
+  ],
+  "Windows 通知入口暂时未能创建，系统通知可能不可用。": [
+    "Windows notification registration failed. System notifications may be unavailable.",
+    "Windows 通知入口暫時未能建立，系統通知可能無法使用。",
+    "Windows 通知を登録できませんでした。システム通知が利用できない可能性があります。",
+    "Windows 알림을 등록하지 못했어요. 시스템 알림을 사용하지 못할 수 있어요.",
+    "No se pudieron registrar las notificaciones de Windows. Puede que no estén disponibles."
+  ],
+  "桌宠和本机记录仍可使用。请检查当前用户开始菜单目录的写入权限后重新启动；无需管理员权限。": [
+    "The pet and local records still work. Check write permissions for your user Start menu folder and restart. Administrator access is not needed.",
+    "桌寵和本機記錄仍可使用。請檢查目前使用者開始功能表目錄的寫入權限後重新啟動；無需管理員權限。",
+    "ペットとローカル記録は使えます。ユーザーのスタートメニューフォルダーの書き込み権限を確認し、再起動してください。管理者権限は不要です。",
+    "펫과 로컬 기록은 계속 사용할 수 있어요. 사용자 시작 메뉴 폴더의 쓰기 권한을 확인하고 다시 시작해 주세요. 관리자 권한은 필요하지 않아요.",
+    "La mascota y los registros locales siguen disponibles. Comprueba los permisos de escritura de tu carpeta del menú Inicio y reinicia. No se necesitan permisos de administrador."
+  ],
+  "知道了": [
+    "Got it",
+    "知道了",
+    "わかりました",
+    "알겠어요",
+    "Entendido"
+  ],
+  "{name}桌宠 · 本机陪伴与提醒": [
+    "{name} · Local companion and reminders",
+    "{name}桌寵 · 本機陪伴與提醒",
+    "{name} · デスクトップの仲間とリマインダー",
+    "{name} · 로컬 친구와 알림",
+    "{name} · Compañía y recordatorios locales"
+  ],
+  "打开陪伴面板": [
+    "Open companion panel",
+    "開啟陪伴面板",
+    "手帳を開く",
+    "기록장 열기",
+    "Abrir panel de compañía"
+  ],
+  "隐藏{name}": [
+    "Hide {name}",
+    "隱藏{name}",
+    "{name}を隠す",
+    "{name} 숨기기",
+    "Ocultar a {name}"
+  ],
+  "显示{name}": [
+    "Show {name}",
+    "顯示{name}",
+    "{name}を表示",
+    "{name} 표시",
+    "Mostrar a {name}"
+  ],
+  "让{name}回到屏幕右下角": [
+    "Move {name} to the bottom-right corner",
+    "讓{name}回到螢幕右下角",
+    "{name}を画面の右下に戻す",
+    "{name}을(를) 화면 오른쪽 아래로 이동",
+    "Llevar a {name} a la esquina inferior derecha"
+  ],
+  "面板关闭后，提醒仍会运行": [
+    "Reminders continue when the panel is closed",
+    "面板關閉後，提醒仍會執行",
+    "手帳を閉じてもリマインダーは動作します",
+    "기록장을 닫아도 알림은 계속돼요",
+    "Los recordatorios siguen activos al cerrar el panel"
+  ],
+  "退出{name}（停止提醒）": [
+    "Quit {name} (stop reminders)",
+    "結束{name}（停止提醒）",
+    "{name}を終了（リマインダーも停止）",
+    "{name} 종료 (알림 중지)",
+    "Salir de {name} (detener recordatorios)"
+  ],
+  "{name} · 用药提醒": [
+    "{name} · Medication reminder",
+    "{name} · 用藥提醒",
+    "{name} · お薬のリマインダー",
+    "{name} · 투약 알림",
+    "{name} · Recordatorio de medicación"
+  ],
+  "有 {count} 项提醒已到时间，其中包含较早的事项。打开计划可查看详情；提醒不会自动记录使用。": [
+    "{count} reminders are due, including earlier ones. Open your plans for details; reminders do not automatically log medication use.",
+    "有 {count} 項提醒已到時間，其中包含較早的事項。開啟計畫可查看詳情；提醒不會自動記錄使用。",
+    "{count} 件の予定時刻を迎えています。以前の予定も含まれます。詳細はプランをご確認ください。通知だけでは使用記録は追加されません。",
+    "이전 항목을 포함해 알림 {count}개의 시간이 됐어요. 계획에서 자세히 확인할 수 있어요. 알림만으로 투약 기록이 추가되지는 않아요.",
+    "Han llegado {count} recordatorios, incluidos algunos anteriores. Abre tus planes para ver los detalles; los recordatorios no registran automáticamente el uso de medicación."
+  ],
+  "你设置的 {count} 项提醒到时间了，可以打开计划查看。": [
+    "It is time for {count} reminders. You can check them in your plans.",
+    "你設定的 {count} 項提醒到時間了，可以開啟計畫查看。",
+    "設定した {count} 件のリマインダーの時間です。プランで確認できます。",
+    "설정한 알림 {count}개의 시간이 됐어요. 계획에서 확인할 수 있어요.",
+    "Es la hora de {count} recordatorios. Puedes consultarlos en tus planes."
+  ],
+  "、": [
+    ", ",
+    "、",
+    "、",
+    ", ",
+    ", "
+  ],
+  "等": [
+    " and more",
+    "等",
+    "ほか",
+    " 외",
+    " y otros"
+  ],
+  "{names}{more}。{message}": [
+    "{names}{more}. {message}",
+    "{names}{more}。{message}",
+    "{names}{more}。{message}",
+    "{names}{more}. {message}",
+    "{names}{more}. {message}"
+  ],
+  "提醒记录暂时无法保存，请检查本机存储空间与用户目录的写入权限。此事项尚未记为已提醒，恢复后会重试。": [
+    "The reminder could not be saved. Check available storage and write permissions for your user folder. It is not marked as delivered and will be retried when storage is available.",
+    "提醒記錄暫時無法儲存，請檢查本機儲存空間與使用者目錄的寫入權限。此事項尚未記為已提醒，恢復後會重試。",
+    "リマインダーの記録を保存できません。空き容量とユーザーフォルダーの書き込み権限をご確認ください。通知済みにはなっていないため、復旧後に再試行します。",
+    "알림 기록을 저장하지 못했어요. 저장 공간과 사용자 폴더의 쓰기 권한을 확인해 주세요. 알림 완료로 기록되지 않았으며 복구 후 다시 시도해요.",
+    "No se pudo guardar el recordatorio. Comprueba el espacio disponible y los permisos de escritura de tu carpeta de usuario. No se ha marcado como entregado y se volverá a intentar cuando sea posible."
+  ],
+  "{name} · 提醒需要留意": [
+    "{name} · Reminder needs attention",
+    "{name} · 提醒需要留意",
+    "{name} · リマインダーをご確認ください",
+    "{name} · 알림 확인이 필요해요",
+    "{name} · Revisa el recordatorio"
+  ],
+  "有多个相同的提醒，请选择这次记录对应的提醒计划。": [
+    "Several reminders match. Choose the reminder plan for this entry.",
+    "有多個相同的提醒，請選擇這次記錄對應的提醒計畫。",
+    "一致するリマインダーが複数あります。この記録に対応するプランを選んでください。",
+    "일치하는 알림이 여러 개예요. 이 기록에 해당하는 알림 계획을 선택해 주세요.",
+    "Hay varios recordatorios coincidentes. Elige el plan correspondiente a este registro."
+  ],
+  "请在系统设置的“通用 → 登录项”中添加或移除潮汐。": [
+    "Add or remove Tide in System Settings → General → Login Items.",
+    "請在系統設定的「一般 → 登入項目」中新增或移除潮汐。",
+    "システム設定の「一般 → ログイン項目」で潮汐を追加または削除してください。",
+    "시스템 설정 → 일반 → 로그인 항목에서 Tide를 추가하거나 제거해 주세요.",
+    "Añade o elimina Tide en Ajustes del Sistema → General → Ítems de inicio."
+  ],
+  "开机启动仅支持已安装的软件版本；开发模式请使用 npm start。": [
+    "Launch at login is available only for installed versions. Use npm start in development mode.",
+    "開機啟動僅支援已安裝的軟體版本；開發模式請使用 npm start。",
+    "ログイン時の起動はインストール版でのみ利用できます。開発モードでは npm start をお使いください。",
+    "로그인 시 실행은 설치된 버전에서만 지원돼요. 개발 모드에서는 npm start를 사용해 주세요.",
+    "El inicio automático solo está disponible en la versión instalada. En modo de desarrollo usa npm start."
+  ],
+  "未知互动动作。": [
+    "Unknown interaction.",
+    "未知互動動作。",
+    "不明なアクションです。",
+    "알 수 없는 상호작용이에요.",
+    "Interacción desconocida."
+  ],
+  "星星会在已有提醒前后两小时内实际用药并记录时自动获得。": [
+    "Stars are earned automatically when you log actual medication use within two hours before or after an existing reminder.",
+    "星星會在已有提醒前後兩小時內實際用藥並記錄時自動獲得。",
+    "設定済みリマインダーの前後2時間以内に実際に使用し、記録すると星を獲得できます。",
+    "설정된 알림 시간의 앞뒤 2시간 이내에 실제로 투약하고 기록하면 별을 자동으로 받아요.",
+    "Ganas estrellas automáticamente al registrar el uso real de medicación dentro de las dos horas anteriores o posteriores a un recordatorio existente."
+  ],
+  "这是一条测试提醒。你可以随时调整提醒偏好。": [
+    "This is a test reminder. You can change your reminder preferences anytime.",
+    "這是一則測試提醒。你可以隨時調整提醒偏好。",
+    "これはテスト通知です。リマインダーの設定はいつでも変更できます。",
+    "테스트 알림이에요. 알림 설정은 언제든 바꿀 수 있어요.",
+    "Este es un recordatorio de prueba. Puedes cambiar tus preferencias cuando quieras."
+  ],
+  "这是一条测试提醒。{name}会在你设置的时间提醒你。": [
+    "This is a test reminder. {name} will remind you at the times you set.",
+    "這是一則測試提醒。{name}會在你設定的時間提醒你。",
+    "これはテスト通知です。{name}が設定した時刻にお知らせします。",
+    "테스트 알림이에요. {name}이(가) 설정한 시간에 알려줄게요.",
+    "Este es un recordatorio de prueba. {name} te avisará a las horas que hayas elegido."
+  ],
+  "导出{name}本机数据": [
+    "Export {name}'s local data",
+    "匯出{name}本機資料",
+    "{name}のローカルデータをエクスポート",
+    "{name}의 로컬 데이터 내보내기",
+    "Exportar los datos locales de {name}"
+  ],
+  "导入{name} JSON 备份": [
+    "Import {name}'s JSON backup",
+    "匯入{name} JSON 備份",
+    "{name}の JSON バックアップをインポート",
+    "{name}의 JSON 백업 가져오기",
+    "Importar la copia JSON de {name}"
+  ],
+  "JSON 备份": [
+    "JSON backup",
+    "JSON 備份",
+    "JSON バックアップ",
+    "JSON 백업",
+    "Copia de seguridad JSON"
+  ],
+  "备份文件超过 5 MB，请检查所选文件。": [
+    "The backup exceeds 5 MB. Check the selected file.",
+    "備份檔案超過 5 MB，請檢查所選檔案。",
+    "バックアップが 5 MB を超えています。選択したファイルをご確認ください。",
+    "백업 파일이 5 MB를 초과해요. 선택한 파일을 확인해 주세요.",
+    "La copia de seguridad supera los 5 MB. Comprueba el archivo seleccionado."
+  ],
+  "导入备份": [
+    "Import backup",
+    "匯入備份",
+    "バックアップをインポート",
+    "백업 가져오기",
+    "Importar copia de seguridad"
+  ],
+  "将替换为备份中的 {plans} 项计划、{doses} 条使用记录、{labs} 条化验记录和 {moods} 天心情。": [
+    "Replace your records with the backup's {plans} plans, {doses} medication entries, {labs} lab results and {moods} days of moods.",
+    "將替換為備份中的 {plans} 項計畫、{doses} 筆使用記錄、{labs} 筆檢驗記錄和 {moods} 天心情。",
+    "バックアップ内のプラン {plans} 件、使用記録 {doses} 件、検査記録 {labs} 件、気分 {moods} 日分に置き換えます。",
+    "백업의 계획 {plans}개, 투약 기록 {doses}개, 검사 기록 {labs}개, 기분 기록 {moods}일분으로 교체해요.",
+    "Se reemplazarán los registros por los {plans} planes, {doses} registros de uso, {labs} análisis y {moods} días de ánimo de la copia."
+  ],
+  "现有数据会保存为本机恢复备份。今天已经选择的心情保留；历史心情按备份恢复。星星账本合并，保留本机已获奖励与已消费记录，恢复旧备份不会返还已吃掉的星星；等级、经验和每日产星机会共享。开机启动、通知隐私和本机皮肤保留当前设置；健康备份不导入模型文件。": [
+    "Your current data will be saved in a local recovery backup. Today's chosen mood stays; older moods are restored from the backup. Star ledgers are merged, keeping earned and spent stars; restoring an old backup does not refund eaten stars. Level, experience and the daily star opportunity are shared. Login startup, notification privacy and local skin settings are retained. Health backups do not import model files.",
+    "現有資料會儲存為本機還原備份。今天已經選擇的心情保留；歷史心情按備份還原。星星帳本合併，保留本機已獲獎勵與已消費記錄，還原舊備份不會返還已吃掉的星星；等級、經驗和每日產星機會共用。開機啟動、通知隱私和本機皮膚保留目前設定；健康備份不匯入模型檔案。",
+    "現在のデータはローカル復元用バックアップに保存します。今日選んだ気分は保持し、過去の気分はバックアップから復元します。星の台帳を統合し、獲得・消費履歴を保持します。古いバックアップを戻しても食べた星は返りません。レベル、経験値、1日の星を生む機会は共有です。ログイン起動、通知のプライバシー、ローカルスキンの設定は保持します。健康データのバックアップからモデルファイルは取り込みません。",
+    "현재 데이터는 로컬 복구 백업으로 저장돼요. 오늘 선택한 기분은 유지하고 이전 기분은 백업에서 복원해요. 별 내역을 합쳐 획득 및 소비 기록을 유지하며, 이전 백업을 복원해도 먹은 별은 돌아오지 않아요. 레벨, 경험치와 하루 별 생성 기회는 공유해요. 로그인 시 실행, 알림 개인정보 및 로컬 스킨 설정은 유지돼요. 건강 데이터 백업에서는 모델 파일을 가져오지 않아요.",
+    "Los datos actuales se guardarán en una copia de recuperación local. Se conserva el ánimo elegido hoy; el historial se restaura desde la copia. Se combinan las estrellas ganadas y gastadas; restaurar una copia antigua no devuelve estrellas consumidas. El nivel, la experiencia y la oportunidad diaria de generar estrellas son compartidos. Se conservan el inicio automático, la privacidad de las notificaciones y las apariencias locales. Las copias de salud no importan archivos de modelos."
+  ],
+  "取消": [
+    "Cancel",
+    "取消",
+    "キャンセル",
+    "취소",
+    "Cancelar"
+  ],
+  "导入并替换": [
+    "Import and replace",
+    "匯入並替換",
+    "インポートして置き換える",
+    "가져와서 교체",
+    "Importar y reemplazar"
+  ],
+  "选择 Live2D 的 model3.json 文件": [
+    "Choose a Live2D model3.json file",
+    "選擇 Live2D 的 model3.json 檔案",
+    "Live2D の model3.json ファイルを選択",
+    "Live2D model3.json 파일 선택",
+    "Selecciona un archivo model3.json de Live2D"
+  ],
+  "皮肤不存在，请重新导入或选择内置鲨鲨。": [
+    "This skin is unavailable. Import it again or choose a built-in shark.",
+    "皮膚不存在，請重新匯入或選擇內建鯊鯊。",
+    "このスキンはありません。再インポートするか、内蔵のサメを選んでください。",
+    "스킨이 없어요. 다시 가져오거나 기본 상어를 선택해 주세요.",
+    "La apariencia no está disponible. Impórtala de nuevo o elige un tiburón incluido."
+  ],
+  "内置桌宠不能删除。": [
+    "Built-in pets cannot be deleted.",
+    "內建桌寵不能刪除。",
+    "内蔵のペットは削除できません。",
+    "기본 펫은 삭제할 수 없어요.",
+    "No se pueden eliminar las mascotas incluidas."
+  ],
+  "皮肤不存在。": [
+    "This skin is unavailable.",
+    "皮膚不存在。",
+    "このスキンはありません。",
+    "스킨이 없어요.",
+    "La apariencia no está disponible."
+  ],
+  "链接无效。": [
+    "Invalid link.",
+    "連結無效。",
+    "無効なリンクです。",
+    "유효하지 않은 링크예요.",
+    "Enlace no válido."
+  ],
+  "仅支持打开内置来源列表中的 HTTPS 资料链接。": [
+    "Only HTTPS reference links from the built-in source list can be opened.",
+    "僅支援開啟內建來源清單中的 HTTPS 資料連結。",
+    "内蔵の出典一覧にある HTTPS リンクのみ開けます。",
+    "기본 출처 목록의 HTTPS 자료 링크만 열 수 있어요.",
+    "Solo se pueden abrir enlaces HTTPS de la lista de fuentes incluida."
+  ],
+  "本机数据恢复": [
+    "Local data recovery",
+    "本機資料還原",
+    "ローカルデータの復元",
+    "로컬 데이터 복구",
+    "Recuperación de datos locales"
+  ],
+  "原数据无法读取，已保留原文件并使用空白数据启动。": [
+    "The original data could not be read. The original file is preserved, and the app has started with empty records.",
+    "原資料無法讀取，已保留原檔案並使用空白資料啟動。",
+    "元のデータを読み込めませんでした。元のファイルを保持し、空のデータで起動しました。",
+    "원래 데이터를 읽을 수 없어요. 원본 파일을 보존하고 빈 기록으로 시작했어요.",
+    "No se pudieron leer los datos originales. Se ha conservado el archivo original y la aplicación se inició con registros vacíos."
+  ],
+  "已从本机备份恢复数据。": [
+    "Data has been restored from a local backup.",
+    "已從本機備份還原資料。",
+    "ローカルバックアップから復元しました。",
+    "로컬 백업에서 데이터를 복구했어요.",
+    "Se han restaurado los datos desde una copia local."
+  ],
+  "原文件已保留在 {directory}。请检查计划、使用记录和化验记录。": [
+    "The original file is preserved in {directory}. Check your plans, medication entries and lab results.",
+    "原檔案已保留在 {directory}。請檢查計畫、使用記錄和檢驗記錄。",
+    "元のファイルは {directory} に保存しています。プラン、使用記録、検査記録をご確認ください。",
+    "원본 파일은 {directory}에 보존돼 있어요. 계획, 투약 기록과 검사 기록을 확인해 주세요.",
+    "El archivo original se conserva en {directory}. Comprueba tus planes, registros de uso y análisis."
+  ],
+  "{name}启动失败": [
+    "{name} could not start",
+    "{name}啟動失敗",
+    "{name}を起動できませんでした",
+    "{name} 시작 실패",
+    "No se pudo iniciar {name}"
+  ],
+  "无法读取或保存本机数据。请检查用户目录的存储空间与写入权限后重新启动。": [
+    "Local data could not be read or saved. Check storage space and write permissions for your user folder, then restart.",
+    "無法讀取或儲存本機資料。請檢查使用者目錄的儲存空間與寫入權限後重新啟動。",
+    "ローカルデータの読み込みまたは保存ができません。ユーザーフォルダーの空き容量と書き込み権限を確認し、再起動してください。",
+    "로컬 데이터를 읽거나 저장할 수 없어요. 사용자 폴더의 저장 공간과 쓰기 권한을 확인한 뒤 다시 시작해 주세요.",
+    "No se pudieron leer o guardar los datos locales. Comprueba el espacio y los permisos de escritura de tu carpeta de usuario y reinicia."
+  ],
+  "项目": [
+    "Analyte",
+    "項目",
+    "項目",
+    "항목",
+    "Analito"
+  ],
+  "测定结果": [
+    "Lab result",
+    "測定結果",
+    "測定結果",
+    "측정 결과",
+    "Resultado de laboratorio"
+  ],
+  "校准状态": [
+    "Calibration status",
+    "校準狀態",
+    "校正状況",
+    "보정 상태",
+    "Estado de calibración"
+  ],
+  "当前显示项目还没有化验结果": [
+    "No lab results for the analytes currently shown",
+    "目前顯示項目還沒有檢驗結果",
+    "表示中の項目にはまだ検査結果がありません",
+    "현재 표시된 항목의 검사 결과가 아직 없어요",
+    "Aún no hay análisis para los analitos mostrados"
+  ],
+  "切换显示项目不会删除已有记录。尚未校准时仍可查看明确标注的参考估计。": [
+    "Changing the displayed analytes does not delete records. Before calibration, you can still view clearly labeled reference estimates.",
+    "切換顯示項目不會刪除已有記錄。尚未校準時仍可查看明確標示的參考估計。",
+    "表示項目を切り替えても記録は削除されません。校正前も、参考値と明示した推定を確認できます。",
+    "표시 항목을 바꿔도 기존 기록은 삭제되지 않아요. 보정 전에도 참고용으로 명시된 추정치를 볼 수 있어요.",
+    "Cambiar los analitos mostrados no elimina registros. Antes de calibrar, puedes consultar estimaciones claramente identificadas como referencia."
+  ],
+  "桌宠保持置顶": [
+    "Keep pet on top",
+    "桌寵保持置頂",
+    "ペットを最前面に表示",
+    "펫을 항상 위에 표시",
+    "Mantener la mascota encima"
+  ],
+  "陪在其他窗口上方": [
+    "Stay above other windows",
+    "陪在其他視窗上方",
+    "ほかのウインドウより手前に表示",
+    "다른 창 위에서 함께해요",
+    "Por encima de otras ventanas"
+  ],
+  "全屏时自动隐藏": [
+    "Auto-hide in full screen",
+    "全螢幕時自動隱藏",
+    "全画面表示中は自動で隠す",
+    "전체 화면에서 자동으로 숨기기",
+    "Ocultar en pantalla completa"
+  ],
+  "前台游戏、视频或无边框全屏窗口下隐藏，退出全屏后恢复": [
+    "Hide during a foreground full-screen game, video or borderless window; return when full screen ends.",
+    "前景遊戲、影片或無邊框全螢幕視窗下隱藏，退出全螢幕後恢復",
+    "ゲームや動画などの全画面・ボーダーレス表示中は隠れ、全画面を終えると戻ります",
+    "게임, 동영상 또는 테두리 없는 전체 화면 창이 앞에 있으면 숨기고 전체 화면을 종료하면 돌아와요",
+    "Se oculta ante juegos, vídeos o ventanas sin bordes a pantalla completa y vuelve al salir"
+  ],
+  "系统通知": [
+    "System notifications",
+    "系統通知",
+    "システム通知",
+    "시스템 알림",
+    "Notificaciones del sistema"
+  ],
+  "需要 {0} 允许通知": [
+    "Notifications must be allowed in {0}",
+    "需要 {0} 允許通知",
+    "{0} で通知の許可が必要です",
+    "{0}에서 알림을 허용해야 해요",
+    "Requiere permiso de notificaciones en {0}"
+  ],
+  "通知隐私模式": [
+    "Private notifications",
+    "通知隱私模式",
+    "通知のプライバシーモード",
+    "알림 개인정보 보호 모드",
+    "Privacidad de notificaciones"
+  ],
+  "不显示药物名称与剂量": [
+    "Hide medication names and doses",
+    "不顯示藥物名稱與劑量",
+    "薬の名前と用量を表示しない",
+    "약물 이름과 용량을 표시하지 않아요",
+    "Oculta los nombres de fármacos y las dosis"
+  ],
+  "登录 {0} 时启动": [
+    "Start when you sign in to {0}",
+    "登入 {0} 時啟動",
+    "{0} へのログイン時に起動",
+    "{0} 로그인 시 실행",
+    "Iniciar al acceder a {0}"
+  ],
+  "仅打包后的程序支持": [
+    "Available in installed builds only",
+    "僅封裝後的程式支援",
+    "配布版のアプリでのみ利用できます",
+    "패키징된 앱에서만 지원돼요",
+    "Disponible solo en la versión empaquetada"
+  ],
+  "减少动画": [
+    "Reduce motion",
+    "減少動畫",
+    "視差効果を減らす",
+    "동작 줄이기",
+    "Reducir animaciones"
+  ],
+  "关闭界面过渡与桌宠的持续动作": [
+    "Turn off page transitions and ongoing pet motion",
+    "關閉介面過渡與桌寵的持續動作",
+    "画面の切り替え効果とペットの継続的な動きを止める",
+    "화면 전환 효과와 펫의 지속적인 움직임을 끄기",
+    "Desactiva las transiciones y el movimiento continuo de la mascota"
+  ],
+  "macOS 版暂不自动检测其他应用的全屏状态，需要时可从菜单栏隐藏桌宠。登录时启动可在系统设置的“通用 → 登录项”中添加潮汐。": [
+    "On macOS, full-screen apps are not detected automatically yet. You can hide the pet from the menu bar. To start at login, add Tide in System Settings → General → Login Items.",
+    "macOS 版暫不自動偵測其他應用程式的全螢幕狀態，需要時可從選單列隱藏桌寵。登入時啟動可在系統設定的「一般 → 登入項目」中新增潮汐。",
+    "macOS 版は他のアプリの全画面を自動検出しません。必要なときはメニューバーからペットを隠せます。ログイン時に起動するには、システム設定の「一般 → ログイン項目」に潮汐を追加してください。",
+    "macOS 버전은 아직 다른 앱의 전체 화면 상태를 자동으로 감지하지 않아요. 필요하면 메뉴 막대에서 펫을 숨길 수 있어요. 로그인 시 실행하려면 시스템 설정 → 일반 → 로그인 항목에 Tide를 추가해 주세요.",
+    "En macOS aún no se detecta automáticamente la pantalla completa de otras aplicaciones. Puedes ocultar la mascota desde la barra de menús. Para iniciar al acceder, añade Tide en Ajustes del Sistema → General → Ítems de inicio."
+  ],
+  "摸摸": [
+    "Pet",
+    "摸摸",
+    "なでる",
+    "쓰다듬기",
+    "Acariciar"
+  ],
+  "星星": [
+    "Stars",
+    "星星",
+    "星",
+    "별",
+    "Estrellas"
+  ],
+  "打盹": [
+    "Nap",
+    "打盹",
+    "うたた寝",
+    "낮잠",
+    "Siesta"
+  ],
+  "使用偏好": [
+    "Preferences",
+    "使用偏好",
+    "環境設定",
+    "환경설정",
+    "Preferencias"
+  ],
+  "桌宠换肤": [
+    "Pet appearances",
+    "桌寵換膚",
+    "ペットの着せ替え",
+    "펫 꾸미기",
+    "Apariencias de la mascota"
+  ],
+  "五种颜色 · 各自的小习惯": [
+    "Five colors · Each with little habits",
+    "五種顏色 · 各自的小習慣",
+    "5つの色、それぞれの小さな習慣",
+    "다섯 가지 색 · 저마다의 작은 습관",
+    "Cinco colores · Cada uno con sus costumbres"
+  ],
+  "数据属于你": [
+    "Your data belongs to you",
+    "資料屬於你",
+    "データはあなたのもの",
+    "데이터는 당신의 것이에요",
+    "Tus datos te pertenecen"
+  ],
+  "健康数据只在本机保存，无账号和云同步。备份为可读 JSON，请妥善保存。": [
+    "Health data stays on this device, with no account or cloud sync. Backups are readable JSON files; keep them somewhere safe.",
+    "健康資料只在本機儲存，無帳號和雲端同步。備份為可讀 JSON，請妥善保存。",
+    "健康データはこの端末だけに保存され、アカウントやクラウド同期はありません。バックアップは読み取り可能な JSON です。大切に保管してください。",
+    "건강 데이터는 이 기기에만 저장되며 계정이나 클라우드 동기화는 없어요. 백업은 읽을 수 있는 JSON 파일이니 안전하게 보관해 주세요.",
+    "Los datos de salud se guardan solo en este dispositivo, sin cuenta ni sincronización en la nube. Las copias son archivos JSON legibles; guárdalas en un lugar seguro."
+  ],
+  "皮肤素材单独保存在本机，不包含于健康数据备份。": [
+    "Appearance assets are stored separately on this device and are not included in health-data backups.",
+    "皮膚素材單獨儲存在本機，不包含於健康資料備份。",
+    "スキンの素材は端末に別途保存され、健康データのバックアップには含まれません。",
+    "스킨 자료는 기기에 별도로 저장되며 건강 데이터 백업에 포함되지 않아요.",
+    "Los archivos de apariencia se guardan por separado y no se incluyen en las copias de datos de salud."
+  ],
+  "UCSF · 女性化激素治疗 ↗": [
+    "UCSF · Feminizing hormone therapy ↗",
+    "UCSF · 女性化荷爾蒙治療 ↗",
+    "UCSF · 女性化ホルモン療法 ↗",
+    "UCSF · 여성화 호르몬 치료 ↗",
+    "UCSF · Terapia hormonal feminizante ↗"
+  ],
+  "UCSF · 男性化激素治疗 ↗": [
+    "UCSF · Masculinizing hormone therapy ↗",
+    "UCSF · 男性化荷爾蒙治療 ↗",
+    "UCSF · 男性化ホルモン療法 ↗",
+    "UCSF · 남성화 호르몬 치료 ↗",
+    "UCSF · Terapia hormonal masculinizante ↗"
+  ],
+  "v0.9.3 · 个人记录与模型探索工具。": [
+    "v0.9.3 · A personal journal and model exploration tool.",
+    "v0.9.3 · 個人記錄與模型探索工具。",
+    "v0.9.3 · 個人の記録とモデル探索のためのツール。",
+    "v0.9.3 · 개인 기록과 모델 탐색 도구.",
+    "v0.9.3 · Herramienta de registro personal y exploración de modelos."
+  ],
+  "名字、外观和提醒方式，都可以在这里调整。": [
+    "Adjust names, appearances and reminders here.",
+    "名字、外觀和提醒方式，都可以在這裡調整。",
+    "名前、見た目、リマインダーの設定はここで変えられます。",
+    "이름, 외모, 알림 방식을 여기에서 바꿀 수 있어요.",
+    "Aquí puedes ajustar el nombre, la apariencia y los recordatorios."
+  ],
+  "修改名字": [
+    "Change name",
+    "修改名字",
+    "名前を変える",
+    "이름 바꾸기",
+    "Cambiar nombre"
+  ],
+  "本机 Live2D": [
+    "Local Live2D",
+    "本機 Live2D",
+    "ローカル Live2D",
+    "로컬 Live2D",
+    "Live2D local"
+  ],
+  "显示桌宠": [
+    "Show pet",
+    "顯示桌寵",
+    "ペットを表示",
+    "펫 표시",
+    "Mostrar mascota"
+  ],
+  "隐藏桌宠": [
+    "Hide pet",
+    "隱藏桌寵",
+    "ペットを隠す",
+    "펫 숨기기",
+    "Ocultar mascota"
+  ],
+  "测试提醒": [
+    "Test reminder",
+    "測試提醒",
+    "通知をテスト",
+    "알림 테스트",
+    "Probar recordatorio"
+  ],
+  "初始设置：模式与体重": [
+    "Initial setup: mode and weight",
+    "初始設定：模式與體重",
+    "初期設定：モードと体重",
+    "초기 설정: 모드와 체중",
+    "Configuración inicial: modo y peso"
+  ],
+  "正在读取本机皮肤…": [
+    "Loading local appearances…",
+    "正在讀取本機皮膚…",
+    "ローカルスキンを読み込み中…",
+    "로컬 스킨을 불러오는 중…",
+    "Cargando apariencias locales…"
+  ],
+  "模型缩放": [
+    "Model scale",
+    "模型縮放",
+    "モデルの拡大率",
+    "모델 크기",
+    "Escala del modelo"
+  ],
+  "适配不同模型的画布比例": [
+    "Adjust for different model canvas proportions",
+    "適配不同模型的畫布比例",
+    "モデルごとのキャンバス比率に合わせる",
+    "모델별 캔버스 비율에 맞추기",
+    "Ajusta las proporciones del lienzo del modelo"
+  ],
+  "支持 Cubism 3/4 的 model3 格式；部分新版本渲染特性不兼容时会提示并显示默认鲨鱼。": [
+    "Supports Cubism 3/4 model3 files. If a newer rendering feature is incompatible, a notice and the default shark are shown.",
+    "支援 Cubism 3/4 的 model3 格式；部分新版本算繪特性不相容時會提示並顯示預設鯊魚。",
+    "Cubism 3/4 の model3 形式に対応しています。新しい描画機能に互換性がない場合は、お知らせと既定のサメを表示します。",
+    "Cubism 3/4의 model3 형식을 지원해요. 새 버전의 렌더링 기능이 호환되지 않으면 안내와 함께 기본 상어를 표시해요.",
+    "Compatible con archivos model3 de Cubism 3/4. Si una función de renderizado nueva es incompatible, se muestra un aviso y el tiburón predeterminado."
+  ],
+  "导出备份": [
+    "Export backup",
+    "匯出備份",
+    "バックアップをエクスポート",
+    "백업 내보내기",
+    "Exportar copia de seguridad"
+  ],
+  "保存": [
+    "Save",
+    "儲存",
+    "保存",
+    "저장",
+    "Guardar"
+  ],
+  "欢迎来到潮汐": [
+    "Welcome to Tide",
+    "歡迎來到潮汐",
+    "潮汐へようこそ",
+    "Tide에 오신 것을 환영해요",
+    "Te damos la bienvenida a Tide"
+  ],
+  "稍后设置": [
+    "Set up later",
+    "稍後設定",
+    "あとで設定",
+    "나중에 설정",
+    "Configurar después"
+  ],
+  "粉色界面 · 雌二醇与 CPA": [
+    "Pink theme · Estradiol and CPA",
+    "粉色介面 · 雌二醇與 CPA",
+    "ピンクの画面 · エストラジオールと CPA",
+    "분홍 테마 · 에스트라디올과 CPA",
+    "Tema rosa · Estradiol y CPA"
+  ],
+  "蓝色界面 · 总睾酮，可选雌二醇": [
+    "Blue theme · Total testosterone, optional estradiol",
+    "藍色介面 · 總睪固酮，可選雌二醇",
+    "ブルーの画面 · 総テストステロン、任意でエストラジオール",
+    "파란 테마 · 총 테스토스테론, 선택적 에스트라디올",
+    "Tema azul · Testosterona total, estradiol opcional"
+  ],
+  "选择使用模式": [
+    "Choose a mode",
+    "選擇使用模式",
+    "モードを選ぶ",
+    "사용 모드 선택",
+    "Elige un modo"
+  ],
+  "模式决定界面配色与默认显示项目，之后可在左上角切换。": [
+    "The mode sets the theme and default analytes. You can switch it from the top-left corner later.",
+    "模式決定介面配色與預設顯示項目，之後可在左上角切換。",
+    "モードによって配色と標準の表示項目が決まります。あとから左上で切り替えられます。",
+    "모드에 따라 테마 색상과 기본 표시 항목이 정해져요. 나중에 왼쪽 위에서 바꿀 수 있어요.",
+    "El modo determina los colores y los analitos predeterminados. Puedes cambiarlo después en la esquina superior izquierda."
+  ],
+  "先确认两项设置": [
+    "Confirm two settings first",
+    "先確認兩項設定",
+    "まず2つの設定を確認",
+    "두 가지 설정을 먼저 확인해 주세요",
+    "Confirma primero dos ajustes"
+  ],
+  "设置和记录保存在本机，之后都可以修改。": [
+    "Settings and records stay on this device and can be changed later.",
+    "設定和記錄儲存在本機，之後都可以修改。",
+    "設定と記録はこの端末に保存され、あとから変更できます。",
+    "설정과 기록은 이 기기에 저장되며 나중에 바꿀 수 있어요.",
+    "Los ajustes y registros se guardan en este dispositivo y se pueden modificar después."
+  ],
+  "药代模型体重（kg）": [
+    "Body weight for PK model (kg)",
+    "藥代模型體重（kg）",
+    "薬物動態モデル用の体重（kg）",
+    "약동학 모델용 체중 (kg)",
+    "Peso para el modelo farmacocinético (kg)"
+  ],
+  "体重用于药代模型的参考计算，请确认或修改当前数值。可填写 20–400 kg。": [
+    "Weight is used for reference calculations in the PK model. Confirm or change the current value; the accepted range is 20–400 kg.",
+    "體重用於藥代模型的參考計算，請確認或修改目前數值。可填寫 20–400 kg。",
+    "体重は薬物動態モデルの参考計算に使います。現在の値を確認または変更してください。20～400 kg を入力できます。",
+    "체중은 약동학 모델의 참고 계산에 사용해요. 현재 값을 확인하거나 수정해 주세요. 20–400 kg을 입력할 수 있어요.",
+    "El peso se utiliza en los cálculos de referencia del modelo farmacocinético. Confirma o modifica el valor actual. El intervalo aceptado es de 20 a 400 kg."
+  ],
+  "请选择 MTF 或 FTM。": [
+    "Choose MTF or FTM.",
+    "請選擇 MTF 或 FTM。",
+    "MTF または FTM を選んでください。",
+    "MTF 또는 FTM을 선택해 주세요.",
+    "Elige MTF o FTM."
+  ],
+  "请填写 20–400 kg 之间的体重。": [
+    "Enter a weight between 20 and 400 kg.",
+    "請填寫 20–400 kg 之間的體重。",
+    "20～400 kg の体重を入力してください。",
+    "20–400 kg 사이의 체중을 입력해 주세요.",
+    "Introduce un peso entre 20 y 400 kg."
+  ],
+  "设置已保存。": [
+    "Settings saved.",
+    "設定已儲存。",
+    "設定を保存しました。",
+    "설정을 저장했어요.",
+    "Configuración guardada."
+  ],
+  "开始使用": [
+    "Get started",
+    "開始使用",
+    "はじめる",
+    "시작하기",
+    "Comenzar"
+  ],
+  "请选择给药方式与药物。": [
+    "Choose a route and medication.",
+    "請選擇給藥方式與藥物。",
+    "投与経路と薬を選んでください。",
+    "투여 경로와 약물을 선택해 주세요.",
+    "Elige la vía de administración y el fármaco."
+  ],
+  "代表药品：{0}": [
+    "Example product: {0}",
+    "代表藥品：{0}",
+    "製品例：{0}",
+    "대표 제품: {0}",
+    "Producto de ejemplo: {0}"
+  ],
+  "以产品标示为准": [
+    "Follow the product label",
+    "以產品標示為準",
+    "製品の表示を確認してください",
+    "제품 표시를 기준으로 해 주세요",
+    "Consulta la etiqueta del producto"
+  ],
+  "非说明书给药方式": [
+    "Off-label administration route",
+    "非仿單給藥方式",
+    "添付文書に記載のない投与経路",
+    "허가사항 외 투여 경로",
+    "Vía de administración fuera de ficha técnica"
+  ],
+  "仅记录与提醒 · 模型待核查": [
+    "Logging and reminders only · Model pending review",
+    "僅記錄與提醒 · 模型待核查",
+    "記録とリマインダーのみ · モデルは未検証",
+    "기록과 알림만 지원 · 모델 검토 대기",
+    "Solo registros y recordatorios · Modelo pendiente de revisión"
+  ],
+  "参考估算 · 可用化验校准": [
+    "Reference estimate · Can be calibrated with lab results",
+    "參考估算 · 可用檢驗校準",
+    "参考推定 · 検査結果で校正可能",
+    "참고 추정 · 검사 결과로 보정 가능",
+    "Estimación de referencia · Calibrable con análisis"
+  ],
+  "药物": [
+    "Medication",
+    "藥物",
+    "薬",
+    "약물",
+    "Fármaco"
+  ],
+  "用量（": [
+    "Amount (",
+    "用量（",
+    "使用量（",
+    "사용량 (",
+    "Cantidad ("
+  ],
+  "按实际使用填写": [
+    "Enter the amount actually used",
+    "按實際使用填寫",
+    "実際の使用量を入力",
+    "실제 사용량 입력",
+    "Introduce la cantidad usada"
+  ],
+  "按所选单位填写有效药物或酯的量；凝胶不是克数。": [
+    "Enter the amount of active drug or ester in the selected unit; for gel, do not enter grams of gel.",
+    "按所選單位填寫有效藥物或酯的量；凝膠不是克數。",
+    "選択した単位で有効成分またはエステルの量を入力してください。ゲル自体のグラム数ではありません。",
+    "선택한 단위로 유효 성분 또는 에스테르의 양을 입력해 주세요. 젤 자체의 그램 수가 아니에요.",
+    "Introduce la cantidad de fármaco activo o éster en la unidad elegida; para el gel, no introduzcas gramos de gel."
+  ],
+  "本次贴片佩戴时长（小时）": [
+    "Patch wear time for this use (hours)",
+    "本次貼片佩戴時長（小時）",
+    "今回のパッチ貼付時間（時間）",
+    "이번 패치 부착 시간 (시간)",
+    "Duración de uso de este parche (horas)"
+  ],
+  "提前移除时需更新为实际时长。": [
+    "If removed early, update this to the actual wear time.",
+    "提前移除時需更新為實際時長。",
+    "早めにはがした場合は、実際の時間に更新してください。",
+    "일찍 제거했다면 실제 부착 시간으로 수정해 주세요.",
+    "Si lo retiras antes, actualiza la duración real de uso."
+  ],
+  "请明确填写": [
+    "Enter a value",
+    "請明確填寫",
+    "値を入力してください",
+    "값을 입력해 주세요",
+    "Introduce un valor"
+  ],
+  "关联提醒": [
+    "Linked reminder",
+    "關聯提醒",
+    "関連するリマインダー",
+    "연결된 알림",
+    "Recordatorio vinculado"
+  ],
+  "自动匹配已有提醒": [
+    "Match an existing reminder automatically",
+    "自動配對已有提醒",
+    "既存のリマインダーと自動照合",
+    "기존 알림과 자동으로 연결",
+    "Vincular automáticamente con un recordatorio"
+  ],
+  "（已暂停）": [
+    "(paused)",
+    "（已暫停）",
+    "（一時停止中）",
+    "(일시 중지됨)",
+    "(en pausa)"
+  ],
+  "按实际使用的药物、用量和时间匹配；已有提醒前后各 2 小时内用药可获得星星。": [
+    "Matched by the medication, amount and actual use time. Use within two hours before or after an existing reminder can earn stars.",
+    "按實際使用的藥物、用量和時間配對；已有提醒前後各 2 小時內用藥可獲得星星。",
+    "実際に使った薬、量、時刻で照合します。既存のリマインダーの前後2時間以内の使用で星を獲得できます。",
+    "실제로 사용한 약물, 양과 시간으로 연결해요. 기존 알림 시간의 앞뒤 2시간 이내에 투약하면 별을 받을 수 있어요.",
+    "Se vincula según el fármaco, la cantidad y la hora real de uso. Puedes ganar estrellas al usarlo en las dos horas anteriores o posteriores a un recordatorio existente."
+  ],
+  "记录一次实际使用": [
+    "Log actual medication use",
+    "記錄一次實際使用",
+    "実際の使用を記録",
+    "실제 투약 기록",
+    "Registrar un uso real"
+  ],
+  "只有你确认的实际使用才会加入模型；提醒不会自动记账。": [
+    "Only actual use you confirm is added to the model; reminders do not create entries automatically.",
+    "只有你確認的實際使用才會加入模型；提醒不會自動記帳。",
+    "確認した実際の使用だけをモデルに追加します。リマインダーで自動記録はしません。",
+    "확인한 실제 투약만 모델에 추가해요. 알림이 자동으로 기록을 만들지는 않아요.",
+    "Solo se añade al modelo el uso real que confirmes; los recordatorios no crean registros automáticamente."
+  ],
+  "实际使用时间": [
+    "Actual use time",
+    "實際使用時間",
+    "実際に使用した日時",
+    "실제 사용 시간",
+    "Fecha y hora de uso real"
+  ],
+  "实际使用时间不能在未来。": [
+    "Actual use time cannot be in the future.",
+    "實際使用時間不能在未來。",
+    "実際の使用日時に未来は指定できません。",
+    "실제 사용 시간을 미래로 입력할 수 없어요.",
+    "La fecha de uso real no puede estar en el futuro."
+  ],
+  "请填写贴片佩戴时长。正在佩戴时可先填计划时长，提前移除后编辑实际时长。": [
+    "Enter patch wear time. While wearing it, you can enter the planned duration and update the actual duration if removed early.",
+    "請填寫貼片佩戴時長。正在佩戴時可先填計畫時長，提前移除後編輯實際時長。",
+    "パッチの貼付時間を入力してください。貼付中は予定時間を入力し、早めにはがしたら実際の時間に編集できます。",
+    "패치 부착 시간을 입력해 주세요. 부착 중이면 예정 시간을 입력한 뒤 일찍 제거했을 때 실제 시간으로 수정할 수 있어요.",
+    "Introduce la duración de uso del parche. Mientras lo llevas, puedes indicar la duración prevista y actualizarla si lo retiras antes."
+  ],
+  "今天普通提醒的 2 颗星星已经领齐了。": [
+    "You have collected today's 2 stars from regular reminders.",
+    "今天一般提醒的 2 顆星星已經領齊了。",
+    "通常のリマインダーでもらえる今日の2つの星は獲得済みです。",
+    "오늘 일반 알림으로 받을 수 있는 별 2개를 모두 받았어요.",
+    "Ya has recibido las 2 estrellas de hoy por recordatorios regulares."
+  ],
+  "这次提醒的星星已经领取过了。": [
+    "The stars for this reminder have already been collected.",
+    "這次提醒的星星已經領取過了。",
+    "このリマインダーの星はすでに獲得しています。",
+    "이 알림의 별은 이미 받았어요.",
+    "Ya has recibido las estrellas de este recordatorio."
+  ],
+  "同一次使用不会重复增加星星。": [
+    "The same use cannot earn stars twice.",
+    "同一次使用不會重複增加星星。",
+    "同じ使用で星を重複して獲得することはできません。",
+    "같은 투약으로 별을 중복해서 받을 수 없어요.",
+    "Un mismo uso no puede generar estrellas dos veces."
+  ],
+  "未匹配到前后 2 小时内、药物与用量一致的已有提醒。": [
+    "No existing reminder matched this medication and amount within two hours before or after use.",
+    "未配對到前後 2 小時內、藥物與用量一致的已有提醒。",
+    "前後2時間以内に、薬と量が一致する既存のリマインダーがありません。",
+    "앞뒤 2시간 이내에 약물과 사용량이 일치하는 기존 알림이 없어요.",
+    "No hay un recordatorio existente con el mismo fármaco y cantidad en las dos horas anteriores o posteriores al uso."
+  ],
+  "星星账本空间已满，本次未增加星星。": [
+    "The star ledger is full. No stars were added for this entry.",
+    "星星帳本空間已滿，本次未增加星星。",
+    "星の台帳がいっぱいのため、今回は星を追加できませんでした。",
+    "별 기록 공간이 가득 차 이번에는 별이 추가되지 않았어요.",
+    "El registro de estrellas está lleno. No se añadieron estrellas esta vez."
+  ],
+  "实际使用已记录，星星口袋里多了 {0} 颗。": [
+    "Use recorded. {0} stars added to your pocket.",
+    "實際使用已記錄，星星口袋裡多了 {0} 顆。",
+    "使用を記録しました。星のポケットに {0} 個増えました。",
+    "실제 사용을 기록했어요. 별 주머니에 {0}개가 늘었어요.",
+    "Uso registrado. Se han añadido {0} estrellas a tu bolsillo."
+  ],
+  "实际使用已记录，曲线已更新。{0}": [
+    "Use recorded and curves updated. {0}",
+    "實際使用已記錄，曲線已更新。{0}",
+    "使用を記録し、曲線を更新しました。{0}",
+    "실제 사용을 기록하고 곡선을 업데이트했어요. {0}",
+    "Uso registrado y curvas actualizadas. {0}"
+  ],
+  "确认已使用并记录": [
+    "Confirm use and save",
+    "確認已使用並記錄",
+    "使用を確認して記録",
+    "사용 확인 및 기록",
+    "Confirmar uso y guardar"
+  ],
+  "编辑提醒": [
+    "Edit reminder",
+    "編輯提醒",
+    "リマインダーを編集",
+    "알림 수정",
+    "Editar recordatorio"
+  ],
+  "创建提醒计划": [
+    "Create reminder plan",
+    "建立提醒計畫",
+    "リマインダープランを作成",
+    "알림 계획 만들기",
+    "Crear plan de recordatorios"
+  ],
+  "按既有方案设置固定间隔，不会自动决定或调整用量。": [
+    "Set a fixed interval based on your existing regimen. The app does not decide or adjust amounts automatically.",
+    "按既有方案設定固定間隔，不會自動決定或調整用量。",
+    "既存の治療計画に合わせて一定の間隔を設定します。アプリが用量を決めたり調整したりすることはありません。",
+    "기존 요법에 따라 일정한 간격을 설정해요. 앱이 사용량을 자동으로 결정하거나 조절하지 않아요.",
+    "Configura un intervalo fijo según tu pauta existente. La aplicación no decide ni ajusta automáticamente las cantidades."
+  ],
+  "计划名称": [
+    "Plan name",
+    "計畫名稱",
+    "プラン名",
+    "계획 이름",
+    "Nombre del plan"
+  ],
+  "给这个提醒起个名字": [
+    "Give this reminder a name",
+    "給這個提醒起個名字",
+    "リマインダーに名前をつける",
+    "알림에 이름을 붙여 주세요",
+    "Ponle un nombre al recordatorio"
+  ],
+  "首次提醒时间": [
+    "First reminder time",
+    "首次提醒時間",
+    "最初のリマインダー日時",
+    "첫 알림 시간",
+    "Primer recordatorio"
+  ],
+  "间隔（小时）": [
+    "Interval (hours)",
+    "間隔（小時）",
+    "間隔（時間）",
+    "간격 (시간)",
+    "Intervalo (horas)"
+  ],
+  "如 24 或 168": [
+    "e.g. 24 or 168",
+    "如 24 或 168",
+    "例：24 または 168",
+    "예: 24 또는 168",
+    "p. ej., 24 o 168"
+  ],
+  "请明确填写贴片计划佩戴时长。": [
+    "Enter the planned patch wear time.",
+    "請明確填寫貼片計畫佩戴時長。",
+    "パッチの予定貼付時間を入力してください。",
+    "패치의 예정 부착 시간을 입력해 주세요.",
+    "Introduce la duración prevista de uso del parche."
+  ],
+  "提醒计划已保存。": [
+    "Reminder plan saved.",
+    "提醒計畫已儲存。",
+    "リマインダープランを保存しました。",
+    "알림 계획을 저장했어요.",
+    "Plan de recordatorios guardado."
+  ],
+  "添加化验结果": [
+    "Add lab result",
+    "新增檢驗結果",
+    "検査結果を追加",
+    "검사 결과 추가",
+    "Añadir resultado de laboratorio"
+  ],
+  "请使用采血时刻；不要填写报告发出时间。": [
+    "Use the blood-sampling time, not the time the report was issued.",
+    "請使用採血時刻；不要填寫報告發出時間。",
+    "報告書の発行日時ではなく、採血した日時を入力してください。",
+    "결과가 나온 시간이 아닌 채혈 시간을 입력해 주세요.",
+    "Usa la fecha y hora de la extracción, no la de emisión del informe."
+  ],
+  "化验项目": [
+    "Lab analyte",
+    "檢驗項目",
+    "検査項目",
+    "검사 항목",
+    "Analito"
+  ],
+  "测定数值": [
+    "Measured value",
+    "測定數值",
+    "測定値",
+    "측정값",
+    "Valor medido"
+  ],
+  "报告单位": [
+    "Report unit",
+    "報告單位",
+    "報告書の単位",
+    "보고서 단위",
+    "Unidad del informe"
+  ],
+  "今天的心情已经记下了，明天再来写一笔吧。": [
+    "Today's mood is already recorded. You can add another tomorrow.",
+    "今天的心情已經記下了，明天再來寫一筆吧。",
+    "今日の気分はもう記録しました。また明日、書きに来てくださいね。",
+    "오늘의 기분은 이미 기록했어요. 내일 또 적으러 와 주세요.",
+    "El ánimo de hoy ya está guardado. Mañana puedes escribir de nuevo."
+  ],
+  "心情记录已达到本机容量上限，请先导出备份。": [
+    "Mood records have reached the local storage limit. Export a backup first.",
+    "心情記錄已達到本機容量上限，請先匯出備份。",
+    "気分の記録が保存件数の上限に達しました。先にバックアップをエクスポートしてください。",
+    "기분 기록이 로컬 저장 한도에 도달했어요. 먼저 백업을 내보내 주세요.",
+    "Los registros de ánimo han alcanzado el límite local. Exporta primero una copia de seguridad."
+  ],
+  "拖动坐标无效。": [
+    "Invalid drag coordinates.",
+    "拖曳座標無效。",
+    "ドラッグの座標が無効です。",
+    "드래그 좌표가 유효하지 않아요.",
+    "Coordenadas de arrastre no válidas."
+  ],
+  "桌宠画面状态无效。": [
+    "Invalid pet display state.",
+    "桌寵畫面狀態無效。",
+    "ペットの表示状態が無効です。",
+    "펫 표시 상태가 유효하지 않아요.",
+    "Estado visual de la mascota no válido."
+  ],
+  "桌宠姿态无效。": [
+    "Invalid pet pose.",
+    "桌寵姿態無效。",
+    "ペットの姿勢が無効です。",
+    "펫 자세가 유효하지 않아요.",
+    "Postura de la mascota no válida."
+  ],
+  "桌宠动作无效。": [
+    "Invalid pet animation.",
+    "桌寵動作無效。",
+    "ペットの動きが無効です。",
+    "펫 동작이 유효하지 않아요.",
+    "Animación de la mascota no válida."
+  ],
+  "桌宠姿态矩阵无效。": [
+    "Invalid pet pose transform.",
+    "桌寵姿態矩陣無效。",
+    "ペットの姿勢変換が無効です。",
+    "펫 자세 변환이 유효하지 않아요.",
+    "Transformación de postura de la mascota no válida."
+  ],
+  "桌宠过渡状态无效。": [
+    "Invalid pet transition state.",
+    "桌寵過渡狀態無效。",
+    "ペットの遷移状態が無効です。",
+    "펫 전환 상태가 유효하지 않아요.",
+    "Estado de transición de la mascota no válido."
+  ],
+  "星星余额画面无效。": [
+    "Invalid star balance display.",
+    "星星餘額畫面無效。",
+    "星の残高表示が無効です。",
+    "별 잔액 표시가 유효하지 않아요.",
+    "Visualización del saldo de estrellas no válida."
+  ],
+  "星光时间无效。": [
+    "Invalid starlight animation time.",
+    "星光時間無效。",
+    "星の光のアニメーション時刻が無効です。",
+    "별빛 애니메이션 시간이 유효하지 않아요.",
+    "Tiempo de animación de estrellas no válido."
+  ],
+  "桌宠待机时间无效。": [
+    "Invalid pet idle time.",
+    "桌寵待機時間無效。",
+    "ペットの待機時間が無効です。",
+    "펫 대기 시간이 유효하지 않아요.",
+    "Tiempo de reposo de la mascota no válido."
+  ],
+  "桌宠产星画面无效。": [
+    "Invalid star-producing animation state.",
+    "桌寵產星畫面無效。",
+    "星を生むアニメーションの状態が無効です。",
+    "별 생성 애니메이션 상태가 유효하지 않아요.",
+    "Estado de la animación de generación de estrellas no válido."
+  ],
+  "仅桌宠窗口可以执行此操作。": [
+    "This action is available only from the pet window.",
+    "僅桌寵視窗可以執行此操作。",
+    "この操作はペットのウインドウでのみ実行できます。",
+    "이 작업은 펫 창에서만 할 수 있어요.",
+    "Esta acción solo está disponible desde la ventana de la mascota."
+  ],
+  "请保持按住鱼鳍后拖动。": [
+    "Keep holding the fin while dragging.",
+    "請保持按住魚鰭後拖曳。",
+    "ひれを押したままドラッグしてください。",
+    "지느러미를 누른 상태로 드래그해 주세요.",
+    "Mantén pulsada la aleta mientras arrastras."
+  ],
+  "请在鱼鳍上按住后拖动。": [
+    "Press and hold the fin, then drag.",
+    "請在魚鰭上按住後拖曳。",
+    "ひれを長押ししてからドラッグしてください。",
+    "지느러미를 길게 누른 뒤 드래그해 주세요.",
+    "Mantén pulsada la aleta y después arrastra."
+  ],
+  "此页面无权访问桌宠画面。": [
+    "This page cannot access the pet display.",
+    "此頁面無權存取桌寵畫面。",
+    "このページはペットの画面にアクセスできません。",
+    "이 페이지는 펫 화면에 접근할 수 없어요.",
+    "Esta página no tiene acceso a la vista de la mascota."
+  ],
+  "此页面无权进行桌宠互动。": [
+    "This page cannot interact with the pet.",
+    "此頁面無權進行桌寵互動。",
+    "このページではペットと触れ合えません。",
+    "이 페이지에서는 펫과 상호작용할 수 없어요.",
+    "Esta página no permite interactuar con la mascota."
+  ],
+  "未知互动窗口。": [
+    "Unknown interaction window.",
+    "未知互動視窗。",
+    "不明な操作ウインドウです。",
+    "알 수 없는 상호작용 창이에요.",
+    "Ventana de interacción desconocida."
+  ],
+  "请从手账拖出一颗星星。": [
+    "Drag a star from the journal.",
+    "請從手帳拖出一顆星星。",
+    "手帳から星を1つドラッグしてください。",
+    "기록장에서 별 하나를 드래그해 주세요.",
+    "Arrastra una estrella desde el diario."
+  ],
+  "星星还不够，攒到一颗时再来吧。": [
+    "No stars yet. Come back when you have one.",
+    "星星還不夠，攢到一顆時再來吧。",
+    "まだ星が足りないみたい。1つ貯まったら、また来てね。",
+    "아직 별이 부족해요. 하나 모이면 다시 와 주세요.",
+    "Aún no hay suficientes estrellas. Vuelve cuando tengas una."
+  ],
+  "这颗星星已经吃掉啦。": [
+    "This star has already been eaten.",
+    "這顆星星已經吃掉啦。",
+    "この星はもう食べちゃったよ。",
+    "이 별은 이미 먹었어요.",
+    "Esta estrella ya se la ha comido."
+  ],
+  "这次拖动已经结束。": [
+    "This drag has ended.",
+    "這次拖曳已經結束。",
+    "今回のドラッグは終了しました。",
+    "이번 드래그가 끝났어요.",
+    "Este arrastre ha terminado."
+  ],
+  "这次拖动已经结束，再拖一颗试试。": [
+    "This drag has ended. Try dragging another star.",
+    "這次拖曳已經結束，再拖一顆試試。",
+    "今回のドラッグは終了しました。もう一度、星をドラッグしてみてください。",
+    "이번 드래그가 끝났어요. 별을 다시 드래그해 보세요.",
+    "Este arrastre ha terminado. Prueba a arrastrar otra estrella."
+  ],
+  "请把星星放到画面中的鲨鱼身上。": [
+    "Drop the star onto the shark on screen.",
+    "請把星星放到畫面中的鯊魚身上。",
+    "画面のサメに星を重ねて離してください。",
+    "화면 속 상어 위에 별을 놓아 주세요.",
+    "Suelta la estrella sobre el tiburón de la pantalla."
+  ],
+  "到达 2 级后会有偶尔捡到的星星。": [
+    "From level 2, your shark may occasionally find stars.",
+    "到達 2 級後會有偶爾撿到的星星。",
+    "レベル2になると、ときどき星を拾ってきます。",
+    "2레벨부터 상어가 가끔 별을 주워 와요.",
+    "A partir del nivel 2, tu tiburón puede encontrar estrellas de vez en cuando."
+  ],
+  "星星随机数无效。": [
+    "Invalid star random value.",
+    "星星隨機數無效。",
+    "星の乱数値が無効です。",
+    "별 무작위 값이 유효하지 않아요.",
+    "Valor aleatorio de estrellas no válido."
+  ],
+  "请选择一只内置鲨鱼。": [
+    "Choose a built-in shark.",
+    "請選擇一隻內建鯊魚。",
+    "内蔵のサメを選んでください。",
+    "기본 상어를 선택해 주세요.",
+    "Elige un tiburón incluido."
+  ],
+  "互动时间无效。": [
+    "Invalid interaction time.",
+    "互動時間無效。",
+    "操作の時刻が無効です。",
+    "상호작용 시간이 유효하지 않아요.",
+    "Hora de interacción no válida."
+  ],
+  "喂食请求无效。": [
+    "Invalid feeding request.",
+    "餵食請求無效。",
+    "食事のリクエストが無効です。",
+    "먹이 주기 요청이 유효하지 않아요.",
+    "Solicitud de alimentación no válida."
+  ],
+  "星星账本已满，暂时不能喂食。": [
+    "The star ledger is full. Feeding is unavailable for now.",
+    "星星帳本已滿，暫時不能餵食。",
+    "星の台帳がいっぱいのため、今は食べさせられません。",
+    "별 기록이 가득 차 지금은 먹이를 줄 수 없어요.",
+    "El registro de estrellas está lleno. Por ahora no se puede alimentar."
+  ],
+  "星星账本已满，暂时不能收下星星。": [
+    "The star ledger is full. More stars cannot be collected for now.",
+    "星星帳本已滿，暫時不能收下星星。",
+    "星の台帳がいっぱいのため、今は星を受け取れません。",
+    "별 기록이 가득 차 지금은 별을 받을 수 없어요.",
+    "El registro de estrellas está lleno. Por ahora no se pueden recibir más estrellas."
+  ],
+  "桌宠位置无效。": [
+    "Invalid pet position.",
+    "桌寵位置無效。",
+    "ペットの位置が無効です。",
+    "펫 위치가 유효하지 않아요.",
+    "Posición de la mascota no válida."
+  ],
+  "数据格式不正确：{0}": [
+    "Invalid data format: {0}",
+    "資料格式不正確：{0}",
+    "データ形式が正しくありません：{0}",
+    "데이터 형식이 올바르지 않아요: {0}",
+    "Formato de datos incorrecto: {0}"
+  ],
+  "{0}存在重复 ID": [
+    "Duplicate IDs in {0}",
+    "{0}存在重複 ID",
+    "{0}の ID が重複しています",
+    "{0}에 중복 ID가 있어요",
+    "Hay identificadores duplicados en {0}"
+  ],
+  "未知给药方式": [
+    "Unknown administration route",
+    "未知給藥方式",
+    "不明な投与経路",
+    "알 수 없는 투여 경로",
+    "Vía de administración desconocida"
+  ],
+  "持续时长": [
+    "Duration",
+    "持續時長",
+    "持続時間",
+    "지속 시간",
+    "Duración"
+  ],
+  "状态": [
+    "State",
+    "狀態",
+    "状態",
+    "상태",
+    "Estado"
+  ],
+  "不支持的版本": [
+    "Unsupported version",
+    "不支援的版本",
+    "非対応のバージョン",
+    "지원하지 않는 버전",
+    "Versión no compatible"
+  ],
+  "设置": [
+    "Settings",
+    "設定",
+    "設定",
+    "설정",
+    "Configuración"
+  ],
+  "桌宠名字": [
+    "Pet name",
+    "桌寵名字",
+    "ペットの名前",
+    "펫 이름",
+    "Nombre de la mascota"
+  ],
+  "自定义名字": [
+    "Custom name",
+    "自訂名字",
+    "カスタム名",
+    "사용자 지정 이름",
+    "Nombre personalizado"
+  ],
+  "称谓": [
+    "Pronouns / form of address",
+    "稱謂",
+    "呼び方",
+    "호칭",
+    "Forma de dirigirse a ti"
+  ],
+  "陪伴模式": [
+    "Companion mode",
+    "陪伴模式",
+    "陪伴モード",
+    "동반 모드",
+    "Modo de compañía"
+  ],
+  "界面语言": [
+    "Interface language",
+    "介面語言",
+    "表示言語",
+    "화면 언어",
+    "Idioma de la interfaz"
+  ],
+  "初始设置完成状态": [
+    "Initial setup completion status",
+    "初始設定完成狀態",
+    "初期設定の完了状態",
+    "초기 설정 완료 상태",
+    "Estado de finalización de la configuración inicial"
+  ],
+  "FTM 显示 E2": [
+    "Show E2 in FTM mode",
+    "FTM 顯示 E2",
+    "FTM モードで E2 を表示",
+    "FTM 모드에서 E2 표시",
+    "Mostrar E2 en modo FTM"
+  ],
+  "全屏时隐藏": [
+    "Hide in full screen",
+    "全螢幕時隱藏",
+    "全画面表示中は隠す",
+    "전체 화면에서 숨기기",
+    "Ocultar en pantalla completa"
+  ],
+  "皮肤 ID": [
+    "Appearance ID",
+    "皮膚 ID",
+    "スキン ID",
+    "스킨 ID",
+    "ID de apariencia"
+  ],
+  "皮肤缩放": [
+    "Appearance scale",
+    "皮膚縮放",
+    "スキンの拡大率",
+    "스킨 크기",
+    "Escala de apariencia"
+  ],
+  "计划": [
+    "Plans",
+    "計畫",
+    "プラン",
+    "계획",
+    "Planes"
+  ],
+  "计划 ID": [
+    "Plan ID",
+    "計畫 ID",
+    "プラン ID",
+    "계획 ID",
+    "ID del plan"
+  ],
+  "计划用量": [
+    "Planned amount",
+    "計畫用量",
+    "予定使用量",
+    "예정 사용량",
+    "Cantidad prevista"
+  ],
+  "提醒间隔": [
+    "Reminder interval",
+    "提醒間隔",
+    "通知間隔",
+    "알림 간격",
+    "Intervalo de recordatorios"
+  ],
+  "计划开始时间": [
+    "Plan start time",
+    "計畫開始時間",
+    "プランの開始日時",
+    "계획 시작 시간",
+    "Inicio del plan"
+  ],
+  "计划状态": [
+    "Plan status",
+    "計畫狀態",
+    "プランの状態",
+    "계획 상태",
+    "Estado del plan"
+  ],
+  "用药记录": [
+    "Medication records",
+    "用藥記錄",
+    "使用記録",
+    "투약 기록",
+    "Registros de medicación"
+  ],
+  "记录 ID": [
+    "Record ID",
+    "記錄 ID",
+    "記録 ID",
+    "기록 ID",
+    "ID del registro"
+  ],
+  "记录用量": [
+    "Recorded amount",
+    "記錄用量",
+    "記録された使用量",
+    "기록된 사용량",
+    "Cantidad registrada"
+  ],
+  "记录时间": [
+    "Record time",
+    "記錄時間",
+    "記録日時",
+    "기록 시간",
+    "Fecha y hora del registro"
+  ],
+  "化验记录": [
+    "Lab records",
+    "檢驗記錄",
+    "検査記録",
+    "검사 기록",
+    "Registros de análisis"
+  ],
+  "化验单位": [
+    "Lab unit",
+    "檢驗單位",
+    "検査の単位",
+    "검사 단위",
+    "Unidad del análisis"
+  ],
+  "化验 ID": [
+    "Lab result ID",
+    "檢驗 ID",
+    "検査 ID",
+    "검사 ID",
+    "ID del análisis"
+  ],
+  "化验数值": [
+    "Lab value",
+    "檢驗數值",
+    "検査値",
+    "검사 수치",
+    "Valor del análisis"
+  ],
+  "化验时间": [
+    "Sampling time",
+    "檢驗時間",
+    "検査日時",
+    "검사 시간",
+    "Fecha y hora de la extracción"
+  ],
+  "模型参数": [
+    "Model parameters",
+    "模型參數",
+    "モデルのパラメータ",
+    "모델 매개변수",
+    "Parámetros del modelo"
+  ],
+  "药代参考设置": [
+    "Pharmacokinetic reference settings",
+    "藥代參考設定",
+    "薬物動態の参考設定",
+    "약동학 참고 설정",
+    "Ajustes de referencia farmacocinética"
+  ],
+  "模型体重（kg）": [
+    "Model body weight (kg)",
+    "模型體重（kg）",
+    "モデルの体重（kg）",
+    "모델 체중 (kg)",
+    "Peso del modelo (kg)"
+  ],
+  "舌下黏膜吸收份额": [
+    "Sublingual mucosal absorption fraction",
+    "舌下黏膜吸收份額",
+    "舌下粘膜からの吸収割合",
+    "설하 점막 흡수 비율",
+    "Fracción de absorción por la mucosa sublingual"
+  ],
+  "模型时间参数": [
+    "Model time parameters",
+    "模型時間參數",
+    "モデルの時間パラメータ",
+    "모델 시간 매개변수",
+    "Parámetros temporales del modelo"
+  ],
+  "基线": [
+    "Baseline",
+    "基線",
+    "ベースライン",
+    "기저값",
+    "Valor basal"
+  ],
+  "雌二醇基线": [
+    "Estradiol baseline",
+    "雌二醇基線",
+    "エストラジオールのベースライン",
+    "에스트라디올 기저값",
+    "Valor basal de estradiol"
+  ],
+  "睾酮基线": [
+    "Testosterone baseline",
+    "睪固酮基線",
+    "テストステロンのベースライン",
+    "테스토스테론 기저값",
+    "Valor basal de testosterona"
+  ],
+  "参考基线": [
+    "Reference baseline",
+    "參考基線",
+    "参考ベースライン",
+    "참고 기저값",
+    "Valor basal de referencia"
+  ],
+  "雌二醇参考基线": [
+    "Estradiol reference baseline",
+    "雌二醇參考基線",
+    "エストラジオールの参考ベースライン",
+    "에스트라디올 참고 기저값",
+    "Valor basal de referencia de estradiol"
+  ],
+  "睾酮参考基线": [
+    "Testosterone reference baseline",
+    "睪固酮參考基線",
+    "テストステロンの参考ベースライン",
+    "테스토스테론 참고 기저값",
+    "Valor basal de referencia de testosterona"
+  ],
+  "自定义参考背景": [
+    "Custom reference background",
+    "自訂參考背景",
+    "カスタム参考背景値",
+    "사용자 지정 참고 배경값",
+    "Valores de referencia personalizados"
+  ],
+  "互动记录": [
+    "Interaction records",
+    "互動記錄",
+    "触れ合いの記録",
+    "상호작용 기록",
+    "Registros de interacción"
+  ],
+  "互动动作": [
+    "Interaction action",
+    "互動動作",
+    "触れ合いの動作",
+    "상호작용 동작",
+    "Acción de interacción"
+  ],
+  "互动 ID": [
+    "Interaction ID",
+    "互動 ID",
+    "操作 ID",
+    "상호작용 ID",
+    "ID de interacción"
+  ],
+  "互动时间": [
+    "Interaction time",
+    "互動時間",
+    "操作日時",
+    "상호작용 시간",
+    "Fecha y hora de interacción"
+  ],
+  "提醒记录": [
+    "Reminder records",
+    "提醒記錄",
+    "通知記録",
+    "알림 기록",
+    "Registros de recordatorios"
+  ],
+  "提醒状态": [
+    "Reminder status",
+    "提醒狀態",
+    "通知の状態",
+    "알림 상태",
+    "Estado del recordatorio"
+  ],
+  "提醒计划 ID": [
+    "Reminder plan ID",
+    "提醒計畫 ID",
+    "リマインダープラン ID",
+    "알림 계획 ID",
+    "ID del plan de recordatorios"
+  ],
+  "提醒计划时间": [
+    "Scheduled reminder time",
+    "提醒計畫時間",
+    "通知の予定時刻",
+    "예정 알림 시간",
+    "Hora programada del recordatorio"
+  ],
+  "提醒 ID": [
+    "Reminder ID",
+    "提醒 ID",
+    "通知 ID",
+    "알림 ID",
+    "ID del recordatorio"
+  ],
+  "提醒时间": [
+    "Reminder time",
+    "提醒時間",
+    "通知時刻",
+    "알림 시간",
+    "Hora del recordatorio"
+  ],
+  "提醒快照用量": [
+    "Amount at reminder time",
+    "提醒快照用量",
+    "通知時点の使用量",
+    "알림 시점의 사용량",
+    "Cantidad al emitir el recordatorio"
+  ],
+  "提醒快照间隔": [
+    "Interval at reminder time",
+    "提醒快照間隔",
+    "通知時点の間隔",
+    "알림 시점의 간격",
+    "Intervalo al emitir el recordatorio"
+  ],
+  "文件超过 5 MB": [
+    "File exceeds 5 MB",
+    "檔案超過 5 MB",
+    "ファイルが 5 MB を超えています",
+    "파일이 5 MB를 초과해요",
+    "El archivo supera los 5 MB"
+  ],
+  "数据超过 5 MB": [
+    "Data exceeds 5 MB",
+    "資料超過 5 MB",
+    "データが 5 MB を超えています",
+    "데이터가 5 MB를 초과해요",
+    "Los datos superan los 5 MB"
+  ],
+  "心情日期": [
+    "Mood date",
+    "心情日期",
+    "気分の日付",
+    "기분 날짜",
+    "Fecha del ánimo"
+  ],
+  "每日心情": [
+    "Daily moods",
+    "每日心情",
+    "毎日の気分",
+    "매일의 기분",
+    "Ánimo diario"
+  ],
+  "每日心情存在重复日期": [
+    "Duplicate dates in daily moods",
+    "每日心情存在重複日期",
+    "毎日の気分に日付の重複があります",
+    "매일의 기분에 중복 날짜가 있어요",
+    "Hay fechas duplicadas en el ánimo diario"
+  ],
+  "每日心情选项": [
+    "Daily mood choice",
+    "每日心情選項",
+    "今日の気分の選択肢",
+    "오늘의 기분 선택",
+    "Opción de ánimo diario"
+  ],
+  "心情记录时间": [
+    "Mood record time",
+    "心情記錄時間",
+    "気分を記録した時刻",
+    "기분 기록 시간",
+    "Hora del registro de ánimo"
+  ],
+  "星星时间": [
+    "Star timestamp",
+    "星星時間",
+    "星の時刻",
+    "별 시간",
+    "Fecha y hora de estrellas"
+  ],
+  "星星账本": [
+    "Star ledger",
+    "星星帳本",
+    "星の台帳",
+    "별 기록",
+    "Registro de estrellas"
+  ],
+  "星星记录": [
+    "Star record",
+    "星星記錄",
+    "星の記録",
+    "별 기록 항목",
+    "Registro de una estrella"
+  ],
+  "星星记录重复或标识无效": [
+    "Duplicate star entry or invalid identifier",
+    "星星記錄重複或識別碼無效",
+    "星の記録が重複しているか ID が無効です",
+    "별 기록이 중복되거나 ID가 유효하지 않아요",
+    "Registro de estrellas duplicado o identificador no válido"
+  ],
+  "星星互动日期或鲨鱼": [
+    "Star interaction date or shark",
+    "星星互動日期或鯊魚",
+    "星の操作日またはサメ",
+    "별 상호작용 날짜 또는 상어",
+    "Fecha o tiburón de la interacción con estrellas"
+  ],
+  "星星喂食消费": [
+    "Star feeding expense",
+    "星星餵食消費",
+    "食べた星の消費",
+    "별 먹이 소비",
+    "Gasto de estrellas al alimentar"
+  ],
+  "星星待机奖励": [
+    "Idle star reward",
+    "星星待機獎勵",
+    "待機中の星の報酬",
+    "대기 중 별 보상",
+    "Recompensa de estrellas en reposo"
+  ],
+  "星星日期或提醒间隔": [
+    "Star date or reminder interval",
+    "星星日期或提醒間隔",
+    "星の日付または通知間隔",
+    "별 날짜 또는 알림 간격",
+    "Fecha de estrellas o intervalo del recordatorio"
+  ],
+  "星星奖励参数": [
+    "Star reward parameters",
+    "星星獎勵參數",
+    "星の報酬パラメータ",
+    "별 보상 매개변수",
+    "Parámetros de recompensa de estrellas"
+  ],
+  "星星实际使用时间": [
+    "Actual use time for star reward",
+    "星星實際使用時間",
+    "星の獲得に対応する実際の使用時刻",
+    "별 보상에 해당하는 실제 사용 시간",
+    "Hora de uso real para la recompensa"
+  ],
+  "星星获得日期": [
+    "Star earned date",
+    "星星獲得日期",
+    "星の獲得日",
+    "별 획득 날짜",
+    "Fecha de obtención de estrellas"
+  ],
+  "星星当日普通奖励超过上限": [
+    "Daily regular star reward limit exceeded",
+    "星星當日一般獎勵超過上限",
+    "通常の星の報酬が1日の上限を超えています",
+    "일반 별 보상의 일일 한도를 초과했어요",
+    "Se ha superado el límite diario de recompensas regulares"
+  ],
+  "星星佩戴时长": [
+    "Patch wear duration for star reward",
+    "星星佩戴時長",
+    "星の獲得に対応するパッチ貼付時間",
+    "별 보상에 해당하는 패치 부착 시간",
+    "Duración del parche para la recompensa"
+  ],
+  "星星同一次实际使用重复": [
+    "Duplicate star reward for the same actual use",
+    "星星同一次實際使用重複",
+    "同じ使用に対する星の報酬が重複しています",
+    "같은 실제 사용에 대한 별 보상이 중복됐어요",
+    "Recompensa duplicada por el mismo uso real"
+  ],
+  "星星待机奖励等级": [
+    "Idle star reward level",
+    "星星待機獎勵等級",
+    "待機中の星の報酬レベル",
+    "대기 중 별 보상 레벨",
+    "Nivel de recompensa de estrellas en reposo"
+  ],
+  "星星余额不足": [
+    "Insufficient star balance",
+    "星星餘額不足",
+    "星の残高不足",
+    "별 잔액 부족",
+    "Saldo de estrellas insuficiente"
+  ],
+  "alwaysOnTop": [
+    "Keep on top",
+    "保持置頂",
+    "最前面に表示",
+    "항상 위에 표시",
+    "Mantener encima"
+  ],
+  "launchAtLogin": [
+    "Launch at login",
+    "登入時啟動",
+    "ログイン時に起動",
+    "로그인 시 실행",
+    "Iniciar al acceder"
+  ],
+  "notifications": [
+    "Notifications",
+    "通知",
+    "通知",
+    "알림",
+    "Notificaciones"
+  ],
+  "privateNotifications": [
+    "Notification privacy",
+    "通知隱私",
+    "通知のプライバシー",
+    "알림 개인정보 보호",
+    "Privacidad de notificaciones"
+  ],
+  "petVisible": [
+    "Pet visibility",
+    "桌寵顯示狀態",
+    "ペットの表示状態",
+    "펫 표시 여부",
+    "Visibilidad de la mascota"
+  ],
+  "reducedMotion": [
+    "Reduced motion",
+    "減少動畫",
+    "視差効果を減らす",
+    "동작 줄이기",
+    "Reducir animaciones"
+  ],
+  "皮肤导入失败：{0}": [
+    "Appearance import failed: {0}",
+    "皮膚匯入失敗：{0}",
+    "スキンのインポートに失敗しました：{0}",
+    "스킨 가져오기 실패: {0}",
+    "Error al importar la apariencia: {0}"
+  ],
+  "无效的皮肤 ID。": [
+    "Invalid appearance ID.",
+    "無效的皮膚 ID。",
+    "スキン ID が無効です。",
+    "스킨 ID가 유효하지 않아요.",
+    "ID de apariencia no válido."
+  ],
+  "模型引用必须是普通相对文件路径。": [
+    "Model references must use normal relative file paths.",
+    "模型引用必須是一般相對檔案路徑。",
+    "モデルの参照には通常の相対ファイルパスを使ってください。",
+    "모델 참조에는 일반 상대 파일 경로를 사용해야 해요.",
+    "Las referencias del modelo deben ser rutas de archivo relativas normales."
+  ],
+  "模型引用包含目录穿越或不支持的文件名。": [
+    "A model reference contains path traversal or an unsupported file name.",
+    "模型引用包含目錄穿越或不支援的檔案名稱。",
+    "モデルの参照にディレクトリトラバーサルか非対応のファイル名が含まれています。",
+    "모델 참조에 디렉터리 탐색 또는 지원하지 않는 파일 이름이 포함돼 있어요.",
+    "Una referencia del modelo contiene recorrido de directorios o un nombre de archivo no compatible."
+  ],
+  "不支持符号链接或目录联接。": [
+    "Symbolic links and directory junctions are not supported.",
+    "不支援符號連結或目錄連接。",
+    "シンボリックリンクとジャンクションは使えません。",
+    "심볼릭 링크와 디렉터리 접합은 지원하지 않아요.",
+    "No se admiten enlaces simbólicos ni uniones de directorios."
+  ],
+  "文件超出了所选模型目录。": [
+    "The file is outside the selected model directory.",
+    "檔案超出了所選模型目錄。",
+    "ファイルが選択したモデルのフォルダーの外にあります。",
+    "파일이 선택한 모델 폴더 밖에 있어요.",
+    "El archivo está fuera de la carpeta del modelo seleccionado."
+  ],
+  "模型引用不是普通文件。": [
+    "The model reference is not a regular file.",
+    "模型引用不是一般檔案。",
+    "モデルの参照は通常のファイルではありません。",
+    "모델 참조가 일반 파일이 아니에요.",
+    "La referencia del modelo no es un archivo normal."
+  ],
+  "仅支持 Cubism 3/4/5 模型数据、JSON 与图片，不接收脚本、网页、声音或程序。": [
+    "Only Cubism 3/4/5 model data, JSON and images are accepted. Scripts, web pages, audio and programs are not allowed.",
+    "僅支援 Cubism 3/4/5 模型資料、JSON 與圖片，不接收指令碼、網頁、聲音或程式。",
+    "Cubism 3/4/5 のモデルデータ、JSON、画像のみ対応しています。スクリプト、Web ページ、音声、実行ファイルは受け付けません。",
+    "Cubism 3/4/5 모델 데이터, JSON과 이미지만 지원해요. 스크립트, 웹페이지, 소리 또는 프로그램은 허용하지 않아요.",
+    "Solo se aceptan datos de modelos Cubism 3/4/5, JSON e imágenes. No se permiten scripts, páginas web, audio ni programas."
+  ],
+  "{0} JSON 文件过大。": [
+    "The {0} JSON file is too large.",
+    "{0} JSON 檔案過大。",
+    "{0} の JSON ファイルが大きすぎます。",
+    "{0} JSON 파일이 너무 커요.",
+    "El archivo JSON {0} es demasiado grande."
+  ],
+  "{0} 不是有效 JSON。": [
+    "{0} is not valid JSON.",
+    "{0} 不是有效 JSON。",
+    "{0} は有効な JSON ではありません。",
+    "{0}은(는) 유효한 JSON이 아니에요.",
+    "{0} no es JSON válido."
+  ],
+  "{0} 顶层必须是 JSON 对象。": [
+    "The top level of {0} must be a JSON object.",
+    "{0} 頂層必須是 JSON 物件。",
+    "{0} の最上位は JSON オブジェクトである必要があります。",
+    "{0}의 최상위는 JSON 객체여야 해요.",
+    "El nivel superior de {0} debe ser un objeto JSON."
+  ],
+  "{0} JSON 结构过于复杂。": [
+    "The JSON structure of {0} is too complex.",
+    "{0} JSON 結構過於複雜。",
+    "{0} の JSON 構造が複雑すぎます。",
+    "{0} JSON 구조가 너무 복잡해요.",
+    "La estructura JSON de {0} es demasiado compleja."
+  ],
+  "{0} 含不支持的对象属性。": [
+    "{0} contains unsupported object properties.",
+    "{0} 含不支援的物件屬性。",
+    "{0} に非対応のオブジェクトプロパティが含まれています。",
+    "{0}에 지원하지 않는 객체 속성이 있어요.",
+    "{0} contiene propiedades de objeto no admitidas."
+  ],
+  "{0} 包含无效数值。": [
+    "{0} contains invalid numeric values.",
+    "{0} 包含無效數值。",
+    "{0} に無効な数値が含まれています。",
+    "{0}에 유효하지 않은 숫자가 있어요.",
+    "{0} contiene valores numéricos no válidos."
+  ],
+  "引用文件类型不匹配：{0}": [
+    "Referenced file type does not match: {0}",
+    "引用檔案類型不符：{0}",
+    "参照ファイルの種類が一致しません：{0}",
+    "참조 파일 형식이 일치하지 않아요: {0}",
+    "El tipo de archivo referenciado no coincide: {0}"
+  ],
+  "PNG 纹理格式无效。": [
+    "Invalid PNG texture format.",
+    "PNG 紋理格式無效。",
+    "PNG テクスチャの形式が無効です。",
+    "PNG 텍스처 형식이 유효하지 않아요.",
+    "Formato de textura PNG no válido."
+  ],
+  "JPEG 纹理格式无效。": [
+    "Invalid JPEG texture format.",
+    "JPEG 紋理格式無效。",
+    "JPEG テクスチャの形式が無効です。",
+    "JPEG 텍스처 형식이 유효하지 않아요.",
+    "Formato de textura JPEG no válido."
+  ],
+  "无法读取 JPEG 纹理尺寸。": [
+    "Unable to read JPEG texture dimensions.",
+    "無法讀取 JPEG 紋理尺寸。",
+    "JPEG テクスチャのサイズを読み取れません。",
+    "JPEG 텍스처 크기를 읽을 수 없어요.",
+    "No se pueden leer las dimensiones de la textura JPEG."
+  ],
+  "WebP 纹理格式无效。": [
+    "Invalid WebP texture format.",
+    "WebP 紋理格式無效。",
+    "WebP テクスチャの形式が無効です。",
+    "WebP 텍스처 형식이 유효하지 않아요.",
+    "Formato de textura WebP no válido."
+  ],
+  "不支持此 WebP 纹理格式。": [
+    "This WebP texture format is not supported.",
+    "不支援此 WebP 紋理格式。",
+    "この WebP テクスチャ形式は非対応です。",
+    "이 WebP 텍스처 형식은 지원하지 않아요.",
+    "Este formato de textura WebP no es compatible."
+  ],
+  "单个模型文件为空或超过 64 MB。": [
+    "A model file is empty or exceeds 64 MB.",
+    "單個模型檔案為空或超過 64 MB。",
+    "モデルファイルが空か、64 MB を超えています。",
+    "모델 파일이 비어 있거나 64 MB를 초과해요.",
+    "Un archivo de modelo está vacío o supera los 64 MB."
+  ],
+  "仅支持有效的 Cubism .moc3 模型。": [
+    "Only valid Cubism .moc3 models are supported.",
+    "僅支援有效的 Cubism .moc3 模型。",
+    "有効な Cubism .moc3 モデルのみ対応しています。",
+    "유효한 Cubism .moc3 모델만 지원해요.",
+    "Solo se admiten modelos Cubism .moc3 válidos."
+  ],
+  "纹理尺寸过大或无效。": [
+    "Texture dimensions are too large or invalid.",
+    "紋理尺寸過大或無效。",
+    "テクスチャのサイズが大きすぎるか無効です。",
+    "텍스처 크기가 너무 크거나 유효하지 않아요.",
+    "Las dimensiones de la textura son demasiado grandes o no válidas."
+  ],
+  "请选择以 .model3.json 结尾的模型文件。": [
+    "Choose a model file ending in .model3.json.",
+    "請選擇以 .model3.json 結尾的模型檔案。",
+    "拡張子が .model3.json のモデルファイルを選んでください。",
+    "이름이 .model3.json으로 끝나는 모델 파일을 선택해 주세요.",
+    "Elige un archivo de modelo que termine en .model3.json."
+  ],
+  "文件名仅大小写不同，无法安全导入。": [
+    "File names differ only by letter case and cannot be imported safely.",
+    "檔案名稱僅大小寫不同，無法安全匯入。",
+    "大文字と小文字だけが異なるファイル名があり、安全にインポートできません。",
+    "대소문자만 다른 파일 이름이 있어 안전하게 가져올 수 없어요.",
+    "Hay nombres que solo se distinguen por mayúsculas y minúsculas y no se pueden importar de forma segura."
+  ],
+  "模型引用超过 512 个文件。": [
+    "The model references more than 512 files.",
+    "模型引用超過 512 個檔案。",
+    "モデルが 512 個を超えるファイルを参照しています。",
+    "모델 참조 파일이 512개를 초과해요.",
+    "El modelo referencia más de 512 archivos."
+  ],
+  "模型文件为空或超过 64 MB。": [
+    "The model file is empty or exceeds 64 MB.",
+    "模型檔案為空或超過 64 MB。",
+    "モデルファイルが空か、64 MB を超えています。",
+    "모델 파일이 비어 있거나 64 MB를 초과해요.",
+    "El archivo de modelo está vacío o supera los 64 MB."
+  ],
+  "模型引用文件总量超过 300 MB。": [
+    "Referenced model files exceed 300 MB in total.",
+    "模型引用檔案總量超過 300 MB。",
+    "モデルが参照するファイルの合計が 300 MB を超えています。",
+    "모델 참조 파일의 총 크기가 300 MB를 초과해요.",
+    "Los archivos referenciados por el modelo superan los 300 MB en total."
+  ],
+  "源模型正在变更，请完成编辑后重试。": [
+    "The source model is changing. Finish editing it, then try again.",
+    "來源模型正在變更，請完成編輯後重試。",
+    "元のモデルが変更中です。編集を終えてから再試行してください。",
+    "원본 모델이 변경 중이에요. 편집을 마친 뒤 다시 시도해 주세요.",
+    "El modelo de origen está cambiando. Termina de editarlo y vuelve a intentarlo."
+  ],
+  "仅支持 Version 3 的 Cubism model3.json。": [
+    "Only Version 3 Cubism model3.json files are supported.",
+    "僅支援 Version 3 的 Cubism model3.json。",
+    "Version 3 の Cubism model3.json のみ対応しています。",
+    "Version 3의 Cubism model3.json만 지원해요.",
+    "Solo se admiten archivos Cubism model3.json de Version 3."
+  ],
+  "模型包含不支持的 FileReferences 类型。": [
+    "The model contains unsupported FileReferences types.",
+    "模型包含不支援的 FileReferences 類型。",
+    "モデルに非対応の FileReferences 種類が含まれています。",
+    "모델에 지원하지 않는 FileReferences 유형이 있어요.",
+    "El modelo contiene tipos FileReferences no compatibles."
+  ],
+  "模型需要 1–64 张纹理。": [
+    "The model requires 1–64 textures.",
+    "模型需要 1–64 張紋理。",
+    "モデルには 1～64 枚のテクスチャが必要です。",
+    "모델에는 텍스처 1–64개가 필요해요.",
+    "El modelo necesita entre 1 y 64 texturas."
+  ],
+  "表情列表无效。": [
+    "Invalid expression list.",
+    "表情清單無效。",
+    "表情リストが無効です。",
+    "표정 목록이 유효하지 않아요.",
+    "Lista de expresiones no válida."
+  ],
+  "表情定义无效。": [
+    "Invalid expression definition.",
+    "表情定義無效。",
+    "表情の定義が無効です。",
+    "표정 정의가 유효하지 않아요.",
+    "Definición de expresión no válida."
+  ],
+  "动作列表无效。": [
+    "Invalid motion list.",
+    "動作清單無效。",
+    "モーションリストが無効です。",
+    "동작 목록이 유효하지 않아요.",
+    "Lista de movimientos no válida."
+  ],
+  "动作分组无效。": [
+    "Invalid motion group.",
+    "動作分組無效。",
+    "モーショングループが無効です。",
+    "동작 그룹이 유효하지 않아요.",
+    "Grupo de movimientos no válido."
+  ],
+  "动作定义无效。": [
+    "Invalid motion definition.",
+    "動作定義無效。",
+    "モーションの定義が無効です。",
+    "동작 정의가 유효하지 않아요.",
+    "Definición de movimiento no válida."
+  ],
+  "动作淡入淡出时间无效。": [
+    "Invalid motion fade duration.",
+    "動作淡入淡出時間無效。",
+    "モーションのフェード時間が無効です。",
+    "동작 페이드 시간이 유효하지 않아요.",
+    "Duración de transición del movimiento no válida."
+  ],
+  "辅助 JSON 不能引用其他模型资源。": [
+    "Auxiliary JSON files cannot reference other model resources.",
+    "輔助 JSON 不能引用其他模型資源。",
+    "補助 JSON はほかのモデルリソースを参照できません。",
+    "보조 JSON은 다른 모델 리소스를 참조할 수 없어요.",
+    "Los archivos JSON auxiliares no pueden referenciar otros recursos del modelo."
+  ],
+  "无效的皮肤目录。": [
+    "Invalid appearance directory.",
+    "無效的皮膚目錄。",
+    "スキンのディレクトリが無効です。",
+    "스킨 폴더가 유효하지 않아요.",
+    "Carpeta de apariencia no válida."
+  ],
+  "皮肤清单无效。": [
+    "Invalid appearance manifest.",
+    "皮膚清單無效。",
+    "スキンのマニフェストが無効です。",
+    "스킨 매니페스트가 유효하지 않아요.",
+    "Manifiesto de apariencia no válido."
+  ],
+  "皮肤文件清单无效。": [
+    "Invalid appearance file manifest.",
+    "皮膚檔案清單無效。",
+    "スキンのファイル一覧が無効です。",
+    "스킨 파일 목록이 유효하지 않아요.",
+    "Lista de archivos de apariencia no válida."
+  ],
+  "皮肤文件大小已改变。": [
+    "The appearance file size has changed.",
+    "皮膚檔案大小已改變。",
+    "スキンファイルのサイズが変わっています。",
+    "스킨 파일 크기가 변경됐어요.",
+    "El tamaño del archivo de apariencia ha cambiado."
+  ],
+  "拒绝删除皮肤库以外的目录。": [
+    "Refusing to delete a directory outside the appearance library.",
+    "拒絕刪除皮膚庫以外的目錄。",
+    "スキンライブラリの外にあるディレクトリは削除できません。",
+    "스킨 라이브러리 밖의 폴더는 삭제할 수 없어요.",
+    "No se puede eliminar una carpeta fuera de la biblioteca de apariencias."
+  ],
+  "最多保存 30 个模型，请先移除不再使用的皮肤。": [
+    "Up to 30 models can be saved. Remove unused appearances first.",
+    "最多儲存 30 個模型，請先移除不再使用的皮膚。",
+    "保存できるモデルは30個までです。先に使わないスキンを削除してください。",
+    "모델은 최대 30개까지 저장할 수 있어요. 사용하지 않는 스킨을 먼저 제거해 주세요.",
+    "Se pueden guardar hasta 30 modelos. Elimina primero las apariencias que ya no uses."
+  ],
+  "资源路径无效。": [
+    "Invalid resource path.",
+    "資源路徑無效。",
+    "リソースのパスが無効です。",
+    "리소스 경로가 유효하지 않아요.",
+    "Ruta de recurso no válida."
+  ],
+  "无效的皮肤资源。": [
+    "Invalid appearance resource.",
+    "無效的皮膚資源。",
+    "スキンのリソースが無効です。",
+    "스킨 리소스가 유효하지 않아요.",
+    "Recurso de apariencia no válido."
+  ],
+  "皮肤资源不存在。": [
+    "The appearance resource does not exist.",
+    "皮膚資源不存在。",
+    "スキンのリソースがありません。",
+    "스킨 리소스가 없어요.",
+    "El recurso de apariencia no existe."
+  ],
+  "皮肤资源已改变，请重新导入。": [
+    "The appearance resource has changed. Import it again.",
+    "皮膚資源已改變，請重新匯入。",
+    "スキンのリソースが変わっています。再インポートしてください。",
+    "스킨 리소스가 변경됐어요. 다시 가져와 주세요.",
+    "El recurso de apariencia ha cambiado. Impórtalo de nuevo."
+  ]
+}

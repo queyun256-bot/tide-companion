@@ -14,6 +14,9 @@ const { setupPetDesktop } = require('./pet-desktop.cjs');
 const { PET_WINDOW_SIZE, movePetWindow } = require('./pet-window.cjs');
 const { setupPetGrowthDesktop } = require('./pet-growth-desktop.cjs');
 const { platformInfo, userDataFolder, loginItemOptions, startupHidden } = require('./platform.cjs');
+const { createNativeI18n } = require('./i18n.cjs');
+const nativeI18n = createNativeI18n(app);
+const t = nativeI18n.t;
 const PLATFORM = platformInfo(process.platform);
 let desktopPet, growthDesktop;
 
@@ -41,10 +44,10 @@ function configureApplicationMenu() {
   if (process.platform !== 'darwin') return;
   app.setAboutPanelOptions({ applicationName: '潮汐', applicationVersion: app.getVersion(), copyright: '潮汐', iconPath: path.join(ROOT, 'assets/app.png') });
   Menu.setApplicationMenu(Menu.buildFromTemplate([
-    { label: '潮汐', submenu: [{ role: 'about' }, { type: 'separator' }, { role: 'hide' }, { role: 'hideOthers' }, { role: 'unhide' }, { type: 'separator' }, { role: 'quit' }] },
-    { label: '手账', submenu: [{ label: '打开手账', accelerator: 'Cmd+1', click: openDashboard }, { role: 'close' }] },
-    { role: 'editMenu' },
-    { role: 'windowMenu' },
+    { label: '潮汐', submenu: [{ label: t('关于潮汐'), role: 'about' }, { type: 'separator' }, { label: t('隐藏潮汐'), role: 'hide' }, { label: t('隐藏其他应用'), role: 'hideOthers' }, { label: t('显示全部'), role: 'unhide' }, { type: 'separator' }, { label: t('退出潮汐'), role: 'quit' }] },
+    { label: t('手账'), submenu: [{ label: t('打开手账'), accelerator: 'Cmd+1', click: openDashboard }, { label: t('关闭窗口'), role: 'close' }] },
+    { label: t('编辑'), role: 'editMenu', submenu: [{ label: t('撤销'), role: 'undo' }, { label: t('重做'), role: 'redo' }, { type: 'separator' }, { label: t('剪切'), role: 'cut' }, { label: t('复制'), role: 'copy' }, { label: t('粘贴'), role: 'paste' }, { label: t('全选'), role: 'selectAll' }] },
+    { label: t('窗口'), role: 'windowMenu', submenu: [{ label: t('最小化'), role: 'minimize' }, { label: t('缩放'), role: 'zoom' }, { type: 'separator' }, { label: t('全部置于前方'), role: 'front' }] },
   ]));
 }
 
@@ -111,7 +114,7 @@ function trustedSender(event) {
 
 function handle(channel, handler) {
   ipcMain.handle(channel, async (event, ...args) => {
-    if (!trustedSender(event)) throw new Error('此页面无权访问桌面功能。');
+    if (!trustedSender(event)) throw new Error(t('此页面无权访问桌面功能。'));
     return handler(...args);
   });
 }
@@ -161,7 +164,7 @@ function toggleDashboard() {
 function createDashboard() {
   const area = screen.getPrimaryDisplay().workArea;
   dashboard = new BrowserWindow({
-    title: '潮汐 · 手账', width: Math.min(1220, area.width), height: Math.min(860, area.height), minWidth: 860, minHeight: 620,
+    title: t('潮汐 · 手账'), width: Math.min(1220, area.width), height: Math.min(860, area.height), minWidth: 860, minHeight: 620,
     show: false, backgroundColor: '#fffafb', autoHideMenuBar: true, icon: appIcon(), webPreferences: webPreferences(),
   });
   configureWindowIdentity(dashboard);
@@ -177,7 +180,7 @@ function createDashboard() {
     if (!shouldStartHidden() || !state.settings.onboardingCompleted || dashboardOpenRequested) dashboard?.show();
     dashboardOpenRequested = false;
   });
-  dashboard.loadFile(path.join(ROOT, 'index.html')).catch(() => dialog.showErrorBox(`无法打开${petName()}`, '应用界面文件缺失，请重新安装或在完整项目目录中启动。'));
+  dashboard.loadFile(path.join(ROOT, 'index.html')).catch(() => dialog.showErrorBox(t('无法打开{name}', { name: petName() }), t('应用界面文件缺失，请重新安装或在完整项目目录中启动。')));
 }
 
 function petPosition() {
@@ -188,7 +191,7 @@ function petPosition() {
 function createPet() {
   const position = petPosition();
   pet = new BrowserWindow({
-    title: `${petName()}桌宠`, ...PET_WINDOW_SIZE, ...position, show: false, frame: false, transparent: true, backgroundColor: '#00000000',
+    title: t('{name}桌宠', { name: petName() }), ...PET_WINDOW_SIZE, ...position, show: false, frame: false, transparent: true, backgroundColor: '#00000000',
     resizable: false, maximizable: false, fullscreenable: false, hasShadow: false, skipTaskbar: true, alwaysOnTop: state.settings.alwaysOnTop,
     ...(process.platform === 'darwin' ? { acceptFirstMouse: true } : {}),
     icon: appIcon(), webPreferences: webPreferences(),
@@ -206,7 +209,7 @@ function createPet() {
   pet.on('blur', () => desktopPet?.cancelDrag());
   pet.on('closed', () => desktopPet?.cancelDrag());
   pet.once('ready-to-show', () => { if (effectivePetVisible()) pet?.showInactive(); });
-  pet.loadFile(path.join(ROOT, 'pet.html')).catch(() => dialog.showErrorBox('无法打开桌宠', '桌宠界面文件缺失，请重新安装或在完整项目目录中启动。'));
+  pet.loadFile(path.join(ROOT, 'pet.html')).catch(() => dialog.showErrorBox(t('无法打开桌宠'), t('桌宠界面文件缺失，请重新安装或在完整项目目录中启动。')));
 }
 
 function keepPetOnScreen() {
@@ -221,7 +224,7 @@ function keepPetOnScreen() {
 function runDesktopAction(action) {
   try { return action(); }
   catch {
-    dialog.showErrorBox(`${petName()} · 操作未保存`, '本次设置未能保存。请检查本机存储空间与用户目录的写入权限后再试，原有数据仍会保留。');
+    dialog.showErrorBox(t('{name} · 操作未保存', { name: petName() }), t('本次设置未能保存。请检查本机存储空间与用户目录的写入权限后再试，原有数据仍会保留。'));
     return false;
   }
 }
@@ -239,7 +242,7 @@ function registerNotificationShortcut() {
       icon: taskbarIconPath(),
       iconIndex: 0,
       appUserModelId: APP_USER_MODEL_ID,
-      description: '潮汐 · 桌面陪伴与提醒',
+      description: t('潮汐 · 桌面陪伴与提醒'),
     });
     if (!saved) throw new Error('Shortcut registration failed');
     // Remove only legacy shortcuts pointing at this exact installed copy.
@@ -254,31 +257,32 @@ function registerNotificationShortcut() {
     }
   } catch {
     dialog.showMessageBox({
-      type: 'warning', title: `${petName()} · Windows 通知`,
-      message: 'Windows 通知入口暂时未能创建，系统通知可能不可用。',
-      detail: '桌宠和本机记录仍可使用。请检查当前用户开始菜单目录的写入权限后重新启动；无需管理员权限。',
-      buttons: ['知道了'],
+      type: 'warning', title: t('{name} · Windows 通知', { name: petName() }),
+      message: t('Windows 通知入口暂时未能创建，系统通知可能不可用。'),
+      detail: t('桌宠和本机记录仍可使用。请检查当前用户开始菜单目录的写入权限后重新启动；无需管理员权限。'),
+      buttons: [t('知道了')],
     }).catch(() => {});
   }
 }
 
 function updateTray() {
   if (!tray) return;
-  tray.setToolTip(`${petName()}桌宠 · 本机陪伴与提醒`);
+  tray.setToolTip(t('{name}桌宠 · 本机陪伴与提醒', { name: petName() }));
   tray.setContextMenu(Menu.buildFromTemplate([
-    { label: '打开陪伴面板', click: openDashboard },
-    { label: `${state.settings.petVisible ? '隐藏' : '显示'}${petName()}`, click: () => runDesktopAction(() => setPetVisible(!state.settings.petVisible)) },
-    { label: `让${petName()}回到屏幕右下角`, click: () => runDesktopAction(() => { setPetVisible(true); movePetWindow(pet, petPosition()); }) },
+    { label: t('打开陪伴面板'), click: openDashboard },
+    { label: t(state.settings.petVisible ? '隐藏{name}' : '显示{name}', { name: petName() }), click: () => runDesktopAction(() => setPetVisible(!state.settings.petVisible)) },
+    { label: t('让{name}回到屏幕右下角', { name: petName() }), click: () => runDesktopAction(() => { setPetVisible(true); movePetWindow(pet, petPosition()); }) },
     { type: 'separator' },
-    { label: '面板关闭后，提醒仍会运行', enabled: false },
-    { label: `退出${petName()}（停止提醒）`, click: () => app.quit() },
+    { label: t('面板关闭后，提醒仍会运行'), enabled: false },
+    { label: t('退出{name}（停止提醒）', { name: petName() }), click: () => app.quit() },
   ]));
 }
 
 function applySettings(previous) {
-  if (dashboard && !dashboard.isDestroyed()) dashboard.setTitle('潮汐 · 手账');
+  if (previous?.language !== state.settings.language) configureApplicationMenu();
+  if (dashboard && !dashboard.isDestroyed()) dashboard.setTitle(t('潮汐 · 手账'));
   if (pet && !pet.isDestroyed()) {
-    pet.setTitle(`${petName()}桌宠`);
+    pet.setTitle(t('{name}桌宠', { name: petName() }));
     pet.setAlwaysOnTop(state.settings.alwaysOnTop);
     if (effectivePetVisible()) pet.showInactive(); else pet.hide();
   }
@@ -308,6 +312,8 @@ function syncLoginItemAtStartup() {
 
 function persist(next) {
   state = store.save(next);
+  // Do not change the visible language before atomic persistence succeeds.
+  nativeI18n.setLanguage(state.settings.language);
   broadcast('state:changed', state);
   return state;
 }
@@ -320,7 +326,7 @@ function setPetVisible(visible) {
   return state;
 }
 
-function showNotification(body, title = `${petName()} · 用药提醒`, onFailure) {
+function showNotification(body, title = t('{name} · 用药提醒', { name: petName() }), onFailure) {
   if (!state.settings.notifications || !Notification.isSupported()) return false;
   let notification;
   try {
@@ -347,27 +353,28 @@ function reminderTick() {
     persist({ ...state, reminderLog: reminders.appendReminderLog(state.reminderLog, due) });
     const hasMissed = due.some((record) => record.status === 'missed');
     const message = hasMissed
-      ? `有 ${due.length} 项提醒已到时间，其中包含较早的事项。打开计划可查看详情；提醒不会自动记录使用。`
-      : `你设置的 ${due.length} 项提醒到时间了，可以打开计划查看。`;
-    const detail = state.settings.privateNotifications ? message : `${due.slice(0, 3).map((record) => record.name).join('、')}${due.length > 3 ? '等' : ''}。${message}`;
+      ? t('有 {count} 项提醒已到时间，其中包含较早的事项。打开计划可查看详情；提醒不会自动记录使用。', { count: due.length })
+      : t('你设置的 {count} 项提醒到时间了，可以打开计划查看。', { count: due.length });
+    const names = due.slice(0, 3).map((record) => record.name).join(t('、'));
+    const detail = state.settings.privateNotifications ? message : t('{names}{more}。{message}', { names, more: due.length > 3 ? t('等') : '', message });
     broadcast('pet:action', { action: 'reminder', at: new Date().toISOString(), message });
     showNotification(detail);
     failureShown = false;
   } catch {
     if (!failureShown) {
       failureShown = true;
-      const message = '提醒记录暂时无法保存，请检查本机存储空间与用户目录的写入权限。此事项尚未记为已提醒，恢复后会重试。';
+      const message = t('提醒记录暂时无法保存，请检查本机存储空间与用户目录的写入权限。此事项尚未记为已提醒，恢复后会重试。');
       broadcast('pet:action', { action: 'reminder', at: new Date().toISOString(), message });
       let errorDialogShown = false;
       const showError = () => {
         if (!errorDialogShown) {
           errorDialogShown = true;
-          dialog.showErrorBox(`${petName()} · 提醒需要留意`, message);
+          dialog.showErrorBox(t('{name} · 提醒需要留意', { name: petName() }), message);
         }
       };
       // A hidden pet must not hide a failed reminder. Keep the notice generic;
       // fall back to a visible error if system notifications are unavailable.
-      if (!showNotification(message, `${petName()} · 提醒需要留意`, showError)) showError();
+      if (!showNotification(message, t('{name} · 提醒需要留意', { name: petName() }), showError)) showError();
     }
   } finally { tickRunning = false; }
 }
@@ -382,6 +389,7 @@ function setupIpc() {
   });
   handle('state:load', () => state);
   handle('app:platform', () => PLATFORM);
+  handle('app:locale', () => nativeI18n.getInfo());
   handle('dose:reward-preview', (record) => {
     const next = validateState({...state, doses:[record]});
     return rewardNewDoses(state,next,Date.now()).outcomes.find(item=>item.doseId===record?.id);
@@ -390,7 +398,7 @@ function setupIpc() {
     const next = validateState({ ...incoming, settings: { ...incoming?.settings, nameCustomized: incoming?.settings?.name !== state.settings.name ? true : state.settings.nameCustomized, activeSkin: state.settings.activeSkin, skinScale: state.settings.skinScale }, reminderLog: state.reminderLog, moods: state.moods, dailyMoods: state.dailyMoods, starWallet:state.starWallet });
     let {wallet,rewards,outcomes} = rewardNewDoses(state,next,Date.now());
     const reportDoseId = typeof options?.reportDoseId === 'string' ? options.reportDoseId : null;
-    if (reportDoseId && outcomes.some(item=>item.doseId===reportDoseId&&item.code==='ambiguous')) throw new Error('有多个相同的提醒，请选择这次记录对应的提醒计划。');
+    if (reportDoseId && outcomes.some(item=>item.doseId===reportDoseId&&item.code==='ambiguous')) throw new Error(t('有多个相同的提醒，请选择这次记录对应的提醒计划。'));
     next.starWallet = wallet;
     // Optional currency must not push an otherwise valid clinical save over the
     // shared storage-size limit. Preserve prior stars and still save the dose.
@@ -401,8 +409,8 @@ function setupIpc() {
     }
     const previous = state.settings;
     if (next.settings.launchAtLogin !== previous.launchAtLogin) {
-      if (!PLATFORM.automaticLoginSettings) throw new Error('请在系统设置的“通用 → 登录项”中添加或移除潮汐。');
-      if (!app.isPackaged) throw new Error('开机启动仅支持已安装的软件版本；开发模式请使用 npm start。');
+      if (!PLATFORM.automaticLoginSettings) throw new Error(t('请在系统设置的“通用 → 登录项”中添加或移除潮汐。'));
+      if (!app.isPackaged) throw new Error(t('开机启动仅支持已安装的软件版本；开发模式请使用 npm start。'));
       app.setLoginItemSettings(loginItemSettings(next.settings.launchAtLogin));
     }
     try { persist(next); }
@@ -421,8 +429,8 @@ function setupIpc() {
   handle('window:pet-show', () => setPetVisible(true));
   handle('window:pet-hide', () => setPetVisible(false));
   handle('pet:interact', (action) => {
-    if (!ACTIONS.has(action)) throw new Error('未知互动动作。');
-    if (action === 'feed') throw new Error('星星会在已有提醒前后两小时内实际用药并记录时自动获得。');
+    if (!ACTIONS.has(action)) throw new Error(t('未知互动动作。'));
+    if (action === 'feed') throw new Error(t('星星会在已有提醒前后两小时内实际用药并记录时自动获得。'));
     const event = { id: crypto.randomUUID(), action, at: new Date().toISOString() };
     // This handler stays synchronous through save. Two queued IPC calls cannot
     // both pass the daily check; failed persistence never changes the day lock.
@@ -432,24 +440,24 @@ function setupIpc() {
     return event;
   });
   handle('notification:test', () => {
-    broadcast('pet:action', { action: 'reminder', at: new Date().toISOString(), message: '这是一条测试提醒。你可以随时调整提醒偏好。' });
-    return { supported: Notification.isSupported(), enabled: state.settings.notifications, shown: showNotification(`这是一条测试提醒。${petName()}会在你设置的时间提醒你。`) };
+    broadcast('pet:action', { action: 'reminder', at: new Date().toISOString(), message: t('这是一条测试提醒。你可以随时调整提醒偏好。') });
+    return { supported: Notification.isSupported(), enabled: state.settings.notifications, shown: showNotification(t('这是一条测试提醒。{name}会在你设置的时间提醒你。', { name: petName() })) };
   });
   handle('data:export', async () => {
-    const result = await dialog.showSaveDialog(dashboard ?? undefined, { title: `导出${petName()}本机数据`, defaultPath: `tide-backup-${new Date().toISOString().slice(0, 10)}.json`, filters: [{ name: 'JSON 备份', extensions: ['json'] }] });
+    const result = await dialog.showSaveDialog(dashboard ?? undefined, { title: t('导出{name}本机数据', { name: petName() }), defaultPath: `tide-backup-${new Date().toISOString().slice(0, 10)}.json`, filters: [{ name: t('JSON 备份'), extensions: ['json'] }] });
     if (result.canceled || !result.filePath) return { canceled: true };
     fs.writeFileSync(result.filePath, JSON.stringify(state, null, 2), { encoding: 'utf8', mode: 0o600 });
     return { canceled: false, filePath: result.filePath };
   });
   handle('data:import', async () => {
-    const result = await dialog.showOpenDialog(dashboard ?? undefined, { title: `导入${petName()} JSON 备份`, filters: [{ name: 'JSON 备份', extensions: ['json'] }], properties: ['openFile'] });
+    const result = await dialog.showOpenDialog(dashboard ?? undefined, { title: t('导入{name} JSON 备份', { name: petName() }), filters: [{ name: t('JSON 备份'), extensions: ['json'] }], properties: ['openFile'] });
     if (result.canceled || !result.filePaths.length) return null;
     const selected = result.filePaths[0];
-    if (fs.statSync(selected).size > MAX_BYTES) throw new Error('备份文件超过 5 MB，请检查所选文件。');
+    if (fs.statSync(selected).size > MAX_BYTES) throw new Error(t('备份文件超过 5 MB，请检查所选文件。'));
     const imported = parseState(fs.readFileSync(selected, 'utf8'));
     const resultConfirm = await dialog.showMessageBox(dashboard ?? undefined, {
-      type: 'question', title: '导入备份', message: `将替换为备份中的 ${imported.plans.length} 项计划、${imported.doses.length} 条使用记录、${imported.labs.length} 条化验记录和 ${imported.dailyMoods.length} 天心情。`,
-      detail: '现有数据会保存为本机恢复备份。今天已经选择的心情保留；历史心情按备份恢复。星星账本合并，保留本机已获奖励与已消费记录，恢复旧备份不会返还已吃掉的星星；等级、经验和每日产星机会共享。开机启动、通知隐私和本机皮肤保留当前设置；健康备份不导入模型文件。', buttons: ['取消', '导入并替换'], defaultId: 0, cancelId: 0, noLink: true,
+      type: 'question', title: t('导入备份'), message: t('将替换为备份中的 {plans} 项计划、{doses} 条使用记录、{labs} 条化验记录和 {moods} 天心情。', { plans: imported.plans.length, doses: imported.doses.length, labs: imported.labs.length, moods: imported.dailyMoods.length }),
+      detail: t('现有数据会保存为本机恢复备份。今天已经选择的心情保留；历史心情按备份恢复。星星账本合并，保留本机已获奖励与已消费记录，恢复旧备份不会返还已吃掉的星星；等级、经验和每日产星机会共享。开机启动、通知隐私和本机皮肤保留当前设置；健康备份不导入模型文件。'), buttons: [t('取消'), t('导入并替换')], defaultId: 0, cancelId: 0, noLink: true,
     });
     if (resultConfirm.response !== 1) return null;
     // Builtin companions travel with every installation, so backups can restore
@@ -466,29 +474,29 @@ function setupIpc() {
   });
   handle('skins:list', listSkins);
   handle('skins:import', async () => {
-    const result = await dialog.showOpenDialog(dashboard ?? undefined, { title: '选择 Live2D 的 model3.json 文件', filters: [{ name: 'Cubism model3.json', extensions: ['json'] }], properties: ['openFile'] });
+    const result = await dialog.showOpenDialog(dashboard ?? undefined, { title: t('选择 Live2D 的 model3.json 文件'), filters: [{ name: 'Cubism model3.json', extensions: ['json'] }], properties: ['openFile'] });
     if (result.canceled || !result.filePaths.length) return null;
     return skinStore.importModel(result.filePaths[0]);
   });
   handle('skins:select', (id, scale) => {
-    if (typeof id !== 'string' || !skinStore.has(id)) throw new Error('皮肤不存在，请重新导入或选择内置鲨鲨。');
+    if (typeof id !== 'string' || !skinStore.has(id)) throw new Error(t('皮肤不存在，请重新导入或选择内置鲨鲨。'));
     desktopPet?.cancelDrag();
     const settings = { ...state.settings, activeSkin: id, skinScale: scale === undefined ? state.settings.skinScale : scale };
     persist({ ...state, settings });
     return state;
   });
   handle('skins:remove', (id) => {
-    if (isBuiltinShark(id)) throw new Error('内置桌宠不能删除。');
-    if (typeof id !== 'string' || !skinStore.has(id)) throw new Error('皮肤不存在。');
+    if (isBuiltinShark(id)) throw new Error(t('内置桌宠不能删除。'));
+    if (typeof id !== 'string' || !skinStore.has(id)) throw new Error(t('皮肤不存在。'));
     if (state.settings.activeSkin === id) persist({ ...state, settings: { ...state.settings, activeSkin: 'builtin', skinScale: 1 } });
     skinStore.remove(id);
     return listSkins();
   });
   handle('link:open', async (value) => {
-    if (typeof value !== 'string' || value.length > 2048) throw new Error('链接无效。');
+    if (typeof value !== 'string' || value.length > 2048) throw new Error(t('链接无效。'));
     let url;
-    try { url = new URL(value); } catch { throw new Error('链接无效。'); }
-    if (url.protocol !== 'https:' || url.username || url.password || (url.port && url.port !== '443') || !DOC_HOSTS.has(url.hostname)) throw new Error('仅支持打开内置来源列表中的 HTTPS 资料链接。');
+    try { url = new URL(value); } catch { throw new Error(t('链接无效。')); }
+    if (url.protocol !== 'https:' || url.username || url.password || (url.port && url.port !== '443') || !DOC_HOSTS.has(url.hostname)) throw new Error(t('仅支持打开内置来源列表中的 HTTPS 资料链接。'));
     await shell.openExternal(url.href);
     return true;
   });
@@ -542,11 +550,13 @@ if (!app.requestSingleInstanceLock()) {
   app.on('window-all-closed', () => { /* Tray owns the reminder process. */ });
   app.on('activate', () => { if (state) openDashboard(); });
   app.whenReady().then(async () => {
-    configureApplicationMenu();
-    registerNotificationShortcut();
+    nativeI18n.setLanguage('system');
     store = createStateStore(app.getPath('userData'));
     const loaded = store.load();
     state = loaded.state;
+    nativeI18n.setLanguage(state.settings.language);
+    configureApplicationMenu();
+    registerNotificationShortcut();
     syncLoginItemAtStartup();
     skinStore = createSkinStore(app.getPath('userData'));
     if (!skinStore.has(state.settings.activeSkin)) state = { ...state, settings: { ...state.settings, activeSkin: 'builtin', skinScale: 1 } };
@@ -578,10 +588,10 @@ if (!app.requestSingleInstanceLock()) {
     // Wait for local UI to receive recovery reminder events.
     dashboard.webContents.once('did-finish-load', reminderTick);
     if (loaded.recovered) {
-      dialog.showMessageBox({ type: 'warning', title: '本机数据恢复', message: loaded.fresh ? '原数据无法读取，已保留原文件并使用空白数据启动。' : '已从本机备份恢复数据。', detail: `原文件已保留在 ${app.getPath('userData')}。请检查计划、使用记录和化验记录。` });
+      dialog.showMessageBox({ type: 'warning', title: t('本机数据恢复'), message: t(loaded.fresh ? '原数据无法读取，已保留原文件并使用空白数据启动。' : '已从本机备份恢复数据。'), detail: t('原文件已保留在 {directory}。请检查计划、使用记录和化验记录。', { directory: app.getPath('userData') }) });
     }
   }).catch(() => {
-    dialog.showErrorBox(`${petName()}启动失败`, '无法读取或保存本机数据。请检查用户目录的存储空间与写入权限后重新启动。');
+    dialog.showErrorBox(t('{name}启动失败', { name: petName() }), t('无法读取或保存本机数据。请检查用户目录的存储空间与写入权限后重新启动。'));
     app.quit();
   });
 }

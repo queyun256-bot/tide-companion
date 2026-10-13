@@ -1,3 +1,4 @@
+import { t as translate } from './i18n.js';
 /**
  * E2/T empirical compartment simulation and independent CPA label model.
  * Personal labs fit one shared amplitude per analyte; clinical accuracy is not
@@ -15,7 +16,7 @@ const EPOCH = '2026-01-01T00:00:00Z';
 
 export const REFERENCE_BASELINES = Object.freeze(Object.fromEntries(
   Object.entries(referencePresets.baselines).map(([mode, values]) => [mode, Object.freeze(values)])));
-export const BASELINE_EVIDENCE = Object.freeze(referencePresets.source);
+export const BASELINE_EVIDENCE = Object.freeze({...referencePresets.source,get title(){return translate(referencePresets.source.title);},get population(){return translate(referencePresets.source.population);},get limitation(){return translate(referencePresets.source.limitation);}});
 export const MODE_BASELINES = REFERENCE_BASELINES;
 export const CPA_SOURCE = Object.freeze(SOURCES.cpa);
 
@@ -23,7 +24,7 @@ function peakScale(routeId, amount, hours, target) {
   return target / doseShape({ dose: { amount, at: EPOCH }, profile: getProfile(routeId), at: Date.parse(EPOCH) + hours * HOUR });
 }
 function ref(routeId, scale, anchor, source, note) {
-  return Object.freeze({ routeId, scale, anchor: Object.freeze(anchor), source, note, evidence: '来源数值锚定的参考情境，含未验证形状与外推假设' });
+  return Object.freeze({ routeId, scale, anchor: Object.freeze(anchor), source, get note(){return typeof note==='function'?note():translate(note);}, get evidence(){return translate('来源数值锚定的参考情境，含未验证形状与外推假设');} });
 }
 
 // Freeze amplitude against the original profiles. Editing half-lives must NOT
@@ -31,7 +32,7 @@ function ref(routeId, scale, anchor, source, note) {
 export const REFERENCE_MODELS = Object.freeze({
   ...Object.fromEntries(MAHIRO_PROFILES.map(p => [p.id, ref(p.id, mahiroConcentrationScale(p.id),
     { kind: 'empirical-compartment-simulation', bodyWeightKg: 70, parameters: p.pkParameters, commit: MAHIRO_SOURCE.commit }, MAHIRO_SOURCE,
-    `${p.note} 体重仅用于表观分布容积；这是经验参考模拟，不是来源研究观测峰值或临床验证。`)])),
+    ()=>`${p.note} ${translate('体重仅用于表观分布容积；这是经验参考模拟，不是来源研究观测峰值或临床验证。')}`)])),
   'cpa-oral': ref('cpa-oral', peakScale('cpa-oral', 100, 3, 285),
     { kind: 'observed-parent-drug-peak', dose: 100, hours: 3, total: 285, sourceBaseline: 0,
       terminalHalfLifeHours: 43.9, reportedAbsoluteBioavailability: 0.88 }, CPA_SOURCE,
@@ -45,10 +46,10 @@ function time(value) {
   if (typeof value !== 'string' || !/(?:Z|[+-]\d{2}:?\d{2})$/i.test(value)) return NaN;
   return Date.parse(value);
 }
-function info(warnings) { const unique = [...new Set(warnings)]; return { warnings: unique, warning: unique.join(' ') }; }
+function info(warnings) { const unique = [...new Set(warnings.map(message=>translate(message)))]; return { warnings: unique, warning: unique.join(' ') }; }
 function fixedBaseline(values, analyte, fallback) {
   const value = values?.[analyte] ?? fallback;
-  if (!finite(value) || value < 0) throw new Error('基线必须是对应浓度单位的有限非负数。');
+  if (!finite(value) || value < 0) throw new Error(translate('基线必须是对应浓度单位的有限非负数。'));
   return value;
 }
 
@@ -59,9 +60,9 @@ function prepareRoute(routeId, records, configs, pkSettings) {
     const duration = configs?.[routeId]?.durationHours ?? profile.defaults.durationHours;
     const doses = records.map(dose => {
       const start = time(dose.at);
-      if (!finite(start) || !finite(dose.amount) || dose.amount <= 0) throw new Error(`${profile.name}：存在无效给药时间或用量。`);
+      if (!finite(start) || !finite(dose.amount) || dose.amount <= 0) throw new Error(translate('{name}：存在无效给药时间或用量。',{name:profile.name}));
       const wear = dose.durationHours ?? duration;
-      if (profile.kernelKind === 'patch' && (!finite(wear) || wear <= 0 || wear > 8760)) throw new Error('贴片佩戴时长须明确且在0–8760小时内。');
+      if (profile.kernelKind === 'patch' && (!finite(wear) || wear <= 0 || wear > 8760)) throw new Error(translate('贴片佩戴时长须明确且在0–8760小时内。'));
       return { start, amount: dose.amount, durationHours: wear };
     });
     const shapeAt = instant => doses.reduce((total, dose) => total + mahiroAmount({ routeId,
@@ -71,16 +72,16 @@ function prepareRoute(routeId, records, configs, pkSettings) {
   }
   const config = { ...profile.defaults, ...configs?.[routeId] };
   for (const key of ['absorptionHalfLifeHours', 'eliminationHalfLifeHours']) {
-    if (!finite(config[key]) || config[key] < 0.001 || config[key] > 8760) throw new Error(`${profile.name}：半衰期须在0.001–8760小时内。`);
+    if (!finite(config[key]) || config[key] < 0.001 || config[key] > 8760) throw new Error(translate('{name}：半衰期须在0.001–8760小时内。',{name:profile.name}));
   }
   const ka = Math.LN2 / config.absorptionHalfLifeHours;
   const ke = Math.LN2 / config.eliminationHalfLifeHours;
   const difference = Math.abs(ka - ke), slow = Math.min(ka, ke);
   const doses = records.map(dose => {
     const start = time(dose.at);
-    if (!finite(start) || !finite(dose.amount) || dose.amount <= 0) throw new Error(`${profile.name}：存在无效给药时间或用量。`);
+    if (!finite(start) || !finite(dose.amount) || dose.amount <= 0) throw new Error(translate('{name}：存在无效给药时间或用量。',{name:profile.name}));
     const duration = dose.durationHours ?? config.durationHours;
-    if (profile.model === 'infusion' && (!finite(duration) || duration <= 0 || duration > 8760)) throw new Error('贴片佩戴时长须明确且在0–8760小时内。');
+    if (profile.model === 'infusion' && (!finite(duration) || duration <= 0 || duration > 8760)) throw new Error(translate('贴片佩戴时长须明确且在0–8760小时内。'));
     return { start, amount: dose.amount, duration };
   });
   const shapeAt = instant => {
@@ -146,7 +147,7 @@ function fitAmplitude({ routes, samples, baseline, unsupported, blocking, analyt
   if (rows.length === 1) warnings.push('仅1个样本，模型强制经过该点；零RMSE不能证明曲线准确。');
   else if (rows.length < 3) warnings.push('少于3个样本，不能验证峰谷或未来预测。');
   if (baseline === 0 && analyte !== 'cpa') warnings.push('个人校准基线0是固定假设，不代表真实内源激素为0。');
-  if (excluded) warnings.push(`${excluded}条重复或无模型暴露的样本未参与幅度拟合。`);
+  if (excluded) warnings.push(translate('{count}条重复或无模型暴露的样本未参与幅度拟合。',{count:excluded}));
   const meanX = rows.reduce((sum, row) => sum + row.x, 0) / rows.length;
   const cv = Math.sqrt(rows.reduce((sum, row) => sum + (row.x - meanX) ** 2, 0) / rows.length) / meanX;
   if (rows.length > 1 && cv < 0.1) warnings.push('化验覆盖的模型暴露相似，不能验证时间曲线形状。');
@@ -199,7 +200,7 @@ export function compileHormoneModel({ doses = [], labs = [], modelConfigs = {}, 
     try {
       personalBaseline = fixedBaseline(baselines, analyte, 0);
       referenceBaseline = fixedBaseline(referenceBaselines, analyte, modeDefaults[analyte] ?? 0);
-      if (analyte === 'cpa' && (personalBaseline !== 0 || referenceBaseline !== 0)) throw new Error('CPA是外源药物，参考和个人固定背景须为0；已有残留须用给药历史表示。');
+      if (analyte === 'cpa' && (personalBaseline !== 0 || referenceBaseline !== 0)) throw new Error(translate('CPA是外源药物，参考和个人固定背景须为0；已有残留须用给药历史表示。'));
     } catch (error) { errors.push(error.message); }
     for (const [routeId, ds] of Object.entries(grouped)) {
       if (getProfile(routeId).analyte !== analyte) continue;
@@ -219,7 +220,7 @@ export function compileHormoneModel({ doses = [], labs = [], modelConfigs = {}, 
     const unknownBeforeNow = unknown.some(d => !finite(time(d.at)) || time(d.at) <= compiledAt);
     const calibration = fitAmplitude({ routes: calibrationRoutes, samples: normalized[analyte], baseline: personalBaseline, unsupported, analyte, diagnostics: diagnostics[analyte],
       blocking: errors[0] ?? invalidBeforeNow[0]?.message ?? (unknownBeforeNow ? '存在未知药物途径，无法确认其激素贡献。' : null)
-        ?? (missingBeforeNow.length ? `已记录的${missingBeforeNow.map(d => d.profile.name).join('、')}缺少浓度模型，不能在遗漏贡献时进行个人总值校准。` : null) });
+        ?? (missingBeforeNow.length ? translate('已记录的{name}缺少浓度模型，不能在遗漏贡献时进行个人总值校准。',{name:missingBeforeNow.map(d=>d.profile.name).join(', ')}) : null) });
     if (missingBeforeNow.length && !errors.length && !invalidBeforeNow.length && !unknownBeforeNow) calibration.reasonCode = 'record-only-hormone';
     prepared[analyte] = { routes, unsupported, errors, timedErrors, personalBaseline, referenceBaseline, calibration };
   }
@@ -247,7 +248,7 @@ export function compileHormoneModel({ doses = [], labs = [], modelConfigs = {}, 
         const referenceIncrement = route.reference ? shape * route.reference.scale : null;
         const contribution = calibrated ? p.calibration.factor * (shapeOnly ? shape : referenceIncrement) : referenceIncrement;
         return { routeId: route.routeId, name: route.profile.name, shape, referenceIncrement, contribution,
-          supported: Boolean(route.reference), unit: UNITS[analyte], note: route.reference?.note ?? '缺少经过核查的群体参考幅度。' };
+          supported: Boolean(route.reference), unit: UNITS[analyte], note: route.reference?.note ?? translate('缺少经过核查的群体参考幅度。') };
       });
       const valid = finite(instant) && !activeErrors.length && !hasUnknown;
       const numeric = routeContributions.every(r => finite(r.shape) && (r.contribution === null || finite(r.contribution)));
@@ -259,10 +260,10 @@ export function compileHormoneModel({ doses = [], labs = [], modelConfigs = {}, 
         warnings.push(...activeErrors, ...(!finite(instant) ? ['计算时间无效。'] : []), ...(hasUnknown ? ['存在未知药物途径，无法确认其激素贡献。'] : []), ...(!numeric ? ['模型数值超出范围。'] : []));
       } else if (unsupportedMedications.length) {
         status = 'unavailable'; reasonCode = 'record-only-hormone';
-        warnings.push(`以下已记录药物缺少该激素的浓度模型：${unsupportedMedications.map(m => m.name).join('、')}。其贡献未知，不能当作0或输出不完整总值；历史记录和实测仍保留。`);
+        warnings.push(translate('以下已记录药物缺少该激素的浓度模型：{names}。其贡献未知，不能当作0或输出不完整总值；历史记录和实测仍保留。',{names:unsupportedMedications.map(m=>m.name).join(', ')}));
       } else if (unsupported.length && !(calibrated && shapeOnly && active.length === 1)) {
         status = 'unavailable'; reasonCode = 'unsupported-route';
-        warnings.push(`以下途径缺少可用于叠加的参考幅度：${unsupported.map(r => r.profile.name).join('、')}。未把这些贡献当作0，当前不显示不完整总值。`);
+        warnings.push(translate('以下途径缺少可用于叠加的参考幅度：{names}。未把这些贡献当作0，当前不显示不完整总值。',{names:unsupported.map(r=>r.profile.name).join(', ')}));
       } else {
         const background = calibrated ? p.personalBaseline : p.referenceBaseline;
         value = background + routeContributions.reduce((sum, route) => sum + route.contribution, 0);
@@ -275,15 +276,15 @@ export function compileHormoneModel({ doses = [], labs = [], modelConfigs = {}, 
           if (!active.length) warnings.push('没有已记录的CPA给药贡献，模型为0；不代表化验证实为0或排除了遗漏用药。');
         } else {
           warnings.push(p.referenceBaseline === modeDefaults[analyte]
-          ? `参考背景来自Vlot 2019成人队列GAHT前中位数（${p.referenceBaseline}${UNITS[analyte]}），作为可编辑情境；不代表你的当前内源水平，也不是治疗目标。`
-          : `参考背景${p.referenceBaseline}${UNITS[analyte]}为自定义情境；不代表实测或治疗目标。`);
+          ? translate('参考背景来自Vlot 2019成人队列GAHT前中位数（{value}{unit}），作为可编辑情境；不代表你的当前内源水平，也不是治疗目标。',{value:p.referenceBaseline,unit:UNITS[analyte]})
+          : translate('参考背景{value}{unit}为自定义情境；不代表实测或治疗目标。',{value:p.referenceBaseline,unit:UNITS[analyte]}));
           warnings.push('MTF/FTM仅选择参考队列，不从身份推断器官、内源水平或用药后的抑制程度。');
           if (!active.length) warnings.push('没有对应激素给药贡献，显示的只是背景假设；最近化验不会被冒充为实时值。');
         }
       }
       if (active.some(route => route.profile.model === 'mahiro')) {
-        warnings.push(`药代模型经验参考参数：模型体重${resolvedSettings.bodyWeightKg}kg，表观分布容积E2为2L/kg、T为1L/kg；默认体重不是个人测量。`);
-        if (active.some(route => route.profile.kernelKind === 'sublingual')) warnings.push(`舌下黏膜分流比例${(resolvedSettings.sublingualFraction * 100).toFixed(1)}%为情境假设；不代表给定含服时间一定达到该吸收比例。`);
+        warnings.push(translate('药代模型经验参考参数：模型体重{weight}kg，表观分布容积E2为2L/kg、T为1L/kg；默认体重不是个人测量。',{weight:resolvedSettings.bodyWeightKg}));
+        if (active.some(route => route.profile.kernelKind === 'sublingual')) warnings.push(translate('舌下黏膜分流比例{fraction}%为情境假设；不代表给定含服时间一定达到该吸收比例。',{fraction:(resolvedSettings.sublingualFraction*100).toFixed(1)}));
         if (active.some(route => route.profile.model === 'mahiro' && (modelConfigs?.[route.routeId]?.absorptionHalfLifeHours != null || modelConfigs?.[route.routeId]?.eliminationHalfLifeHours != null))) warnings.push('原版本单室半衰期设置已保留，但不用于当前多室参考模型；当前参数见模型说明。');
       }
       // Surface the anchor assumptions with the number, not only in source docs.
@@ -296,7 +297,7 @@ export function compileHormoneModel({ doses = [], labs = [], modelConfigs = {}, 
       }
       if (analyte === 'testosterone' && records.some(d => getMedication(d.routeId)?.analyte === 'cpa' && time(d.at) <= instant)) warnings.push('CPA自身浓度单独估计；其受体阻断、内源T抑制不能从用量或CPA浓度直接换算。此T曲线未模拟CPA抑制，不可解释为CPA后的实际T。');
       const otherRecorded = [...new Set(activeRecorded.filter(d => d.routeId !== 'cpa-oral').map(d => d.profile.name))];
-      if (otherRecorded.length) warnings.push(`${otherRecorded.join('、')}仅记录与提醒；其药效及相互作用未进入当前浓度计算。`);
+      if (otherRecorded.length) warnings.push(translate('{names}仅记录与提醒；其药效及相互作用未进入当前浓度计算。',{names:otherRecorded.join(', ')}));
       if (analyte === 'testosterone' && records.some(d => getMedication(d.routeId)?.analyte === 'estradiol' && time(d.at) <= instant)) warnings.push('E2对内源T的抑制未建模；没有T给药或实测校准时，T数字只是假设背景。');
       if (analyte === 'estradiol' && records.some(d => getMedication(d.routeId)?.analyte === 'testosterone' && time(d.at) <= instant)) warnings.push('外源T的芳香化与内源E2变化未建模。');
       warnings.push(analyte === 'cpa' ? 'CPA曲线仅为标签约束的一室近似；不提供T抑制程度、治疗效果判断或用药建议。' : '曲线形状仍含教学假设，数值不提供治疗效果判断或用药建议。');

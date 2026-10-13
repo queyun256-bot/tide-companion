@@ -11,7 +11,7 @@
 </head>
 <body>
   <main class="pet-stage controls-visible" aria-label="桌面伙伴">
-    <div class="speech is-hidden" id="speech" role="status" aria-live="polite" aria-hidden="true" inert><button id="speech-open" class="speech-open" type="button" hidden aria-label="打开手账查看用药提醒"><span>用药提醒</span><span aria-hidden="true">打开手账 ↗</span></button><span id="speech-text"></span></div>
+    <div class="speech is-hidden" id="speech" role="status" aria-live="polite" aria-hidden="true" inert><button id="speech-open" class="speech-open" type="button" hidden aria-label="打开手账查看用药提醒" data-i18n-aria-label="打开手账查看用药提醒"><span data-i18n="用药提醒">用药提醒</span><span aria-hidden="true" data-i18n="打开手账 ↗">打开手账 ↗</span></button><span id="speech-text"></span></div>
     <div class="float-wrap" data-visual-key="float" id="float-wrap">
       <div class="sparkles" id="sparkles" aria-hidden="true"></div>
       <div class="star-lights" data-visual-key="stars" id="star-lights" data-count="0" aria-hidden="true"></div>
@@ -72,7 +72,7 @@
         <canvas id="live2d-canvas" width="296" height="264" hidden aria-label="Live2D 桌宠"></canvas>
       </button>
     </div>
-    <nav class="pet-controls" aria-label="桌宠互动">
+    <nav class="pet-controls" aria-label="桌宠互动" data-i18n-aria-label="桌宠互动">
       <button type="button" id="open-dashboard" title="打开手账" aria-label="打开手账"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="3"/><path d="M9 3v3M15 3v3M9 11h6M9 15h4"/></svg></button>
       <button type="button" id="pat-pet" title="摸摸" aria-label="摸摸"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2 4.5 4.5 0 0 1 8 2c0 6-8 11-8 11Z"/></svg></button>
       <button type="button" id="nuzzle-pet" title="轻轻蹭蹭" aria-label="轻轻蹭蹭"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16c-3 0-5-2-5-5s2-5 5-5c2 0 4 2 4 5s2 5 4 5c3 0 5-2 5-5s-2-5-5-5"/><path d="m6 18 2-2-2-2m12-10-2 2 2 2"/></svg></button>

@@ -119,7 +119,7 @@ async function run() {
   const archive = path.join(payloadPath, 'resources', 'app.asar');
   const archiveFiles = [];
   const allowedRootFiles = new Set(['LICENSE', 'README.md', 'index.html', 'pet.html', 'package.json']);
-  const allowedJson = new Set(['package.json', 'src/medication-catalog.json', 'src/reference-presets.json', 'assets/vendor/SHA256.json', 'assets/sharks/catalog.json']);
+  const allowedJson = new Set(['package.json', 'src/medication-catalog.json', 'src/reference-presets.json', 'assets/vendor/SHA256.json', 'assets/sharks/catalog.json', 'src/locales/app.json', 'src/locales/native.json', 'src/locales/journal.json', 'src/locales/companion.json']);
   const devOrPrivatePath = /(?:^|\/)(?:tests?|screenshots|raw|node_modules|dist|build|scripts|\.git|\.vscode|userdata|backups?)(?:\/|$)|(?:^|\/)state(?:[.-][^/]*)?\.json$|\.(?:sqlite3?|db|csv|xlsx?|log|bak|tmp)$/i;
   for (const rawPath of asar.listPackage(archive)) {
     const relative = normalize(rawPath);
@@ -142,6 +142,7 @@ async function run() {
   const criticalFiles = [
     'LICENSE',
     'index.html', 'pet.html', 'src/app.js', 'src/app.css', 'src/medication-icons.js', 'src/medication-icons.css',
+    'src/i18n-core.js', 'src/i18n-core.cjs', 'src/i18n.js', 'electron/i18n.cjs', 'src/locales/app.json', 'src/locales/native.json', 'src/locales/journal.json', 'src/locales/companion.json',
     'src/administration-picker.js', 'src/administration-picker.css',
     'src/journal.js', 'src/calendar.js', 'src/calendar.css', 'electron/daily-moods.cjs',
     'src/date-picker.js', 'src/date-picker.css', 'src/gaht-reference.js', 'src/gaht-reference.css',

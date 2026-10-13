@@ -1,8 +1,9 @@
+import { t } from './i18n.js';
 import { administrationIcon } from './medication-icons.js';
 import { ADMINISTRATIONS } from './medications.js';
 
 const mounted = new WeakMap();
-const names = new Map(ADMINISTRATIONS.map(item => [item.id, item.name]));
+const names = {get: id => ADMINISTRATIONS.find(item => item.id === id)?.name};
 
 /** Enhance the existing form select without changing its values or change events. */
 export function mountAdministrationPicker(select) {
@@ -29,7 +30,7 @@ export function mountAdministrationPicker(select) {
   if (select.getAttribute('aria-labelledby')) {
     trigger.setAttribute('aria-labelledby', select.getAttribute('aria-labelledby'));
   } else {
-    trigger.setAttribute('aria-label', select.getAttribute('aria-label') || '给药方式');
+    trigger.setAttribute('aria-label', select.getAttribute('aria-label') || t('给药方式'));
   }
   trigger.setAttribute('aria-required', String(select.required));
 
@@ -50,7 +51,7 @@ export function mountAdministrationPicker(select) {
   listbox.id = 'form-administration-listbox';
   listbox.className = 'administration-picker-listbox';
   listbox.setAttribute('role', 'listbox');
-  listbox.setAttribute('aria-label', '给药方式');
+  listbox.setAttribute('aria-label', t('给药方式'));
   listbox.hidden = true;
 
   const choices = [...select.options].map((option, index) => {

@@ -12,11 +12,12 @@ const ROUTE_IDS = new Set(require('../src/medication-catalog.json').items.map(it
 const REFERENCE_PRESETS = require('../src/reference-presets.json');
 const ACTIONS = new Set(['pet', 'feed', 'sleep', 'wake', 'nuzzle', 'mood-good', 'mood-okay', 'mood-low']);
 const MAX_BYTES = 5 * 1024 * 1024;
+const LANGUAGES = new Set(['system', 'en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'es']);
 
 function defaultState() {
   return {
     schemaVersion: 1,
-    settings: { name: '鲨鲨', nameCustomized: false, pronouns: '', mode: 'mtf', onboardingCompleted: false, showFtmEstradiol: false, alwaysOnTop: true, launchAtLogin: false, notifications: true, privateNotifications: true, petVisible: true, reducedMotion: false, autoHideFullscreen: true, activeSkin: 'builtin', skinScale: 1 },
+    settings: { name: '鲨鲨', nameCustomized: false, pronouns: '', mode: 'mtf', language: 'system', onboardingCompleted: false, showFtmEstradiol: false, alwaysOnTop: true, launchAtLogin: false, notifications: true, privateNotifications: true, petVisible: true, reducedMotion: false, autoHideFullscreen: true, activeSkin: 'builtin', skinScale: 1 },
     plans: [], doses: [], labs: [], modelConfigs: {}, pkSettings: { bodyWeightKg: 70, sublingualFraction: 0.11 }, baselines: { estradiol: 0, testosterone: 0 }, referenceBaselines: { ...REFERENCE_PRESETS.baselines.mtf }, referencePresetVersion: REFERENCE_PRESETS.version, referenceBaselineCustomized: false, moods: [], dailyMoods: [], reminderLog: [], starWallet: emptyStarWallet(), petGrowth: deriveGrowth(emptyStarWallet()),
   };
 }
@@ -71,6 +72,8 @@ function validateState(input) {
   out.settings.pronouns = str(settings.pronouns ?? '', '称谓', 60, true);
   if (settings.mode !== undefined && !['mtf', 'ftm'].includes(settings.mode)) fail('陪伴模式');
   out.settings.mode = settings.mode ?? 'mtf';
+  if (settings.language !== undefined && !LANGUAGES.has(settings.language)) fail('界面语言');
+  out.settings.language = settings.language ?? 'system';
   out.settings.onboardingCompleted = settings.onboardingCompleted === undefined ? false : bool(settings.onboardingCompleted, '初始设置完成状态');
   out.settings.showFtmEstradiol = settings.showFtmEstradiol === undefined ? false : bool(settings.showFtmEstradiol, 'FTM 显示 E2');
   out.settings.autoHideFullscreen = settings.autoHideFullscreen === undefined ? true : bool(settings.autoHideFullscreen, '全屏时隐藏');
@@ -196,7 +199,7 @@ function createStateStore(directory) {
     const starWalletMigration = original.starWallet === undefined;
     const olderVersion = oldMigration ? '0.2' : backgroundMigration ? '0.3' : pkMigration ? '0.4' : setupMigration ? '0.5.1' : null;
     const migrationVersions = [...(olderVersion ? [olderVersion] : []), ...(dailyMoodMigration ? ['0.6.0'] : []), ...(starWalletMigration ? ['0.8.0'] : [])];
-    return { state, migrated: migrationVersions.length > 0, migrationVersion: migrationVersions[0], migrationVersions };
+    return { state, migrated: migrationVersions.length > 0 || original.settings?.language === undefined, migrationVersion: migrationVersions[0], migrationVersions };
   }
   function preserveMigration(candidate, loaded) {
     for (const version of loaded.migrationVersions) {

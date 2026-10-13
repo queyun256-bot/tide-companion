@@ -1,3 +1,4 @@
+import { t as translate } from './i18n.js';
 /**
  * Reference simulation adapted from Oyama's HRT Tracker, MIT licensed.
  * Copyright (c) 2025 Joseph Smirnova Oyama.
@@ -8,7 +9,7 @@
  * at equal rates (notably TE ka = ke), without perturbing physical parameters.
  */
 export const MAHIRO_SOURCE = Object.freeze({
-  title: 'HRT Tracker 参考算法（经验模拟参数）', url: 'https://hrt.mahiro.uk',
+  get title(){return translate('HRT Tracker 参考算法（经验模拟参数）');}, url: 'https://hrt.mahiro.uk',
   repository: 'https://github.com/xunxunProjects/Oyama-s-HRT-Tracker',
   commit: 'fa48eb72a80f2adc65fec0b0045ec25204ad7250',
 });
@@ -17,8 +18,8 @@ export const DEFAULT_PK_SETTINGS = Object.freeze({ bodyWeightKg: 70, sublingualF
 export function resolvePkSettings(value = {}) {
   const result = { bodyWeightKg: value.bodyWeightKg ?? DEFAULT_PK_SETTINGS.bodyWeightKg,
     sublingualFraction: value.sublingualFraction ?? DEFAULT_PK_SETTINGS.sublingualFraction };
-  if (!Number.isFinite(result.bodyWeightKg) || result.bodyWeightKg < 20 || result.bodyWeightKg > 400) throw new Error('模型体重须为20–400 kg的有限数；默认70 kg只是参考假设。');
-  if (!Number.isFinite(result.sublingualFraction) || result.sublingualFraction < 0 || result.sublingualFraction > 1) throw new Error('舌下黏膜分流比例须在0–1之间。');
+  if (!Number.isFinite(result.bodyWeightKg) || result.bodyWeightKg < 20 || result.bodyWeightKg > 400) throw new Error(translate('模型体重须为20–400 kg的有限数；默认70 kg只是参考假设。'));
+  if (!Number.isFinite(result.sublingualFraction) || result.sublingualFraction < 0 || result.sublingualFraction > 1) throw new Error(translate('舌下黏膜分流比例须在0–1之间。'));
   return result;
 }
 
@@ -88,8 +89,8 @@ export function threeCompartment(tau, ka, kh, ke) {
 /** Per-dose amount in mg of circulating active parent, NOT input ester mg. */
 export function mahiroAmount({ routeId, amount, hours, durationHours, pkSettings = DEFAULT_PK_SETTINGS }) {
   const p = MAHIRO_MODELS[routeId];
-  if (!p) throw new Error('该途径无可用药代模型参考参数。');
-  if (!Number.isFinite(amount) || amount <= 0 || !Number.isFinite(hours)) throw new Error('给药量或时间无效。');
+  if (!p) throw new Error(translate('该途径无可用药代模型参考参数。'));
+  if (!Number.isFinite(amount) || amount <= 0 || !Number.isFinite(hours)) throw new Error(translate('给药量或时间无效。'));
   if (hours <= 0) return 0;
   const dose = amount * p.molecularRatio;
   const two = rate => twoCompartment(hours, rate, p.clearanceRate);
@@ -102,7 +103,7 @@ export function mahiroAmount({ routeId, amount, hours, durationHours, pkSettings
   }
   if (p.kernelKind === 'patch') {
     const duration = durationHours ?? p.durationHours;
-    if (!Number.isFinite(duration) || duration <= 0 || duration > 8760) throw new Error('贴片实际佩戴时长须为0–8760小时内的正数。');
+    if (!Number.isFinite(duration) || duration <= 0 || duration > 8760) throw new Error(translate('贴片实际佩戴时长须为0–8760小时内的正数。'));
     const rate = amount / (p.unit === 'μg/day' ? 24000 : 24);
     return rate / p.clearanceRate * -Math.expm1(-p.clearanceRate * Math.min(hours, duration)) * Math.exp(-p.clearanceRate * Math.max(0, hours - duration));
   }
@@ -125,15 +126,15 @@ const names = {
   't-undecanoate-im': '十一酸睾酮 TU · 肌注', 't-gel': '睾酮 · 凝胶', 't-patch': '睾酮 · 贴片',
 };
 export const MAHIRO_PROFILES = Object.freeze(Object.entries(MAHIRO_MODELS).map(([id, p]) => Object.freeze({
-  id, name: names[id], analyte: p.analyte, model: 'mahiro', kernelKind: p.kernelKind,
+  id, get name(){return names[id].split(' · ').map(part=>translate(part)).join(' · ');}, analyte: p.analyte, model: 'mahiro', kernelKind: p.kernelKind,
   unit: p.unit ?? 'mg', doseUnit: p.unit ?? 'mg', concentrationUnit: p.analyte === 'estradiol' ? 'pg/mL' : 'ng/dL',
   defaults: Object.freeze({ absorptionHalfLifeHours: Math.LN2 / (p.absorptionRate ?? p.clearanceRate), eliminationHalfLifeHours: Math.LN2 / p.clearanceRate,
     ...(p.durationHours ? { durationHours: p.durationHours } : {}) }),
-  pkParameters: p, sources: [MAHIRO_SOURCE], evidence: '经验参考模拟；未经个体或临床验证',
-  note: p.kernelKind === 'sublingual'
+  pkParameters: p, sources: [MAHIRO_SOURCE], get evidence(){return translate('经验参考模拟；未经个体或临床验证');},
+  get note(){return translate(p.kernelKind === 'sublingual'
     ? '双分支参考模型：黏膜吸收与吞咽首过分别计算；EV黏膜分支额外经酯水解。剂量为片剂标示的化合物mg，分子量只换算一次；黏膜比例默认11%为经验假设。'
     : p.kernelKind === 'depot' ? '双储库→酯水解→清除参考模型；形成分数和清除常数是经验有效参数，输入为酯mg，不等同于游离激素mg。'
       : p.kernelKind === 'gel' ? '凝胶参考模型，默认普通手臂/大腿参数；产品、涂抹部位与个体差异未个体化。输入有效激素mg。'
         : p.kernelKind === 'patch' ? '恒速释放参考模型，剂量为标称每日释放量；按实际佩戴时长停止输入，移除后继续衰减。'
-          : '口服参考模型；EV首过与水解近似折入有效吸收速率，按酯mg输入并进行一次分子量换算。',
+          : '口服参考模型；EV首过与水解近似折入有效吸收速率，按酯mg输入并进行一次分子量换算。');},
 })));

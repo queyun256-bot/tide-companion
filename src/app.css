@@ -256,4 +256,14 @@ body[data-mode="ftm"] #toast { background: #426178; }
 .onboarding-mode > small { display: block; margin-top: 10px; }
 .onboarding-modal .form-footer { margin-top: 18px; }
 
+/* Language names are shown in their own scripts; let longer translations wrap. */
+body { font-family: "Segoe UI", "Microsoft YaHei UI", "PingFang SC", "Yu Gothic UI", "Malgun Gothic", sans-serif; }
+.nav svg { flex-shrink: 0; }
+.nav button span { min-width: 0; overflow-wrap: anywhere; line-height: 1.5; }
+.language-setting { align-items: flex-start; flex-direction: column; }
+.language-setting select { width: 100%; max-width: 100%; }
+.setting-line > div { min-width: 0; }
+.card-head { flex-wrap: wrap; }
+.card-head .pill { white-space: normal; }
+
 

@@ -20,7 +20,7 @@ function setup(oldName, customUserData) {
   const context = vm.createContext({
     require: id => id === 'electron' ? { app, protocol: { registerSchemesAsPrivileged() {} } }
       : id === 'node:path' ? path.win32 : id.startsWith('node:') ? require(id)
-      : id === './platform.cjs' ? require('../electron/platform.cjs') : {},
+      : ['./platform.cjs', './i18n.cjs'].includes(id) ? require(`../electron/${id.slice(2)}`) : {},
     process: { platform: 'win32', execPath: 'C:\\Fixture\\Tide-Companion.exe' },
     __dirname: 'C:\\Fixture\\electron', console,
   });

@@ -1,0 +1,2431 @@
+{
+  "日历": [
+    "Calendar",
+    "日曆",
+    "カレンダー",
+    "달력",
+    "Calendario"
+  ],
+  "心情不错": [
+    "Feeling good",
+    "心情不錯",
+    "いい気分",
+    "기분 좋아요",
+    "Me siento bien"
+  ],
+  "平平淡淡": [
+    "Feeling okay",
+    "平平淡淡",
+    "ふつう",
+    "평온해요",
+    "Normal"
+  ],
+  "有点低落": [
+    "Feeling low",
+    "有點低落",
+    "少し落ち込み気味",
+    "조금 우울해요",
+    "Algo decaído"
+  ],
+  "今天": [
+    "Today",
+    "今天",
+    "今日",
+    "오늘",
+    "Hoy"
+  ],
+  "当天": [
+    "That day",
+    "當天",
+    "その日",
+    "그날",
+    "Ese día"
+  ],
+  "今天的心情": [
+    "Today's mood",
+    "今天的心情",
+    "今日の気分",
+    "오늘의 기분",
+    "Ánimo de hoy"
+  ],
+  "当天的心情": [
+    "Mood that day",
+    "當天的心情",
+    "その日の気分",
+    "그날의 기분",
+    "Ánimo de ese día"
+  ],
+  "已记录": [
+    "Recorded",
+    "已記錄",
+    "記録済み",
+    "기록됨",
+    "Registrado"
+  ],
+  "默认": [
+    "Default",
+    "預設",
+    "既定",
+    "기본값",
+    "Predeterminado"
+  ],
+  "这一天还没到，心情留到当天再记。": [
+    "This day is still ahead. Record your mood when it arrives.",
+    "這一天還沒到，心情留到當天再記。",
+    "まだ先の日です。気分はその日に記録しましょう。",
+    "아직 오지 않은 날이에요. 그날 기분을 기록해 주세요.",
+    "Ese día aún no ha llegado. Registra tu ánimo cuando llegue."
+  ],
+  "{day} {time} 记下的心情，已保存。": [
+    "Mood saved: {day}, {time}.",
+    "{day} {time} 記下的心情，已儲存。",
+    "{day} {time} の気分を保存しました。",
+    "{day} {time}에 기록한 기분이 저장되었어요.",
+    "Ánimo guardado: {day}, {time}."
+  ],
+  "每天可选一次，保存后不能更改。不选择时默认为平平淡淡。": [
+    "Choose once a day. Saved moods cannot be changed. If left blank, the default is feeling okay.",
+    "每天可選一次，儲存後不能更改。不選擇時預設為平平淡淡。",
+    "選べるのは1日1回で、保存後は変更できません。未選択の場合は「ふつう」になります。",
+    "하루 한 번 선택할 수 있고 저장 후 변경할 수 없어요. 선택하지 않으면 평온한 기분으로 기록돼요.",
+    "Puedes elegir una vez al día y no cambiarlo después de guardar. Si no eliges, se registra como normal."
+  ],
+  "当天未选择心情，默认记为平平淡淡。": [
+    "No mood was chosen that day; the default is feeling okay.",
+    "當天未選擇心情，預設記為平平淡淡。",
+    "その日の気分は未選択のため、「ふつう」として表示します。",
+    "그날 기분을 선택하지 않아 평온한 기분으로 표시돼요.",
+    "No se eligió un ánimo ese día; se muestra como normal."
+  ],
+  "佩戴 {hours} 小时": [
+    "Worn for {hours} hours",
+    "佩戴 {hours} 小時",
+    "装着 {hours} 時間",
+    "{hours}시간 부착",
+    "Uso durante {hours} horas"
+  ],
+  "未发生": [
+    "Not yet occurred",
+    "尚未發生",
+    "未実施",
+    "아직 실행 전",
+    "Aún no ocurrido"
+  ],
+  "编辑": [
+    "Edit",
+    "編輯",
+    "編集",
+    "수정",
+    "Editar"
+  ],
+  "删除": [
+    "Delete",
+    "刪除",
+    "削除",
+    "삭제",
+    "Eliminar"
+  ],
+  "采血时间": [
+    "Blood draw time",
+    "採血時間",
+    "採血日時",
+    "채혈 시각",
+    "Hora de extracción"
+  ],
+  "把每天的用药和心情，放在一起回看。": [
+    "Look back on your medication and mood together.",
+    "把每天的用藥和心情，放在一起回看。",
+    "毎日のお薬と気分を、一緒に振り返れます。",
+    "매일의 투약과 기분을 함께 돌아보세요.",
+    "Repasa juntos tus medicamentos y tu ánimo de cada día."
+  ],
+  "回到今天": [
+    "Back to today",
+    "回到今天",
+    "今日に戻る",
+    "오늘로 이동",
+    "Volver a hoy"
+  ],
+  "月历": [
+    "Month calendar",
+    "月曆",
+    "月間カレンダー",
+    "월간 달력",
+    "Calendario mensual"
+  ],
+  "选择月份": [
+    "Choose month",
+    "選擇月份",
+    "月を選択",
+    "월 선택",
+    "Elegir mes"
+  ],
+  "选择日期": [
+    "Choose date",
+    "選擇日期",
+    "日付を選択",
+    "날짜 선택",
+    "Elegir fecha"
+  ],
+  "选择日期与时间": [
+    "Choose date and time",
+    "選擇日期與時間",
+    "日時を選択",
+    "날짜와 시간 선택",
+    "Elegir fecha y hora"
+  ],
+  "上个月": [
+    "Previous month",
+    "上個月",
+    "前の月",
+    "이전 달",
+    "Mes anterior"
+  ],
+  "下个月": [
+    "Next month",
+    "下個月",
+    "次の月",
+    "다음 달",
+    "Mes siguiente"
+  ],
+  "上一年": [
+    "Previous year",
+    "上一年",
+    "前年",
+    "이전 해",
+    "Año anterior"
+  ],
+  "下一年": [
+    "Next year",
+    "下一年",
+    "翌年",
+    "다음 해",
+    "Año siguiente"
+  ],
+  "本月 {doses} 次用药 · {labs} 条化验": [
+    "This month: {doses} doses · {labs} lab results",
+    "本月 {doses} 次用藥 · {labs} 筆化驗",
+    "今月：投薬 {doses} 回 · 検査 {labs} 件",
+    "이번 달: 투약 {doses}회 · 검사 {labs}건",
+    "Este mes: {doses} dosis · {labs} análisis"
+  ],
+  "{doses} 次用药，{labs} 条化验": [
+    "{doses} doses, {labs} lab results",
+    "{doses} 次用藥，{labs} 筆化驗",
+    "投薬 {doses} 回、検査 {labs} 件",
+    "투약 {doses}회, 검사 {labs}건",
+    "{doses} dosis, {labs} análisis"
+  ],
+  "用药 {count}": [
+    "Doses {count}",
+    "用藥 {count}",
+    "投薬 {count}",
+    "투약 {count}",
+    "Dosis {count}"
+  ],
+  "化验 {count}": [
+    "Labs {count}",
+    "化驗 {count}",
+    "検査 {count}",
+    "검사 {count}",
+    "Análisis {count}"
+  ],
+  "浅色心情为默认值": [
+    "Faded moods are defaults",
+    "淺色心情為預設值",
+    "薄い色は既定の気分",
+    "옅은 기분 아이콘은 기본값",
+    "Los ánimos atenuados son predeterminados"
+  ],
+  "实际用药": [
+    "Doses taken",
+    "實際用藥",
+    "実際の投薬",
+    "실제 투약",
+    "Dosis tomadas"
+  ],
+  "＋ 记录使用": [
+    "＋ Record dose",
+    "＋ 記錄使用",
+    "＋ 使用を記録",
+    "＋ 투약 기록",
+    "＋ Registrar dosis"
+  ],
+  "当天实际用药": [
+    "Doses taken that day",
+    "當天實際用藥",
+    "その日の実際の投薬",
+    "그날 실제 투약",
+    "Dosis tomadas ese día"
+  ],
+  "这一天还没有实际用药记录。": [
+    "No doses recorded for this day yet.",
+    "這一天還沒有實際用藥記錄。",
+    "この日の投薬記録はまだありません。",
+    "이 날의 실제 투약 기록이 아직 없어요.",
+    "Aún no hay dosis registradas para este día."
+  ],
+  "化验记录": [
+    "Lab results",
+    "化驗記錄",
+    "検査記録",
+    "검사 기록",
+    "Resultados de análisis"
+  ],
+  "＋ 添加化验": [
+    "＋ Add lab result",
+    "＋ 新增化驗",
+    "＋ 検査を追加",
+    "＋ 검사 추가",
+    "＋ Añadir análisis"
+  ],
+  "当天化验": [
+    "Lab results that day",
+    "當天化驗",
+    "その日の検査",
+    "그날 검사",
+    "Análisis de ese día"
+  ],
+  "这一天还没有化验记录。": [
+    "No lab results recorded for this day yet.",
+    "這一天還沒有化驗記錄。",
+    "この日の検査記録はまだありません。",
+    "이 날의 검사 기록이 아직 없어요.",
+    "Aún no hay análisis registrados para este día."
+  ],
+  "按本机日期归档，显示所有药物与检测项目；提醒计划不计为实际用药。": [
+    "Organized by local date, including all medications and lab tests. Reminder plans are not counted as doses taken.",
+    "依本機日期歸檔，顯示所有藥物與檢測項目；提醒計畫不計為實際用藥。",
+    "端末の日付で整理し、すべての薬と検査を表示します。リマインダー予定は実際の投薬に含みません。",
+    "기기 날짜 기준으로 모든 약물과 검사를 표시해요. 알림 계획은 실제 투약으로 세지 않아요.",
+    "Se organiza por fecha local e incluye todos los medicamentos y análisis. Los recordatorios no cuentan como dosis tomadas."
+  ],
+  "打开月份选择器": [
+    "Open month picker",
+    "開啟月份選擇器",
+    "月の選択を開く",
+    "월 선택기 열기",
+    "Abrir selector de mes"
+  ],
+  "打开日期选择器": [
+    "Open date picker",
+    "開啟日期選擇器",
+    "日付の選択を開く",
+    "날짜 선택기 열기",
+    "Abrir selector de fecha"
+  ],
+  "请填写日期。": [
+    "Enter a date.",
+    "請填寫日期。",
+    "日付を入力してください。",
+    "날짜를 입력해 주세요.",
+    "Introduce una fecha."
+  ],
+  "请填写有效日期。": [
+    "Enter a valid date.",
+    "請填寫有效日期。",
+    "有効な日付を入力してください。",
+    "올바른 날짜를 입력해 주세요.",
+    "Introduce una fecha válida."
+  ],
+  "请填写有效月份，例如 2026-10。": [
+    "Enter a valid month, such as 2026-10.",
+    "請填寫有效月份，例如 2026-10。",
+    "2026-10 のように有効な月を入力してください。",
+    "2026-10처럼 올바른 월을 입력해 주세요.",
+    "Introduce un mes válido, por ejemplo 2026-10."
+  ],
+  "请填写有效日期，例如 2026-10-12。": [
+    "Enter a valid date, such as 2026-10-12.",
+    "請填寫有效日期，例如 2026-10-12。",
+    "2026-10-12 のように有効な日付を入力してください。",
+    "2026-10-12처럼 올바른 날짜를 입력해 주세요.",
+    "Introduce una fecha válida, por ejemplo 2026-10-12."
+  ],
+  "请填写有效日期和时间，例如 2026-10-12 09:30。": [
+    "Enter a valid date and time, such as 2026-10-12 09:30.",
+    "請填寫有效日期和時間，例如 2026-10-12 09:30。",
+    "2026-10-12 09:30 のように有効な日時を入力してください。",
+    "2026-10-12 09:30처럼 올바른 날짜와 시간을 입력해 주세요.",
+    "Introduce una fecha y hora válidas, por ejemplo 2026-10-12 09:30."
+  ],
+  "这个本机时间不存在，请检查日期、时间或夏令时切换。": [
+    "This local time does not exist. Check the date, time or daylight-saving transition.",
+    "這個本機時間不存在，請檢查日期、時間或日光節約時間切換。",
+    "この現地時刻は存在しません。日時や夏時間の切り替えを確認してください。",
+    "존재하지 않는 현지 시각이에요. 날짜, 시간 또는 서머타임 전환을 확인해 주세요.",
+    "Esta hora local no existe. Revisa la fecha, hora o cambio de horario de verano."
+  ],
+  "不能早于 {value}。": [
+    "Must not be earlier than {value}.",
+    "不能早於 {value}。",
+    "{value} より前は選べません。",
+    "{value} 이전일 수 없어요.",
+    "No puede ser anterior a {value}."
+  ],
+  "不能晚于 {value}。": [
+    "Must not be later than {value}.",
+    "不能晚於 {value}。",
+    "{value} より後は選べません。",
+    "{value} 이후일 수 없어요.",
+    "No puede ser posterior a {value}."
+  ],
+  "本机时间": [
+    "Local time",
+    "本機時間",
+    "端末の時刻",
+    "기기 현지 시각",
+    "Hora local"
+  ],
+  "轻点选择": [
+    "Tap to choose",
+    "輕點選擇",
+    "タップして選択",
+    "눌러서 선택",
+    "Toca para elegir"
+  ],
+  "月份": [
+    "Month",
+    "月份",
+    "月",
+    "월",
+    "Mes"
+  ],
+  "日期": [
+    "Date",
+    "日期",
+    "日付",
+    "날짜",
+    "Fecha"
+  ],
+  "日期，使用方向键移动": [
+    "Dates; use arrow keys to move",
+    "日期，使用方向鍵移動",
+    "日付。矢印キーで移動",
+    "날짜, 방향키로 이동",
+    "Fechas; usa las flechas para moverte"
+  ],
+  "，今天": [
+    ", today",
+    "，今天",
+    "、今日",
+    ", 오늘",
+    ", hoy"
+  ],
+  "使用时间": [
+    "Time taken",
+    "使用時間",
+    "使用時刻",
+    "사용 시각",
+    "Hora de uso"
+  ],
+  "小时": [
+    "Hour",
+    "小時",
+    "時",
+    "시",
+    "Hora"
+  ],
+  "分钟": [
+    "Minute",
+    "分鐘",
+    "分",
+    "분",
+    "Minuto"
+  ],
+  "时": [
+    "h",
+    "時",
+    "時",
+    "시",
+    "h"
+  ],
+  "分": [
+    "min",
+    "分",
+    "分",
+    "분",
+    "min"
+  ],
+  "本月": [
+    "This month",
+    "本月",
+    "今月",
+    "이번 달",
+    "Este mes"
+  ],
+  "现在": [
+    "Now",
+    "現在",
+    "現在",
+    "지금",
+    "Ahora"
+  ],
+  "取消": [
+    "Cancel",
+    "取消",
+    "キャンセル",
+    "취소",
+    "Cancelar"
+  ],
+  "确定": [
+    "Confirm",
+    "確定",
+    "確定",
+    "확인",
+    "Confirmar"
+  ],
+  "小时为 0–23，分钟为 0–59。": [
+    "Hours must be 0–23 and minutes 0–59.",
+    "小時為 0–23，分鐘為 0–59。",
+    "時は 0–23、分は 0–59 で入力してください。",
+    "시는 0–23, 분은 0–59여야 해요.",
+    "La hora debe estar entre 0–23 y los minutos entre 0–59."
+  ],
+  "给药方式": [
+    "Administration route",
+    "給藥方式",
+    "投与経路",
+    "투여 경로",
+    "Vía de administración"
+  ],
+  "口服": [
+    "Oral",
+    "口服",
+    "経口",
+    "경구",
+    "Oral"
+  ],
+  "舌下含服": [
+    "Sublingual",
+    "舌下含服",
+    "舌下",
+    "설하",
+    "Sublingual"
+  ],
+  "颊黏膜含服": [
+    "Buccal",
+    "頰黏膜含服",
+    "頬粘膜",
+    "협점막",
+    "Bucal"
+  ],
+  "经皮凝胶": [
+    "Transdermal gel",
+    "經皮凝膠",
+    "経皮ジェル",
+    "경피 젤",
+    "Gel transdérmico"
+  ],
+  "经皮贴片": [
+    "Transdermal patch",
+    "經皮貼片",
+    "経皮パッチ",
+    "경피 패치",
+    "Parche transdérmico"
+  ],
+  "经皮喷雾": [
+    "Transdermal spray",
+    "經皮噴霧",
+    "経皮スプレー",
+    "경피 스프레이",
+    "Aerosol transdérmico"
+  ],
+  "肌内注射": [
+    "Intramuscular injection",
+    "肌肉注射",
+    "筋肉内注射",
+    "근육 주사",
+    "Inyección intramuscular"
+  ],
+  "皮下注射": [
+    "Subcutaneous injection",
+    "皮下注射",
+    "皮下注射",
+    "피하 주사",
+    "Inyección subcutánea"
+  ],
+  "直肠使用": [
+    "Rectal",
+    "直腸使用",
+    "直腸内",
+    "직장 투여",
+    "Rectal"
+  ],
+  "植入剂": [
+    "Implant",
+    "植入劑",
+    "インプラント",
+    "임플란트",
+    "Implante"
+  ],
+  "舌下": [
+    "Sublingual",
+    "舌下",
+    "舌下",
+    "설하",
+    "Sublingual"
+  ],
+  "凝胶": [
+    "Gel",
+    "凝膠",
+    "ジェル",
+    "젤",
+    "Gel"
+  ],
+  "贴片": [
+    "Patch",
+    "貼片",
+    "パッチ",
+    "패치",
+    "Parche"
+  ],
+  "肌注": [
+    "IM injection",
+    "肌注",
+    "筋注",
+    "근육 주사",
+    "Inyección IM"
+  ],
+  "雌二醇": [
+    "Estradiol",
+    "雌二醇",
+    "エストラジオール",
+    "에스트라디올",
+    "Estradiol"
+  ],
+  "睾酮": [
+    "Testosterone",
+    "睪固酮",
+    "テストステロン",
+    "테스토스테론",
+    "Testosterona"
+  ],
+  "雌二醇 E2": [
+    "Estradiol E2",
+    "雌二醇 E2",
+    "エストラジオール E2",
+    "에스트라디올 E2",
+    "Estradiol E2"
+  ],
+  "总睾酮 T": [
+    "Total testosterone T",
+    "總睪固酮 T",
+    "総テストステロン T",
+    "총 테스토스테론 T",
+    "Testosterona total T"
+  ],
+  "醋酸环丙孕酮 CPA": [
+    "Cyproterone acetate CPA",
+    "醋酸環丙孕酮 CPA",
+    "酢酸シプロテロン CPA",
+    "시프로테론 아세테이트 CPA",
+    "Acetato de ciproterona CPA"
+  ],
+  "睾酮 T": [
+    "Testosterone T",
+    "睪固酮 T",
+    "テストステロン T",
+    "테스토스테론 T",
+    "Testosterona T"
+  ],
+  "雌二醇 E2（含半水合物）": [
+    "Estradiol E2 (including hemihydrate)",
+    "雌二醇 E2（含半水合物）",
+    "エストラジオール E2（半水和物を含む）",
+    "에스트라디올 E2 (반수화물 포함)",
+    "Estradiol E2 (incluido hemihidrato)"
+  ],
+  "雌二醇 E2（微粒化）": [
+    "Micronized estradiol E2",
+    "雌二醇 E2（微粒化）",
+    "微粒化エストラジオール E2",
+    "미세화 에스트라디올 E2",
+    "Estradiol E2 micronizado"
+  ],
+  "戊酸雌二醇 EV": [
+    "Estradiol valerate EV",
+    "戊酸雌二醇 EV",
+    "吉草酸エストラジオール EV",
+    "에스트라디올 발레레이트 EV",
+    "Valerato de estradiol EV"
+  ],
+  "环戊丙酸雌二醇 EC": [
+    "Estradiol cypionate EC",
+    "環戊丙酸雌二醇 EC",
+    "シピオン酸エストラジオール EC",
+    "에스트라디올 시피오네이트 EC",
+    "Cipionato de estradiol EC"
+  ],
+  "苯甲酸雌二醇 EB": [
+    "Estradiol benzoate EB",
+    "苯甲酸雌二醇 EB",
+    "安息香酸エストラジオール EB",
+    "에스트라디올 벤조에이트 EB",
+    "Benzoato de estradiol EB"
+  ],
+  "庚酸雌二醇 EEn": [
+    "Estradiol enanthate EEn",
+    "庚酸雌二醇 EEn",
+    "エナント酸エストラジオール EEn",
+    "에스트라디올 에난테이트 EEn",
+    "Enantato de estradiol EEn"
+  ],
+  "庚酸睾酮 TE": [
+    "Testosterone enanthate TE",
+    "庚酸睪固酮 TE",
+    "エナント酸テストステロン TE",
+    "테스토스테론 에난테이트 TE",
+    "Enantato de testosterona TE"
+  ],
+  "环戊丙酸睾酮 TC": [
+    "Testosterone cypionate TC",
+    "環戊丙酸睪固酮 TC",
+    "シピオン酸テストステロン TC",
+    "테스토스테론 시피오네이트 TC",
+    "Cipionato de testosterona TC"
+  ],
+  "十一酸睾酮 TU": [
+    "Testosterone undecanoate TU",
+    "十一酸睪固酮 TU",
+    "ウンデカン酸テストステロン TU",
+    "테스토스테론 운데카노에이트 TU",
+    "Undecanoato de testosterona TU"
+  ],
+  "十一酸睾酮 TU（长效）": [
+    "Testosterone undecanoate TU (long-acting)",
+    "十一酸睪固酮 TU（長效）",
+    "ウンデカン酸テストステロン TU（長時間作用型）",
+    "테스토스테론 운데카노에이트 TU (지속형)",
+    "Undecanoato de testosterona TU (acción prolongada)"
+  ],
+  "丙酸睾酮 TP": [
+    "Testosterone propionate TP",
+    "丙酸睪固酮 TP",
+    "プロピオン酸テストステロン TP",
+    "테스토스테론 프로피오네이트 TP",
+    "Propionato de testosterona TP"
+  ],
+  "混合睾酮酯": [
+    "Mixed testosterone esters",
+    "混合睪固酮酯",
+    "混合テストステロンエステル",
+    "혼합 테스토스테론 에스테르",
+    "Ésteres mixtos de testosterona"
+  ],
+  "螺内酯": [
+    "Spironolactone",
+    "螺內酯",
+    "スピロノラクトン",
+    "스피로노락톤",
+    "Espironolactona"
+  ],
+  "比卡鲁胺": [
+    "Bicalutamide",
+    "比卡魯胺",
+    "ビカルタミド",
+    "비칼루타마이드",
+    "Bicalutamida"
+  ],
+  "非那雄胺": [
+    "Finasteride",
+    "非那雄胺",
+    "フィナステリド",
+    "피나스테리드",
+    "Finasterida"
+  ],
+  "度他雄胺": [
+    "Dutasteride",
+    "度他雄胺",
+    "デュタステリド",
+    "두타스테리드",
+    "Dutasterida"
+  ],
+  "微粒化黄体酮 P4": [
+    "Micronized progesterone P4",
+    "微粒化黃體酮 P4",
+    "微粒化プロゲステロン P4",
+    "미세화 프로게스테론 P4",
+    "Progesterona P4 micronizada"
+  ],
+  "黄体酮 P4": [
+    "Progesterone P4",
+    "黃體酮 P4",
+    "プロゲステロン P4",
+    "프로게스테론 P4",
+    "Progesterona P4"
+  ],
+  "醋酸甲羟孕酮 MPA": [
+    "Medroxyprogesterone acetate MPA",
+    "醋酸甲羥孕酮 MPA",
+    "酢酸メドロキシプロゲステロン MPA",
+    "메드록시프로게스테론 아세테이트 MPA",
+    "Acetato de medroxiprogesterona MPA"
+  ],
+  "亮丙瑞林（缓释）": [
+    "Leuprorelin (depot)",
+    "亮丙瑞林（緩釋）",
+    "リュープロレリン（徐放性）",
+    "류프로렐린 (서방형)",
+    "Leuprorelina (depot)"
+  ],
+  "曲普瑞林（缓释）": [
+    "Triptorelin (depot)",
+    "曲普瑞林（緩釋）",
+    "トリプトレリン（徐放性）",
+    "트립토렐린 (서방형)",
+    "Triptorelina (depot)"
+  ],
+  "戈舍瑞林（缓释植入注射）": [
+    "Goserelin (depot implant injection)",
+    "戈舍瑞林（緩釋植入注射）",
+    "ゴセレリン（徐放性インプラント注射）",
+    "고세렐린 (서방형 삽입 주사)",
+    "Goserelina (implante inyectable depot)"
+  ],
+  "组氨瑞林 Histrelin": [
+    "Histrelin",
+    "組氨瑞林 Histrelin",
+    "ヒストレリン",
+    "히스트렐린",
+    "Histrelina"
+  ],
+  "未校准参考": [
+    "Uncalibrated reference",
+    "未校準參考",
+    "未校正の参考値",
+    "미보정 참고값",
+    "Referencia sin calibrar"
+  ],
+  "个人校准估计": [
+    "Personally calibrated estimate",
+    "個人校準估計",
+    "個人校正による推定",
+    "개인 보정 추정값",
+    "Estimación con calibración personal"
+  ],
+  "暂无法估计": [
+    "Estimate unavailable",
+    "暫無法估計",
+    "推定できません",
+    "현재 추정 불가",
+    "Estimación no disponible"
+  ],
+  "记录需核对": [
+    "Review records",
+    "記錄需核對",
+    "記録を確認",
+    "기록 확인 필요",
+    "Revisa los registros"
+  ],
+  "已参与校准": [
+    "Included in calibration",
+    "已參與校準",
+    "校正に使用済み",
+    "보정에 포함됨",
+    "Incluido en la calibración"
+  ],
+  "未来采血时间，未参与校准": [
+    "Future blood draw; excluded from calibration",
+    "未來採血時間，未參與校準",
+    "未来の採血日時のため未使用",
+    "미래 채혈 시각으로 보정에서 제외됨",
+    "Extracción futura; excluida de la calibración"
+  ],
+  "数值、单位或采血时间无效": [
+    "Invalid value, unit or blood draw time",
+    "數值、單位或採血時間無效",
+    "値、単位、採血日時が無効です",
+    "수치, 단위 또는 채혈 시각이 잘못됨",
+    "Valor, unidad u hora de extracción no válidos"
+  ],
+  "重复实测点，未重复拟合": [
+    "Duplicate lab result; not fitted twice",
+    "重複實測點，未重複擬合",
+    "重複した実測値は再適合しません",
+    "중복 실측값은 다시 적합하지 않음",
+    "Resultado duplicado; no se ajusta dos veces"
+  ],
+  "该时刻没有已记录给药的模型暴露": [
+    "No modeled exposure from recorded doses at that time",
+    "該時刻沒有已記錄給藥的模型暴露",
+    "その時点で記録した投薬のモデル曝露量がありません",
+    "해당 시각에 기록된 투약의 모델 노출량이 없음",
+    "Sin exposición modelada de dosis registradas en ese momento"
+  ],
+  "测值低于个人固定基线": [
+    "Result below the fixed personal baseline",
+    "測值低於個人固定基線",
+    "実測値が個人の固定ベースライン未満",
+    "측정값이 개인 고정 기준선보다 낮음",
+    "Resultado inferior a la línea basal personal fija"
+  ],
+  "未参与本次校准": [
+    "Not included in this calibration",
+    "未參與本次校準",
+    "今回の校正には未使用",
+    "이번 보정에 포함되지 않음",
+    "No incluido en esta calibración"
+  ],
+  "已记录药物中仍有缺少浓度模型的组合，详见模型说明。": [
+    "Some recorded medication combinations lack a concentration model. See model details.",
+    "已記錄藥物中仍有缺少濃度模型的組合，詳見模型說明。",
+    "記録した薬の組み合わせに濃度モデルがないものがあります。モデル説明を確認してください。",
+    "기록된 약물 조합 중 농도 모델이 없는 항목이 있어요. 모델 설명을 확인해 주세요.",
+    "Algunas combinaciones registradas no tienen modelo de concentración. Consulta los detalles del modelo."
+  ],
+  "当前给药组合缺少可叠加的模型幅度。": [
+    "This combination lacks model amplitudes that can be added together.",
+    "目前給藥組合缺少可疊加的模型幅度。",
+    "現在の組み合わせには加算できるモデル振幅がありません。",
+    "현재 투약 조합에 합산 가능한 모델 크기가 없어요.",
+    "Esta combinación carece de amplitudes del modelo que puedan sumarse."
+  ],
+  "给药记录或模型参数需要核对，详见浓度曲线说明。": [
+    "Review dose records or model parameters. See the concentration curve notes.",
+    "給藥記錄或模型參數需要核對，詳見濃度曲線說明。",
+    "投薬記録またはモデルパラメータを確認してください。濃度曲線の説明に詳細があります。",
+    "투약 기록 또는 모델 매개변수를 확인해 주세요. 농도 곡선 설명을 참고해 주세요.",
+    "Revisa los registros de dosis o parámetros. Consulta las notas de la curva."
+  ],
+  "模型数值超出范围，请检查参数与用量。": [
+    "Model value out of range. Check parameters and doses.",
+    "模型數值超出範圍，請檢查參數與用量。",
+    "モデル値が範囲外です。パラメータと用量を確認してください。",
+    "모델 수치가 범위를 벗어났어요. 매개변수와 용량을 확인해 주세요.",
+    "Valor del modelo fuera de rango. Revisa los parámetros y las dosis."
+  ],
+  "模型暂无法计算，请查看校准说明。": [
+    "The model cannot calculate a value. See calibration notes.",
+    "模型暫無法計算，請查看校準說明。",
+    "現在計算できません。校正の説明を確認してください。",
+    "현재 모델 계산이 불가능해요. 보정 설명을 확인해 주세요.",
+    "El modelo no puede calcular un valor. Consulta las notas de calibración."
+  ],
+  "{count} 个实测点用于幅度校准。": [
+    "{count} lab results used to calibrate amplitude.",
+    "{count} 個實測點用於幅度校準。",
+    "実測値 {count} 件で振幅を校正しています。",
+    "실측값 {count}개로 크기를 보정했어요.",
+    "Se usaron {count} resultados para calibrar la amplitud."
+  ],
+  "另有 {count} 个点未参与。": [
+    "Another {count} results were excluded.",
+    "另有 {count} 個點未參與。",
+    "ほか {count} 件は除外しました。",
+    "그 외 {count}개는 제외되었어요.",
+    "Se excluyeron otros {count} resultados."
+  ],
+  "单点校准不能验证峰谷形状。": [
+    "A single result cannot validate peak and trough shape.",
+    "單點校準不能驗證峰谷形狀。",
+    "1点の校正ではピークやトラフの形状を検証できません。",
+    "한 점 보정으로 최고·최저 농도 형태를 검증할 수 없어요.",
+    "Un solo punto no valida la forma de picos y valles."
+  ],
+  "采血记录在未来，尚未参与校准；当前显示参考估计。": [
+    "Future blood draws are not yet used for calibration; showing a reference estimate.",
+    "採血記錄在未來，尚未參與校準；目前顯示參考估計。",
+    "採血日時が未来のため校正には未使用です。参考推定値を表示しています。",
+    "미래 채혈 기록은 아직 보정에 사용하지 않으며 참고 추정값을 표시해요.",
+    "Las extracciones futuras aún no se usan para calibrar; se muestra una estimación de referencia."
+  ],
+  "化验时刻没有足够的已记录给药暴露，当前保留参考估计。": [
+    "Insufficient modeled exposure at the blood draw time; retaining the reference estimate.",
+    "化驗時刻沒有足夠的已記錄給藥暴露，目前保留參考估計。",
+    "採血時の記録済み投薬による曝露が不十分なため、参考推定値を表示します。",
+    "채혈 시각의 기록된 투약 노출량이 부족하여 참고 추정값을 유지해요.",
+    "No hay suficiente exposición registrada en la extracción; se mantiene la estimación de referencia."
+  ],
+  "化验低于个人固定基线，尚未完成校准。": [
+    "The lab result is below the fixed personal baseline; calibration is incomplete.",
+    "化驗低於個人固定基線，尚未完成校準。",
+    "検査値が個人の固定ベースライン未満のため、校正が完了していません。",
+    "검사값이 개인 고정 기준선보다 낮아 보정을 완료하지 못했어요.",
+    "El resultado está por debajo de la línea basal personal fija; la calibración está incompleta."
+  ],
+  "新增途径没有被化验覆盖，当前使用参考估计。": [
+    "The new route is not covered by lab results; using the reference estimate.",
+    "新增途徑沒有被化驗涵蓋，目前使用參考估計。",
+    "新しい経路は検査でカバーされていないため、参考推定値を使用します。",
+    "새 투여 경로가 검사에 포함되지 않아 참고 추정값을 사용해요.",
+    "Los análisis no cubren la nueva vía; se usa la estimación de referencia."
+  ],
+  "此给药组合尚不能由一个化验倍率确定总贡献。": [
+    "One lab-derived scaling factor cannot determine this combination's total contribution.",
+    "此給藥組合尚不能由一個化驗倍率確定總貢獻。",
+    "1つの検査倍率では、この組み合わせの総寄与を決定できません。",
+    "하나의 검사 배율로 이 투약 조합의 총 기여량을 정할 수 없어요.",
+    "Un único factor de calibración no permite determinar el aporte total de esta combinación."
+  ],
+  "实测未提供可识别的药物增量，当前保留参考估计。": [
+    "Lab results do not identify a drug-related increment; retaining the reference estimate.",
+    "實測未提供可識別的藥物增量，目前保留參考估計。",
+    "実測値から薬物由来の増分を識別できないため、参考推定値を表示します。",
+    "실측값에서 약물 증가분을 식별할 수 없어 참고 추정값을 유지해요.",
+    "Los análisis no permiten identificar un incremento por el fármaco; se mantiene la referencia."
+  ],
+  "现有实测未能用于个人校准，详见化验与校准页。": [
+    "Current lab results could not be used for personal calibration. See Labs & Calibration.",
+    "現有實測未能用於個人校準，詳見化驗與校準頁。",
+    "現在の実測値は個人校正に使用できませんでした。検査・校正ページを確認してください。",
+    "현재 실측값을 개인 보정에 사용할 수 없어요. 검사 및 보정 페이지를 확인해 주세요.",
+    "Los resultados actuales no pudieron usarse para la calibración personal. Consulta Análisis y calibración."
+  ],
+  "当前仅显示参考背景；没有对应药物的已记录贡献。": [
+    "Only the reference background is shown; no contribution from the corresponding medication is recorded.",
+    "目前僅顯示參考背景；沒有對應藥物的已記錄貢獻。",
+    "対応する薬の投薬記録がないため、参考背景値のみを表示しています。",
+    "해당 약물의 기록된 기여량이 없어 참고 배경값만 표시해요.",
+    "Solo se muestra el fondo de referencia; no hay aportes registrados del medicamento correspondiente."
+  ],
+  "根据已记录用量和参考参数计算，可用采血结果校准。": [
+    "Calculated from recorded doses and reference parameters; can be calibrated with blood results.",
+    "依已記錄用量和參考參數計算，可用採血結果校準。",
+    "投薬記録と参考パラメータから計算しています。採血結果で校正できます。",
+    "기록된 용량과 참고 매개변수로 계산하며 채혈 결과로 보정할 수 있어요.",
+    "Calculado con dosis registradas y parámetros de referencia; puede calibrarse con análisis de sangre."
+  ],
+  "最近实测 {value} {unit} · {date}": [
+    "Latest lab: {value} {unit} · {date}",
+    "最近實測 {value} {unit} · {date}",
+    "直近の実測 {value} {unit} · {date}",
+    "최근 실측 {value} {unit} · {date}",
+    "Último análisis: {value} {unit} · {date}"
+  ],
+  "暂无当前时刻以前的有效实测": [
+    "No valid lab results before this time",
+    "尚無目前時刻以前的有效實測",
+    "この時刻より前の有効な実測値はありません",
+    "현재 시각 이전의 유효한 실측값 없음",
+    "Sin análisis válidos anteriores a este momento"
+  ],
+  "还没有化验记录": [
+    "No lab results yet",
+    "還沒有化驗記錄",
+    "検査記録はまだありません",
+    "검사 기록이 아직 없어요",
+    "Aún no hay análisis"
+  ],
+  "按住鼠标右键拖动标线，查看任意时刻的 {names}": [
+    "Hold the right mouse button and drag the marker to view {names} at any time",
+    "按住滑鼠右鍵拖動標線，查看任意時刻的 {names}",
+    "マウスの右ボタンで標線をドラッグし、任意の時刻の {names} を確認できます",
+    "마우스 오른쪽 버튼을 누르고 표시선을 끌어 원하는 시각의 {names}를 확인하세요",
+    "Mantén pulsado el botón derecho y arrastra el marcador para ver {names} en cualquier momento"
+  ],
+  "时间标线。按左右方向键或鼠标右键拖动，读取 {names} 浓度": [
+    "Time marker. Use left/right arrows or right-drag to read {names} concentrations",
+    "時間標線。按左右方向鍵或滑鼠右鍵拖動，讀取 {names} 濃度",
+    "時間標線。左右の矢印キーまたは右ドラッグで {names} の濃度を読み取れます",
+    "시간 표시선. 좌우 방향키 또는 마우스 오른쪽 드래그로 {names} 농도를 확인하세요",
+    "Marcador temporal. Usa las flechas o arrastra con el botón derecho para leer las concentraciones de {names}"
+  ],
+  "实测": [
+    "Measured",
+    "實測",
+    "実測",
+    "실측",
+    "Medido"
+  ],
+  "右轴": [
+    "Right axis",
+    "右軸",
+    "右軸",
+    "오른쪽 축",
+    "Eje derecho"
+  ],
+  "左轴": [
+    "Left axis",
+    "左軸",
+    "左軸",
+    "왼쪽 축",
+    "Eje izquierdo"
+  ],
+  "圆点为实测 · 虚线为不追加给药的推算": [
+    "Dots: lab results · Dashed lines: projection without further doses",
+    "圓點為實測 · 虛線為不追加給藥的推算",
+    "丸点：実測値 · 破線：追加投薬なしの予測",
+    "점: 실측값 · 점선: 추가 투약 없는 추정",
+    "Puntos: análisis · Líneas discontinuas: proyección sin más dosis"
+  ],
+  "指南监测参考": [
+    "Guideline monitoring reference",
+    "指南監測參考",
+    "ガイドラインのモニタリング参考値",
+    "가이드라인 모니터링 참고값",
+    "Referencia de seguimiento de las guías"
+  ],
+  "约 367–734 pmol/L · 用于临床采血解读": [
+    "About 367–734 pmol/L · For interpreting clinical blood tests",
+    "約 367–734 pmol/L · 用於臨床採血解讀",
+    "約 367–734 pmol/L · 臨床採血の解釈用",
+    "약 367–734 pmol/L · 임상 채혈 해석용",
+    "Aproximadamente 367–734 pmol/L · Para interpretar análisis clínicos"
+  ],
+  "适用条件与文献": [
+    "Context and references",
+    "適用條件與文獻",
+    "適用条件と文献",
+    "적용 조건과 문헌",
+    "Contexto y referencias"
+  ],
+  "E2 范围证据综述 · 2025": [
+    "Review of E2 range evidence · 2025",
+    "E2 範圍證據綜述 · 2025",
+    "E2 範囲のエビデンスレビュー · 2025",
+    "E2 범위 근거 검토 · 2025",
+    "Revisión de la evidencia del rango de E2 · 2025"
+  ],
+  "仅指庚酸 / 环戊丙酸睾酮注射间隔中点采血": [
+    "Only for blood drawn midway between testosterone enanthate/cypionate injections",
+    "僅指庚酸／環戊丙酸睪固酮注射間隔中點採血",
+    "エナント酸／シピオン酸テストステロン注射間隔の中間点での採血のみ",
+    "테스토스테론 에난테이트/시피오네이트 주사 간격 중간 시점의 채혈에만 해당",
+    "Solo para extracciones a mitad del intervalo entre inyecciones de enantato/cipionato de testosterona"
+  ],
+  "未设统一 E2 目标": [
+    "No universal E2 target",
+    "未設統一 E2 目標",
+    "一律の E2 目標なし",
+    "일률적인 E2 목표 없음",
+    "Sin objetivo universal de E2"
+  ],
+  "FTM 模式不套用女性化治疗的 100–200 pg/mL": [
+    "The feminizing therapy range of 100–200 pg/mL does not apply in FTM mode",
+    "FTM 模式不套用女性化治療的 100–200 pg/mL",
+    "FTM モードに女性化療法の 100–200 pg/mL は適用しません",
+    "FTM 모드에는 여성화 치료의 100–200 pg/mL 범위를 적용하지 않아요",
+    "El rango de 100–200 pg/mL de la terapia feminizante no se aplica en modo FTM"
+  ],
+  "WPATH SOC8 附录 C 表 5 与 Endocrine Society 2017 表 15 列出女性化 GAHT 的这一监测参考。实际解读需结合给药途径及采血距上次用药的时间。": [
+    "WPATH SOC8 Appendix C Table 5 and Endocrine Society 2017 Table 15 list this monitoring reference for feminizing GAHT. Interpretation depends on the route and time since the last dose.",
+    "WPATH SOC8 附錄 C 表 5 與 Endocrine Society 2017 表 15 列出女性化 GAHT 的此監測參考。實際解讀需結合給藥途徑及採血距上次用藥的時間。",
+    "WPATH SOC8 付録 C 表 5 と Endocrine Society 2017 表 15 にある女性化 GAHT のモニタリング参考値です。投与経路と最終投薬から採血までの時間を考慮して解釈します。",
+    "WPATH SOC8 부록 C 표 5와 Endocrine Society 2017 표 15의 여성화 GAHT 모니터링 참고값이에요. 투여 경로와 마지막 투약 후 채혈까지의 시간을 고려해야 해요.",
+    "WPATH SOC8, apéndice C, tabla 5, y Endocrine Society 2017, tabla 15, incluyen esta referencia para GAHT feminizante. Su interpretación depende de la vía y del tiempo desde la última dosis."
+  ],
+  "这里的当前数值是模型估计，不能直接当作采血结果；参考范围也不是每一时刻的安全阈值。2025 年系统综述未找到证据证明这一范围能带来最佳女性化效果或减少不良事件。": [
+    "The current value is a model estimate, not a blood test result. This range is not a safety threshold at every instant. A 2025 systematic review found no evidence that this range optimizes feminization or reduces adverse events.",
+    "這裡的目前數值是模型估計，不能直接當作採血結果；參考範圍也不是每一時刻的安全閾值。2025 年系統綜述未找到證據證明此範圍能帶來最佳女性化效果或減少不良事件。",
+    "現在値はモデル推定であり採血結果ではありません。この範囲は各時点の安全基準ではありません。2025 年のシステマティックレビューでは、この範囲が女性化を最適化したり有害事象を減らしたりする根拠は見つかりませんでした。",
+    "현재 값은 채혈 결과가 아닌 모델 추정값이며, 이 범위는 매 순간의 안전 기준이 아니에요. 2025년 체계적 문헌고찰은 이 범위가 여성화 효과를 최적화하거나 이상반응을 줄인다는 근거를 찾지 못했어요.",
+    "El valor actual es una estimación del modelo, no un análisis. Este rango no es un umbral de seguridad en cada instante. Una revisión sistemática de 2025 no halló pruebas de que optimice la feminización o reduzca eventos adversos."
+  ],
+  "Endocrine Society 2017 表 14 与 WPATH SOC8 附录 C 表 5 的针剂监测建议需结合采血时点。上述数值不适用于整条估算曲线或所有睾酮给药方式。": [
+    "The injection monitoring recommendations in Endocrine Society 2017 Table 14 and WPATH SOC8 Appendix C Table 5 depend on blood draw timing. These values do not apply to the entire estimated curve or to every testosterone route.",
+    "Endocrine Society 2017 表 14 與 WPATH SOC8 附錄 C 表 5 的針劑監測建議需結合採血時點。上述數值不適用於整條估算曲線或所有睪固酮給藥方式。",
+    "Endocrine Society 2017 表 14 と WPATH SOC8 付録 C 表 5 の注射剤モニタリングは採血時点によります。この値は推定曲線全体やすべてのテストステロン投与経路には適用できません。",
+    "Endocrine Society 2017 표 14와 WPATH SOC8 부록 C 표 5의 주사 모니터링 권고는 채혈 시점에 따라 해석해야 해요. 위 수치는 추정 곡선 전체나 모든 테스토스테론 투여 경로에 적용되지 않아요.",
+    "Las recomendaciones para inyectables de Endocrine Society 2017, tabla 14, y WPATH SOC8, apéndice C, tabla 5, dependen del momento de extracción. Estos valores no se aplican a toda la curva ni a todas las vías de testosterona."
+  ],
+  "长效十一酸睾酮针剂通常在下一次注射前采血；经皮睾酮在每日使用至少一周后、距涂药至少两小时采血。其他情形需按对应制剂、男性生理参考范围及个人治疗目标解读。": [
+    "Long-acting testosterone undecanoate is usually sampled before the next injection. Transdermal testosterone is sampled after at least one week of daily use and at least two hours after application. Other cases require interpretation for the formulation, male physiological reference range and individual goals.",
+    "長效十一酸睪固酮針劑通常在下次注射前採血；經皮睪固酮在每日使用至少一週後、距塗藥至少兩小時採血。其他情形需依對應製劑、男性生理參考範圍及個人治療目標解讀。",
+    "長時間作用型ウンデカン酸テストステロンは通常、次回注射前に採血します。経皮テストステロンは毎日使用を1週間以上続け、塗布から2時間以上後に採血します。その他は製剤、男性の生理的参考範囲、個別の治療目標を踏まえて解釈します。",
+    "지속형 테스토스테론 운데카노에이트는 보통 다음 주사 전에 채혈해요. 경피 테스토스테론은 최소 1주일간 매일 사용한 후 도포로부터 최소 2시간 뒤 채혈해요. 다른 경우에는 제제, 남성 생리 참고 범위와 개인 치료 목표를 고려해야 해요.",
+    "La testosterona undecanoato de acción prolongada suele medirse antes de la siguiente inyección. La transdérmica, tras al menos una semana de uso diario y dos horas después de aplicarla. Los demás casos se interpretan según la formulación, el rango fisiológico masculino y los objetivos individuales."
+  ],
+  "这两份指南的男性化 GAHT 监测表未给出统一的雌二醇目标范围。显示 E2 可帮助回顾自己的记录和实测变化，但应结合个人情况解读，不能据此判定睾酮治疗是否达标。": [
+    "Neither guideline's masculinizing GAHT monitoring table gives a universal estradiol target. E2 can help review personal records and measured changes, but must be interpreted in context and cannot determine whether testosterone treatment meets its goals.",
+    "這兩份指南的男性化 GAHT 監測表未給出統一的雌二醇目標範圍。顯示 E2 可幫助回顧個人記錄與實測變化，但需結合個人情況解讀，不能據此判定睪固酮治療是否達標。",
+    "両ガイドラインの男性化 GAHT モニタリング表には一律の E2 目標範囲はありません。E2 表示は記録や実測の変化を振り返る助けになりますが、個人の状況に応じた解釈が必要で、テストステロン治療の目標達成を判定するものではありません。",
+    "두 가이드라인의 남성화 GAHT 모니터링 표에는 일률적인 에스트라디올 목표 범위가 없어요. E2는 개인 기록과 실측 변화를 돌아보는 데 도움이 되지만 개인 상황에 맞게 해석해야 하며 테스토스테론 치료의 목표 달성 여부를 판단할 수는 없어요.",
+    "Ninguna de las dos guías establece un objetivo universal de estradiol en sus tablas de GAHT masculinizante. E2 ayuda a revisar registros y cambios medidos, pero debe interpretarse según cada persona y no determina si la testosterona cumple sus objetivos."
+  ],
+  "该组合暂未核准浓度模型；支持记录与提醒。": [
+    "No concentration model has been verified for this combination; recording and reminders are supported.",
+    "此組合尚未核准濃度模型；支援記錄與提醒。",
+    "この組み合わせの濃度モデルは未確認です。記録とリマインダーに対応しています。",
+    "이 조합의 농도 모델은 검증되지 않았으며 기록과 알림을 지원해요.",
+    "No se ha verificado un modelo de concentración para esta combinación; admite registros y recordatorios."
+  ],
+  "按标签记录戊酸雌二醇酯的 mg；不与游离雌二醇 mg 自动等同。": [
+    "Record labeled mg of estradiol valerate ester; these are not automatically equivalent to mg of free estradiol.",
+    "依標籤記錄戊酸雌二醇酯的 mg；不與游離雌二醇 mg 自動等同。",
+    "表示された吉草酸エストラジオールエステルの mg を記録します。遊離エストラジオールの mg と自動的に同等には扱いません。",
+    "라벨에 표시된 에스트라디올 발레레이트 에스테르의 mg를 기록하며 유리 에스트라디올 mg와 동일하게 취급하지 않아요.",
+    "Registra los mg del éster de valerato de estradiol indicados; no equivalen automáticamente a mg de estradiol libre."
+  ],
+  "本条用于记录既有含服方案；代表片剂正式说明书通常为口服，含服的吸收差异很大。": [
+    "For recording an existing sublingual regimen. These tablets are generally labeled for oral use; absorption under the tongue varies widely.",
+    "本項用於記錄既有含服方案；代表片劑正式說明書通常為口服，含服的吸收差異很大。",
+    "既存の舌下使用を記録する項目です。通常は経口用の錠剤で、舌下吸収には大きな差があります。",
+    "기존 설하 요법을 기록하는 항목이에요. 해당 정제는 보통 경구용으로 허가되어 있으며 설하 흡수에는 큰 차이가 있어요.",
+    "Para registrar un régimen sublingual existente. Estas tabletas suelen estar indicadas para uso oral; la absorción sublingual varía mucho."
+  ],
+  "记录片剂标示的 EV 酯 mg。参考模拟分开处理黏膜吸收、吞咽和酯转化；可用 E2 化验校准幅度。舌下为超说明书途径，模型参数不等于个人实测吸收。": [
+    "Record the tablet's labeled mg of EV ester. The reference simulation separates mucosal absorption, swallowing and ester conversion; E2 labs can calibrate amplitude. Sublingual use is off-label; parameters do not measure personal absorption.",
+    "記錄片劑標示的 EV 酯 mg。參考模擬分開處理黏膜吸收、吞嚥和酯轉化；可用 E2 化驗校準幅度。舌下為仿單外途徑，模型參數不等於個人實測吸收。",
+    "錠剤に表示された EV エステルの mg を記録します。参考モデルは粘膜吸収、嚥下、エステル変換を分け、E2 検査で振幅を校正できます。舌下使用は適応外で、パラメータは個人の実測吸収ではありません。",
+    "정제에 표시된 EV 에스테르 mg를 기록해요. 참고 모형은 점막 흡수, 삼킴, 에스테르 전환을 구분하며 E2 검사로 크기를 보정할 수 있어요. 설하 사용은 허가 외 경로이며 매개변수는 개인 실측 흡수량이 아니에요.",
+    "Registra los mg de éster EV de la tableta. La simulación separa absorción mucosa, deglución y conversión del éster; los análisis de E2 calibran la amplitud. El uso sublingual es fuera de ficha técnica y los parámetros no miden la absorción personal."
+  ],
+  "用于记录；颊黏膜与舌下吸收不自动视为等效。": [
+    "For recording; buccal and sublingual absorption are not assumed equivalent.",
+    "用於記錄；頰黏膜與舌下吸收不自動視為等效。",
+    "記録用です。頬粘膜吸収と舌下吸収を同等とは扱いません。",
+    "기록용이며 협점막과 설하 흡수를 동일하게 간주하지 않아요.",
+    "Para registro; no se supone equivalencia entre absorción bucal y sublingual."
+  ],
+  "用于记录超说明书途径；未核准颊黏膜 EV 的浓度模型。": [
+    "For recording an off-label route; no concentration model has been verified for buccal EV.",
+    "用於記錄仿單外途徑；未核准頰黏膜 EV 的濃度模型。",
+    "適応外経路の記録用です。頬粘膜 EV の濃度モデルは未確認です。",
+    "허가 외 경로 기록용이며 협점막 EV 농도 모델은 검증되지 않았어요.",
+    "Para registrar una vía fuera de ficha técnica; el modelo de concentración de EV bucal no está verificado."
+  ],
+  "记录每次喷雾所含的有效雌二醇 mg，不填喷数；需按所用产品标签换算。": [
+    "Record mg of active estradiol in each application, not the number of sprays; convert using your product's label.",
+    "記錄每次噴霧所含的有效雌二醇 mg，不填噴數；需依產品標籤換算。",
+    "噴霧回数ではなく、使用した有効エストラジオールの mg を記録します。製品表示に従って換算してください。",
+    "분사 횟수가 아닌 사용한 유효 에스트라디올 mg를 기록하고 제품 라벨에 따라 환산해 주세요.",
+    "Registra los mg de estradiol activo, no el número de pulverizaciones; convierte según la etiqueta del producto."
+  ],
+  "按所用单方酯剂 mg 记录；不用于复方雌孕激素针剂。": [
+    "Record mg of the single-ester product used; not for combined estrogen/progestogen injections.",
+    "依所用單方酯劑 mg 記錄；不適用於複方雌孕激素針劑。",
+    "単一エステル製剤の mg を記録します。エストロゲン・プロゲストーゲン配合注射には使用しません。",
+    "사용한 단일 에스테르 제제의 mg를 기록하며 에스트로겐·프로게스토겐 복합 주사에는 사용하지 않아요.",
+    "Registra los mg del producto de un solo éster; no se aplica a inyecciones combinadas de estrógeno y progestágeno."
+  ],
+  "用于记录单方制剂；常见复方避孕针不对应本条，不能用本条代表复方成分。": [
+    "For single-ingredient products; common combined contraceptive injections do not match this entry, which cannot represent their combined ingredients.",
+    "用於記錄單方製劑；常見複方避孕針不對應本項，不能用本項代表複方成分。",
+    "単剤の記録用です。一般的な配合避妊注射やその配合成分を表す項目ではありません。",
+    "단일 성분 제제 기록용이며 일반적인 복합 피임 주사나 그 복합 성분을 나타내는 항목이 아니에요.",
+    "Para productos de un solo ingrediente; las inyecciones anticonceptivas combinadas no corresponden a esta entrada ni se representan con ella."
+  ],
+  "皮下注射与肌注参数不自动等效。": [
+    "Subcutaneous and intramuscular parameters are not assumed equivalent.",
+    "皮下注射與肌注參數不自動等效。",
+    "皮下注射と筋注のパラメータを同等とは扱いません。",
+    "피하 주사와 근육 주사 매개변수는 동일하게 간주하지 않아요.",
+    "No se supone equivalencia entre parámetros subcutáneos e intramusculares."
+  ],
+  "记录植入的有效成分 mg；不使用注射或贴片方程代替植入释放。": [
+    "Record implanted active ingredient in mg; injection or patch equations do not substitute for implant release.",
+    "記錄植入的有效成分 mg；不使用注射或貼片方程代替植入釋放。",
+    "埋め込んだ有効成分の mg を記録します。放出を注射やパッチの式で代用しません。",
+    "삽입한 유효성분의 mg를 기록하며 임플란트 방출을 주사나 패치 방정식으로 대체하지 않아요.",
+    "Registra los mg de principio activo implantado; las ecuaciones de inyección o parche no sustituyen la liberación del implante."
+  ],
+  "长效产品及给药条件不同，不使用短效睾酮酯方程替代。": [
+    "Long-acting products and administration conditions differ; short-acting testosterone ester equations are not substituted.",
+    "長效產品及給藥條件不同，不使用短效睪固酮酯方程替代。",
+    "長時間作用型製剤と投与条件は異なるため、短時間作用型エステルの式で代用しません。",
+    "지속형 제품과 투여 조건이 다르므로 단기 작용 테스토스테론 에스테르 방정식으로 대체하지 않아요.",
+    "Los productos de acción prolongada y sus condiciones difieren; no se sustituyen por ecuaciones de ésteres de acción corta."
+  ],
+  "用于记录；不与长效酯自动等效。": [
+    "For recording; not assumed equivalent to long-acting esters.",
+    "用於記錄；不與長效酯自動等效。",
+    "記録用です。長時間作用型エステルと同等とは扱いません。",
+    "기록용이며 지속형 에스테르와 동일하게 간주하지 않아요.",
+    "Para registro; no se supone equivalencia con ésteres de acción prolongada."
+  ],
+  "按产品标示的总酯 mg 记录；各酯比例与释放不同，未核准整体浓度方程。": [
+    "Record total ester mg on the label; ester proportions and release differ, and no overall concentration equation is verified.",
+    "依產品標示的總酯 mg 記錄；各酯比例與釋放不同，尚未核准整體濃度方程。",
+    "表示された総エステル mg を記録します。各エステルの割合・放出が異なり、総濃度の式は未確認です。",
+    "제품에 표시된 총 에스테르 mg를 기록해요. 에스테르별 비율과 방출이 달라 전체 농도 방정식은 검증되지 않았어요.",
+    "Registra los mg totales de éster de la etiqueta; las proporciones y liberación varían, y no hay ecuación global verificada."
+  ],
+  "自动注射器与其他制剂的皮下参数不自动等效。": [
+    "Subcutaneous parameters of autoinjectors and other formulations are not assumed equivalent.",
+    "自動注射器與其他製劑的皮下參數不自動等效。",
+    "自動注射器と他の製剤の皮下パラメータを同等とは扱いません。",
+    "자동 주사기와 다른 제제의 피하 매개변수는 동일하게 간주하지 않아요.",
+    "No se supone equivalencia de parámetros subcutáneos entre autoinyectores y otras formulaciones."
+  ],
+  "用于记录既有皮下方案，不能直接照套肌注参数。": [
+    "For recording an existing subcutaneous regimen; intramuscular parameters cannot be applied directly.",
+    "用於記錄既有皮下方案，不能直接套用肌注參數。",
+    "既存の皮下投与の記録用です。筋注のパラメータは直接適用できません。",
+    "기존 피하 요법 기록용이며 근육 주사 매개변수를 직접 적용할 수 없어요.",
+    "Para registrar un régimen subcutáneo existente; no se aplican directamente parámetros intramusculares."
+  ],
+  "不同口服 TU 产品受食物与配方影响显著；不按 mg 将各品牌视为生物等效。": [
+    "Oral TU products are strongly affected by food and formulation; equal mg across brands are not considered bioequivalent.",
+    "不同口服 TU 產品受食物與配方影響顯著；不依 mg 將各品牌視為生體相等。",
+    "経口 TU は食事・製剤の影響が大きく、ブランド間で同じ mg を生物学的同等とは扱いません。",
+    "경구 TU는 음식과 제형의 영향을 크게 받으므로 같은 mg라도 브랜드 간 생물학적 동등성을 가정하지 않아요.",
+    "Los productos orales de TU dependen mucho de alimentos y formulación; los mismos mg de distintas marcas no se consideran bioequivalentes."
+  ],
+  "记录标称每日释放 mg，不是贴片总含药量。": [
+    "Record nominal mg released per day, not the patch's total drug content.",
+    "記錄標稱每日釋放 mg，不是貼片總含藥量。",
+    "パッチの総含有量ではなく、表示された1日放出量 mg を記録します。",
+    "패치의 총 약물 함량이 아닌 표시된 일일 방출량 mg를 기록해 주세요.",
+    "Registra los mg nominales liberados al día, no el contenido total del parche."
+  ],
+  "记录总植入有效成分 mg；不套用注射释放参数。": [
+    "Record total implanted active ingredient in mg; injection release parameters are not applied.",
+    "記錄總植入有效成分 mg；不套用注射釋放參數。",
+    "埋め込んだ有効成分の総 mg を記録します。注射の放出パラメータは使いません。",
+    "삽입한 유효성분 총 mg를 기록하며 주사 방출 매개변수는 적용하지 않아요.",
+    "Registra los mg totales de principio activo implantado; no se aplican parámetros de liberación de inyectables."
+  ],
+  "估计的是 CPA 本身的总血清浓度（ng/mL），不是睾酮下降量、受体占有率或治疗效果。": [
+    "Estimates total serum CPA itself (ng/mL), not testosterone reduction, receptor occupancy or treatment effect.",
+    "估計的是 CPA 本身的總血清濃度（ng/mL），不是睪固酮下降量、受體占有率或治療效果。",
+    "CPA 自体の総血清濃度（ng/mL）を推定します。T の減少量、受容体占有率、治療効果ではありません。",
+    "CPA 자체의 총 혈청 농도(ng/mL)를 추정하며 테스토스테론 감소량, 수용체 점유율 또는 치료 효과가 아니에요.",
+    "Estima la concentración sérica total de CPA (ng/mL), no la reducción de testosterona, ocupación de receptores ni efecto terapéutico."
+  ],
+  "支持记录与提醒；受体与内分泌作用不作为 E2/T 浓度加减项。": [
+    "Recording and reminders only; receptor and endocrine effects are not added to or subtracted from E2/T concentrations.",
+    "支援記錄與提醒；受體與內分泌作用不作為 E2/T 濃度加減項。",
+    "記録とリマインダーに対応します。受容体・内分泌作用を E2/T 濃度に加減しません。",
+    "기록과 알림을 지원하며 수용체와 내분비 작용을 E2/T 농도에 가감하지 않아요.",
+    "Admite registros y recordatorios; los efectos receptoriales y endocrinos no se suman ni restan de E2/T."
+  ],
+  "支持记录既有方案；不把受体阻断误算为睾酮下降，也不代表推荐使用。": [
+    "For existing regimens; receptor blockade is not treated as testosterone reduction, and inclusion is not a recommendation to use it.",
+    "支援記錄既有方案；不把受體阻斷誤算為睪固酮下降，也不代表推薦使用。",
+    "既存の療法の記録用です。受容体遮断を T 減少と誤計算せず、使用推奨を意味しません。",
+    "기존 요법 기록용이며 수용체 차단을 테스토스테론 감소로 계산하거나 사용을 권장하는 것이 아니에요.",
+    "Para regímenes existentes; el bloqueo receptorial no se trata como reducción de testosterona ni implica recomendación de uso."
+  ],
+  "5α还原酶抑制剂；不把 DHT 作用等同于总睾酮下降。": [
+    "5α-reductase inhibitor; effects on DHT are not equated with a fall in total testosterone.",
+    "5α還原酶抑制劑；不把 DHT 作用等同於總睪固酮下降。",
+    "5α還元酵素阻害薬です。DHT への作用を総 T の低下と同一視しません。",
+    "5α 환원효소 억제제이며 DHT 작용을 총 테스토스테론 감소와 동일시하지 않아요.",
+    "Inhibidor de la 5α-reductasa; el efecto sobre DHT no equivale a una caída de testosterona total."
+  ],
+  "5α还原酶抑制剂；本软件不估计 DHT。": [
+    "5α-reductase inhibitor; this app does not estimate DHT.",
+    "5α還原酶抑制劑；本軟體不估計 DHT。",
+    "5α還元酵素阻害薬です。このアプリは DHT を推定しません。",
+    "5α 환원효소 억제제이며 이 앱은 DHT를 추정하지 않아요.",
+    "Inhibidor de la 5α-reductasa; esta aplicación no estima DHT."
+  ],
+  "支持记录既有方案；不预测孕酮浓度或胸部发育效果。": [
+    "Records existing regimens; does not predict progesterone concentrations or breast development.",
+    "支援記錄既有方案；不預測孕酮濃度或胸部發育效果。",
+    "既存の療法を記録します。プロゲステロン濃度や乳房発育を予測しません。",
+    "기존 요법을 기록하며 프로게스테론 농도나 유방 발달 효과를 예측하지 않아요.",
+    "Registra regímenes existentes; no predice concentraciones de progesterona ni desarrollo mamario."
+  ],
+  "只记录实际既有用法；不同制剂的获准途径不同，口服胶囊不自动等同于直肠制剂。": [
+    "Records actual existing use only; approved routes vary by formulation, and oral capsules are not automatically equivalent to rectal products.",
+    "僅記錄實際既有用法；不同製劑的核准途徑不同，口服膠囊不自動等同於直腸製劑。",
+    "実際の既存使用のみを記録します。承認経路は製剤により異なり、経口カプセルを直腸製剤と同等とは扱いません。",
+    "실제 기존 사용만 기록해요. 제제별 허가 경로가 다르며 경구 캡슐을 직장용 제제와 동일하게 취급하지 않아요.",
+    "Solo registra el uso real existente; las vías aprobadas varían y las cápsulas orales no equivalen automáticamente a productos rectales."
+  ],
+  "支持记录与提醒，不模拟内分泌反馈。": [
+    "Recording and reminders supported; endocrine feedback is not modeled.",
+    "支援記錄與提醒，不模擬內分泌回饋。",
+    "記録とリマインダーに対応し、内分泌フィードバックはモデル化しません。",
+    "기록과 알림을 지원하며 내분비 피드백은 모형화하지 않아요.",
+    "Admite registros y recordatorios; no simula la retroalimentación endocrina."
+  ],
+  "产品的适用途径与释放周期不同，按处方和标签记录；未模拟起始激素升高或抑制反馈。": [
+    "Routes and release periods vary by product. Record according to the prescription and label; initial hormone flare and suppressive feedback are not modeled.",
+    "產品的適用途徑與釋放週期不同，依處方和標籤記錄；未模擬初期激素升高或抑制回饋。",
+    "製品で投与経路・放出期間が異なります。処方と表示に従って記録してください。初期のホルモン上昇や抑制フィードバックは未モデル化です。",
+    "제품별 투여 경로와 방출 주기가 다르므로 처방과 라벨대로 기록해 주세요. 초기 호르몬 상승과 억제 피드백은 모형화하지 않아요.",
+    "Las vías y períodos de liberación varían. Registra según receta y etiqueta; no se simulan el aumento hormonal inicial ni la retroalimentación supresora."
+  ],
+  "不同储库制剂不等效；仅记录既有方案。": [
+    "Different depot formulations are not equivalent; records existing regimens only.",
+    "不同儲庫製劑不等效；僅記錄既有方案。",
+    "各デポ製剤は同等ではありません。既存の療法の記録のみです。",
+    "서로 다른 데포 제제는 동등하지 않으며 기존 요법만 기록해요.",
+    "Las formulaciones depot no son equivalentes; solo registra regímenes existentes."
+  ],
+  "按具体制剂记录，不模拟 GnRH 的时变内分泌反馈。": [
+    "Record the specific formulation; time-varying endocrine feedback of GnRH is not modeled.",
+    "依具體製劑記錄，不模擬 GnRH 的時變內分泌回饋。",
+    "具体的な製剤に従って記録します。GnRH の時間変化する内分泌フィードバックはモデル化しません。",
+    "구체적인 제제를 기록하며 시간에 따른 GnRH 내분비 피드백은 모형화하지 않아요.",
+    "Registra la formulación concreta; no se simula la retroalimentación endocrina variable de GnRH."
+  ],
+  "用于记录缓释植入注射，不使用普通皮下注射药代参数。": [
+    "For depot implant injections; ordinary subcutaneous pharmacokinetic parameters are not used.",
+    "用於記錄緩釋植入注射，不使用一般皮下注射藥代參數。",
+    "徐放性インプラント注射の記録用です。通常の皮下注射の薬物動態パラメータは使いません。",
+    "서방형 삽입 주사 기록용이며 일반 피하 주사 약동학 매개변수는 사용하지 않아요.",
+    "Para implantes inyectables depot; no usa parámetros farmacocinéticos de inyección subcutánea ordinaria."
+  ],
+  "植入剂仅记录实际置入事件；更换计划须按处方记录。": [
+    "Implants record actual insertion events only; replacement plans must follow the prescription.",
+    "植入劑僅記錄實際置入事件；更換計畫須依處方記錄。",
+    "インプラントは実際の挿入のみを記録します。交換予定は処方に従って記録してください。",
+    "임플란트는 실제 삽입만 기록하며 교체 계획은 처방에 따라 기록해야 해요.",
+    "Los implantes solo registran inserciones reales; los planes de sustitución deben seguir la receta."
+  ],
+  "Estrace / 诺坤复 Estrofem / Zumenon": [
+    "Estrace / Estrofem / Zumenon",
+    "Estrace / 諾坤復 Estrofem / Zumenon",
+    "Estrace / Estrofem / Zumenon",
+    "Estrace / Estrofem / Zumenon",
+    "Estrace / Estrofem / Zumenon"
+  ],
+  "补佳乐 Progynova": [
+    "Progynova",
+    "補佳樂 Progynova",
+    "Progynova",
+    "Progynova",
+    "Progynova"
+  ],
+  "Estrace / 诺坤复 Estrofem（口服片用于含服）": [
+    "Estrace / Estrofem (oral tablets used sublingually)",
+    "Estrace / 諾坤復 Estrofem（口服片用於含服）",
+    "Estrace / Estrofem（経口錠の舌下使用）",
+    "Estrace / Estrofem (경구 정제의 설하 사용)",
+    "Estrace / Estrofem (tabletas orales usadas por vía sublingual)"
+  ],
+  "补佳乐 Progynova（正式说明书为口服）": [
+    "Progynova (labeled for oral use)",
+    "補佳樂 Progynova（正式說明書為口服）",
+    "Progynova（承認経路は経口）",
+    "Progynova (공식 허가는 경구)",
+    "Progynova (indicado para uso oral)"
+  ],
+  "Estrace / Estrofem（口服片用于含服）": [
+    "Estrace / Estrofem (oral tablets used buccally)",
+    "Estrace / Estrofem（口服片用於含服）",
+    "Estrace / Estrofem（経口錠の頬粘膜使用）",
+    "Estrace / Estrofem (경구 정제의 협점막 사용)",
+    "Estrace / Estrofem (tabletas orales usadas por vía bucal)"
+  ],
+  "爱斯妥 Oestrogel / EstroGel": [
+    "Oestrogel / EstroGel",
+    "愛斯妥 Oestrogel / EstroGel",
+    "Oestrogel / EstroGel",
+    "Oestrogel / EstroGel",
+    "Oestrogel / EstroGel"
+  ],
+  "Delestrogen / 戊酸雌二醇注射液": [
+    "Delestrogen / estradiol valerate injection",
+    "Delestrogen / 戊酸雌二醇注射液",
+    "Delestrogen / 吉草酸エストラジオール注射液",
+    "Delestrogen / 에스트라디올 발레레이트 주사액",
+    "Delestrogen / valerato de estradiol inyectable"
+  ],
+  "苯甲酸雌二醇注射液（单方）": [
+    "Estradiol benzoate injection (single ingredient)",
+    "苯甲酸雌二醇注射液（單方）",
+    "安息香酸エストラジオール注射液（単剤）",
+    "에스트라디올 벤조에이트 주사액 (단일 성분)",
+    "Benzoato de estradiol inyectable (un solo ingrediente)"
+  ],
+  "单方制剂（按实际标签核对）": [
+    "Single-ingredient product (check the actual label)",
+    "單方製劑（依實際標籤核對）",
+    "単剤（実際の表示を確認）",
+    "단일 성분 제제 (실제 라벨 확인)",
+    "Producto de un solo ingrediente (revisa la etiqueta)"
+  ],
+  "戊酸雌二醇注射液（按实际途径记录）": [
+    "Estradiol valerate injection (record actual route)",
+    "戊酸雌二醇注射液（依實際途徑記錄）",
+    "吉草酸エストラジオール注射液（実際の経路を記録）",
+    "에스트라디올 발레레이트 주사액 (실제 경로 기록)",
+    "Valerato de estradiol inyectable (registra la vía real)"
+  ],
+  "Depo-Estradiol（按实际途径记录）": [
+    "Depo-Estradiol (record actual route)",
+    "Depo-Estradiol（依實際途徑記錄）",
+    "Depo-Estradiol（実際の経路を記録）",
+    "Depo-Estradiol (실제 경로 기록)",
+    "Depo-Estradiol (registra la vía real)"
+  ],
+  "雌二醇植入剂（产品规格各异）": [
+    "Estradiol implants (specifications vary)",
+    "雌二醇植入劑（產品規格各異）",
+    "エストラジオールインプラント（製品規格は異なります）",
+    "에스트라디올 임플란트 (제품 규격 상이)",
+    "Implantes de estradiol (las especificaciones varían)"
+  ],
+  "Testoviron Depot / 庚酸睾酮注射液": [
+    "Testoviron Depot / testosterone enanthate injection",
+    "Testoviron Depot / 庚酸睪固酮注射液",
+    "Testoviron Depot / エナント酸テストステロン注射液",
+    "Testoviron Depot / 테스토스테론 에난테이트 주사액",
+    "Testoviron Depot / enantato de testosterona inyectable"
+  ],
+  "Nebido / Aveed / 十一酸睾酮注射液": [
+    "Nebido / Aveed / testosterone undecanoate injection",
+    "Nebido / Aveed / 十一酸睪固酮注射液",
+    "Nebido / Aveed / ウンデカン酸テストステロン注射液",
+    "Nebido / Aveed / 테스토스테론 운데카노에이트 주사액",
+    "Nebido / Aveed / undecanoato de testosterona inyectable"
+  ],
+  "丙酸睾酮注射液": [
+    "Testosterone propionate injection",
+    "丙酸睪固酮注射液",
+    "プロピオン酸テストステロン注射液",
+    "테스토스테론 프로피오네이트 주사액",
+    "Propionato de testosterona inyectable"
+  ],
+  "Sustanon（混合酯制剂）": [
+    "Sustanon (mixed esters)",
+    "Sustanon（混合酯製劑）",
+    "Sustanon（混合エステル）",
+    "Sustanon (혼합 에스테르)",
+    "Sustanon (ésteres mixtos)"
+  ],
+  "Xyosted / 庚酸睾酮制剂（按实际途径记录）": [
+    "Xyosted / testosterone enanthate (record actual route)",
+    "Xyosted / 庚酸睪固酮製劑（依實際途徑記錄）",
+    "Xyosted / エナント酸テストステロン（実際の経路を記録）",
+    "Xyosted / 테스토스테론 에난테이트 (실제 경로 기록)",
+    "Xyosted / enantato de testosterona (registra la vía real)"
+  ],
+  "Depo-Testosterone（按实际途径记录）": [
+    "Depo-Testosterone (record actual route)",
+    "Depo-Testosterone（依實際途徑記錄）",
+    "Depo-Testosterone（実際の経路を記録）",
+    "Depo-Testosterone (실제 경로 기록)",
+    "Depo-Testosterone (registra la vía real)"
+  ],
+  "安特尔 Andriol / Jatenzo / Tlando": [
+    "Andriol / Jatenzo / Tlando",
+    "安特爾 Andriol / Jatenzo / Tlando",
+    "Andriol / Jatenzo / Tlando",
+    "Andriol / Jatenzo / Tlando",
+    "Andriol / Jatenzo / Tlando"
+  ],
+  "Androderm（可及性因地区而异）": [
+    "Androderm (availability varies by region)",
+    "Androderm（可及性因地區而異）",
+    "Androderm（入手可能性は地域によります）",
+    "Androderm (지역에 따라 이용 가능 여부 상이)",
+    "Androderm (disponibilidad según región)"
+  ],
+  "Testopel / 睾酮植入剂": [
+    "Testopel / testosterone implants",
+    "Testopel / 睪固酮植入劑",
+    "Testopel / テストステロンインプラント",
+    "Testopel / 테스토스테론 임플란트",
+    "Testopel / implantes de testosterona"
+  ],
+  "Androcur / 色普龙": [
+    "Androcur",
+    "Androcur / 色普龍",
+    "Androcur",
+    "Androcur",
+    "Androcur"
+  ],
+  "Aldactone / 安体舒通": [
+    "Aldactone",
+    "Aldactone / 安體舒通",
+    "Aldactone",
+    "Aldactone",
+    "Aldactone"
+  ],
+  "Casodex / 康士得": [
+    "Casodex",
+    "Casodex / 康士得",
+    "Casodex",
+    "Casodex",
+    "Casodex"
+  ],
+  "Propecia / 保法止": [
+    "Propecia",
+    "Propecia / 保法止",
+    "Propecia",
+    "Propecia",
+    "Propecia"
+  ],
+  "Avodart / 安福达": [
+    "Avodart",
+    "Avodart / 安福達",
+    "Avodart",
+    "Avodart",
+    "Avodart"
+  ],
+  "Utrogestan / Prometrium / 黄体酮胶囊": [
+    "Utrogestan / Prometrium / progesterone capsules",
+    "Utrogestan / Prometrium / 黃體酮膠囊",
+    "Utrogestan / Prometrium / プロゲステロンカプセル",
+    "Utrogestan / Prometrium / 프로게스테론 캡슐",
+    "Utrogestan / Prometrium / cápsulas de progesterona"
+  ],
+  "黄体酮制剂（依具体产品核对途径）": [
+    "Progesterone (check the product's route)",
+    "黃體酮製劑（依具體產品核對途徑）",
+    "プロゲステロン製剤（製品の経路を確認）",
+    "프로게스테론 (제품별 경로 확인)",
+    "Progesterona (revisa la vía del producto)"
+  ],
+  "Provera / 安宫黄体酮": [
+    "Provera",
+    "Provera / 安宮黃體酮",
+    "Provera",
+    "Provera",
+    "Provera"
+  ],
+  "Lupron Depot / 亮丙瑞林缓释制剂": [
+    "Lupron Depot / depot leuprorelin",
+    "Lupron Depot / 亮丙瑞林緩釋製劑",
+    "Lupron Depot / 徐放性リュープロレリン",
+    "Lupron Depot / 서방형 류프로렐린",
+    "Lupron Depot / leuprorelina depot"
+  ],
+  "Eligard / 抑那通（按具体产品核对）": [
+    "Eligard / Enantone (check the specific product)",
+    "Eligard / 抑那通（依具體產品核對）",
+    "Eligard / Enantone（製品ごとに確認）",
+    "Eligard / Enantone (제품별 확인)",
+    "Eligard / Enantone (revisa el producto concreto)"
+  ],
+  "Decapeptyl / 达菲林（按具体产品核对）": [
+    "Decapeptyl / Diphereline (check the specific product)",
+    "Decapeptyl / 達菲林（依具體產品核對）",
+    "Decapeptyl / Diphereline（製品ごとに確認）",
+    "Decapeptyl / Diphereline (제품별 확인)",
+    "Decapeptyl / Diphereline (revisa el producto concreto)"
+  ],
+  "Zoladex / 诺雷得": [
+    "Zoladex",
+    "Zoladex / 諾雷得",
+    "Zoladex",
+    "Zoladex",
+    "Zoladex"
+  ],
+  "经验参考模拟；未经个体或临床验证": [
+    "Empirical reference simulation; not personally or clinically validated",
+    "經驗參考模擬；未經個體或臨床驗證",
+    "経験的参考シミュレーション。個別・臨床検証は未実施",
+    "경험적 참고 모형이며 개인 또는 임상 검증을 거치지 않음",
+    "Simulación empírica de referencia; sin validación individual ni clínica"
+  ],
+  "含教学假设，未经个体或临床验证": [
+    "Includes educational assumptions; not personally or clinically validated",
+    "含教學假設，未經個體或臨床驗證",
+    "学習用の仮定を含み、個別・臨床検証は未実施",
+    "교육용 가정을 포함하며 개인 또는 임상 검증을 거치지 않음",
+    "Incluye supuestos educativos; sin validación individual ni clínica"
+  ],
+  "来源数值锚定的参考情境，含未验证形状与外推假设": [
+    "Source-anchored reference scenario with unvalidated shape and extrapolation assumptions",
+    "來源數值錨定的參考情境，含未驗證形狀與外推假設",
+    "出典値に基づく参考シナリオ。未検証の形状と外挿仮定を含む",
+    "출처 수치 기반 참고 시나리오이며 미검증 형태와 외삽 가정을 포함함",
+    "Escenario de referencia anclado a fuentes, con forma y extrapolación no validadas"
+  ],
+  "体重仅用于表观分布容积；这是经验参考模拟，不是来源研究观测峰值或临床验证。": [
+    "Weight is used only for apparent distribution volume. This is an empirical reference simulation, not an observed study peak or clinical validation.",
+    "體重僅用於表觀分布容積；這是經驗參考模擬，不是來源研究觀測峰值或臨床驗證。",
+    "体重は見かけの分布容積にのみ使用します。経験的参考シミュレーションであり、研究の観測ピークや臨床検証ではありません。",
+    "체중은 겉보기 분포용적에만 사용해요. 이는 경험적 참고 모형이며 연구 관측 최고값이나 임상 검증이 아니에요.",
+    "El peso solo se usa para el volumen aparente de distribución. Es una simulación empírica, no un pico observado en estudios ni una validación clínica."
+  ],
+  "双分支参考模型：黏膜吸收与吞咽首过分别计算；EV黏膜分支额外经酯水解。剂量为片剂标示的化合物mg，分子量只换算一次；黏膜比例默认11%为经验假设。": [
+    "Two-branch reference model: mucosal absorption and swallowed first-pass are separate; the EV mucosal branch also includes ester hydrolysis. Dose is labeled compound mg, with one molecular-weight conversion. The default 11% mucosal fraction is empirical.",
+    "雙分支參考模型：黏膜吸收與吞嚥首渡分開計算；EV 黏膜分支另經酯水解。劑量為標示化合物 mg，分子量僅換算一次；預設黏膜比例 11% 為經驗假設。",
+    "粘膜吸収と嚥下後の初回通過を分けた2分岐参考モデルです。EV 粘膜分岐にはエステル加水分解も含みます。用量は表示化合物 mg で分子量換算は1回のみ。既定の粘膜割合 11% は経験的仮定です。",
+    "점막 흡수와 삼킨 약의 초회통과를 분리하는 2분기 모형이며 EV 점막 분기에는 에스테르 가수분해도 포함해요. 용량은 표시된 화합물 mg, 분자량 환산은 한 번이며 기본 점막 비율 11%는 경험적 가정이에요.",
+    "Modelo de dos ramas: absorción mucosa y primer paso tras deglución separados; EV añade hidrólisis del éster en la rama mucosa. La dosis son mg del compuesto indicado, con una sola conversión molecular. El 11% mucoso predeterminado es empírico."
+  ],
+  "双储库→酯水解→清除参考模型；形成分数和清除常数是经验有效参数，输入为酯mg，不等同于游离激素mg。": [
+    "Two depots → ester hydrolysis → clearance. Formation fractions and clearance constants are empirical effective parameters. Input is ester mg, not equivalent to free hormone mg.",
+    "雙儲庫→酯水解→清除參考模型；形成分數與清除常數為經驗有效參數，輸入為酯 mg，不等同於游離激素 mg。",
+    "2つのデポ→エステル加水分解→消失の参考モデルです。形成割合・消失定数は経験的有効パラメータ。入力はエステル mg で遊離ホルモン mg とは異なります。",
+    "이중 저장소→에스테르 가수분해→제거 모형이에요. 생성 분율과 제거 상수는 경험적 유효 매개변수이며 입력은 유리 호르몬 mg와 다른 에스테르 mg예요.",
+    "Dos depósitos → hidrólisis del éster → eliminación. Fracciones de formación y constantes de eliminación son parámetros empíricos efectivos. La entrada es mg de éster, no de hormona libre."
+  ],
+  "凝胶参考模型，默认普通手臂/大腿参数；产品、涂抹部位与个体差异未个体化。输入有效激素mg。": [
+    "Gel reference model with default ordinary arm/thigh parameters; product, site and individual variation are not personalized. Enter active hormone mg.",
+    "凝膠參考模型，預設一般手臂／大腿參數；產品、塗抹部位與個體差異未個人化。輸入有效激素 mg。",
+    "通常の腕・大腿部パラメータを既定とするジェル参考モデルです。製品、部位、個人差は個別化していません。有効ホルモン mg を入力します。",
+    "일반 팔·허벅지 기본 매개변수의 젤 참고 모형이에요. 제품, 도포 부위, 개인차를 개별화하지 않았으며 유효 호르몬 mg를 입력해요.",
+    "Modelo de gel con parámetros de brazo/muslo; no personaliza producto, zona ni diferencias individuales. Introduce mg de hormona activa."
+  ],
+  "恒速释放参考模型，剂量为标称每日释放量；按实际佩戴时长停止输入，移除后继续衰减。": [
+    "Constant-release reference model. Dose is the labeled daily release; input stops at the recorded wear duration and decay continues after removal.",
+    "恆速釋放參考模型，劑量為標稱每日釋放量；依實際佩戴時長停止輸入，移除後繼續衰減。",
+    "一定放出の参考モデルで、用量は表示された1日放出量です。実際の装着時間で入力を止め、剥離後も減衰します。",
+    "정속 방출 모형으로 용량은 표시된 일일 방출량이에요. 실제 부착 시간이 끝나면 유입을 중단하고 제거 후에도 감소해요.",
+    "Modelo de liberación constante. La dosis es la liberación diaria indicada; la entrada termina al finalizar el uso registrado y el descenso continúa tras retirarlo."
+  ],
+  "口服参考模型；EV首过与水解近似折入有效吸收速率，按酯mg输入并进行一次分子量换算。": [
+    "Oral reference model. EV first-pass and hydrolysis are approximated within the effective absorption rate; enter ester mg, with one molecular-weight conversion.",
+    "口服參考模型；EV 首渡與水解近似折入有效吸收速率，依酯 mg 輸入並進行一次分子量換算。",
+    "経口参考モデルです。EV の初回通過と加水分解を有効吸収速度に近似的に含め、エステル mg を入力し分子量換算を1回行います。",
+    "경구 참고 모형으로 EV 초회통과와 가수분해를 유효 흡수율에 근사 포함해요. 에스테르 mg를 입력하고 분자량 환산을 한 번 수행해요.",
+    "Modelo oral. El primer paso e hidrólisis de EV se aproximan en la tasa efectiva de absorción; introduce mg de éster, con una conversión molecular."
+  ],
+  "模型体重须为20–400 kg的有限数；默认70 kg只是参考假设。": [
+    "Model weight must be finite and 20–400 kg; the default 70 kg is only a reference assumption.",
+    "模型體重須為 20–400 kg 的有限數；預設 70 kg 僅為參考假設。",
+    "モデル体重は有限の 20–400 kg が必要です。既定の 70 kg は参考上の仮定です。",
+    "모델 체중은 유한한 20–400 kg여야 하며 기본 70 kg은 참고 가정일 뿐이에요.",
+    "El peso del modelo debe ser finito y de 20–400 kg; 70 kg es solo un supuesto de referencia."
+  ],
+  "舌下黏膜分流比例须在0–1之间。": [
+    "The sublingual mucosal fraction must be between 0 and 1.",
+    "舌下黏膜分流比例須在 0–1 之間。",
+    "舌下粘膜の分岐割合は 0–1 が必要です。",
+    "설하 점막 분율은 0–1 사이여야 해요.",
+    "La fracción mucosa sublingual debe estar entre 0 y 1."
+  ],
+  "该途径无可用药代模型参考参数。": [
+    "No pharmacokinetic reference parameters are available for this route.",
+    "此途徑無可用藥代模型參考參數。",
+    "この経路には利用できる薬物動態の参考パラメータがありません。",
+    "이 경로에 사용 가능한 약동학 참고 매개변수가 없어요.",
+    "No hay parámetros farmacocinéticos de referencia para esta vía."
+  ],
+  "给药量或时间无效。": [
+    "Invalid dose amount or time.",
+    "給藥量或時間無效。",
+    "投薬量または日時が無効です。",
+    "투약량 또는 시각이 잘못되었어요.",
+    "Cantidad u hora de dosis no válidas."
+  ],
+  "贴片实际佩戴时长须为0–8760小时内的正数。": [
+    "Actual patch wear duration must be positive and at most 8760 hours.",
+    "貼片實際佩戴時長須為正數且不超過 8760 小時。",
+    "実際のパッチ装着時間は正の値で、8760 時間以下が必要です。",
+    "실제 패치 부착 시간은 양수이고 8760시간 이하여야 해요.",
+    "El tiempo real de uso del parche debe ser positivo y no superar 8760 horas."
+  ],
+  "默认佩戴时长须为0–8760小时内的正数。": [
+    "Default wear duration must be positive and at most 8760 hours.",
+    "預設佩戴時長須為正數且不超過 8760 小時。",
+    "既定の装着時間は正の値で、8760 時間以下が必要です。",
+    "기본 부착 시간은 양수이고 8760시간 이하여야 해요.",
+    "La duración predeterminada debe ser positiva y no superar 8760 horas."
+  ],
+  "贴片佩戴时长须明确且在0–8760小时内。": [
+    "Specify a positive patch wear duration of at most 8760 hours.",
+    "貼片佩戴時長須明確、為正數且不超過 8760 小時。",
+    "正のパッチ装着時間を 8760 時間以下で指定してください。",
+    "패치 부착 시간을 0보다 크고 8760시간 이하로 명시해 주세요.",
+    "Especifica una duración positiva del parche de hasta 8760 horas."
+  ],
+  "半衰期须为0.001–8760小时内的有限正数。": [
+    "Half-lives must be finite positive numbers from 0.001 to 8760 hours.",
+    "半衰期須為 0.001–8760 小時內的有限正數。",
+    "半減期は有限の正の数で、0.001–8760 時間が必要です。",
+    "반감기는 0.001–8760시간 범위의 유한한 양수여야 해요.",
+    "Las semividas deben ser números positivos finitos entre 0.001 y 8760 horas."
+  ],
+  "{name}：半衰期须在0.001–8760小时内。": [
+    "{name}: half-lives must be 0.001–8760 hours.",
+    "{name}：半衰期須在 0.001–8760 小時內。",
+    "{name}：半減期は 0.001–8760 時間が必要です。",
+    "{name}: 반감기는 0.001–8760시간이어야 해요.",
+    "{name}: las semividas deben ser de 0.001–8760 horas."
+  ],
+  "{name}：存在无效给药时间或用量。": [
+    "{name}: invalid dose time or amount.",
+    "{name}：存在無效給藥時間或用量。",
+    "{name}：投薬日時または量が無効です。",
+    "{name}: 잘못된 투약 시각 또는 용량이 있어요.",
+    "{name}: hora o cantidad de dosis no válida."
+  ],
+  "基线必须是对应浓度单位的有限非负数。": [
+    "The baseline must be a finite nonnegative number in the corresponding concentration unit.",
+    "基線須為對應濃度單位的有限非負數。",
+    "ベースラインは対応する濃度単位で、有限の非負数が必要です。",
+    "기준선은 해당 농도 단위의 유한한 음이 아닌 수여야 해요.",
+    "La línea basal debe ser un número finito no negativo en la unidad de concentración correspondiente."
+  ],
+  "基线须为非负数，单位与当前激素浓度一致。": [
+    "The baseline must be nonnegative and use the hormone's concentration unit.",
+    "基線須為非負數，單位與目前激素濃度一致。",
+    "ベースラインは非負数で、対象ホルモンの濃度単位と一致する必要があります。",
+    "기준선은 음이 아니어야 하며 현재 호르몬 농도 단위와 같아야 해요.",
+    "La línea basal debe ser no negativa y usar la unidad de concentración de la hormona."
+  ],
+  "固定基线须为非负数。": [
+    "The fixed baseline must be nonnegative.",
+    "固定基線須為非負數。",
+    "固定ベースラインは非負数が必要です。",
+    "고정 기준선은 음이 아니어야 해요.",
+    "La línea basal fija no puede ser negativa."
+  ],
+  "给药记录须为数组。": [
+    "Dose records must be an array.",
+    "給藥記錄須為陣列。",
+    "投薬記録は配列である必要があります。",
+    "투약 기록은 배열이어야 해요.",
+    "Los registros de dosis deben ser una matriz."
+  ],
+  "给药与化验记录必须为数组。": [
+    "Dose and lab records must be arrays.",
+    "給藥與化驗記錄必須為陣列。",
+    "投薬・検査記録は配列である必要があります。",
+    "투약 및 검사 기록은 배열이어야 해요.",
+    "Los registros de dosis y análisis deben ser matrices."
+  ],
+  "化验记录须为数组。": [
+    "Lab records must be an array.",
+    "化驗記錄須為陣列。",
+    "検査記録は配列である必要があります。",
+    "검사 기록은 배열이어야 해요.",
+    "Los registros de análisis deben ser una matriz."
+  ],
+  "存在无效的给药量或时间，请修正记录。": [
+    "Invalid dose amount or time; please correct the records.",
+    "存在無效的給藥量或時間，請修正記錄。",
+    "無効な投薬量または日時があります。記録を修正してください。",
+    "잘못된 투약량 또는 시각이 있어요. 기록을 수정해 주세요.",
+    "Hay una cantidad u hora de dosis no válida; corrige los registros."
+  ],
+  "模型数值超出范围。": [
+    "Model value out of range.",
+    "模型數值超出範圍。",
+    "モデル値が範囲外です。",
+    "모델 수치가 범위를 벗어났어요.",
+    "Valor del modelo fuera de rango."
+  ],
+  "模型暴露溢出，无法校准。": [
+    "Modeled exposure overflowed; calibration is unavailable.",
+    "模型暴露溢出，無法校準。",
+    "モデル曝露量が上限を超え、校正できません。",
+    "모델 노출량이 범위를 초과하여 보정할 수 없어요.",
+    "La exposición modelada desbordó el rango; no puede calibrarse."
+  ],
+  "化验项目须明确为雌二醇、总睾酮或CPA。": [
+    "The lab analyte must be estradiol, total testosterone or CPA.",
+    "化驗項目須明確為雌二醇、總睪固酮或 CPA。",
+    "検査項目にはエストラジオール、総テストステロン、CPA を指定してください。",
+    "검사 항목은 에스트라디올, 총 테스토스테론 또는 CPA여야 해요.",
+    "El análisis debe especificar estradiol, testosterona total o CPA."
+  ],
+  "化验数值或采血时间无效。": [
+    "Invalid lab value or blood draw time.",
+    "化驗數值或採血時間無效。",
+    "検査値または採血日時が無効です。",
+    "검사 수치 또는 채혈 시각이 잘못되었어요.",
+    "Valor de análisis u hora de extracción no válidos."
+  ],
+  "化验单位与项目不匹配；E2使用pg/mL或pmol/L，总T使用ng/dL或nmol/L，CPA使用ng/mL或nmol/L。": [
+    "Unit does not match the analyte: E2 uses pg/mL or pmol/L, total T ng/dL or nmol/L, and CPA ng/mL or nmol/L.",
+    "化驗單位與項目不符；E2 使用 pg/mL 或 pmol/L，總 T 使用 ng/dL 或 nmol/L，CPA 使用 ng/mL 或 nmol/L。",
+    "単位が項目と一致しません。E2 は pg/mL または pmol/L、総 T は ng/dL または nmol/L、CPA は ng/mL または nmol/L です。",
+    "단위가 항목과 맞지 않아요. E2는 pg/mL 또는 pmol/L, 총 T는 ng/dL 또는 nmol/L, CPA는 ng/mL 또는 nmol/L를 사용해요.",
+    "La unidad no coincide: E2 usa pg/mL o pmol/L; T total, ng/dL o nmol/L; CPA, ng/mL o nmol/L."
+  ],
+  "化验数值超出范围。": [
+    "Lab value out of range.",
+    "化驗數值超出範圍。",
+    "検査値が範囲外です。",
+    "검사 수치가 범위를 벗어났어요.",
+    "Valor del análisis fuera de rango."
+  ],
+  "请选择已支持的给药途径。": [
+    "Choose a supported administration route.",
+    "請選擇已支援的給藥途徑。",
+    "対応する投与経路を選択してください。",
+    "지원되는 투여 경로를 선택해 주세요.",
+    "Elige una vía de administración compatible."
+  ],
+  "计算时间无效。": [
+    "Invalid calculation time.",
+    "計算時間無效。",
+    "計算日時が無効です。",
+    "계산 시각이 잘못되었어요.",
+    "Hora de cálculo no válida."
+  ],
+  "计算时间无效，需包含时区。": [
+    "Invalid calculation time; include a time zone.",
+    "計算時間無效，需包含時區。",
+    "計算日時が無効です。タイムゾーンを含めてください。",
+    "계산 시각이 잘못되었어요. 시간대를 포함해 주세요.",
+    "Hora de cálculo no válida; incluye una zona horaria."
+  ],
+  "计算时间无效，须含时区。": [
+    "Invalid calculation time; include a time zone.",
+    "計算時間無效，須含時區。",
+    "計算日時が無効です。タイムゾーンを含めてください。",
+    "계산 시각이 잘못되었어요. 시간대를 포함해 주세요.",
+    "Hora de cálculo no válida; incluye una zona horaria."
+  ],
+  "未来采血记录未参与校准。": [
+    "Future blood draws are excluded from calibration.",
+    "未來採血記錄未參與校準。",
+    "未来の採血記録は校正に使用していません。",
+    "미래 채혈 기록은 보정에서 제외했어요.",
+    "Las extracciones futuras se excluyen de la calibración."
+  ],
+  "拟合数值超出范围。": [
+    "Fitted value out of range.",
+    "擬合數值超出範圍。",
+    "適合値が範囲外です。",
+    "적합 수치가 범위를 벗어났어요.",
+    "Valor ajustado fuera de rango."
+  ],
+  "校准数值超出范围。": [
+    "Calibration value out of range.",
+    "校準數值超出範圍。",
+    "校正値が範囲外です。",
+    "보정 수치가 범위를 벗어났어요.",
+    "Valor de calibración fuera de rango."
+  ],
+  "不存在": [
+    "Does not exist",
+    "不存在",
+    "存在しません",
+    "존재하지 않음",
+    "No existe"
+  ],
+  "存在未知药物途径，无法确认其激素贡献。": [
+    "An unknown medication route prevents determining its hormone contribution.",
+    "存在未知藥物途徑，無法確認其激素貢獻。",
+    "不明な投与経路があり、ホルモンへの寄与を確認できません。",
+    "알 수 없는 약물 경로가 있어 호르몬 기여량을 확인할 수 없어요.",
+    "Una vía de medicación desconocida impide determinar su aporte hormonal."
+  ],
+  "缺少经过核查的群体参考幅度。": [
+    "No verified population reference amplitude is available.",
+    "缺少經過核查的群體參考幅度。",
+    "確認済みの集団参考振幅がありません。",
+    "검증된 집단 참고 크기가 없어요.",
+    "No hay amplitud poblacional de referencia verificada."
+  ],
+  "CPA是外源药物，参考和个人固定背景须为0；已有残留须用给药历史表示。": [
+    "CPA is exogenous; reference and personal fixed backgrounds must be 0. Represent residual exposure through dose history.",
+    "CPA 是外源藥物，參考與個人固定背景須為 0；既有殘留須以給藥歷史表示。",
+    "CPA は外因性薬物のため参考・個人の固定背景値は 0 です。残存量は投薬履歴で表します。",
+    "CPA는 외인성 약물이므로 참고 및 개인 고정 배경은 0이어야 해요. 잔류량은 투약 이력으로 나타내 주세요.",
+    "CPA es exógeno; el fondo fijo personal y de referencia debe ser 0. Representa los residuos mediante el historial de dosis."
+  ],
+  "CPA是外源药物，固定背景须为0；已有残留须用给药历史表示。": [
+    "CPA is exogenous; its fixed background must be 0. Represent residual exposure through dose history.",
+    "CPA 是外源藥物，固定背景須為 0；既有殘留須以給藥歷史表示。",
+    "CPA は外因性薬物のため固定背景値は 0 です。残存量は投薬履歴で表します。",
+    "CPA는 외인성 약물이므로 고정 배경은 0이어야 해요. 잔류량은 투약 이력으로 나타내 주세요.",
+    "CPA es exógeno; su fondo fijo debe ser 0. Representa los residuos mediante el historial de dosis."
+  ],
+  "CPA无内源背景，基线固定为0；只按已记录的CPA口服剂量估计母药总浓度，不包括代谢物。": [
+    "CPA has no endogenous background and its baseline is fixed at 0. Only total parent-drug concentration from recorded oral CPA is estimated, excluding metabolites.",
+    "CPA 無內源背景，基線固定為 0；僅依已記錄 CPA 口服劑量估计母藥總濃度，不包括代謝物。",
+    "CPA の内因性背景はなくベースラインは 0 です。記録済み経口 CPA から親薬物の総濃度のみを推定し、代謝物は含みません。",
+    "CPA는 내인성 배경이 없어 기준선을 0으로 고정해요. 기록한 경구 CPA의 모약물 총 농도만 추정하며 대사체는 제외해요.",
+    "CPA no tiene fondo endógeno; su línea basal es 0. Solo se estima la concentración total del fármaco original de las dosis orales registradas, sin metabolitos."
+  ],
+  "没有已记录的CPA给药贡献，模型为0；不代表化验证实为0或排除了遗漏用药。": [
+    "No CPA dose contribution is recorded, so the model is 0. This neither confirms a zero lab result nor rules out unrecorded doses.",
+    "沒有已記錄的 CPA 給藥貢獻，模型為 0；不代表化驗證實為 0 或排除遺漏用藥。",
+    "CPA の投薬記録がないためモデルは 0 です。実測が 0 である確認でも、記録漏れの除外でもありません。",
+    "CPA 투약 기여량이 기록되지 않아 모델은 0이에요. 실측 0을 확인하거나 누락된 투약을 배제한 것은 아니에요.",
+    "Sin aportes de CPA registrados, el modelo da 0. No confirma un análisis de 0 ni descarta dosis omitidas del registro."
+  ],
+  "CPA自身浓度单独估计；其受体阻断、内源T抑制不能从用量或CPA浓度直接换算。此T曲线未模拟CPA抑制，不可解释为CPA后的实际T。": [
+    "CPA concentration is estimated separately. Receptor blockade and endogenous T suppression cannot be converted directly from its dose or concentration. This T curve does not model CPA suppression and is not actual T after CPA.",
+    "CPA 自身濃度單獨估計；受體阻斷、內源 T 抑制不能從用量或 CPA 濃度直接換算。此 T 曲線未模擬 CPA 抑制，不可視為 CPA 後的實際 T。",
+    "CPA 濃度は別に推定します。受容体遮断や内因性 T 抑制は用量・濃度から直接換算できません。T 曲線は CPA 抑制を含まず、CPA 使用後の実際の T ではありません。",
+    "CPA 농도는 별도 추정해요. 수용체 차단과 내인성 T 억제는 용량이나 CPA 농도로 직접 환산할 수 없어요. 이 T 곡선은 CPA 억제를 모형화하지 않으며 CPA 사용 후 실제 T로 해석할 수 없어요.",
+    "CPA se estima por separado. El bloqueo receptorial y la supresión de T no se convierten directamente desde su dosis o concentración. Esta curva de T no simula la supresión por CPA ni representa la T real tras usarlo."
+  ],
+  "CPA曲线仅为标签约束的一室近似；不提供T抑制程度、治疗效果判断或用药建议。": [
+    "The CPA curve is a label-constrained one-compartment approximation; it does not assess T suppression, treatment effects or advise on dosing.",
+    "CPA 曲線僅為標籤約束的一室近似；不提供 T 抑制程度、療效判斷或用藥建議。",
+    "CPA 曲線は添付文書に基づく1コンパートメント近似で、T 抑制、治療効果の判定、服薬助言は提供しません。",
+    "CPA 곡선은 라벨 기반 1구획 근사이며 T 억제 정도, 치료 효과 판단 또는 투약 조언을 제공하지 않아요.",
+    "La curva de CPA es una aproximación de un compartimento basada en la ficha; no evalúa supresión de T, efectos terapéuticos ni aconseja dosis."
+  ],
+  "E2对内源T的抑制未建模；没有T给药或实测校准时，T数字只是假设背景。": [
+    "E2 suppression of endogenous T is not modeled; without T dosing or lab calibration, the T value is only an assumed background.",
+    "E2 對內源 T 的抑制未建模；沒有 T 給藥或實測校準時，T 數字僅是假設背景。",
+    "E2 による内因性 T 抑制はモデル化していません。T 投与や実測校正がない場合、T 値は仮定の背景値のみです。",
+    "E2의 내인성 T 억제는 모형화하지 않았어요. T 투약이나 실측 보정이 없으면 T 수치는 가정한 배경일 뿐이에요.",
+    "No se modela la supresión de T endógena por E2; sin dosis de T ni calibración con análisis, T es solo un fondo supuesto."
+  ],
+  "外源T的芳香化与内源E2变化未建模。": [
+    "Aromatization of exogenous T and changes in endogenous E2 are not modeled.",
+    "外源 T 的芳香化與內源 E2 變化未建模。",
+    "外因性 T の芳香化と内因性 E2 の変化はモデル化していません。",
+    "외인성 T의 방향족화와 내인성 E2 변화는 모형화하지 않았어요.",
+    "No se modelan la aromatización de T exógena ni los cambios de E2 endógeno."
+  ],
+  "MTF/FTM仅选择参考队列，不从身份推断器官、内源水平或用药后的抑制程度。": [
+    "MTF/FTM only selects a reference cohort; identity is not used to infer organs, endogenous levels or suppression after medication.",
+    "MTF/FTM 僅選擇參考族群，不從身分推斷器官、內源濃度或用藥後抑制程度。",
+    "MTF/FTM は参考集団を選ぶだけで、アイデンティティから臓器、内因性濃度、服薬後の抑制を推定しません。",
+    "MTF/FTM은 참고 집단만 선택하며 정체성으로 장기, 내인성 농도 또는 투약 후 억제 정도를 추론하지 않아요.",
+    "MTF/FTM solo selecciona una cohorte de referencia; no se infieren órganos, niveles endógenos ni supresión a partir de la identidad."
+  ],
+  "参考背景来自Vlot 2019成人队列GAHT前中位数（{value}{unit}），作为可编辑情境；不代表你的当前内源水平，也不是治疗目标。": [
+    "The reference background is the pre-GAHT median in the Vlot 2019 adult cohort ({value}{unit}), an editable scenario, not your current endogenous level or a treatment target.",
+    "參考背景來自 Vlot 2019 成人族群 GAHT 前中位數（{value}{unit}），作為可編輯情境；不代表你目前的內源濃度，也不是治療目標。",
+    "参考背景値は Vlot 2019 成人集団の GAHT 前中央値（{value}{unit}）で、編集可能なシナリオです。現在の内因性濃度や治療目標ではありません。",
+    "참고 배경은 Vlot 2019 성인 집단의 GAHT 전 중앙값({value}{unit})을 편집 가능한 시나리오로 사용한 것이며 현재 개인 내인성 농도나 치료 목표가 아니에요.",
+    "El fondo de referencia es la mediana previa a GAHT de la cohorte adulta Vlot 2019 ({value}{unit}), un escenario editable, no tu nivel endógeno actual ni un objetivo terapéutico."
+  ],
+  "参考背景{value}{unit}为自定义情境；不代表实测或治疗目标。": [
+    "Reference background {value}{unit} is a custom scenario, not a measurement or treatment target.",
+    "參考背景 {value}{unit} 為自訂情境；不代表實測或治療目標。",
+    "参考背景 {value}{unit} はカスタムシナリオで、実測値や治療目標ではありません。",
+    "참고 배경 {value}{unit}은 사용자 시나리오이며 실측값이나 치료 목표가 아니에요.",
+    "El fondo de referencia {value}{unit} es un escenario personalizado, no una medición ni un objetivo terapéutico."
+  ],
+  "药代模型经验参考参数：模型体重{weight}kg，表观分布容积E2为2L/kg、T为1L/kg；默认体重不是个人测量。": [
+    "Empirical PK reference: model weight {weight}kg, apparent distribution volume 2L/kg for E2 and 1L/kg for T. Default weight is not a personal measurement.",
+    "藥代模型經驗參考參數：模型體重 {weight}kg，表觀分布容積 E2 為 2L/kg、T 為 1L/kg；預設體重不是個人測量。",
+    "経験的 PK 参考：モデル体重 {weight}kg、見かけの分布容積は E2 2L/kg、T 1L/kg。既定体重は個人の実測値ではありません。",
+    "경험적 PK 참고: 모델 체중 {weight}kg, 겉보기 분포용적 E2 2L/kg, T 1L/kg. 기본 체중은 개인 측정값이 아니에요.",
+    "Referencia PK empírica: peso del modelo {weight}kg, volumen aparente de distribución E2 2L/kg y T 1L/kg. El peso predeterminado no es una medición personal."
+  ],
+  "舌下黏膜分流比例{fraction}%为情境假设；不代表给定含服时间一定达到该吸收比例。": [
+    "The {fraction}% sublingual mucosal fraction is a scenario assumption; a given holding time does not guarantee this absorption fraction.",
+    "舌下黏膜分流比例 {fraction}% 為情境假設；不代表特定含服時間一定達到此吸收比例。",
+    "舌下粘膜割合 {fraction}% はシナリオ仮定です。一定の保持時間でその吸収割合に達する保証ではありません。",
+    "설하 점막 분율 {fraction}%는 시나리오 가정이며 특정 함복 시간으로 이 흡수 비율에 도달함을 보장하지 않아요.",
+    "La fracción mucosa sublingual del {fraction}% es un supuesto; mantenerla un tiempo dado no garantiza esa absorción."
+  ],
+  "原版本单室半衰期设置已保留，但不用于当前多室参考模型；当前参数见模型说明。": [
+    "Legacy one-compartment half-life settings are retained but not used in the current multi-compartment reference model. See model details for current parameters.",
+    "舊版單室半衰期設定已保留，但不用於目前多室參考模型；目前參數見模型說明。",
+    "旧版の1コンパートメント半減期設定は保持しますが、現行の多コンパートメント参考モデルには使用しません。現行パラメータはモデル説明を参照してください。",
+    "이전 1구획 반감기 설정은 보존하지만 현재 다구획 참고 모형에는 사용하지 않아요. 현재 매개변수는 모델 설명을 참고해 주세요.",
+    "Se conservan las semividas antiguas de un compartimento, pero no se usan en el modelo multicompartimental actual. Consulta los parámetros actuales en los detalles."
+  ],
+  "曲线形状仍含教学假设，数值不提供治疗效果判断或用药建议。": [
+    "The curve still includes educational assumptions; its values do not assess treatment effects or provide dosing advice.",
+    "曲線形狀仍含教學假設，數值不提供療效判斷或用藥建議。",
+    "曲線形状には学習用の仮定を含み、治療効果の判定や服薬助言は提供しません。",
+    "곡선 형태에는 교육용 가정이 포함되어 있으며 수치는 치료 효과 판단이나 투약 조언을 제공하지 않아요.",
+    "La curva incluye supuestos educativos; sus valores no evalúan efectos terapéuticos ni aconsejan dosis."
+  ],
+  "{names}仅记录与提醒；其药效及相互作用未进入当前浓度计算。": [
+    "{names}: recording and reminders only; effects and interactions are not included in this concentration calculation.",
+    "{names} 僅記錄與提醒；其藥效及交互作用未納入目前濃度計算。",
+    "{names} は記録とリマインダーのみです。薬効や相互作用は濃度計算に含みません。",
+    "{names}: 기록과 알림만 제공하며 약효와 상호작용은 현재 농도 계산에 포함되지 않아요.",
+    "{names}: solo registros y recordatorios; sus efectos e interacciones no se incluyen en el cálculo de concentración."
+  ],
+  "未个人校准：这是来源数值与简化形状组成的参考情境，不是你的实际血药浓度。": [
+    "Not personally calibrated: a reference scenario combining source values and simplified shapes, not your actual blood concentration.",
+    "未個人校準：這是來源數值與簡化形狀組成的參考情境，不是你的實際血藥濃度。",
+    "個人校正なし：出典値と簡略形状を組み合わせた参考シナリオで、実際の血中濃度ではありません。",
+    "개인 보정 전: 출처 수치와 단순화된 형태의 참고 시나리오이며 개인의 실제 혈중 농도가 아니에요.",
+    "Sin calibración personal: es un escenario de referencia con valores de fuentes y formas simplificadas, no tu concentración sanguínea real."
+  ],
+  "没有对应激素给药贡献，显示的只是背景假设；最近化验不会被冒充为实时值。": [
+    "No dose contribution for this hormone; only an assumed background is shown. The latest lab result is not presented as a live value.",
+    "沒有對應激素給藥貢獻，顯示的僅為背景假設；最近化驗不會被當作即時值。",
+    "対応ホルモンの投薬寄与がなく、仮定の背景値のみを表示します。直近検査値を現在値として扱いません。",
+    "해당 호르몬 투약 기여량이 없어 가정한 배경만 표시하며 최근 검사를 실시간 값으로 표시하지 않아요.",
+    "Sin aporte de dosis para esta hormona, solo se muestra un fondo supuesto. El último análisis no se presenta como valor en tiempo real."
+  ],
+  "没有对应激素给药模型，化验保留为最近实测，不能直接外推为当前浓度。": [
+    "No dosing model for this hormone. Labs remain available as recent measurements and cannot be extrapolated directly into a current concentration.",
+    "沒有對應激素給藥模型，化驗保留為最近實測，不能直接外推為目前濃度。",
+    "対応する投与モデルがありません。検査は直近実測として保持し、現在濃度へ直接外挿できません。",
+    "해당 호르몬 투약 모델이 없어요. 검사는 최근 실측으로 보존되며 현재 농도로 직접 외삽할 수 없어요.",
+    "No hay modelo de dosis para esta hormona. Los análisis se conservan como mediciones recientes y no se extrapolan directamente a la concentración actual."
+  ],
+  "尚无可用个人化验，显示有明确假设的参考情境。": [
+    "No usable personal labs yet; showing a reference scenario with explicit assumptions.",
+    "尚無可用個人化驗，顯示有明確假設的參考情境。",
+    "使用できる個人検査値がないため、仮定を明示した参考シナリオを表示します。",
+    "사용 가능한 개인 검사가 아직 없어 가정을 명시한 참고 시나리오를 표시해요.",
+    "Aún no hay análisis personales utilizables; se muestra un escenario de referencia con supuestos explícitos."
+  ],
+  "组合中包含缺少参考幅度的途径，单一缩放系数无法确定各途径贡献；保留历史与化验，不输出不完整总值。": [
+    "A route in this combination lacks reference amplitude. A single scale cannot determine each contribution; history and labs are retained without displaying an incomplete total.",
+    "組合中包含缺少參考幅度的途徑，單一縮放係數無法確定各途徑貢獻；保留歷史與化驗，不輸出不完整總值。",
+    "組み合わせに参考振幅のない経路があります。単一倍率で各寄与を決められず、不完全な合計は表示せず履歴と検査を保持します。",
+    "조합에 참고 크기가 없는 경로가 있어 단일 배율로 각 기여량을 결정할 수 없어요. 이력과 검사는 보존하고 불완전한 총값은 표시하지 않아요.",
+    "Una vía carece de amplitud de referencia. Un solo factor no determina cada aporte; se conservan historial y análisis sin mostrar un total incompleto."
+  ],
+  "至少一条有效暴露时的化验低于个人固定基线，请核对基线与记录；不能拟合负药物增量。": [
+    "At least one lab with modeled exposure is below the fixed personal baseline. Check baseline and records; negative drug increments cannot be fitted.",
+    "至少一筆有效暴露時的化驗低於個人固定基線，請核對基線與記錄；不能擬合負藥物增量。",
+    "曝露のある検査値が少なくとも1件、個人固定ベースライン未満です。基線と記録を確認してください。負の薬物増分は適合できません。",
+    "유효 노출 시 검사 중 하나 이상이 개인 고정 기준선보다 낮아요. 기준선과 기록을 확인해 주세요. 음의 약물 증가분은 적합할 수 없어요.",
+    "Al menos un análisis con exposición modelada está por debajo de la línea basal fija. Revisa la base y los registros; no pueden ajustarse incrementos farmacológicos negativos."
+  ],
+  "化验时刻没有足够的已记录药物暴露，不能确定幅度；最近实测仍可查看。": [
+    "Insufficient recorded exposure at the lab time to determine amplitude; the latest measured result remains available.",
+    "化驗時刻沒有足夠的已記錄藥物暴露，不能確定幅度；最近實測仍可查看。",
+    "採血時の記録済み曝露が不足し振幅を決められません。直近実測は引き続き確認できます。",
+    "검사 시각의 기록된 약물 노출량이 부족하여 크기를 정할 수 없지만 최근 실측값은 볼 수 있어요.",
+    "No hay suficiente exposición registrada al extraer sangre para determinar la amplitud; el último resultado medido sigue disponible."
+  ],
+  "有途径未被任何校准化验覆盖；不能把另一种途径的个人倍率迁移到新增途径，当前退回参考情境。": [
+    "Some routes are not covered by any calibration lab. A personal factor from another route cannot transfer to a new route; reverting to the reference scenario.",
+    "有途徑未被任何校準化驗涵蓋；不能將其他途徑的個人倍率轉移到新增途徑，目前退回參考情境。",
+    "校正検査がカバーしない経路があります。他経路の個人倍率は移せないため、参考シナリオに戻します。",
+    "보정 검사가 포함하지 않는 경로가 있어요. 다른 경로의 개인 배율을 새 경로로 옮길 수 없어 참고 시나리오로 돌아가요.",
+    "Algunas vías no están cubiertas por análisis de calibración. No se traslada el factor personal de otra vía; se vuelve al escenario de referencia."
+  ],
+  "无法识别正的药物幅度，请核对个人基线、化验与给药历史。": [
+    "No positive drug amplitude can be identified. Check your baseline, labs and dose history.",
+    "無法識別正的藥物幅度，請核對個人基線、化驗與給藥歷史。",
+    "正の薬物振幅を識別できません。個人基線、検査、投薬履歴を確認してください。",
+    "양의 약물 크기를 식별할 수 없어요. 개인 기준선, 검사, 투약 이력을 확인해 주세요.",
+    "No puede identificarse una amplitud farmacológica positiva. Revisa la línea basal, análisis e historial de dosis."
+  ],
+  "该途径缺少群体参考幅度，使用个人化验对单途径形状拟合；未经临床验证。": [
+    "This route lacks population reference amplitude; personal labs fit the single-route shape. Not clinically validated.",
+    "此途徑缺少群體參考幅度，使用個人化驗對單途徑形狀擬合；未經臨床驗證。",
+    "集団参考振幅がないため、個人検査で単一経路の形状を適合します。臨床検証は未実施です。",
+    "집단 참고 크기가 없어 개인 검사로 단일 경로 형태를 적합하며 임상 검증되지 않았어요.",
+    "Esta vía carece de amplitud poblacional; los análisis personales ajustan la forma de una sola vía. Sin validación clínica."
+  ],
+  "只对该激素的合成参考增量拟合一个共同倍率；各途径的比例来自参考假设，并未分别得到个人校准。": [
+    "Only one shared factor is fitted to this hormone's combined reference increment. Route proportions come from assumptions, not separate personal calibrations.",
+    "僅對此激素的合成參考增量擬合共同倍率；各途徑比例來自參考假設，未分別得到個人校準。",
+    "ホルモンの合成参考増分に共通倍率を1つ適合します。経路の比率は仮定で、個別に校正されたものではありません。",
+    "이 호르몬의 합산 참고 증가분에 하나의 공통 배율만 적합해요. 경로별 비율은 참고 가정이며 각각 개인 보정된 것이 아니에요.",
+    "Solo se ajusta un factor común al incremento de referencia combinado. Las proporciones entre vías son supuestos, no calibraciones personales separadas."
+  ],
+  "仅1个样本，模型强制经过该点；零RMSE不能证明曲线准确。": [
+    "Only one sample; the model is forced through it. Zero RMSE does not prove curve accuracy.",
+    "僅 1 個樣本，模型強制經過該點；零 RMSE 不能證明曲線準確。",
+    "標本が1点のみのため必ず通るよう適合します。RMSE 0 は正確性の証明ではありません。",
+    "표본이 하나라 모델이 그 점을 강제로 통과해요. RMSE 0은 곡선 정확성을 증명하지 않아요.",
+    "Solo una muestra; el modelo se fuerza a pasar por ella. RMSE cero no demuestra precisión."
+  ],
+  "仅1个样本：曲线被强制穿过该点，零误差不能证明准确性。": [
+    "Only one sample; the curve is forced through it. Zero error does not prove accuracy.",
+    "僅 1 個樣本：曲線被強制穿過該點，零誤差不能證明準確性。",
+    "標本が1点のみのため必ず通るよう適合します。誤差 0 は正確性の証明ではありません。",
+    "표본이 하나라 곡선이 그 점을 강제로 통과해요. 오차 0은 정확성을 증명하지 않아요.",
+    "Solo una muestra; la curva se fuerza a pasar por ella. Error cero no demuestra precisión."
+  ],
+  "少于3个样本，不能验证峰谷或未来预测。": [
+    "Fewer than 3 samples cannot validate peaks, troughs or future predictions.",
+    "少於 3 個樣本，不能驗證峰谷或未來預測。",
+    "3点未満ではピーク、トラフ、将来予測を検証できません。",
+    "표본 3개 미만으로 최고·최저 농도나 미래 예측을 검증할 수 없어요.",
+    "Menos de 3 muestras no validan picos, valles ni predicciones futuras."
+  ],
+  "少于3个样本：只能粗略校准幅度，不能验证曲线。": [
+    "Fewer than 3 samples only roughly calibrate amplitude and cannot validate the curve.",
+    "少於 3 個樣本：只能粗略校準幅度，不能驗證曲線。",
+    "3点未満では振幅の大まかな校正のみで曲線を検証できません。",
+    "표본 3개 미만은 크기를 대략 보정할 뿐 곡선을 검증할 수 없어요.",
+    "Menos de 3 muestras solo calibran aproximadamente la amplitud; no validan la curva."
+  ],
+  "个人校准基线0是固定假设，不代表真实内源激素为0。": [
+    "A personal calibration baseline of 0 is a fixed assumption, not proof that endogenous hormone is zero.",
+    "個人校準基線 0 是固定假設，不代表真實內源激素為 0。",
+    "個人校正基線 0 は固定仮定で、実際の内因性ホルモンが 0 という意味ではありません。",
+    "개인 보정 기준선 0은 고정 가정이며 실제 내인성 호르몬이 0이라는 뜻이 아니에요.",
+    "Una línea basal personal de 0 es un supuesto fijo, no prueba de hormona endógena cero."
+  ],
+  "{count}条重复或无模型暴露的样本未参与幅度拟合。": [
+    "{count} duplicate samples or samples without modeled exposure were excluded from amplitude fitting.",
+    "{count} 筆重複或無模型暴露的樣本未參與幅度擬合。",
+    "重複またはモデル曝露のない {count} 件は振幅適合から除外しました。",
+    "중복되거나 모델 노출이 없는 표본 {count}개를 크기 적합에서 제외했어요.",
+    "Se excluyeron {count} muestras duplicadas o sin exposición modelada del ajuste de amplitud."
+  ],
+  "化验覆盖的模型暴露相似，不能验证时间曲线形状。": [
+    "The labs cover similar modeled exposures and cannot validate the time-curve shape.",
+    "化驗涵蓋的模型暴露相似，不能驗證時間曲線形狀。",
+    "検査が類似のモデル曝露に偏り、時間曲線の形状を検証できません。",
+    "검사가 비슷한 모델 노출만 포함하여 시간 곡선 형태를 검증할 수 없어요.",
+    "Los análisis cubren exposiciones similares y no validan la forma temporal de la curva."
+  ],
+  "拟合残差较大，记录或模型可能不适用。RMSE不是预测区间。": [
+    "Large fitting residuals; records or model may not apply. RMSE is not a prediction interval.",
+    "擬合殘差較大，記錄或模型可能不適用。RMSE 不是預測區間。",
+    "適合残差が大きく記録やモデルが不適切な可能性があります。RMSE は予測区間ではありません。",
+    "적합 잔차가 커서 기록이나 모델이 적절하지 않을 수 있어요. RMSE는 예측 구간이 아니에요.",
+    "Residuos de ajuste grandes; los registros o el modelo pueden no ser adecuados. RMSE no es un intervalo de predicción."
+  ],
+  "已记录的{name}缺少浓度模型，不能在遗漏贡献时进行个人总值校准。": [
+    "Recorded {name} lacks a concentration model; total personal calibration cannot omit its contribution.",
+    "已記錄的 {name} 缺少濃度模型，不能遺漏貢獻而進行個人總值校準。",
+    "記録した {name} に濃度モデルがなく、その寄与を省略して個人総値を校正できません。",
+    "기록한 {name}의 농도 모델이 없어 그 기여량을 누락한 채 개인 총값을 보정할 수 없어요.",
+    "{name} registrado carece de modelo de concentración; no se puede calibrar el total personal omitiendo su aporte."
+  ],
+  "该时刻出现未被化验覆盖的新途径，当前退回参考情境，不迁移其他途径的个人倍率。": [
+    "A new route at this time is not covered by labs. Reverting to reference without transferring another route's personal factor.",
+    "此時刻出現未被化驗涵蓋的新途徑，目前退回參考情境，不轉移其他途徑的個人倍率。",
+    "この時点に検査で未カバーの新経路があるため、他経路の個人倍率を移さず参考値に戻します。",
+    "이 시각에 검사가 포함하지 않는 새 경로가 있어 다른 경로의 개인 배율을 옮기지 않고 참고 시나리오로 돌아가요.",
+    "Hay una vía nueva no cubierta por análisis en este momento. Se vuelve a la referencia sin trasladar el factor personal de otra vía."
+  ],
+  "以下已记录药物缺少该激素的浓度模型：{names}。其贡献未知，不能当作0或输出不完整总值；历史记录和实测仍保留。": [
+    "Recorded medications without a concentration model for this hormone: {names}. Their contributions are unknown, not zero; no incomplete total is shown. History and labs remain available.",
+    "以下已記錄藥物缺少此激素濃度模型：{names}。貢獻未知，不能當作 0 或輸出不完整總值；歷史記錄與實測仍保留。",
+    "このホルモンの濃度モデルがない記録済み薬：{names}。寄与は不明で 0 とみなさず、不完全な合計は表示しません。履歴と実測は保持します。",
+    "해당 호르몬 농도 모델이 없는 기록 약물: {names}. 기여량은 미지이며 0으로 취급하거나 불완전한 총값을 표시하지 않아요. 이력과 실측은 유지돼요.",
+    "Medicamentos registrados sin modelo para esta hormona: {names}. Su aporte es desconocido, no cero; no se muestra un total incompleto. Se conservan historial y análisis."
+  ],
+  "以下途径缺少可用于叠加的参考幅度：{names}。未把这些贡献当作0，当前不显示不完整总值。": [
+    "Routes lacking additive reference amplitudes: {names}. Their contributions are not treated as zero; an incomplete total is not shown.",
+    "以下途徑缺少可疊加的參考幅度：{names}。未將貢獻當作 0，目前不顯示不完整總值。",
+    "加算できる参考振幅のない経路：{names}。寄与を 0 と扱わず、不完全な合計は表示しません。",
+    "합산 가능한 참고 크기가 없는 경로: {names}. 기여량을 0으로 취급하지 않으며 불완전한 총값은 표시하지 않아요.",
+    "Vías sin amplitudes de referencia sumables: {names}. Sus aportes no se tratan como cero; no se muestra un total incompleto."
+  ],
+  "多途径数值按固定参考比例线性叠加，基线只加一次；跨制剂等比例、个体吸收和内源变化未验证。": [
+    "Routes are added linearly with fixed reference proportions and one baseline. Proportionality across formulations, personal absorption and endogenous changes are unvalidated.",
+    "多途徑數值依固定參考比例線性疊加，基線僅加一次；跨製劑等比例、個體吸收與內源變化未驗證。",
+    "複数経路を固定参考比率で線形加算し、基線は1回のみ加えます。製剤間の比例、個人吸収、内因性変化は未検証です。",
+    "여러 경로를 고정 참고 비율로 선형 합산하고 기준선은 한 번만 더해요. 제제 간 비례, 개인 흡수 및 내인성 변화는 검증되지 않았어요.",
+    "Las vías se suman linealmente con proporciones fijas y una sola línea basal. No se validaron proporcionalidad entre formulaciones, absorción individual ni cambios endógenos."
+  ],
+  "当前模型暴露超出化验覆盖范围，属于外推。": [
+    "Current modeled exposure lies outside the lab-covered range; this is extrapolation.",
+    "目前模型暴露超出化驗涵蓋範圍，屬於外推。",
+    "現在のモデル曝露は検査のカバー範囲外で、外挿にあたります。",
+    "현재 모델 노출은 검사 범위 밖으로 외삽에 해당해요.",
+    "La exposición modelada actual queda fuera del rango cubierto por análisis; es una extrapolación."
+  ],
+  "当前暴露超出校准样本覆盖范围，属于外推估计。": [
+    "Current exposure is outside the calibration sample range; this is an extrapolated estimate.",
+    "目前暴露超出校準樣本涵蓋範圍，屬於外推估計。",
+    "現在の曝露は校正標本の範囲外で、外挿推定です。",
+    "현재 노출은 보정 표본 범위 밖으로 외삽 추정이에요.",
+    "La exposición actual está fuera del rango de calibración; es una estimación extrapolada."
+  ],
+  "化验低于所设固定基线；请核对基线、单位与采血时刻后重新校准。": [
+    "Lab result below the fixed baseline; check baseline, units and blood draw time, then recalibrate.",
+    "化驗低於設定固定基線；請核對基線、單位與採血時刻後重新校準。",
+    "検査値が固定基線未満です。基線、単位、採血日時を確認して再校正してください。",
+    "검사값이 고정 기준선보다 낮아요. 기준선, 단위, 채혈 시각을 확인한 후 다시 보정해 주세요.",
+    "El análisis está por debajo de la línea basal fija; revisa base, unidades y extracción y recalibra."
+  ],
+  "化验未提供可识别的正药物增量，不能确定幅度。": [
+    "Labs do not identify a positive drug increment; amplitude cannot be determined.",
+    "化驗未提供可識別的正藥物增量，不能確定幅度。",
+    "検査から正の薬物増分を識別できず、振幅を決められません。",
+    "검사에서 양의 약물 증가분을 식별할 수 없어 크기를 정할 수 없어요.",
+    "Los análisis no identifican un incremento farmacológico positivo; no se determina la amplitud."
+  ],
+  "基线固定，内源抑制、个体变化、SHBG及其他药物作用未建模；各途径不能直接合并为总浓度。": [
+    "The baseline is fixed; endogenous suppression, individual changes, SHBG and other drug effects are not modeled. Routes cannot be directly combined into a total concentration.",
+    "基線固定，內源抑制、個體變化、SHBG 與其他藥物作用未建模；各途徑不能直接合併為總濃度。",
+    "基線は固定で、内因性抑制、個人変動、SHBG、他薬の作用は未モデル化です。各経路を直接総濃度に合算できません。",
+    "기준선은 고정되며 내인성 억제, 개인 변화, SHBG, 다른 약물 작용은 모형화하지 않았어요. 각 경로를 직접 총 농도로 합칠 수 없어요.",
+    "La base es fija; no se modelan supresión endógena, cambios individuales, SHBG ni otros fármacos. Las vías no se combinan directamente en una concentración total."
+  ],
+  "基线设为0是假设，不代表真实内源激素为0；单一幅度无法区分基线与药物贡献。": [
+    "A zero baseline is an assumption, not actual zero endogenous hormone; one amplitude cannot separate baseline from drug contribution.",
+    "基線設為 0 是假設，不代表真實內源激素為 0；單一幅度無法區分基線與藥物貢獻。",
+    "基線 0 は仮定で、内因性ホルモンが 0 という意味ではありません。単一振幅では基線と薬物寄与を区別できません。",
+    "기준선 0은 실제 내인성 호르몬 0이 아닌 가정이며 단일 크기로 기준선과 약물 기여량을 구분할 수 없어요.",
+    "Una base de 0 es un supuesto, no hormona endógena cero; una amplitud no separa la base del aporte del fármaco."
+  ],
+  "存在同一激素的其他途径，单途径模型不能估算当前总血浓度。": [
+    "Other routes for this hormone are present; a single-route model cannot estimate the current total blood concentration.",
+    "存在同一激素的其他途徑，單途徑模型不能估算目前總血濃度。",
+    "同じホルモンの他経路があるため、単一経路モデルで現在の総血中濃度は推定できません。",
+    "동일 호르몬의 다른 경로가 있어 단일 경로 모델로 현재 총 혈중 농도를 추정할 수 없어요.",
+    "Hay otras vías de la misma hormona; un modelo de una vía no estima la concentración sanguínea total actual."
+  ],
+  "尚未完成个人校准：仅显示相对模型暴露，不能当作血药浓度。": [
+    "Personal calibration incomplete: showing relative modeled exposure only, not blood concentration.",
+    "尚未完成個人校準：僅顯示相對模型暴露，不能當作血藥濃度。",
+    "個人校正は未完了です。相対モデル曝露のみで、血中濃度ではありません。",
+    "개인 보정 미완료: 상대적인 모델 노출만 표시하며 혈중 농도가 아니에요.",
+    "Calibración personal incompleta: solo muestra exposición relativa modelada, no concentración sanguínea."
+  ],
+  "当前激素在化验前存在其他或未知途径记录，无法区分贡献；请选择完整且单一途径时期的数据后校准。": [
+    "Other or unknown routes were recorded for this hormone before labs, so contributions cannot be separated. Calibrate using a complete period with a single route.",
+    "此激素在化驗前有其他或未知途徑記錄，無法區分貢獻；請選完整且單一途徑時期的資料後校準。",
+    "検査前に他経路または不明経路があり、寄与を区別できません。単一経路の完全な期間データで校正してください。",
+    "검사 전에 이 호르몬의 다른 경로나 알 수 없는 경로가 기록되어 기여량을 구분할 수 없어요. 단일 경로의 완전한 기간 자료로 보정해 주세요.",
+    "Se registraron otras vías o vías desconocidas antes del análisis, sin poder separar aportes. Calibra con un período completo de una sola vía."
+  ],
+  "拟合误差相对较大，请核对记录与模型适用性；不据此调整给药。": [
+    "Relatively large fitting error. Check records and model suitability; do not adjust doses based on this.",
+    "擬合誤差相對較大，請核對記錄與模型適用性；不據此調整給藥。",
+    "適合誤差が比較的大きいため記録とモデルの適用性を確認してください。これに基づく用量調整はしません。",
+    "적합 오차가 비교적 커요. 기록과 모델 적합성을 확인하되 이를 근거로 투약을 조정하지 마세요.",
+    "Error de ajuste relativamente grande. Revisa registros y adecuación del modelo; no ajustes dosis basándote en esto."
+  ],
+  "校准只拟合幅度，未验证半衰期或生物利用度；结果是模型估计，不是实时检测。": [
+    "Calibration fits amplitude only, without validating half-life or bioavailability. Results are model estimates, not real-time measurements.",
+    "校準僅擬合幅度，未驗證半衰期或生體可用率；結果為模型估計，不是即時檢測。",
+    "校正は振幅のみを適合し、半減期・バイオアベイラビリティは検証しません。結果は推定でリアルタイム測定ではありません。",
+    "보정은 크기만 적합하며 반감기나 생체이용률을 검증하지 않아요. 결과는 실시간 측정이 아닌 모델 추정값이에요.",
+    "La calibración solo ajusta amplitud, sin validar semivida ni biodisponibilidad. Son estimaciones, no mediciones en tiempo real."
+  ],
+  "样本处于相似模型暴露水平，不能识别峰谷形状；RMSE是拟合误差，不是预测区间。": [
+    "Samples have similar modeled exposure, so peaks and troughs cannot be identified. RMSE is fitting error, not a prediction interval.",
+    "樣本處於相似模型暴露水平，不能識別峰谷形狀；RMSE 是擬合誤差，不是預測區間。",
+    "標本のモデル曝露が類似し、ピーク・トラフを識別できません。RMSE は適合誤差で予測区間ではありません。",
+    "표본의 모델 노출이 비슷하여 최고·최저 형태를 식별할 수 없어요. RMSE는 적합 오차이며 예측 구간이 아니에요.",
+    "Las muestras tienen exposición similar y no identifican picos y valles. RMSE es error de ajuste, no intervalo de predicción."
+  ],
+  "模型参数、基线或校准前给药记录已改变，请重新校准。": [
+    "Model parameters, baseline or pre-calibration dose history changed; please recalibrate.",
+    "模型參數、基線或校準前給藥記錄已改變，請重新校準。",
+    "パラメータ、基線、校正前投薬履歴が変わりました。再校正してください。",
+    "모델 매개변수, 기준선 또는 보정 전 투약 이력이 변경되었어요. 다시 보정해 주세요.",
+    "Cambiaron parámetros, base o historial previo; vuelve a calibrar."
+  ],
+  "没有可用于当前激素的有效化验。": [
+    "No valid labs are available for this hormone.",
+    "沒有可用於目前激素的有效化驗。",
+    "対象ホルモンの有効な検査値がありません。",
+    "해당 호르몬에 사용 가능한 유효 검사가 없어요.",
+    "No hay análisis válidos para esta hormona."
+  ],
+  "至少一个化验时刻没有足够的已记录模型暴露，无法校准；请补齐给药历史并核对采血时间。": [
+    "At least one lab time has insufficient recorded modeled exposure, preventing calibration. Complete dose history and check blood draw times.",
+    "至少一個化驗時刻沒有足夠的已記錄模型暴露，無法校準；請補齊給藥歷史並核對採血時間。",
+    "少なくとも1件の採血時に記録済みモデル曝露が足りず、校正できません。投薬履歴と採血日時を確認してください。",
+    "검사 시각 중 하나 이상에서 기록된 모델 노출이 부족해 보정할 수 없어요. 투약 이력을 보완하고 채혈 시각을 확인해 주세요.",
+    "Al menos una extracción tiene exposición registrada insuficiente para calibrar. Completa el historial y verifica las horas de extracción."
+  ],
+  "标签峰时与终末半衰期约束的一室近似，未作个体或临床验证": [
+    "One-compartment approximation constrained by labeled peak time and terminal half-life; no individual or clinical validation",
+    "標籤峰時與終末半衰期約束的一室近似，未作個體或臨床驗證",
+    "表示のピーク時刻・終末半減期に制約した1コンパートメント近似。個別・臨床検証なし",
+    "라벨의 최고 시각과 말기 반감기로 제한한 1구획 근사이며 개인 또는 임상 검증 없음",
+    "Aproximación de un compartimento limitada por tiempo al pico y semivida terminal de la ficha; sin validación individual ni clínica"
+  ],
+  "CPA 醋酸环丙孕酮 · 口服": [
+    "CPA cyproterone acetate · Oral",
+    "CPA 醋酸環丙孕酮 · 口服",
+    "CPA 酢酸シプロテロン · 経口",
+    "CPA 시프로테론 아세테이트 · 경구",
+    "CPA acetato de ciproterona · Oral"
+  ],
+  "Androcur 50mg片标签中的PK给药实际为两片共100mg，约3h总CPA峰285ng/mL、终末半衰期43.9h；一室近似吸收速率由峰时推得。幅度已含吸收影响，不再另乘88%生物利用度。其他剂量作线性外推，未验证个体准确性。": [
+    "The Androcur 50mg label's PK dose was two tablets totaling 100mg: total CPA peak about 285ng/mL at 3h, terminal half-life 43.9h. One-compartment absorption rate is inferred from peak time. Amplitude already includes absorption; 88% bioavailability is not multiplied again. Other doses are linearly extrapolated; individual accuracy is unvalidated.",
+    "Androcur 50mg 片標籤中的 PK 給藥實為兩片共 100mg：約 3h 總 CPA 峰 285ng/mL、終末半衰期 43.9h；一室吸收速率由峰時推得。幅度已含吸收影響，不再另乘 88% 生體可用率。其他劑量線性外推，未驗證個體準確性。",
+    "Androcur 50mg 錠の PK 投与量は2錠の計 100mg：3h 頃の総 CPA ピーク 285ng/mL、終末半減期 43.9h。1コンパートメント吸収速度はピーク時刻から推定。振幅は吸収を含み、88% を再乗算しません。他用量は線形外挿で個人精度は未検証です。",
+    "Androcur 50mg 라벨의 PK 용량은 2정, 총 100mg이며 약 3h의 총 CPA 최고농도 285ng/mL, 말기 반감기 43.9h예요. 1구획 흡수율은 최고 시각에서 추론했어요. 크기에 흡수가 포함되어 생체이용률 88%를 다시 곱하지 않아요. 다른 용량은 선형 외삽이며 개인 정확성은 미검증이에요.",
+    "La dosis PK de Androcur 50mg fue de dos tabletas, 100mg: pico total de CPA de unos 285ng/mL a 3h y semivida terminal de 43.9h. La absorción de un compartimento se infiere del tiempo al pico. La amplitud ya incluye absorción; no se vuelve a multiplicar por 88%. Otras dosis se extrapolan linealmente; precisión individual no validada."
+  ],
+  "Androcur 50mg片标签实际PK给药为两片共100mg：约3h总CPA峰285ng/mL、终末半衰期43.9h。吸收半衰期0.449h由一室模型峰时方程推得，非直接测量。仅估计CPA本身，不等于T抑制。": [
+    "The Androcur 50mg label used two tablets, 100mg, for PK: total CPA peak about 285ng/mL at 3h and terminal half-life 43.9h. Absorption half-life 0.449h is inferred from a one-compartment peak-time equation, not measured. Estimates CPA only, not T suppression.",
+    "Androcur 50mg 片標籤實際 PK 給藥為兩片共 100mg：約 3h 總 CPA 峰 285ng/mL、終末半衰期 43.9h。吸收半衰期 0.449h 由一室模型峰時方程推得，非直接測量。僅估計 CPA 本身，不等於 T 抑制。",
+    "Androcur 50mg 錠の PK は2錠計 100mg：3h 頃に総 CPA 285ng/mL、終末半減期 43.9h。吸収半減期 0.449h は1コンパートメントのピーク時刻式から推定し、実測ではありません。CPA のみで T 抑制ではありません。",
+    "Androcur 50mg PK 투약은 2정 총 100mg으로 약 3h의 총 CPA 최고농도 285ng/mL, 말기 반감기 43.9h예요. 흡수 반감기 0.449h는 1구획 최고 시각 방정식의 추론이며 직접 측정값이 아니에요. CPA 자체만 추정하며 T 억제가 아니에요.",
+    "La PK de Androcur 50mg usó dos tabletas, 100mg: CPA total de unos 285ng/mL a 3h y semivida terminal de 43.9h. La semivida de absorción de 0.449h se infiere de una ecuación de tiempo al pico, no se mide. Estima solo CPA, no supresión de T."
+  ],
+  "UCSF 女性化 GAHT 制剂与证据": [
+    "UCSF feminizing GAHT formulations and evidence",
+    "UCSF 女性化 GAHT 製劑與證據",
+    "UCSF 女性化 GAHT の製剤と根拠",
+    "UCSF 여성화 GAHT 제제와 근거",
+    "UCSF: formulaciones y evidencia de GAHT feminizante"
+  ],
+  "UCSF 男性化 GAHT 制剂与证据": [
+    "UCSF masculinizing GAHT formulations and evidence",
+    "UCSF 男性化 GAHT 製劑與證據",
+    "UCSF 男性化 GAHT の製剤と根拠",
+    "UCSF 남성화 GAHT 제제와 근거",
+    "UCSF: formulaciones y evidencia de GAHT masculinizante"
+  ],
+  "Progynova 戊酸雌二醇口服片 SmPC": [
+    "Progynova oral estradiol valerate SmPC",
+    "Progynova 戊酸雌二醇口服片 SmPC",
+    "Progynova 吉草酸エストラジオール経口錠 SmPC",
+    "Progynova 경구 에스트라디올 발레레이트 SmPC",
+    "SmPC de Progynova, valerato de estradiol oral"
+  ],
+  "Lenzetto 雌二醇喷雾 SmPC": [
+    "Lenzetto estradiol spray SmPC",
+    "Lenzetto 雌二醇噴霧 SmPC",
+    "Lenzetto エストラジオールスプレー SmPC",
+    "Lenzetto 에스트라디올 스프레이 SmPC",
+    "SmPC de Lenzetto, aerosol de estradiol"
+  ],
+  "Androcur 醋酸环丙孕酮 SmPC": [
+    "Androcur cyproterone acetate SmPC",
+    "Androcur 醋酸環丙孕酮 SmPC",
+    "Androcur 酢酸シプロテロン SmPC",
+    "Androcur 시프로테론 아세테이트 SmPC",
+    "SmPC de Androcur, acetato de ciproterona"
+  ],
+  "Zumenon 雌二醇片 SmPC": [
+    "Zumenon estradiol tablets SmPC",
+    "Zumenon 雌二醇片 SmPC",
+    "Zumenon エストラジオール錠 SmPC",
+    "Zumenon 에스트라디올 정제 SmPC",
+    "SmPC de Zumenon, tabletas de estradiol"
+  ],
+  "Doll et al., 2022：舌下与口服雌二醇原始研究": [
+    "Doll et al., 2022: original sublingual and oral estradiol study",
+    "Doll et al., 2022：舌下與口服雌二醇原始研究",
+    "Doll et al., 2022：舌下・経口エストラジオール原著研究",
+    "Doll et al., 2022: 설하 및 경구 에스트라디올 원저",
+    "Doll et al., 2022: estudio original de estradiol sublingual y oral"
+  ],
+  "Oriowo et al., 1980：雌二醇酯药代原始研究": [
+    "Oriowo et al., 1980: original estradiol ester PK study",
+    "Oriowo et al., 1980：雌二醇酯藥代原始研究",
+    "Oriowo et al., 1980：エストラジオールエステル PK 原著研究",
+    "Oriowo et al., 1980: 에스트라디올 에스테르 PK 원저",
+    "Oriowo et al., 1980: estudio original de PK de ésteres de estradiol"
+  ],
+  "DailyMed：Estradiol valerate 标签": [
+    "DailyMed: estradiol valerate label",
+    "DailyMed：Estradiol valerate 標籤",
+    "DailyMed：吉草酸エストラジオール添付文書",
+    "DailyMed: 에스트라디올 발레레이트 라벨",
+    "DailyMed: ficha de valerato de estradiol"
+  ],
+  "DailyMed：Depo-Estradiol 标签": [
+    "DailyMed: Depo-Estradiol label",
+    "DailyMed：Depo-Estradiol 標籤",
+    "DailyMed：Depo-Estradiol 添付文書",
+    "DailyMed: Depo-Estradiol 라벨",
+    "DailyMed: ficha de Depo-Estradiol"
+  ],
+  "DailyMed：EstroGel 标签": [
+    "DailyMed: EstroGel label",
+    "DailyMed：EstroGel 標籤",
+    "DailyMed：EstroGel 添付文書",
+    "DailyMed: EstroGel 라벨",
+    "DailyMed: ficha de EstroGel"
+  ],
+  "DailyMed：Vivelle-Dot 标签": [
+    "DailyMed: Vivelle-Dot label",
+    "DailyMed：Vivelle-Dot 標籤",
+    "DailyMed：Vivelle-Dot 添付文書",
+    "DailyMed: Vivelle-Dot 라벨",
+    "DailyMed: ficha de Vivelle-Dot"
+  ],
+  "DailyMed：Testosterone cypionate 标签": [
+    "DailyMed: testosterone cypionate label",
+    "DailyMed：Testosterone cypionate 標籤",
+    "DailyMed：シピオン酸テストステロン添付文書",
+    "DailyMed: 테스토스테론 시피오네이트 라벨",
+    "DailyMed: ficha de cipionato de testosterona"
+  ],
+  "DailyMed：AndroGel 1.62% 标签": [
+    "DailyMed: AndroGel 1.62% label",
+    "DailyMed：AndroGel 1.62% 標籤",
+    "DailyMed：AndroGel 1.62% 添付文書",
+    "DailyMed: AndroGel 1.62% 라벨",
+    "DailyMed: ficha de AndroGel 1.62%"
+  ],
+  "Androcur 50mg SmPC 5.1/5.2：CPA药效与口服药代": [
+    "Androcur 50mg SmPC 5.1/5.2: CPA effects and oral PK",
+    "Androcur 50mg SmPC 5.1/5.2：CPA 藥效與口服藥代",
+    "Androcur 50mg SmPC 5.1/5.2：CPA 薬効と経口 PK",
+    "Androcur 50mg SmPC 5.1/5.2: CPA 약효 및 경구 PK",
+    "Androcur 50mg SmPC 5.1/5.2: efectos de CPA y PK oral"
+  ],
+  "HRT Tracker 参考算法（经验模拟参数）": [
+    "HRT Tracker reference algorithm (empirical simulation parameters)",
+    "HRT Tracker 參考演算法（經驗模擬參數）",
+    "HRT Tracker 参考アルゴリズム（経験的シミュレーションパラメータ）",
+    "HRT Tracker 참고 알고리즘 (경험적 모형 매개변수)",
+    "Algoritmo de referencia HRT Tracker (parámetros empíricos)"
+  ],
+  "Vlot et al., 2019 · ENIGI 成人队列基线中位数": [
+    "Vlot et al., 2019 · ENIGI adult cohort baseline medians",
+    "Vlot et al., 2019 · ENIGI 成人族群基線中位數",
+    "Vlot et al., 2019 · ENIGI 成人集団のベースライン中央値",
+    "Vlot et al., 2019 · ENIGI 성인 집단 기준선 중앙값",
+    "Vlot et al., 2019 · Medianas basales de la cohorte adulta ENIGI"
+  ],
+  "Amsterdam ENIGI 成人；排除既往激素治疗，9–12时空腹采血；TW n=121，TM n=132": [
+    "Amsterdam ENIGI adults; prior hormone therapy excluded; fasting blood drawn 09:00–12:00; TW n=121, TM n=132",
+    "Amsterdam ENIGI 成人；排除既往激素治療，9–12 時空腹採血；TW n=121，TM n=132",
+    "Amsterdam ENIGI 成人。ホルモン療法歴を除外、9–12 時に空腹時採血。TW n=121、TM n=132",
+    "Amsterdam ENIGI 성인; 이전 호르몬 치료 제외, 9–12시 공복 채혈; TW n=121, TM n=132",
+    "Adultos ENIGI de Ámsterdam; sin terapia hormonal previa, extracción en ayunas de 9–12 h; TW n=121, TM n=132"
+  ],
+  "治疗前队列的参考背景，并非治疗后水平、个体预测或目标范围；身份不能推断器官、月经周期或当前激素状态。": [
+    "Reference background from a pre-treatment cohort, not post-treatment levels, personal predictions or a target range. Identity does not determine organs, menstrual cycle or current hormone status.",
+    "治療前族群的參考背景，並非治療後濃度、個體預測或目標範圍；身分不能推斷器官、月經週期或目前激素狀態。",
+    "治療前集団の参考背景であり、治療後濃度、個人予測、目標範囲ではありません。アイデンティティから臓器、月経周期、現在のホルモン状態は推定できません。",
+    "치료 전 집단의 참고 배경이며 치료 후 농도, 개인 예측 또는 목표 범위가 아니에요. 정체성으로 장기, 월경 주기, 현재 호르몬 상태를 추론할 수 없어요.",
+    "Fondo de referencia de una cohorte previa al tratamiento, no niveles posteriores, predicciones personales ni objetivos. La identidad no determina órganos, ciclo menstrual ni estado hormonal actual."
+  ]
+}

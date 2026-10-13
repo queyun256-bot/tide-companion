@@ -7,6 +7,7 @@ import { installStarFeeding } from './star-feeding.js';
 import { publishCompanionVisual } from './pet-visual.js';
 import { walletBalance, renderStarfield } from './star-effects.js';
 import { ensurePetStarEffects, setProducedAmount } from './pet-star-animation.js';
+import { t, getLocale, setLanguage, onLanguageChange, applyTranslations, formatNumber, translateError } from './i18n.js';
 
 const api = window.petAPI;
 const stage = document.querySelector('.pet-stage'), speech = document.getElementById('speech'), text = document.getElementById('speech-text');
@@ -29,6 +30,7 @@ const finDrag = installFinDrag({ stage, handle: document.getElementById('fin-dra
   }
 });
 let name = '鲨鲨', initialized = false, moodRecords = [], activeSkin = 'builtin';
+let systemLocale = navigator.language, languagePreference = 'system', dashboardVisible = false;
 let starBalance = 0, starEpoch = Date.now(), starPausedAt = null;
 const celebratedRewards = new Set();
 let speechTimer, actionTimer, sparkleTimer, clickTimer, controlsTimer, starTimer, holdTimer, blinkTimer, touchRelaxTimer;
@@ -94,17 +96,17 @@ function say(message, duration = 6500, reminder = false) {
 
 function updateLabels() {
   const sleeping = ['drowsy', 'sleeping'].includes(companion.state);
-  document.title = `${name} · 桌面伙伴`;
-  touch.title = `摸摸${name} · 按住轻蹭 · 滑动抚摸 · 双击打开手账`;
-  touch.setAttribute('aria-label', `摸摸${name}；按住轻蹭，滑动抚摸；双击打开手账`);
-  document.querySelector('.drag-handle title').textContent = `长按${name}头顶鱼鳍后，轻轻拖动`;
-  document.querySelector('.drag-handle').setAttribute('aria-label', `长按${name}头顶鱼鳍后拖动`);
-  const labels = { 'pat-pet': `摸摸${name}的脑袋`, 'nuzzle-pet': `和${name}轻轻蹭蹭`, 'wallet-pet': `查看星星余额：${starBalance} 颗`, 'sleep-pet': sleeping ? `轻轻叫醒${name}` : `让${name}打个短盹` };
+  document.title = t('{name} · 桌面伙伴', {name});
+  touch.title = t('摸摸{name} · 按住轻蹭 · 滑动抚摸 · 双击打开手账', {name});
+  touch.setAttribute('aria-label', t('摸摸{name}；按住轻蹭，滑动抚摸；双击打开手账', {name}));
+  document.querySelector('.drag-handle title').textContent = t('长按{name}头顶鱼鳍后，轻轻拖动', {name});
+  document.querySelector('.drag-handle').setAttribute('aria-label', t('长按{name}头顶鱼鳍后拖动', {name}));
+  const labels = { 'pat-pet': t('摸摸{name}的脑袋', {name}), 'nuzzle-pet': t('和{name}轻轻蹭蹭', {name}), 'wallet-pet': t('查看星星余额：{count} 颗', {count: formatNumber(starBalance)}), 'sleep-pet': sleeping ? t('轻轻叫醒{name}', {name}) : t('让{name}打个短盹', {name}) };
   for (const [id, label] of Object.entries(labels)) { const element = document.getElementById(id); element.title = label; element.setAttribute('aria-label', label); }
   sleepButton.setAttribute('aria-pressed', String(sleeping));
-  stage.setAttribute('aria-label', `${name}，桌面伙伴`);
-  document.querySelector('#builtin-pet svg title').textContent = `${name}，戴着跨性别旗帜围巾的小鲨鱼`;
-  document.getElementById('live2d-canvas').setAttribute('aria-label', `${name}，Live2D 桌宠`);
+  stage.setAttribute('aria-label', t('{name}，桌面伙伴', {name}));
+  document.querySelector('#builtin-pet svg title').textContent = t('{name}，戴着跨性别旗帜围巾的小鲨鱼', {name});
+  document.getElementById('live2d-canvas').setAttribute('aria-label', t('{name}，Live2D 桌宠', {name}));
 }
 
 function updateStarfield() {
@@ -115,7 +117,7 @@ function updateStarfield() {
   renderStarfield(starLights,{balance:starBalance,epoch:starEpoch,now,reducedMotion,paused,pausedAt:starPausedAt,variant:companion.variant.id});
 }
 function showWallet() {
-  say(`身边还有 ${starBalance} 颗星星。可以在手账里拖一颗给我，慢慢长大。`,8500);
+  say(t('身边还有 {count} 颗星星。可以在手账里拖一颗给我，慢慢长大。', {count: formatNumber(starBalance)}),8500);
   showControls();
 }
 function companionStarEvent(event) {
@@ -134,7 +136,7 @@ function companionStarEvent(event) {
   if (feeding) say(companion.line('feed', Date.now()).message);
   else {
     const lines = { builtin: '咦，围巾里亮了一点。', 'builtin-rose': '围巾里藏了点暖暖的星光。', 'builtin-mint': '小鳍边，慢慢亮起来了。', 'builtin-peach': '尾巴一晃，掉出小星星啦。', 'builtin-lilac': '刚刚的小梦，留下一点光。' };
-    say(lines[companion.variant.id] || lines.builtin, 7500);
+    say(t(lines[companion.variant.id] || lines.builtin), 7500);
   }
 }
 function celebrateReward(event) {
@@ -145,7 +147,7 @@ function celebrateReward(event) {
   clearTimeout(starTimer);starLights.classList.add('is-star-celebrating');
   starTimer=setTimeout(()=>starLights.classList.remove('is-star-celebrating'),4500);
   if(companion.state==='awake'&&!finDrag.active&&!document.hidden)animate(companion.mood==='low'?'nod':'nuzzle');
-  say(`${companion.line('reward',Date.now()).message} ＋${event.amount} ✦`);
+  say(`${companion.line('reward',Date.now()).message} ＋${formatNumber(event.amount)} ✦`);
 }
 
 function renderState() {
@@ -165,6 +167,8 @@ function renderState() {
 function applyState(value) {
   const state = value?.state || value || {};
   const settings = state.settings || {};
+  languagePreference = settings.language || 'system';
+  setLanguage(languagePreference, systemLocale);
   starBalance = walletBalance(state.starWallet);
   const nextName = typeof settings.name === 'string' && settings.name.trim() ? settings.name.trim().slice(0, 40) : '鲨鲨';
   const renamed = nextName !== name;
@@ -180,7 +184,7 @@ function applyState(value) {
   document.documentElement.dataset.mode = settings.mode === 'ftm' ? 'ftm' : 'mtf';
   renderState();
   window.TideLive2D?.switchSkin(settings);
-  if (!initialized || renamed) say(renamed && initialized ? `嗯，以后叫我${name}。` : `嗨，我是${name}。`);
+  if (!initialized || renamed) say(renamed && initialized ? t('嗯，以后叫我{name}。', {name}) : t('嗨，我是{name}。', {name}));
   else if (changedSkin && isBuiltinShark(activeSkin)) say(companion.line('greeting', Date.now()).message);
   initialized = true;
 }
@@ -249,7 +253,7 @@ function processEffects(effects, interactive = false) {
 
 function showAction(action, message, localGesture = action) {
   if(action==='feed'){showWallet();return;}
-  if (action === 'reminder') { say(message || '有一条用药提醒，打开手账查看吧。', 20000, true); return; }
+  if (action === 'reminder') { say(message || t('有一条用药提醒，打开手账查看吧。'), 20000, true); return; }
   if (finDrag.active) return;
   const allowed = ['pet', 'pat', 'feed', 'sleep', 'wake', 'nuzzle', 'mood-good', 'mood-okay', 'mood-low'];
   if (!allowed.includes(action)) return;
@@ -263,19 +267,20 @@ async function act(action, gesture = action) {
 }
 
 function openDashboard() {
-  if (api?.openDashboard) Promise.resolve(api.openDashboard()).catch(() => say('手账暂时没有打开，请从托盘再试一次。'));
+  if (api?.openDashboard) Promise.resolve(api.openDashboard()).catch(() => say(t('手账暂时没有打开，请从托盘再试一次。')));
   else window.location.href = 'index.html';
 }
 
 function setDashboardVisibility(visible) {
-  const label = visible ? '收起手账' : '打开手账';
+  dashboardVisible = Boolean(visible);
+  const label = t(visible ? '收起手账' : '打开手账');
   dashboardButton.title = label;
   dashboardButton.setAttribute('aria-label', label);
   dashboardButton.setAttribute('aria-expanded', String(Boolean(visible)));
 }
 
 function toggleDashboard() {
-  if (api?.toggleDashboard) Promise.resolve(api.toggleDashboard()).then(setDashboardVisibility).catch(() => say('手账暂时没有响应，请从托盘再试一次。'));
+  if (api?.toggleDashboard) Promise.resolve(api.toggleDashboard()).then(setDashboardVisibility).catch(() => say(t('手账暂时没有响应，请从托盘再试一次。')));
   else openDashboard();
 }
 
@@ -351,9 +356,9 @@ document.addEventListener('live2d-status', event => {
   const ready = event.detail.state === 'ready';
   document.getElementById('builtin-pet').hidden = ready;
   stage.classList.toggle('live2d-active', ready);
-  if (event.detail.state === 'loading') say('正在准备新的外观……', 20000);
-  if (ready) { resetSmallMotion(); window.TideLive2D?.setSleeping(companion.state === 'sleeping'); say('新外观准备好了。'); }
-  if (event.detail.state === 'error') say(event.detail.message, 12000);
+  if (event.detail.state === 'loading') say(t('正在准备新的外观……'), 20000);
+  if (ready) { resetSmallMotion(); window.TideLive2D?.setSleeping(companion.state === 'sleeping'); say(t('新外观准备好了。')); }
+  if (event.detail.state === 'error') say(translateError(event.detail.message), 12000);
 });
 const heartbeat = setInterval(() => {
   const now = Date.now();
@@ -377,10 +382,25 @@ api?.onPetAction?.(event => {
   if (!action || (action === lastReceivedAction && Date.now() - lastReceivedAt < 700)) return;
   showAction(action, event?.message);
 });
-if (api?.loadState) Promise.resolve(api.loadState()).then(applyState).catch(() => applyState({ settings: {} }));
-else applyState({ settings: {} });
+const stopLanguage = onLanguageChange(() => {
+  document.documentElement.lang = getLocale();
+  applyTranslations(document);
+  clearTimeout(speechTimer);
+  text.textContent = '';
+  speech.classList.add('is-hidden'); speech.inert = true; speech.setAttribute('aria-hidden', 'true');
+  speech.classList.remove('is-reminder'); reminderUntil = 0;
+  updateLabels(); setDashboardVisibility(dashboardVisible);
+  applySharkPalette(document.querySelector('#builtin-pet svg'), activeSkin);
+});
+async function initialize() {
+  try { const locale = await api?.getLocale?.(); if (locale?.systemLocale) systemLocale = locale.systemLocale; } catch { /* Browser locale remains available. */ }
+  try { applyState(api?.loadState ? await api.loadState() : {settings: {}}); }
+  catch { applyState({settings: {}}); }
+  document.documentElement.lang = getLocale(); applyTranslations(document); updateLabels(); setDashboardVisibility(dashboardVisible);
+}
+initialize();
 window.addEventListener('beforeunload', () => {
-  finDrag.dispose(); petInput.dispose(); starFeeding.dispose(); stopVisualPublisher();
+  finDrag.dispose(); petInput.dispose(); starFeeding.dispose(); stopVisualPublisher(); stopLanguage();
   clearInterval(heartbeat);
   for (const timer of [speechTimer, actionTimer, sparkleTimer, clickTimer, controlsTimer, starTimer, holdTimer, blinkTimer, touchRelaxTimer]) clearTimeout(timer);
   unsubscribeDashboard?.();

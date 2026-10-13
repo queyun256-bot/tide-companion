@@ -1,3 +1,4 @@
+import { t as translate } from './i18n.js';
 /**
  * Shared route registry, dose kernels and legacy single-route calibration API.
  * Multi-analyte reference concentrations are provided by hormones.js using the
@@ -13,22 +14,22 @@ const VERSION = 'pk-4';
 export const UNIT_FACTORS = Object.freeze({ estradiolPmolPerPg: 1000 / 272.38, testosteroneNmolPerNgDl: 10 / 288.42, cpaNmolPerNgMl: 1000 / 416.94 });
 
 export const SOURCES = Object.freeze({
-  oral: { title: 'Doll et al., 2022：舌下与口服雌二醇原始研究', url: 'https://pubmed.ncbi.nlm.nih.gov/34781041/' },
-  depot: { title: 'Oriowo et al., 1980：雌二醇酯药代原始研究', url: 'https://pubmed.ncbi.nlm.nih.gov/7389356/' },
-  ev: { title: 'DailyMed：Estradiol valerate 标签', url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2984bce2-89bf-4768-a1ca-ccf03b1197be' },
-  ec: { title: 'DailyMed：Depo-Estradiol 标签', url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a4229fd-fecd-4ac1-9c4f-6d442533457f' },
-  egel: { title: 'DailyMed：EstroGel 标签', url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=762ac371-bb8b-47e7-b48f-e80d452c9dd4' },
-  patch: { title: 'DailyMed：Vivelle-Dot 标签', url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ccb77f9-d47b-4381-ad5c-5b92524e1c4a' },
-  tc: { title: 'DailyMed：Testosterone cypionate 标签', url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f60c5520-b336-44a2-95d5-f274939fa595' },
-  te: { title: 'emc：Testosterone Enantate SmPC', url: 'https://www.medicines.org.uk/emc/product/3733/smpc' },
-  tgel: { title: 'DailyMed：AndroGel 1.62% 标签', url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4e8d29b-8707-4d47-e053-2a95a90aecee' },
-  cpa: { title: 'Androcur 50mg SmPC 5.1/5.2：CPA药效与口服药代', url: 'https://www.medicines.org.uk/emc/product/15996/smpc' },
+  oral: { get title(){return translate('Doll et al., 2022：舌下与口服雌二醇原始研究');}, url: 'https://pubmed.ncbi.nlm.nih.gov/34781041/' },
+  depot: { get title(){return translate('Oriowo et al., 1980：雌二醇酯药代原始研究');}, url: 'https://pubmed.ncbi.nlm.nih.gov/7389356/' },
+  ev: { get title(){return translate('DailyMed：Estradiol valerate 标签');}, url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2984bce2-89bf-4768-a1ca-ccf03b1197be' },
+  ec: { get title(){return translate('DailyMed：Depo-Estradiol 标签');}, url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a4229fd-fecd-4ac1-9c4f-6d442533457f' },
+  egel: { get title(){return translate('DailyMed：EstroGel 标签');}, url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=762ac371-bb8b-47e7-b48f-e80d452c9dd4' },
+  patch: { get title(){return translate('DailyMed：Vivelle-Dot 标签');}, url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5ccb77f9-d47b-4381-ad5c-5b92524e1c4a' },
+  tc: { get title(){return translate('DailyMed：Testosterone cypionate 标签');}, url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f60c5520-b336-44a2-95d5-f274939fa595' },
+  te: { get title(){return translate('emc：Testosterone Enantate SmPC');}, url: 'https://www.medicines.org.uk/emc/product/3733/smpc' },
+  tgel: { get title(){return translate('DailyMed：AndroGel 1.62% 标签');}, url: 'https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f4e8d29b-8707-4d47-e053-2a95a90aecee' },
+  cpa: { get title(){return translate('Androcur 50mg SmPC 5.1/5.2：CPA药效与口服药代');}, url: 'https://www.medicines.org.uk/emc/product/15996/smpc' },
 });
 
 const profile = (id, name, analyte, absorption, elimination, note, sources, extra = {}) => Object.freeze({
-  id, name, analyte, unit: 'mg', doseUnit: 'mg', concentrationUnit: analyte === 'estradiol' ? 'pg/mL' : analyte === 'cpa' ? 'ng/mL' : 'ng/dL',
+  id, get name(){return translate(name);}, analyte, unit: 'mg', doseUnit: 'mg', concentrationUnit: analyte === 'estradiol' ? 'pg/mL' : analyte === 'cpa' ? 'ng/mL' : 'ng/dL',
   model: 'bateman', defaults: Object.freeze({ absorptionHalfLifeHours: absorption, eliminationHalfLifeHours: elimination, ...extra.defaults }),
-  note, evidence: '含教学假设，未经个体或临床验证', sources: sources.map(key => SOURCES[key]), ...extra,
+  ...extra, get note(){return translate(note);}, get evidence(){return translate(extra.evidence || '含教学假设，未经个体或临床验证');}, get sources(){return sources.map(key => ({...SOURCES[key],title:translate(SOURCES[key].title)}));},
 });
 
 export const PROFILES = Object.freeze([
@@ -49,15 +50,15 @@ function time(value) {
 
 function finite(value) { return typeof value === 'number' && Number.isFinite(value); }
 function positive(value) { return finite(value) && value > 0; }
-function messages(warnings) { return { warnings: [...new Set(warnings)], warning: [...new Set(warnings)].join(' ') }; }
+function messages(warnings) { const localized = [...new Set(warnings.map(message=>translate(message)))]; return {warnings:localized,warning:localized.join(' ')}; }
 
 function resolveConfig(p, config = {}) {
   if (p.model === 'mahiro') return { ...p.defaults, ...resolvePkSettings(config), durationHours: config.durationHours ?? p.defaults.durationHours };
   const result = { ...p.defaults, ...config };
   for (const key of ['absorptionHalfLifeHours', 'eliminationHalfLifeHours']) {
-    if (!positive(result[key]) || result[key] < 0.001 || result[key] > 8760) throw new Error('半衰期须为0.001–8760小时内的有限正数。');
+    if (!positive(result[key]) || result[key] < 0.001 || result[key] > 8760) throw new Error(translate('半衰期须为0.001–8760小时内的有限正数。'));
   }
-  if (p.model === 'infusion' && (!positive(result.durationHours) || result.durationHours > 8760)) throw new Error('默认佩戴时长须为0–8760小时内的正数。');
+  if (p.model === 'infusion' && (!positive(result.durationHours) || result.durationHours > 8760)) throw new Error(translate('默认佩戴时长须为0–8760小时内的正数。'));
   return result;
 }
 
@@ -72,14 +73,14 @@ function doseSignature(doses, cutoff) {
 /** Bateman kernel with a stable equal-rate limit. The result is unscaled exposure. */
 export function doseShape({ dose, profile: p, config, at }) {
   const t = (time(at) - time(dose.at)) / HOUR;
-  if (!Number.isFinite(t) || !positive(dose.amount)) throw new Error('给药量或时间无效。');
+  if (!Number.isFinite(t) || !positive(dose.amount)) throw new Error(translate('给药量或时间无效。'));
   if (t < 0) return 0;
   const cfg = resolveConfig(p, config);
   if (p.model === 'mahiro') return mahiroAmount({ routeId: p.id, amount: dose.amount, hours: t, durationHours: dose.durationHours ?? cfg.durationHours, pkSettings: cfg });
   const ke = LN2 / cfg.eliminationHalfLifeHours;
   if (p.model === 'infusion') {
     const duration = dose.durationHours ?? cfg.durationHours;
-    if (!positive(duration) || duration > 8760) throw new Error('贴片实际佩戴时长须为0–8760小时内的正数。');
+    if (!positive(duration) || duration > 8760) throw new Error(translate('贴片实际佩戴时长须为0–8760小时内的正数。'));
     // μg/day -> mg/hour. No assumed bioavailability or distribution volume.
     const rate = dose.amount / 24_000;
     const active = Math.min(t, duration);
@@ -94,9 +95,9 @@ export function doseShape({ dose, profile: p, config, at }) {
 }
 
 function relevantDoses(doses, p) {
-  if (!Array.isArray(doses)) throw new Error('给药记录须为数组。');
+  if (!Array.isArray(doses)) throw new Error(translate('给药记录须为数组。'));
   const selected = doses.filter(d => d?.routeId === p.id);
-  if (selected.some(d => !positive(d.amount) || !Number.isFinite(time(d.at)))) throw new Error('存在无效的给药量或时间，请修正记录。');
+  if (selected.some(d => !positive(d.amount) || !Number.isFinite(time(d.at)))) throw new Error(translate('存在无效的给药量或时间，请修正记录。'));
   return selected;
 }
 
@@ -110,13 +111,13 @@ function mixedBefore(doses, p, cutoff) {
 
 function exposure(doses, p, cfg, at) {
   const result = doses.reduce((sum, dose) => sum + doseShape({ dose, profile: p, config: cfg, at }), 0);
-  if (!Number.isFinite(result)) throw new Error('模型数值超出范围。');
+  if (!Number.isFinite(result)) throw new Error(translate('模型数值超出范围。'));
   return result;
 }
 
 /** Convert an actual lab to the analyte's canonical serum unit, without guessing. */
 export function normalizeLab(lab) {
-  const invalid = warning => ({ valid: false, value: null, warning });
+  const invalid = source => { const warning=translate(source); return { valid: false, value: null, warning }; };
   if (!lab || !['estradiol', 'testosterone', 'cpa'].includes(lab.analyte)) return invalid('化验项目须明确为雌二醇、总睾酮或CPA。');
   if (!finite(lab.value) || lab.value < 0 || !Number.isFinite(time(lab.at))) return invalid('化验数值或采血时间无效。');
   const unit = String(lab.unit ?? '').replace(/\s+/g, '').toLowerCase();
@@ -187,10 +188,10 @@ export function estimateAt({ doses = [], routeId, at = new Date().toISOString(),
   const warnings = [];
   const result = { value: null, shape: 0, unit: p?.concentrationUnit ?? null, status: 'uncalibrated', routeId, analyte: p?.analyte ?? null };
   try {
-    if (!p) throw new Error('请选择已支持的给药途径。');
-    if (!Number.isFinite(time(at))) throw new Error('计算时间无效，须含时区。');
-    if (!finite(baseline) || baseline < 0) throw new Error('固定基线须为非负数。');
-    if (p.analyte === 'cpa' && baseline !== 0) throw new Error('CPA是外源药物，固定背景须为0；已有残留须用给药历史表示。');
+    if (!p) throw new Error(translate('请选择已支持的给药途径。'));
+    if (!Number.isFinite(time(at))) throw new Error(translate('计算时间无效，须含时区。'));
+    if (!finite(baseline) || baseline < 0) throw new Error(translate('固定基线须为非负数。'));
+    if (p.analyte === 'cpa' && baseline !== 0) throw new Error(translate('CPA是外源药物，固定背景须为0；已有残留须用给药历史表示。'));
     const cfg = resolveConfig(p, config);
     const selected = relevantDoses(doses, p);
     result.shape = exposure(selected, p, cfg, at);
@@ -208,7 +209,7 @@ export function estimateAt({ doses = [], routeId, at = new Date().toISOString(),
       return { ...result, ...messages(warnings) };
     }
     const value = baseline + result.shape * calibration.factor;
-    if (!Number.isFinite(value)) throw new Error('模型数值超出范围。');
+    if (!Number.isFinite(value)) throw new Error(translate('模型数值超出范围。'));
     warnings.push(...(calibration.warnings ?? []));
     if (calibration.exposureRange && (result.shape < calibration.exposureRange[0] * 0.8 || result.shape > calibration.exposureRange[1] * 1.2)) warnings.push('当前暴露超出校准样本覆盖范围，属于外推估计。');
     return { ...result, value, status: 'calibrated', ...messages(warnings) };
